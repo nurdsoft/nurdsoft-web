@@ -1,3 +1,132 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pageStyles {
+    color: "#232129";
+    font-family: "-apple-system, Roboto, sans-serif, serif";
+    background-image:  url("../images/background.png");
+    height: 100vh;
+}
+
+.logoAnimation {
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter_n {
+    opacity: 0;
+    animation: load 1s ease-in-out forwards;
+}
+
+.widthL {
+    width: 85px;
+}
+
+
+.bottomText {
+    position: fixed;
+    bottom: 60px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: #F2F3FF;
+    animation: animate 1.5s linear infinite;
+}
+
+
+
+.letter_u {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    width: 61px;
+}
+
+.letter_r {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    width: 61px;
+}
+
+.letter_d {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    width: 61px;
+}
+
+.letter_s {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    width: 77px;
+}
+
+.letter_o {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 6s;
+    width: 61px;
+}
+
+.letter_f {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+    width: 61px;
+}
+
+.letter_t {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 8s;
+    width: 61px;
+}
+
+@keyframes load {
+    0% {
+      transform: translateX(-450%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes animate {
+    0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 0;
+      }
+  }
+
+  
+
+/* @keyframes load {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
