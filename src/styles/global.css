@@ -3,125 +3,178 @@
 @tailwind utilities;
 
 .pageStyles {
-    color: "#232129";
-    font-family: "-apple-system, Roboto, sans-serif, serif";
-    background-image:  url("../images/background.png");
-    height: 100vh;
+  color: "#232129";
+  font-family: "-apple-system, Roboto, sans-serif, serif";
+  background-image: url("../images/background.png");
+  height: 100vh;
 }
 
 .logoAnimation {
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    display: flex;
-    padding: 0 20px;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  padding: 0 20px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .letter_n {
-    opacity: 0;
-    animation: load 1s ease-in-out forwards;
+  opacity: 0;
+  animation: load 0.8s ease-in-out forwards;
 }
-
-.widthL {
-    width: 85px;
-}
-
-
-.bottomText {
-    position: fixed;
-    bottom: 60px;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-    color: #F2F3FF;
-    animation: animate 1.5s linear infinite;
-}
-
-
 
 .letter_u {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    width: 61px;
+  opacity: 0;
+  animation: load 0.5s ease-in-out 0s forwards;
 }
 
 .letter_r {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 3s;
-    width: 61px;
+  opacity: 0;
+  animation: load 0.6s ease-in-out 0s forwards;
+}
+
+.widthL {
+  width: 85px;
+}
+
+.bottomText {
+  position: fixed;
+  bottom: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  color: #f2f3ff;
+  animation: animate 1.5s linear infinite;
+}
+
+.letter_u {
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  width: 61px;
+}
+
+.letter_r {
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  width: 61px;
 }
 
 .letter_d {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 4s;
-    width: 61px;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  width: 61px;
 }
 
 .letter_s {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 5s;
-    width: 77px;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  width: 77px;
 }
 
 .letter_o {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 6s;
-    width: 61px;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  width: 61px;
 }
 
 .letter_f {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 7s;
-    width: 61px;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 7s;
+  width: 61px;
 }
 
 .letter_t {
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 8s;
-    width: 61px;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 8s;
+  width: 61px;
 }
 
 @keyframes load {
-    0% {
-      transform: translateX(-450%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-450%);
+    opacity: 0;
   }
-
-  @keyframes animate {
-    0%{
-        opacity: 0;
-      }
-      50%{
-        opacity: 0.7;
-      }
-      100%{
-        opacity: 0;
-      }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
 
-  
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.layoutContainer {
+  background-image: url("../images/home-bg.gif");
+  height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.burgerContainer {
+  display: none;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 17px 0;
+  text-decoration: none !important;
+}
+.menuContainer {
+  display: flex;
+  gap: 33px;
+  font-size: 18px;
+}
+.contactLink {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+a {
+  color: #f2f3ff;
+  text-decoration: none !important;
+}
+span {
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+a:hover {
+  color: #6164fa !important;
+}
+a.active {
+  color: #6164fa !important;
+}
+
+.wrapperContainer {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 1210px) 1fr;
+}
 
 /* @keyframes load {
     0% {
