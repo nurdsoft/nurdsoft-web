@@ -1,0 +1,26 @@
+@import "~sass-rem";
+
+.parentContainer {
+  margin-left: rem(60px);
+  padding-bottom: rem(40px);
+  .softwareDiv {
+    color: var(--primary-100);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin: rem(100px) 0 rem(30px) 0;
+  }
+
+  .mainTitleDiv {
+    color: var(--off-white-100);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0 0 rem(80px) 0;
+    width: 50%;
+  }
+
+}
+
+

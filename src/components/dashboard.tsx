@@ -1,0 +1,23 @@
+import * as React from "react";
+import "./dashboard.scss";
+import Wrapper from "./wrapper";
+import { BsArrowRight } from "react-icons/bs";
+import Button from "./button";
+
+const Dashboard = () => {
+  return (
+    <>
+      <Wrapper>
+        <div className="parentContainer">
+          <div className="softwareDiv">SOFTWARE ENGINEERING STUDIO</div>
+          <div className="mainTitleDiv lineUp">
+            We build stunning online experiences
+          </div>
+          <Button buttonText="OUR SERVICES" />
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+
+export default Dashboard;

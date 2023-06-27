@@ -1,0 +1,101 @@
+@import "~sass-rem";
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  .button {
+    position: relative;
+    border: 0;
+    display: inline-block;
+    width: 12px;
+    height: auto;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    background: transparent;
+
+    .buttonText {
+      position: absolute;
+      inset: 0;
+      padding: 0.9rem 0;
+      width: max-content;
+      margin-left: 1.5rem;
+      line-height: 1.6;
+      letter-spacing: 0.04em;
+      font-size: rem(16px);
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .buttonTextPrimary {
+      color: var(--off-white-100);
+    }
+
+    .buttonTextTransparent {
+      color: var(--primary-100);
+    }
+
+    .circle {
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 1.625rem;
+      transition: all 0.4s ease-in-out;
+
+      .icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: var(--off-white-100);
+      }
+    }
+
+    .circleColorPrimary {
+      background-color: var(--primary-100);
+    }
+
+    .circleColorTransparent {
+      background-color: var(--off-white-100);
+      opacity: 0.12;
+    }
+
+    &:hover {
+      .circle {
+        width: 200px;
+      }
+
+    //   .buttonTextTransparent {
+    //     color: var(--off-white-100);
+    //   }
+
+    //   .buttonTextPrimary {
+    //     color: var(--primary-100);
+    //   }
+    }
+  }
+}
+
+.lineUp {
+  animation: 2s anim-lineUp ease-out 1;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

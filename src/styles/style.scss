@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./color/color-palatte";
 
 .pageStyles {
   color: "#232129";
@@ -126,54 +127,6 @@
   100% {
     opacity: 0;
   }
-}
-
-.layoutContainer {
-  background-image: url("../images/home-bg.gif");
-  height: 100vh;
-}
-
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 99;
-}
-.burgerContainer {
-  display: none;
-}
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 0 17px 0;
-  text-decoration: none !important;
-}
-.menuContainer {
-  display: flex;
-  gap: 33px;
-  font-size: 18px;
-}
-.contactLink {
-  cursor: pointer;
-  text-decoration: none !important;
-}
-a {
-  color: #f2f3ff;
-  text-decoration: none !important;
-}
-span {
-  margin-left: 12px;
-  text-transform: uppercase;
-}
-a:hover {
-  color: #6164fa !important;
-}
-a.active {
-  color: #6164fa !important;
-}
-
-.wrapperContainer {
-  display: grid;
-  grid-template-columns: 1fr minmax(min-content, 1210px) 1fr;
 }
 
 /* @keyframes load {
