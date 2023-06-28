@@ -3,6 +3,8 @@
 .parentContainer {
   margin-left: rem(60px);
   padding-bottom: rem(40px);
+  height: 100%;
+
   .softwareDiv {
     color: var(--primary-100);
     letter-spacing: 0.04em;
@@ -12,15 +14,34 @@
     margin: rem(100px) 0 rem(30px) 0;
   }
 
-  .mainTitleDiv {
+  .mainTitleDashboardDiv {
     color: var(--off-white-100);
     letter-spacing: 0.04em;
     font-weight: 500;
-    font-size: 52px;
+    font-size: rem(52px);
     margin: 0 0 rem(80px) 0;
     width: 50%;
   }
-
 }
 
+.lineUp {
+  animation: 2s anim-lineUp ease-out 1;
+}
 
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

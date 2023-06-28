@@ -6,6 +6,11 @@
   top: 0;
   z-index: 99;
   border-bottom: 1px solid var(--dark-gray-100);
+  background-image: url("../images/home-bg.gif");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   .headerContainer {
     display: flex;
     justify-content: space-between;
