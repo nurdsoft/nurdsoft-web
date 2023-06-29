@@ -1,17 +1,6 @@
 import * as React from "react";
-import { withPrefix, type HeadFC, type PageProps } from "gatsby";
+import {  type PageProps } from "gatsby";
 import "../styles/style.scss";
-import { StaticImage } from "gatsby-plugin-image";
-import {
-  LETTER_D,
-  LETTER_F,
-  LETTER_N,
-  LETTER_O,
-  LETTER_R,
-  LETTER_S,
-  LETTER_T,
-  LETTER_U,
-} from "../icons";
 import Layout from "../components/layout";
 import * as animationData from "../animations/logo.json";
 import Lottie from "react-lottie";
@@ -79,4 +68,3 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;

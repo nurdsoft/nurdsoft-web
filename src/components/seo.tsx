@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import { useLocation } from "@reach/router";
 
 export default function Seo() {
   const { site } = useStaticQuery(
@@ -20,24 +19,6 @@ export default function Seo() {
   );
 
   const metaDescription = site.siteMetadata.description;
-
-  const location = useLocation();
-
-  const capitalizeFirstLetter = (str: string) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  };
-
-  const getSlugName = () => {
-    const path = location.pathname;
-    let slug = path;
-    if (path === "/") {
-      slug = "/home/";
-    }
-    if (path.endsWith("/")) {
-      slug = slug.slice(0, -1);
-    }
-    return capitalizeFirstLetter(slug.substring(1));
-  };
 
   return (
     <Helmet
