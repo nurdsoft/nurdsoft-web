@@ -2,7 +2,9 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `nurdsoft-web`,
+    title: `Nurdsoft-`,
+    description: `SOFTWARE ENGINEERING STUDIO`,
+    author: `Nurdsoft (Prakhar Dixit)`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -14,11 +16,11 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     `gatsby-plugin-sass`,
-    'gatsby-plugin-breakpoints',
+    "gatsby-plugin-breakpoints",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/favicon.svg",
       },
     },
     "gatsby-transformer-remark",

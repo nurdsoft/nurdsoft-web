@@ -15,6 +15,7 @@ import {
 import Layout from "../components/layout";
 import * as animationData from "../animations/logo.json";
 import Lottie from "react-lottie";
+import Seo from "../components/seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [_step, _setStep] = React.useState<number>(0);
@@ -55,6 +56,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <>
+      <Seo />
       {_step === 0 || _step === 1 ? (
         <main className="pageStyles flex justify-center items-center">
           {(_step === 0 || _step === 1) && (
