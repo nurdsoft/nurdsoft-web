@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
-import ogImage from "../images/og-img.png";
 
 export default function Seo() {
   const { site } = useStaticQuery(
@@ -62,7 +61,7 @@ export default function Seo() {
         },
         {
           property: `og:image`,
-          content: `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/${ogImage}`,
+          content: `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`,
         },
         {
           property: `og:url`,
@@ -74,7 +73,7 @@ export default function Seo() {
       <meta
         key="og:image"
         name="og:image"
-        content={`https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/${ogImage}`}
+        content={`https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
       />
       <title>Nurdsoft</title>
       <meta name="description" content="Software Engineering Studio" />
