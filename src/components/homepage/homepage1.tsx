@@ -16,7 +16,7 @@ const Homepage1 = () => {
             </div>
             <Button buttonText="WHO WE ARE" />
           </div>
-          <div className="mt-36">
+          <div className="mt-36 imageContainer">
             <img
               src="/think-about.png"
               width={1000}

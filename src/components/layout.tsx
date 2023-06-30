@@ -5,7 +5,6 @@ import Header from "./header";
 import Dashboard from "./dashboard";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Wrapper from "./wrapper";
 import Homepage1 from "./homepage/homepage1";
 
 const Layout = () => {
@@ -18,11 +17,11 @@ const Layout = () => {
         <div style={{ height: "100vh" }}>
           <Parallax pages={2}>
             <ParallaxLayer
-              speed={2}
+              speed={3}
               offset={0}
-              factor={2}
+              factor={5}
               style={{
-                backgroundImage: `url(/home-bg.gif)`,
+                backgroundImage: `url(/homepage_bg-hero.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center top",
                 height: "100vh",

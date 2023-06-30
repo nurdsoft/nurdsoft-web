@@ -35,6 +35,12 @@ const config: GatsbyConfig = {
       __key: "images",
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.nurdsoft-web-new-prakhar-ira-main.buildndeploy.co`,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",

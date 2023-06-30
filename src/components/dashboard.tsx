@@ -1,9 +1,7 @@
 import * as React from "react";
 import "./dashboard.scss";
 import Wrapper from "./wrapper";
-import { BsArrowRight } from "react-icons/bs";
 import Button from "./button";
-import Homepage1 from "./homepage/homepage1";
 
 const Dashboard = () => {
   return (
