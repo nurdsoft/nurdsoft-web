@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     "gatsby-plugin-breakpoints",
     {
       resolve: "gatsby-plugin-manifest",

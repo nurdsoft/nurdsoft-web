@@ -1,9 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
 
 export default function Seo() {
-
   const metas = [
     {
       name: `description`,
@@ -32,12 +30,28 @@ export default function Seo() {
   ];
 
   return (
-    <Helmet>
+    <Helmet title="Nurdsoft" meta={metas}>
       <meta charSet="utf-8" />
       <title>Nurdsoft</title>
-      {metas.map((meta) => (
-        <meta key={meta.name} name={meta.name} content={meta.content} />
-      ))}
+      <meta
+        key="og:image"
+        name="og:image"
+        content={`https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
+      />
+      <meta key="og:title" property="og:title" content="Nurdsoft" />
+      <meta key="og:type" property="og:type" content="website" />
+      <meta key="title" property="title" content="Nurdsoft" />
+      <meta name="description" content="Software Engineering Studio" />
+      <meta
+        key="og:description"
+        property="og:description"
+        content="Software Engineering Studio"
+      />
+      <meta
+        key="og:url"
+        property="og:url"
+        content="https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co"
+      />
     </Helmet>
   );
 }
