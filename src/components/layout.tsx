@@ -6,26 +6,21 @@ import Dashboard from "./dashboard";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Homepage1 from "./homepage/homepage1";
+import Homepage3 from "./homepage/homepage3";
 
 const Layout = () => {
-  const breakpoints = useBreakpoint();
-
   return (
     <>
       <main className="layoutContainer">
         <Header />
         <div style={{ height: "100vh" }}>
-          <Parallax pages={2}>
+          <Parallax pages={3}>
             <ParallaxLayer
-              speed={3}
+              speed={2}
               offset={0}
-              factor={5}
+              factor={2}
               style={{
-                backgroundImage: `url(/homepage_bg-hero.png)`,
-                backgroundSize: "cover",
-                backgroundPosition: "center top",
-                height: "100vh",
-                backgroundAttachment: "fixed",
+                backgroundColor: "var(--black-100)",
               }}
             >
               <Dashboard />
@@ -33,16 +28,23 @@ const Layout = () => {
             <ParallaxLayer
               offset={1}
               speed={1}
+              factor={2}
               style={{
-                backgroundImage: `url(/homepage_bg-hero.png)`,
-                backgroundSize: "100%",
-                backgroundPosition: "center top",
-                height: "100vh",
-                backgroundAttachment: "fixed",
-                opacity: "0.97",
+                backgroundColor: "var(--black-100)",
               }}
             >
               <Homepage1 />
+            </ParallaxLayer>
+            <ParallaxLayer
+              offset={2}
+              speed={1}
+              style={{
+                backgroundColor: "var(--black-100)",
+                paddingBottom: "40px",
+                height: '100vh'
+              }}
+            >
+              <Homepage3 />
             </ParallaxLayer>
           </Parallax>
         </div>

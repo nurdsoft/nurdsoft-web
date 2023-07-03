@@ -5,11 +5,7 @@
   top: 0;
   z-index: 99;
   border-bottom: 1px solid var(--dark-gray-100);
-  background-image: url("/homepage_bg-hero.png");
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: var(--black-100);
   .headerContainer {
     display: flex;
     justify-content: space-between;

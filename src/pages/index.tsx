@@ -1,5 +1,5 @@
 import * as React from "react";
-import {  type PageProps } from "gatsby";
+import { type PageProps } from "gatsby";
 import "../styles/style.scss";
 import Layout from "../components/layout";
 import * as animationData from "../animations/logo.json";
@@ -14,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
       if (_step === 0) {
         _setStep((step) => step + 1);
       }
-    }, 2300);
+    }, 2500);
   }, []);
 
   React.useEffect(() => {
@@ -46,16 +46,11 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <Seo />
-      {_step === 0 || _step === 1 ? (
+      {_step === 0 ? (
         <main className="pageStyles flex justify-center items-center">
-          {(_step === 0 || _step === 1) && (
-            <div>
-              <Lottie options={defaultOptions} />
-            </div>
-          )}
-          {_step === 1 && (
-            <div className="bottomText">Press any key to continue...</div>
-          )}
+          <div>
+            <Lottie options={defaultOptions} />
+          </div>
         </main>
       ) : (
         <Layout />
@@ -67,4 +62,3 @@ const IndexPage: React.FC<PageProps> = () => {
 //BND-343
 
 export default IndexPage;
-
