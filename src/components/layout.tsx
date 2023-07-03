@@ -14,7 +14,7 @@ const Layout = () => {
       <main className="layoutContainer">
         <Header />
         <div style={{ height: "100vh" }}>
-          <Parallax pages={3}>
+          <Parallax pages={4}>
             <ParallaxLayer
               speed={2}
               offset={0}
@@ -38,10 +38,11 @@ const Layout = () => {
             <ParallaxLayer
               offset={2}
               speed={1}
+              factor={2}
               style={{
                 backgroundColor: "var(--black-100)",
                 paddingBottom: "40px",
-                height: '100vh'
+                height: "100vh",
               }}
             >
               <Homepage3 />

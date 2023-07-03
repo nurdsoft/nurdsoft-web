@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Homepage1 = () => {
   return (
     <Wrapper>
-      <div className="parentContainer">
+      <div className="homepage1_parentContainer">
         <div className="flex">
           <div>
             <div className="mainTitleDiv lineUp">

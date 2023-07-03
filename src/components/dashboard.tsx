@@ -8,7 +8,7 @@ const Dashboard = () => {
     <>
       <Wrapper>
         <div>
-          <div className="parentContainer">
+          <div className="dashboardParentContainer">
             <div className="softwareDiv">SOFTWARE ENGINEERING STUDIO</div>
             <div className="mainTitleDashboardDiv lineUp">
               We build stunning online experiences
