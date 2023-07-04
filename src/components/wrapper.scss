@@ -1,4 +1,9 @@
 .wrapperContainer {
-    display: grid;
-    grid-template-columns: 1fr minmax(min-content, 1100px) 1fr;
-  }
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 1100px) 1fr;
+}
+
+.wrapperLeftContainer {
+  display: grid;
+  grid-template-columns: 17% 84%;
+}

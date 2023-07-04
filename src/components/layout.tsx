@@ -7,6 +7,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Homepage1 from "./homepage/homepage1";
 import Homepage3 from "./homepage/homepage3";
 import Homepage4 from "./homepage/homepage4";
+import Homepage2 from "./homepage/homepage2";
 
 const Layout = () => {
   return (
@@ -14,7 +15,7 @@ const Layout = () => {
       <main className="layoutContainer">
         <Header />
         <div style={{ height: "100vh" }}>
-          <Parallax pages={5}>
+          <Parallax pages={6}>
             <ParallaxLayer
               speed={2}
               offset={0}
@@ -45,10 +46,22 @@ const Layout = () => {
                 height: "100vh",
               }}
             >
-              <Homepage3 />
+              <Homepage2 />
             </ParallaxLayer>
             <ParallaxLayer
               offset={3}
+              speed={1}
+              factor={2}
+              style={{
+                backgroundColor: "var(--black-100)",
+                paddingBottom: "40px",
+                height: "100vh",
+              }}
+            >
+              <Homepage3 />
+            </ParallaxLayer>
+            <ParallaxLayer
+              offset={4}
               speed={1}
               factor={2}
               style={{

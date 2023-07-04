@@ -6,13 +6,15 @@ const Button = ({
   buttonText,
   isLinkButton = false,
   showArrowIcon = true,
+  className,
 }: {
   buttonText: string;
   isLinkButton?: boolean;
   showArrowIcon?: boolean;
+  className?: string;
 }) => {
   return (
-    <div className="buttonContainer">
+    <div className={`buttonContainer ${className}`}>
       <button className="button">
         <span
           className={`circle ${

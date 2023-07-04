@@ -1,0 +1,17 @@
+@import "~sass-rem";
+
+.homepage2_parentContainer {
+  padding: 0 rem(25px) rem(60px) rem(25px);
+  .homepage2_flexContainer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+    .homepage2_leftContainer {
+      width: 50%;
+    }
+    .homepage2_rightContainer {
+      width: 50%;
+    }
+  }
+}

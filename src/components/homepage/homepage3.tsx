@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Homepage3 = () => {
   return (
     <Wrapper>
-      <div className="parentContainer">
+      <div className="homepage3_parentContainer">
         <h4 className="trustedHeading">Trusted By</h4>
         <div className="gridContainer">
           <div className="boxContainer item1">

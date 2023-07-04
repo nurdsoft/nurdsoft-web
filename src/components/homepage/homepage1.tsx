@@ -2,7 +2,6 @@ import * as React from "react";
 import "./homepage1.scss";
 import Button from "../button";
 import Wrapper from "../wrapper";
-import { StaticImage } from "gatsby-plugin-image";
 
 const Homepage1 = () => {
   return (
