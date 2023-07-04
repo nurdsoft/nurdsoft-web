@@ -1,8 +1,6 @@
 @import "~sass-rem";
 
 .parentContainer {
-  height: 100vh;
-  overflow: scroll;
   padding-bottom: rem(60px);
   h4.trustedHeading {
     text-align: center;
@@ -11,11 +9,15 @@
     background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     font-size: rem(60px);
+    animation: 2s slide-right 1.5s forwards;
+    transform: translateX(-150%);
   }
 
   .gridContainer {
     display: grid;
+    margin-top: rem(90px);
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
     color: var(--off-white-100);
@@ -82,7 +84,6 @@
   }
 }
 
-
 .gridBox1,
 .gridBox3 {
   height: 50%;
@@ -95,5 +96,11 @@
     background-color: var(--gray-100);
     border-top: unset;
     border-bottom: unset !important;
+  }
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0);
   }
 }
