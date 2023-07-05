@@ -3,7 +3,7 @@ import "./homepage2.scss";
 import Wrapper from "../wrapper";
 import { StaticImage } from "gatsby-plugin-image";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../../styles/carousel.scss";
 import SliderLeftPanel from "../slider/sliderleftpanel";
 import SliderRightPanel from "../slider/sliderrightpanel";
 import WrapperLeft from "../wrapperleft";

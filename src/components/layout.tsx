@@ -8,6 +8,7 @@ import Homepage1 from "./homepage/homepage1";
 import Homepage3 from "./homepage/homepage3";
 import Homepage4 from "./homepage/homepage4";
 import Homepage2 from "./homepage/homepage2";
+import Homepage5 from "./homepage/homepage5";
 
 const Layout = () => {
   return (
@@ -15,7 +16,7 @@ const Layout = () => {
       <main className="layoutContainer">
         <Header />
         <div style={{ height: "100vh" }}>
-          <Parallax pages={6}>
+          <Parallax pages={7}>
             <ParallaxLayer
               speed={2}
               offset={0}
@@ -62,6 +63,18 @@ const Layout = () => {
             </ParallaxLayer>
             <ParallaxLayer
               offset={4}
+              speed={2}
+              factor={1}
+              style={{
+                backgroundColor: "var(--black-100)",
+                paddingBottom: "40px",
+                height: "100vh",
+              }}
+            >
+              <Homepage4 />
+            </ParallaxLayer>
+            <ParallaxLayer
+              offset={5}
               speed={1}
               factor={2}
               style={{
@@ -70,7 +83,7 @@ const Layout = () => {
                 height: "100vh",
               }}
             >
-              <Homepage4 />
+              <Homepage5 />
             </ParallaxLayer>
           </Parallax>
         </div>
