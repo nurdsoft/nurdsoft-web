@@ -8,7 +8,7 @@ const Homepage5 = () => {
   return (
     <>
       <Wrapper>
-        <div>
+        <div className="pl-2 pr-2">
           <div className="homepage5_parentContainer">
             <div className="homepage5_reviewDiv">READ OUR REVIEWS</div>
             <div className="homepage5_textContainer homepage5_lineUp">
