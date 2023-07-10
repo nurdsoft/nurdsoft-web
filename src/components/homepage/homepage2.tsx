@@ -129,7 +129,7 @@ const Homepage2 = () => {
       </Wrapper>
     </div>
   ) : (
-    <WrapperLeft>
+    <Wrapper>
       <div className="homepage2_parentContainer">
         <div className="homepage2_flexContainer">
           <div className="homepage2_leftContainer">
@@ -188,7 +188,7 @@ const Homepage2 = () => {
                 <StaticImage
                   src="../../images/showcase_nft.png"
                   quality={100}
-                  width={625}
+                  width={500}
                   alt="NFT"
                 />
               </SliderRightPanel>
@@ -196,14 +196,14 @@ const Homepage2 = () => {
                 <StaticImage
                   src="../../images/simplify_work.png"
                   quality={100}
-                  width={625}
+                  width={500}
                   alt="Simplify Work"
                 />
               </SliderRightPanel>
               <SliderRightPanel>
                 <StaticImage
                   src="../../images/slider_dashboard.png"
-                  width={625}
+                  width={500}
                   quality={100}
                   alt="Slider Dashboard"
                 />
@@ -212,7 +212,7 @@ const Homepage2 = () => {
           </div>
         </div>
       </div>
-    </WrapperLeft>
+    </Wrapper>
   );
 };
 

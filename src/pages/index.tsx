@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import * as animationData from "../animations/logo.json";
 import Lottie from "react-lottie";
 import Seo from "../components/seo";
+import HomeLayout from "../components/layouts/homelayout";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [_step, _setStep] = React.useState<number>(0);
@@ -53,7 +54,9 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </main>
       ) : (
-        <Layout />
+        <Layout>
+          <HomeLayout />
+        </Layout>
       )}
     </>
   );

@@ -8,7 +8,6 @@ import NurdsoftImage from "../images/nurdsoft-logo-expanded.png";
 import "./header.scss";
 import Button from "./button";
 
-
 const Header = () => {
   const [_showHamburgerMenu, _setShowHamburgerMenu] = useState(false);
 
@@ -40,7 +39,7 @@ const Header = () => {
                 </div>
                 <div className="menuContainer">
                   <Link
-                    activeClassName="active"
+                    activeClassName="activeMenuLink"
                     className="menuLink"
                     to="/services/"
                   >
@@ -48,7 +47,7 @@ const Header = () => {
                     <span className="onHover">SERVICES</span>
                   </Link>
                   <Link
-                    activeClassName="active"
+                    activeClassName="activeMenuLink"
                     className="menuLink"
                     to="/industry/"
                   >
@@ -56,7 +55,7 @@ const Header = () => {
                     <span className="onHover">INDUSTRY</span>
                   </Link>
                   <Link
-                    activeClassName="active"
+                    activeClassName="activeMenuLink"
                     className="menuLink"
                     to="/about/"
                   >
@@ -65,7 +64,7 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    activeClassName="active"
+                    activeClassName="activeMenuLink"
                     className="menuLink"
                     to="/work/"
                   >
@@ -73,7 +72,7 @@ const Header = () => {
                     <span className="onHover">WORK</span>
                   </Link>
                   <Link
-                    activeClassName="active"
+                    activeClassName="activeMenuLink"
                     className="menuLink"
                     to="/estimate_project/"
                   >

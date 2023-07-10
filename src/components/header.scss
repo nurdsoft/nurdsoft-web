@@ -57,6 +57,10 @@
   }
 }
 
+a.activeMenuLink {
+  color: var(--primary-100) !important;
+}
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
