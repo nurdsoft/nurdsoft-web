@@ -61,3 +61,80 @@ export const DOUBLE_QUOTE_PINK = (props: React.SVGProps<SVGSVGElement>) => {
     </svg>
   );
 };
+
+export const SERVICES_HOME_ICON_1 = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="64"
+      height="64"
+      viewBox="0 0 64 64"
+      fill="none"
+    >
+      <rect width="64" height="64" rx="32" fill="#F2F3FF" />
+      <path
+        d="M39.7777 22H24.2223C22.9949 22 22 22.9949 22 24.2223V39.7777C22 41.0051 22.9949 42 24.2223 42H39.7777C41.0051 42 42 41.0051 42 39.7777V24.2223C42 22.9949 41.0051 22 39.7777 22Z"
+        stroke="#6164FA"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M22 28.6665H42"
+        stroke="#6164FA"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M28.667 41.9998V28.6665"
+        stroke="#6164FA"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const SERVICES_HOME_ICON_2 = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="65"
+      height="64"
+      viewBox="0 0 65 64"
+      fill="none"
+    >
+      <rect x="0.333252" width="64" height="64" rx="32" fill="#F2F3FF" />
+      <path
+        d="M32.3333 21C32.3333 27.0752 37.2581 32 43.3333 32C37.2581 32 32.3333 36.9248 32.3333 43C32.3333 36.9248 27.4084 32 21.3333 32C27.4084 32 32.3333 27.0752 32.3333 21Z"
+        stroke="#6164FA"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const SERVICES_HOME_ICON_3 = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="65"
+      height="64"
+      viewBox="0 0 65 64"
+      fill="none"
+    >
+      <rect x="0.666748" width="64" height="64" rx="32" fill="#F2F3FF" />
+      <path
+        d="M26.9525 22.4V41.6H38.381V22.4H26.9525ZM25.8096 20H39.5239C40.1551 20 40.6667 20.5373 40.6667 21.2V42.8C40.6667 43.4628 40.1551 44 39.5239 44H25.8096C25.1784 44 24.6667 43.4628 24.6667 42.8V21.2C24.6667 20.5373 25.1784 20 25.8096 20ZM32.6667 38C33.2979 38 33.8096 38.5372 33.8096 39.2C33.8096 39.8628 33.2979 40.4 32.6667 40.4C32.0355 40.4 31.5239 39.8628 31.5239 39.2C31.5239 38.5372 32.0355 38 32.6667 38Z"
+        fill="#6164FA"
+      />
+    </svg>
+  );
+};
