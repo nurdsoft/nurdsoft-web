@@ -9,7 +9,7 @@ const IndustryLayout = () => {
       <ParallaxLayer
         speed={2}
         offset={0}
-        factor={2}
+        factor={0}
         style={{
           backgroundColor: "var(--black-100)",
         }}

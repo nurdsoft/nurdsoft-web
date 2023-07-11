@@ -19,3 +19,12 @@
         gap: 0px 64px;
     }
 }
+
+@media only screen and (max-width: 680px) {
+    .industryPage1_parentContainer {
+        .cardsContainer{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+}
