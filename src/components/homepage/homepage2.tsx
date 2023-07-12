@@ -6,12 +6,10 @@ import { Carousel } from "react-responsive-carousel";
 import "../../styles/carousel.scss";
 import SliderLeftPanel from "../slider/sliderleftpanel";
 import SliderRightPanel from "../slider/sliderrightpanel";
-import WrapperLeft from "../wrapperleft";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import ResponsiveSliderPanel from "../slider/responsivesliderpanel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 const Homepage2 = () => {
   const breakpoints = useBreakpoint();

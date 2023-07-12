@@ -18,7 +18,7 @@ const Header = () => {
           <div className="boxContainer">
             <div className="headerContainer">
               <div>
-                <Link to="/home/">
+                <Link to="/">
                   <img src={NurdsoftImage} width={200} alt="Nurdsoft Logo" />
                 </Link>
               </div>
