@@ -47,7 +47,9 @@ const IndustryPageCarousel = () => {
                 </div>
                 <div className='right'>
                   <img className='quote' src={Quotes} alt='quotes' />
-                  <p className='description'>"Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups."</p>
+                  <p className='description'>
+                    "Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups."
+                  </p>
                   <div className='testGiverInfo'>
                     <p className='name'>Name here</p>
                     <p className='designation'>Designation</p>

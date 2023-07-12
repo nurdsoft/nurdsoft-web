@@ -1,6 +1,7 @@
 .industryPage2_parentContainer {
     max-width: 1400px;
-    h1 {
+    margin: 0 auto;
+    h1.heading {
         font-size: 64px;
         font-style: normal;
         font-weight: 700;
@@ -34,6 +35,25 @@
                 height: 18px;
                 border-radius: 18px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .industryPage2_parentContainer {
+        max-width: 1100px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .industryPage2_parentContainer {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .industryPage2_parentContainer {
+        max-width: 300px;
+        h1.heading {
+            font-size: 48px;
         }
     }
 }

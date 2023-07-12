@@ -7,7 +7,7 @@ const IndustryPage2 = () => {
   return (
     <Wrapper>
       <div className='industryPage2_parentContainer'>
-        <h1>Client <br/> Testimonials</h1>
+        <h1 className='heading'>Client <br/> Testimonials</h1>
         <IndustryPageCarousel />
       </div>
     </Wrapper>
