@@ -25,6 +25,11 @@
         .servicespage4_showVideo {
           display: block;
           padding: 0 !important;
+          .servicespage4_backgroundImg {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
         }
         .servicespage4_hide {
           display: none;

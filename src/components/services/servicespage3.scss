@@ -1,0 +1,90 @@
+@import "~sass-rem";
+
+.servicespage3_parentContainer {
+  padding: 0 rem(8px) 0 rem(8px);
+
+  .servicespage3_gridContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: rem(90px);
+    gap: 10px;
+    .servicespage3_titleDiv {
+      background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+      font-size: rem(58px);
+      margin-top: rem(30px);
+      grid-column: 1 / span 5;
+      line-height: 1.2em;
+      grid-row: 2;
+    }
+    .servicespage3_rightContainer {
+      align-items: flex-start;
+      background-image: url(../../images/ellipese.png);
+      background-repeat: no-repeat;
+      height: 85vh;
+      background-size: contain;
+      .servicespage3_listContainer {
+        .servicespage3_count {
+          color: var(--off-gray);
+          font-size: rem(18px);
+        }
+        .servicespage3_options {
+          .servicespage3_line {
+            border-color: var(--primary-100);
+            border-width: 3px;
+          }
+          .servicespage3_optionsList {
+            color: var(--white);
+            font-size: rem(40px);
+            font-weight: 500;
+            line-height: 58px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lineUp {
+  animation: 2.5s anim-lineUp ease-out 1;
+}
+
+@media only screen and (max-width: 966px) {
+  .servicespage3_parentContainer {
+    padding: rem(25px) !important;
+    .servicespage3_gridContainer {
+      display: flex !important;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0);
+  }
+}

@@ -13,9 +13,9 @@ const HomeLayout = () => {
   return (
     <Parallax pages={8}>
       <ParallaxLayer
-        speed={2}
+        speed={1}
         offset={0}
-        factor={2}
+        factor={0}
         style={{
           backgroundColor: "var(--black-100)",
         }}
@@ -24,8 +24,8 @@ const HomeLayout = () => {
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
-        speed={1}
-        factor={2}
+        speed={0}
+        factor={0}
         style={{
           backgroundColor: "var(--black-100)",
         }}
@@ -35,11 +35,9 @@ const HomeLayout = () => {
       <ParallaxLayer
         offset={2}
         speed={1}
-        factor={2}
+        factor={1}
         style={{
           backgroundColor: "var(--black-100)",
-          paddingBottom: "40px",
-          height: "100vh",
         }}
       >
         <Homepage2 />
@@ -47,47 +45,39 @@ const HomeLayout = () => {
       <ParallaxLayer
         offset={3}
         speed={1}
-        factor={2}
+        factor={1}
         style={{
           backgroundColor: "var(--black-100)",
-          paddingBottom: "40px",
-          height: "100vh",
         }}
       >
         <Homepage3 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={4}
-        speed={2}
-        factor={1}
+        speed={0}
+        factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          paddingBottom: "40px",
-          height: "100vh",
         }}
       >
         <Homepage4 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={5}
-        speed={2}
-        factor={1}
+        speed={1}
+        factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          paddingBottom: "40px",
-          height: "100vh",
         }}
       >
         <Homepage6 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={6}
-        speed={1}
-        factor={2}
+        speed={0}
+        factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          paddingBottom: "40px",
-          height: "100vh",
         }}
       >
         <Homepage5 />
@@ -99,6 +89,7 @@ const HomeLayout = () => {
         style={{
           backgroundColor: "var(--black-100)",
           height: "100vh",
+          paddingBottom: "40px",
         }}
       >
         <Contact />

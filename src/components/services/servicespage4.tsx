@@ -2,13 +2,12 @@ import * as React from "react";
 import "./servicespage4.scss";
 import Wrapper from "../wrapper";
 import Button from "../button";
-import Video from "../video";
-import Blockchain from "../videos/blockchain.mp4";
-import Security from "../videos/security.mp4";
-import Crypto from "../videos/crypto.mp4";
-import Finance from "../videos/finance.mp4";
-import Healthcare from "../videos/healthcare.mp4";
-import RealEstate from "../videos/real-estate.mp4";
+import CyberSecurity from "../videos/cyber_security_industry.gif";
+import Blockchain from "../videos/blockchain_industry.gif";
+import RealEstate from "../videos/real_estate_industry.gif";
+import Healthcare from "../videos/healthcare_industry.gif";
+import Fintech from "../videos/fintech_industry.gif";
+import Crypto from "../videos/crypto_industry.gif";
 
 const Servicespage4 = () => {
   return (
@@ -18,11 +17,10 @@ const Servicespage4 = () => {
           <div className="servicespage4_boxContainer servicespage4_item1">
             <span className="servicespage4_hide">Blockchain</span>
             <span className="servicespage4_showVideo">
-              <Video
-                videoSrcURL={Blockchain}
-                videoTitle="Blockchain"
-                autoplay={true}
-                loop={true}
+              <img
+                src={Blockchain}
+                className="servicespage4_backgroundImg"
+                alt="Blockchain"
               />
             </span>
           </div>
@@ -42,55 +40,50 @@ const Servicespage4 = () => {
           <div className="servicespage4_boxContainer servicespage4_item3">
             <span className="servicespage4_hide"> Cyber Security</span>
             <span className="servicespage4_showVideo">
-              <Video
-                videoSrcURL={Security}
-                videoTitle="Security"
-                autoplay={true}
-                loop={true}
+              <img
+                src={CyberSecurity}
+                className="servicespage4_backgroundImg"
+                alt="Cyber Security"
               />
             </span>
           </div>
           <div className="servicespage4_boxContainer servicespage4_item4">
             <span className="servicespage4_hide">Crypto</span>
             <span className="servicespage4_showVideo">
-              <Video
-                videoSrcURL={Crypto}
-                videoTitle="Crypto"
-                autoplay={true}
-                loop={true}
+              <img
+                src={Crypto}
+                className="servicespage4_backgroundImg"
+                alt="Crypto"
               />
             </span>
           </div>
           <div className="servicespage4_boxContainer servicespage4_item5">
             <span className="servicespage4_hide">Fintech</span>
             <span className="servicespage4_showVideo">
-              <Video
-                videoSrcURL={Finance}
-                videoTitle="Fintech"
-                autoplay={true}
-                loop={true}
+              <img
+                src={Fintech}
+                className="servicespage4_backgroundImg"
+                alt="Fintech"
               />
             </span>
           </div>
           <div className="servicespage4_boxContainer servicespage4_item6">
             <span className="servicespage4_hide"> Real Estate</span>
             <span className="servicespage4_showVideo">
-              <Video
-                videoSrcURL={RealEstate}
-                videoTitle="Real Estate"
-                autoplay={true}
-                loop={true}
+              <img
+                src={RealEstate}
+                className="servicespage4_backgroundImg"
+                alt="Real Estate"
               />
             </span>
           </div>
           <div className="servicespage4_boxContainer servicespage4_item7">
             <span className="servicespage4_hide"> Healthcare</span>
             <span className="servicespage4_showVideo">
-              <Video
-                videoSrcURL={Healthcare}
-                videoTitle="Healthcare"
-                autoplay={true}
-                loop={true}
+              <img
+                src={Healthcare}
+                className="servicespage4_backgroundImg"
+                alt="Healthcare"
               />
             </span>
           </div>
