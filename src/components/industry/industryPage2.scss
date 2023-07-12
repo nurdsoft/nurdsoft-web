@@ -1,0 +1,39 @@
+.industryPage2_parentContainer {
+    max-width: 1400px;
+    h1 {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 74px;
+        text-align: center;
+        background: linear-gradient(92.15deg, #6164FA 0%, #2CD7E6 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .control-dots{
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+
+        span {
+            width: 24px;
+            height: 24px;
+            border: 1px solid var(--gray-100);
+            cursor: pointer;
+            display: block;
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                width: 18px;
+                height: 18px;
+                border-radius: 18px;
+            }
+        }
+    }
+}

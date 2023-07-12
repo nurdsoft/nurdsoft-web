@@ -1,0 +1,66 @@
+.industryCarouselSlide {
+    display: flex;
+    gap: 67px;
+    justify-content: center;
+
+    .left {
+        max-width: 508px;
+        min-width: 298px;
+        width: 95%;
+        background: url("../../images/project-mockup.svg");
+        background-position-y: bottom;
+        background-size: 117% 100%;
+        background-repeat: no-repeat;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: flex-start;
+        color: var(--off-white-100);
+        text-align: left;
+        margin-top: 100px;
+
+        .quote {
+            width: 80px;
+            height: 80px;
+        }
+        .description {
+            max-width: 700px;
+            width: 95%;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        .testGiverInfo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+
+            .name {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+            }
+            .designation {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                text-transform: uppercase;
+            }
+            img {
+                height: 46px;
+                width: auto;
+            }
+        }
+    }
+}
