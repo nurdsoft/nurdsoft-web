@@ -9,8 +9,7 @@ const CustomIndicator = (onClickHandler: any, isSelected: any, index: any, label
   
   return (
     <span
-      className='dotBorder'
-      style={isSelected ? {border: '1px solid #6164FA'} : {}}
+      className={`dotBorder ${isSelected ? 'selectedDotBorder' : '' }`}
       onClick={onClickHandler}
       onKeyDown={onClickHandler}
       key={index}
@@ -18,7 +17,7 @@ const CustomIndicator = (onClickHandler: any, isSelected: any, index: any, label
       tabIndex={0}
       aria-label={`${label} ${index + 1}`}
     >
-      <div className='dotContent' style={isSelected ? {background: "#6164FA"} : {}}></div>
+      <div className={`dotContent ${isSelected ? 'selectedDotContent' : '' }`} ></div>
     </span>
   );
 }
@@ -41,12 +40,12 @@ const IndustryPageCarousel = () => {
           renderIndicator={CustomIndicator}
         >
           {
-            arr.map((index) => (
+            arr.map((_, index) => (
               <div key={index} className='industryCarouselSlide'>
-                <div className='left'>
+                <div className='industryCarouselSlideLeft'>
                   <img src={Client} alt='slide1' />
                 </div>
-                <div className='right'>
+                <div className='industryCarouselSlideRight'>
                   <img className='quote' src={Quotes} alt='quotes' />
                   <p className='description'>
                     "Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups."
