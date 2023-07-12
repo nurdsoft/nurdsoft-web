@@ -1,14 +1,15 @@
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
-import Quotes from '../../images/quotes.svg'
-import Logo from '../../images/Logo.svg'
-import './industryPageCarousel.scss'
-import Client from '../../images/client.png'
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import Quotes from '../../images/quotes.svg';
+import Logo from '../../images/Logo.svg';
+import './industryPageCarousel.scss';
+import Client from '../../images/client.png';
 
 const CustomIndicator = (onClickHandler: any, isSelected: any, index: any, label: any) => {
   
   return (
     <span
+      className='dotBorder'
       style={isSelected ? {border: '1px solid #6164FA'} : {}}
       onClick={onClickHandler}
       onKeyDown={onClickHandler}
@@ -17,7 +18,7 @@ const CustomIndicator = (onClickHandler: any, isSelected: any, index: any, label
       tabIndex={0}
       aria-label={`${label} ${index + 1}`}
     >
-      <div style={isSelected ? {background: "#6164FA"} : {}}></div>
+      <div className='dotContent' style={isSelected ? {background: "#6164FA"} : {}}></div>
     </span>
   );
 }
@@ -53,7 +54,7 @@ const IndustryPageCarousel = () => {
                   <div className='testGiverInfo'>
                     <p className='name'>Name here</p>
                     <p className='designation'>Designation</p>
-                    <img src={Logo} alt='quotes' />
+                    <img className='logo' src={Logo} alt='quotes' />
                   </div>
                 </div>
               </div>

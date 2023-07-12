@@ -1,7 +1,7 @@
-import React from 'react'
-import './industryPage2.scss'
-import Wrapper from '../wrapper'
-import IndustryPageCarousel from './IndustryPageCarousel'
+import React from 'react';
+import './industryPage2.scss';
+import Wrapper from '../wrapper';
+import IndustryPageCarousel from './IndustryPageCarousel';
 
 const IndustryPage2 = () => {
   return (
