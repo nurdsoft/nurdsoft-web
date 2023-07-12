@@ -1,0 +1,33 @@
+@import "~sass-rem";
+
+.industryPage1_parentContainer {
+    margin: 6.25rem 0 1.875rem 0;
+    color: var(--off-white-100);
+
+    .industryPage1_heading {
+        font-size: rem(64px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 74px;
+        margin-bottom: rem(80px);
+
+        span.blue{
+            color: var(--primary-100);
+        }
+    }
+
+    .cardsContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 64px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .industryPage1_parentContainer {
+        .cardsContainer{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+}
