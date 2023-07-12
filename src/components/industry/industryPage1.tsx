@@ -2,12 +2,12 @@ import React from 'react'
 import Wrapper from '../wrapper'
 import './industryPage1.scss'
 import IndustryPageCard from './industryPageCard'
-import CyberSecurity from "../../images/cyber_security_industry.png"
-import Blockchain from "../../images/blockchain_industry.png"
-import RealEstate from "../../images/real_estate_industry.png"
-import Healthcare from "../../images/healthcare_industry.png"
-import Fintech from "../../images/fintech_industry.png"
-import Crypto from "../../images/crypto_industry.png"
+import CyberSecurity from '../../components/videos/cyber_security_industry.gif'
+import Blockchain from "../../components/videos/blockchain_industry.gif"
+import RealEstate from "../../components/videos/real_estate_industry.gif"
+import Healthcare from "../../components/videos/healthcare_industry.gif"
+import Fintech from "../../components/videos/fintech_industry.gif"
+import Crypto from "../../components/videos/crypto_industry.gif"
 
 const IndustryPage1 = () => {
   const data = [
