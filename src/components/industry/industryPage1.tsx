@@ -1,16 +1,17 @@
-import React from 'react'
-import Wrapper from '../wrapper'
-import './industryPage1.scss'
-import IndustryPageCard from './industryPageCard'
-import CyberSecurity from '../../components/videos/cyber_security_industry.gif'
-import Blockchain from "../../components/videos/blockchain_industry.gif"
-import RealEstate from "../../components/videos/real_estate_industry.gif"
-import Healthcare from "../../components/videos/healthcare_industry.gif"
-import Fintech from "../../components/videos/fintech_industry.gif"
-import Crypto from "../../components/videos/crypto_industry.gif"
+import React from 'react';
+import Wrapper from '../wrapper';
+import './industryPage1.scss';
+import IndustryPageCard from './industryPageCard';
+import CyberSecurity from '../../components/videos/cyber_security_industry.gif';
+import Blockchain from "../../components/videos/blockchain_industry.gif";
+import RealEstate from "../../components/videos/real_estate_industry.gif";
+import Healthcare from "../../components/videos/healthcare_industry.gif";
+import Fintech from "../../components/videos/fintech_industry.gif";
+import Crypto from "../../components/videos/crypto_industry.gif";
+import { IndustryData } from '../../types/industryTypes';
 
 const IndustryPage1 = () => {
-  const data = [
+  const data: IndustryData[] = [
     {
       img: CyberSecurity,
       title: "Cyber Security",
@@ -45,10 +46,10 @@ const IndustryPage1 = () => {
   return (
     <Wrapper>
       <div className='industryPage1_parentContainer'>
-        <h1 className='industryPage1_heading'>Software <span>solutions</span><br /> for every sector</h1>
+        <h1 className='industryPage1_heading'>Software <span className='blue'>solutions</span><br /> for every sector</h1>
         <div className='cardsContainer'>
           {
-            data.map((cardData, index) => <IndustryPageCard data={cardData} key={index} />)
+            data.map((cardData: IndustryData, index) => <IndustryPageCard data={cardData} key={index} />)
           }
         </div>
       </div>

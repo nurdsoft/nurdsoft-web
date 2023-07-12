@@ -2,37 +2,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 568px;
-    min-width: 298px;
+    max-width: rem(568px);
+    min-width: rem(298px);
     width: 100%;
     flex-direction: column;
     align-self: start;
     &:nth-child(2n-1){
-        margin-top: 73px;
+        margin-top: rem(73px);
     }
 
     .cardImg{
-        padding: 20px 20px 0px 20px;
+        padding: rem(20px) rem(20px) 0px rem(20px);
         background-color: var(--dark-gray-100);
-        max-height: 369px;
+        max-height: rem(369px);
         overflow: hidden;
     }
 
     .content{
         .title {
-            font-size: 48px;
+            font-size: rem(48px);
             font-style: normal;
             font-weight: 700;
-            line-height: 58px;
-            margin-top: 48px;
+            line-height: rem(58px);
+            margin-top: rem(48px);
         }
 
         .description {
-            font-size: 18px;
+            font-size: rem(18px);
             font-style: normal;
             font-weight: 400;
             line-height: 27px;
-            margin-top: 20px;
+            margin-top: rem(20px);
         }
     }
 }

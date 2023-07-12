@@ -7,10 +7,11 @@
         font-style: normal;
         font-weight: 700;
         line-height: 74px;
-        span{
+        margin-bottom: rem(80px);
+
+        span.blue{
             color: var(--primary-100);
         }
-        margin-bottom: rem(80px);
     }
 
     .cardsContainer{
