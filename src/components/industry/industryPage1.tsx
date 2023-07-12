@@ -52,7 +52,7 @@ const IndustryPage1 = () => {
   return (
     <Wrapper>
       <div className="industryPage1_parentContainer">
-        <h1 className="industryPage1_heading">
+        <h1 className="industryPage1_heading industryPage1_lineUp">
           Software <span className="blue">solutions</span>
           <br /> for every sector
         </h1>

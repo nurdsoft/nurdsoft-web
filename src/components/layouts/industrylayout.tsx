@@ -8,9 +8,9 @@ const IndustryLayout = () => {
   return (
     <Parallax pages={3}>
       <ParallaxLayer
-        speed={2}
+        speed={1}
         offset={0}
-        factor={0}
+        factor={10}
         style={{
           backgroundColor: "var(--black-100)",
         }}
@@ -20,7 +20,7 @@ const IndustryLayout = () => {
       <ParallaxLayer
         speed={2}
         offset={1}
-        factor={0}
+        factor={1}
         style={{
           backgroundColor: "var(--black-100)",
         }}
@@ -29,7 +29,7 @@ const IndustryLayout = () => {
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
-        speed={1}
+        speed={0}
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
