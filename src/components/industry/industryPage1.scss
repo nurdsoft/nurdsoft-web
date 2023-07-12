@@ -2,15 +2,15 @@
     margin: 6.25rem 0 1.875rem 0;
     color: var(--off-white-100);
 
-    h1{
-        font-size: 64px;
+    .industryPage1_heading {
+        font-size: rem(64px);
         font-style: normal;
         font-weight: 700;
         line-height: 74px;
         span{
             color: var(--primary-100);
         }
-        margin-bottom: 80px;
+        margin-bottom: rem(80px);
     }
 
     .cardsContainer{

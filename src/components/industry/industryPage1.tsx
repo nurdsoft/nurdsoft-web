@@ -45,7 +45,7 @@ const IndustryPage1 = () => {
   return (
     <Wrapper>
       <div className='industryPage1_parentContainer'>
-        <h1>Software <span>solutions</span><br /> for every sector</h1>
+        <h1 className='industryPage1_heading'>Software <span>solutions</span><br /> for every sector</h1>
         <div className='cardsContainer'>
           {
             data.map((cardData, index) => <IndustryPageCard data={cardData} key={index} />)
