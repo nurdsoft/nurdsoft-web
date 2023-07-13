@@ -1,9 +1,9 @@
 import React from "react";
-import "./industrypage2.scss";
+import "./industriespage2.scss";
 import Wrapper from "../wrapper";
 import Industrypagecarousel from "./industrypagecarousel";
 
-const Industrypage2 = () => {
+const Industriespage2 = () => {
   return (
     <Wrapper>
       <div className="industryPage2_parentContainer">
@@ -16,4 +16,4 @@ const Industrypage2 = () => {
   );
 };
 
-export default Industrypage2;
+export default Industriespage2;

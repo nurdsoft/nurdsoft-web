@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Contact from "../contact/contact";
-// import Industrypage1 from "../industry/industrypage1";
-// import Industrypage2 from "../industry/industrypage2";
+import Industriespage1 from "../industries/industriespage1";
+import Industriespage2 from "../industries/industriespage2";
 
 const IndustryLayout = () => {
   return (
-    <Parallax pages={1}>
-      {/* <ParallaxLayer
+    <Parallax pages={3}>
+      <ParallaxLayer
         speed={2}
         offset={0}
         factor={10}
@@ -15,7 +15,7 @@ const IndustryLayout = () => {
           backgroundColor: "var(--black-100)",
         }}
       >
-        <Industrypage1 />
+        <Industriespage1 />
       </ParallaxLayer>
       <ParallaxLayer
         speed={1}
@@ -25,10 +25,10 @@ const IndustryLayout = () => {
           backgroundColor: "var(--black-100)",
         }}
       >
-        <Industrypage2 />
-      </ParallaxLayer> */}
+        <Industriespage2 />
+      </ParallaxLayer>
       <ParallaxLayer
-        offset={0}
+        offset={2}
         speed={0}
         factor={0}
         style={{
