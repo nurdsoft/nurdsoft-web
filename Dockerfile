@@ -1,7 +1,7 @@
 FROM node
 WORKDIR /src
 COPY . ./
-RUN npm run clean && npm install -f && npm run build
+RUN npm install -f &&  npm run clean && npm run build
 
 FROM nginx:stable-alpine
 COPY --from=0 /src/public /usr/share/nginx/html
