@@ -8,7 +8,7 @@ import Healthcare from "../../components/videos/healthcare_industry.gif";
 import Fintech from "../../components/videos/fintech_industry.gif";
 import Crypto from "../../components/videos/crypto_industry.gif";
 import { IndustryData } from "../../types/industryTypes";
-import IndustryPageCard from "./industrypagecard";
+import Industrypagecard from "./industrypagecard";
 
 const Industrypage1 = () => {
   const data: IndustryData[] = [
@@ -58,7 +58,7 @@ const Industrypage1 = () => {
         </h1>
         <div className="cardsContainer">
           {data.map((cardData: IndustryData, index: number) => (
-            <IndustryPageCard data={cardData} key={index} />
+            <Industrypagecard data={cardData} key={index} />
           ))}
         </div>
       </div>
