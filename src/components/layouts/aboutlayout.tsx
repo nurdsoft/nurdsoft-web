@@ -2,6 +2,7 @@ import * as React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Contact from "../contact/contact";
 import AboutPage4 from "../about/aboutPage4";
+import AboutPage2 from "../about/aboutPage2";
 
 const AboutLayout = () => {
   return (
@@ -28,7 +29,7 @@ const AboutLayout = () => {
           paddingBottom: "40px",
         }}
       >
-        <p>Highlight section</p>
+        <AboutPage2 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
