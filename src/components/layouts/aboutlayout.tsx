@@ -7,7 +7,7 @@ import AboutPage1 from "../about/aboutPage1";
 
 const AboutLayout = () => {
   return (
-    <Parallax pages={2}>
+    <Parallax pages={6}>
       <ParallaxLayer
         offset={0}
         speed={1}
