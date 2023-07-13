@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Wrapper from '../wrapper';
 import ClientFeedbackCarousel from '../common/ClientFeedbackCarousel';
 import Client from '../../images/client2.png';

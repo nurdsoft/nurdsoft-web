@@ -7,7 +7,7 @@ interface IClientFeedback {
 }
 
 interface IClientCarouselData {
-    data: IClientFeedback[]
+    data: IClientFeedback[];
 }
 
 export {
