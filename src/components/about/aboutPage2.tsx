@@ -4,6 +4,20 @@ import './aboutPage2.scss';
 import Button from '../button';
 
 const AboutPage2 = () => {
+  const statsData = [
+    {
+      number: 17,
+      label: "Talented People"
+    },
+    {
+      number: 120,
+      label: "Delivered Projects"
+    },
+    {
+      number: 12,
+      label: "Expertise years"
+    }
+  ]
   return (
     <Wrapper>
       <div className='aboutPage2_parentContainer'>
@@ -12,18 +26,14 @@ const AboutPage2 = () => {
           <Button buttonText="SCHEDULE CONSULTATION" />
         </div>
         <div className='companyStats'>
-          <div className='stat'>
-            <p className='statNumber'>17+</p>
-            <p className='statLabel'>Talented People</p>
-          </div>
-          <div className='stat'>
-            <p className='statNumber'>120+</p>
-            <p className='statLabel'>Delivered Projects</p>
-          </div>
-          <div className='stat'>
-            <p className='statNumber'>12+</p>
-            <p className='statLabel'>Expertise years</p>
-          </div>
+          {
+            statsData.map((data, index) => (
+              <div className='stat' key={index}>
+                <p className='statNumber'>{data.number}+</p>
+                <p className='statLabel'>{data.label}</p>
+              </div>
+            ))
+          }
         </div>
       </div>
     </Wrapper>
