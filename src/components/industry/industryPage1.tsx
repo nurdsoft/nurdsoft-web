@@ -1,7 +1,6 @@
 import React from "react";
 import Wrapper from "../wrapper";
-import "./industryPage1.scss";
-import IndustryPageCard from "./industryPageCard";
+import "./industrypage1.scss";
 import CyberSecurity from "../../components/videos/cyber_security_industry.gif";
 import Blockchain from "../../components/videos/blockchain_industry.gif";
 import RealEstate from "../../components/videos/real_estate_industry.gif";
@@ -9,6 +8,7 @@ import Healthcare from "../../components/videos/healthcare_industry.gif";
 import Fintech from "../../components/videos/fintech_industry.gif";
 import Crypto from "../../components/videos/crypto_industry.gif";
 import { IndustryData } from "../../types/industryTypes";
+import IndustryPageCard from "./industryPageCard";
 
 const IndustryPage1 = () => {
   const data: IndustryData[] = [

@@ -1,11 +1,6 @@
 import * as React from "react";
 import "./servicespage3.scss";
 import Wrapper from "../wrapper";
-import {
-  SERVICES_HOME_ICON_1,
-  SERVICES_HOME_ICON_2,
-  SERVICES_HOME_ICON_3,
-} from "../../icons";
 import Button from "../button";
 
 const ServicesPage3 = () => {

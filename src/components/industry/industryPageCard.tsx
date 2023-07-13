@@ -1,20 +1,19 @@
-import React from 'react';
-import './IndustryPageCard.scss';
-import { IndustryPageCardProps } from '../../types/industryTypes';
+import React from "react";
+import "./industrypagecard.scss";
+import { IndustryPageCardProps } from "../../types/industryTypes";
 
+const IndustryPageCard = ({ data }: IndustryPageCardProps) => {
+  return (
+    <div className="industryPageCard">
+      <div className="cardImg">
+        <img src={data.img} alt="cardImg" />
+      </div>
+      <div className="content">
+        <p className="title">{data.title}</p>
+        <p className="description">{data.description}</p>
+      </div>
+    </div>
+  );
+};
 
-const IndustryPageCard = ({data}: IndustryPageCardProps) => {
-    return (
-        <div className='industryPageCard'>
-            <div className='cardImg'>
-                <img src={data.img} alt='cardImg' />
-            </div>
-            <div className='content'>
-                <p className='title'>{data.title}</p>
-                <p className='description'>{data.description}</p>
-            </div>
-        </div>
-    )
-}
-
-export default IndustryPageCard
+export default IndustryPageCard;
