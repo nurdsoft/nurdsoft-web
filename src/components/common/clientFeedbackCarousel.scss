@@ -1,13 +1,13 @@
 @import "~sass-rem";
 
-.industryCarouselSlide {
+.clientFeedbackCarouselSlide {
     display: flex;
     gap: 67px;
     justify-content: center;
     max-width: rem(1400px);
     width: 100%;
 
-    .industryCarouselSlideLeft {
+    .clientFeedbackCarouselSlideLeft {
         max-width: rem(508px);
         min-width: rem(298px);
         width: 95%;
@@ -21,7 +21,7 @@
         }
     }
 
-    .industryCarouselSlideRight {
+    .clientFeedbackCarouselSlideRight {
         display: flex;
         flex-direction: column;
         gap: 48px;
@@ -71,23 +71,23 @@
 }
 
 @media screen and (max-width: 1410px) {
-    .industryCarouselSlide {
+    .clientFeedbackCarouselSlide {
         max-width: rem(1100px);
     }
 }
 @media screen and (max-width: 1100px) {
-    .industryCarouselSlide {
+    .clientFeedbackCarouselSlide {
         max-width: rem(1100px);
         flex-direction: column;
         align-items: center;
         gap: 20px;
 
-        .industryCarouselSlideLeft {
+        .clientFeedbackCarouselSlideLeft {
             background-size: 116% 85%;
             max-width: rem(440px);
         }
 
-        .industryCarouselSlideRight {
+        .clientFeedbackCarouselSlideRight {
             .testGiverInfo {
                 padding-bottom: rem(140px);
             }
@@ -96,13 +96,13 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .industryCarouselSlide {
+    .clientFeedbackCarouselSlide {
         max-width: 600px;
     }
 }
 
 @media screen and (max-width: 620px) {
-    .industryCarouselSlide {
+    .clientFeedbackCarouselSlide {
         max-width: 300px;
     }
 }
