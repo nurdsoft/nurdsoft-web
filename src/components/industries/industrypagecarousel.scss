@@ -1,0 +1,108 @@
+@import "~sass-rem";
+
+.clientFeedbackCarouselSlide {
+    display: flex;
+    gap: 67px;
+    justify-content: center;
+    max-width: rem(1400px);
+    width: 100%;
+
+    .clientFeedbackCarouselSlideLeft {
+        max-width: rem(508px);
+        min-width: rem(298px);
+        width: 95%;
+        background: url("../../images/project-mockup.svg");
+        background-position-y: bottom;
+        background-size: 117% 100%;
+        background-repeat: no-repeat;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .clientFeedbackCarouselSlideRight {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: flex-start;
+        color: var(--off-white-100);
+        text-align: left;
+        margin-top: rem(100px);
+
+        .quote {
+            width: rem(80px);
+            height: rem(80px);
+        }
+        .description {
+            max-width: 700px;
+            width: 95%;
+            font-size: rem(24px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: rem(36px);
+        }
+        .testGiverInfo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+
+            .name {
+                font-size: rem(20px);
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+            }
+            .designation {
+                font-size: rem(16px);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                text-transform: uppercase;
+            }
+            img.logo {
+                height: rem(46px);
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .clientFeedbackCarouselSlide {
+        max-width: rem(1100px);
+    }
+}
+@media screen and (max-width: 1100px) {
+    .clientFeedbackCarouselSlide {
+        max-width: rem(1100px);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .clientFeedbackCarouselSlideLeft {
+            background-size: 116% 85%;
+            max-width: rem(440px);
+        }
+
+        .clientFeedbackCarouselSlideRight {
+            .testGiverInfo {
+                padding-bottom: rem(140px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .clientFeedbackCarouselSlide {
+        max-width: rem(600px);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .clientFeedbackCarouselSlide {
+        max-width: rem(300px);
+    }
+}

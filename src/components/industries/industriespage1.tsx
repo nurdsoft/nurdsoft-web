@@ -1,6 +1,6 @@
 import React from "react";
 import Wrapper from "../wrapper";
-import "./industrypage1.scss";
+import "./industriespage1.scss";
 import CyberSecurity from "../../components/videos/cyber_security_industry.gif";
 import Blockchain from "../../components/videos/blockchain_industry.gif";
 import RealEstate from "../../components/videos/real_estate_industry.gif";
@@ -8,9 +8,9 @@ import Healthcare from "../../components/videos/healthcare_industry.gif";
 import Fintech from "../../components/videos/fintech_industry.gif";
 import Crypto from "../../components/videos/crypto_industry.gif";
 import { IndustryData } from "../../types/industryTypes";
-import IndustryPageCard from "./industrypagecard";
+import Industrypagecard from "./industrypagecard";
 
-const Industrypage1 = () => {
+const Industriespage1 = () => {
   const data: IndustryData[] = [
     {
       img: CyberSecurity,
@@ -58,7 +58,7 @@ const Industrypage1 = () => {
         </h1>
         <div className="cardsContainer">
           {data.map((cardData: IndustryData, index: number) => (
-            <IndustryPageCard data={cardData} key={index} />
+            <Industrypagecard data={cardData} key={index} />
           ))}
         </div>
       </div>
@@ -66,4 +66,4 @@ const Industrypage1 = () => {
   );
 };
 
-export default Industrypage1;
+export default Industriespage1;

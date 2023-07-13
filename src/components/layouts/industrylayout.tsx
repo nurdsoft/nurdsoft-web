@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Contact from "../contact/contact";
-import Industrypage1 from "../industry/industrypage1";
-import Industrypage2 from "../industry/industrypage2";
+import Industriespage1 from "../industries/industriespage1";
+import Industriespage2 from "../industries/industriespage2";
 
 const IndustryLayout = () => {
   return (
@@ -15,7 +15,7 @@ const IndustryLayout = () => {
           backgroundColor: "var(--black-100)",
         }}
       >
-        <Industrypage1 />
+        <Industriespage1 />
       </ParallaxLayer>
       <ParallaxLayer
         speed={1}
@@ -25,7 +25,7 @@ const IndustryLayout = () => {
           backgroundColor: "var(--black-100)",
         }}
       >
-        <Industrypage2 />
+        <Industriespage2 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
