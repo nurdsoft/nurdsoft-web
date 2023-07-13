@@ -2,7 +2,7 @@ import React from "react";
 import "./industrypagecard.scss";
 import { IndustryPageCardProps } from "../../types/industryTypes";
 
-const IndustryPageCard = ({ data }: IndustryPageCardProps) => {
+const Industrypagecard = ({ data }: IndustryPageCardProps) => {
   return (
     <div className="industryPageCard">
       <div className="cardImg">
@@ -16,4 +16,4 @@ const IndustryPageCard = ({ data }: IndustryPageCardProps) => {
   );
 };
 
-export default IndustryPageCard;
+export default Industrypagecard;

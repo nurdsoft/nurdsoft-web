@@ -8,9 +8,9 @@ import Healthcare from "../../components/videos/healthcare_industry.gif";
 import Fintech from "../../components/videos/fintech_industry.gif";
 import Crypto from "../../components/videos/crypto_industry.gif";
 import { IndustryData } from "../../types/industryTypes";
-import IndustryPageCard from "./industryPageCard";
+import IndustryPageCard from "./industrypagecard";
 
-const IndustryPage1 = () => {
+const Industrypage1 = () => {
   const data: IndustryData[] = [
     {
       img: CyberSecurity,
@@ -66,4 +66,4 @@ const IndustryPage1 = () => {
   );
 };
 
-export default IndustryPage1;
+export default Industrypage1;
