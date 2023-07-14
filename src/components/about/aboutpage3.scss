@@ -1,0 +1,16 @@
+@import "~sass-rem";
+
+.aboutPage3_parentContainer {
+    .aboutPage3_heading{
+        background: linear-gradient(135deg, #6164FA 0%, #2CD7E5 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: rem(64px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: rem(74px);
+        text-align: center;
+        margin-bottom: rem(64px);
+    }
+}

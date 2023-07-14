@@ -3,6 +3,9 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Contact from "../contact/contact";
 import AboutPage4 from "../about/aboutPage4";
 import AboutPage2 from "../about/aboutPage2";
+import AboutPage1 from "../about/aboutPage1";
+import AboutPage5 from "../about/aboutPage5";
+import AboutPage3 from "../about/aboutPage3";
 
 const AboutLayout = () => {
   return (
@@ -17,7 +20,7 @@ const AboutLayout = () => {
           paddingBottom: "40px",
         }}
       >
-        <p>Rainbow carousel</p>
+        <AboutPage1 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={1}
@@ -41,7 +44,7 @@ const AboutLayout = () => {
           paddingBottom: "40px",
         }}
       >
-        <p>Team Map section</p>
+        <AboutPage3 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={3}
@@ -65,7 +68,7 @@ const AboutLayout = () => {
           paddingBottom: "40px",
         }}
       >
-        <p>Hire now section</p>
+        <AboutPage5 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={5}
