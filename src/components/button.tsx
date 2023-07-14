@@ -7,15 +7,17 @@ const Button = ({
   isLinkButton = false,
   showArrowIcon = true,
   className,
+  onClick,
 }: {
   buttonText: string;
   isLinkButton?: boolean;
   showArrowIcon?: boolean;
   className?: string;
+  onClick?: () => void;
 }) => {
   return (
     <div className={`buttonContainer ${className}`}>
-      <button className="button">
+      <button onClick={() => onClick && onClick()} className="button">
         <span
           className={`circle ${
             isLinkButton ? "circleColorTransparent" : "circleColorPrimary"

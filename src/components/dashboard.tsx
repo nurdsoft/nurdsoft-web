@@ -2,8 +2,13 @@ import * as React from "react";
 import "./dashboard.scss";
 import Wrapper from "./wrapper";
 import Button from "./button";
+import { navigate } from "gatsby";
 
 const Dashboard = () => {
+  const onServiceButtonClick = () => {
+    navigate("/services/");
+  };
+
   return (
     <>
       <Wrapper>
@@ -13,7 +18,7 @@ const Dashboard = () => {
             <div className="mainTitleDashboardDiv lineUp">
               We build stunning online experiences
             </div>
-            <Button buttonText="OUR SERVICES" />
+            <Button onClick={onServiceButtonClick} buttonText="OUR SERVICES" />
           </div>
         </div>
       </Wrapper>

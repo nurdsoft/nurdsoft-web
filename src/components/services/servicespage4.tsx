@@ -8,6 +8,7 @@ import RealEstate from "../videos/real_estate_industry.gif";
 import Healthcare from "../videos/healthcare_industry.gif";
 import Fintech from "../videos/fintech_industry.gif";
 import Crypto from "../videos/crypto_industry.gif";
+import { navigate } from "gatsby";
 
 const Servicespage4 = () => {
   return (
@@ -33,7 +34,12 @@ const Servicespage4 = () => {
                 </p>
               </div>
               <div className="cursor-pointer servicespage4_gridBox3 pl-20">
-                <Button buttonText="VIEW OUR WORK" />
+                <Button
+                  onClick={() => {
+                    navigate("/work/");
+                  }}
+                  buttonText="VIEW OUR WORK"
+                />
               </div>
             </div>
           </div>

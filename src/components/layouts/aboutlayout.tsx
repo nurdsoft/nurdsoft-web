@@ -12,12 +12,10 @@ const AboutLayout = () => {
     <Parallax pages={6}>
       <ParallaxLayer
         offset={0}
-        speed={1}
+        speed={0}
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <AboutPage1 />
@@ -28,20 +26,16 @@ const AboutLayout = () => {
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <AboutPage2 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
-        speed={1}
+        speed={0}
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <AboutPage3 />
@@ -52,27 +46,23 @@ const AboutLayout = () => {
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <AboutPage4 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={4}
-        speed={1}
+        speed={0.5}
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
-          height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <AboutPage5 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={5}
-        speed={1}
+        speed={0}
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",
