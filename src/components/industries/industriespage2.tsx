@@ -1,10 +1,10 @@
 import React from "react";
-import "./industriesPage2.scss";
+import "./industriespage2.scss";
 import Wrapper from "../wrapper";
-import ClientFeedbackCarousel from "../common/ClientFeedbackCarousel";
 import Client from "../../images/client.png";
 import Logo from "../../images/Logo.svg";
 import { IClientFeedback } from "../../types/carouselTypes";
+import ClientFeedbackCarousel from "../common/clientFeedbackCarousel";
 
 const Industriespage2 = () => {
   const data: IClientFeedback[] = [

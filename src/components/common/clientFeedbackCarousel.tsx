@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import Quotes from "../../images/quotes.svg";
-import "./ClientFeedbackCarousel.scss";
+import "./clientFeedbackCarousel.scss";
 import { IClientCarouselData } from "../../types/carouselTypes";
 
 const CustomIndicator = (
