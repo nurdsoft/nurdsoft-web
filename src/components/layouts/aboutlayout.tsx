@@ -4,6 +4,7 @@ import Contact from "../contact/contact";
 import AboutPage4 from "../about/aboutPage4";
 import AboutPage2 from "../about/aboutPage2";
 import AboutPage1 from "../about/aboutPage1";
+import AboutPage5 from "../about/aboutPage5";
 
 const AboutLayout = () => {
   return (
@@ -66,7 +67,7 @@ const AboutLayout = () => {
           paddingBottom: "40px",
         }}
       >
-        <p>Hire now section</p>
+        <AboutPage5 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={5}

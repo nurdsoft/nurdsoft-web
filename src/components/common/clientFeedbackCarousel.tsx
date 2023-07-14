@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import Quotes from '../../images/quotes.svg';
 import './clientFeedbackCarousel.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { IClientCarouselData } from '../../types/carouselTypes';
 
 const CustomIndicator = (onClickHandler: any, isSelected: any, index: any, label: any) => {
