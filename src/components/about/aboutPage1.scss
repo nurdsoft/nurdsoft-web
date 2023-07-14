@@ -21,7 +21,7 @@
   .companyDescription {
     display: grid;
     grid-template-columns: 1fr 2px 1fr;
-    gap: rem(48px);
+    gap: 48px;
     align-items: center;
     .companyDescriptionText{
       font-size: rem(18px);

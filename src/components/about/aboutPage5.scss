@@ -5,14 +5,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: rem(60px);
+    gap: 60px;
 
     .aboutPage5_joinUs{
         background: linear-gradient(135deg, #B62BF5 0%, #E52E2C 100%);
         font-size: rem(64px);
         font-style: normal;
         font-weight: 700;
-        line-height: rem(74px);
+        line-height: 74px;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         text-align: center;

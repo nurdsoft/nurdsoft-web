@@ -1,9 +1,9 @@
 import React from 'react';
 import './aboutPage3.scss';
-import India from '../../images/india.png'
-import America from '../../images/america.png'
-import Philippines from '../../images/phillipines.png'
-import Russia from '../../images/russia.png'
+import India from '../../images/india.png';
+import America from '../../images/america.png';
+import Philippines from '../../images/phillipines.png';
+import Russia from '../../images/russia.png';
 import Wrapper from '../wrapper';
 import {
   ComposableMap,
