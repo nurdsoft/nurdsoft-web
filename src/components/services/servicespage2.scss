@@ -15,8 +15,8 @@
       -webkit-background-clip: text;
       background-clip: text;
       letter-spacing: 0.04em;
-      font-weight: 500;
-      font-size: rem(56px);
+      font-weight: 700;
+      font-size: rem(58px);
       line-height: 1.2em;
     }
     .servicespage2_rightContainer {
@@ -31,20 +31,126 @@
 
   .servicespage2_wrapper {
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     .servicespage2_slider {
       display: flex;
       gap: 40px;
       flex-wrap: nowrap;
-      scroll-snap-align: start;
-      img {
-        width: rem(500px);
-        height: rem(250px);
-        object-fit: cover;
+      scroll-snap-align: x mandatory;
+      max-width: 400px;
+      .servicespage2_boxContainer {
+        border: 1px solid var(--gray-100);
+        padding: rem(32px);
+        width: rem(350px);
+        cursor: pointer;
+        flex: 0 0 auto;
+        height: rem(225px);
+        transition: height 0.5s;
+        -webkit-transition: height 0.5s;
+        .servicespage2_iconPurple {
+          display: none;
+        }
+        .servicespage2_boxText {
+          font-size: rem(28px);
+          color: var(--white);
+          font-weight: 500;
+          line-height: 48px;
+        }
+        .servicespage2_boxPara {
+          display: none;
+          font-size: rem(18px);
+          color: var(--off-gray);
+          margin-top: rem(4px);
+          font-weight: 400;
+          line-height: 30px;
+        }
+        &:hover {
+          background-color: var(--dark-gray-100);
+          border-width: 0 1px 1px 0;
+          border-color: var(--dark-gray-100);
+          border-style: solid;
+          height: rem(400px);
+          .servicespage2_iconPurple {
+            display: block;
+          }
+          .servicespage2_iconWhite {
+            display: none;
+          }
+          .servicepage2_Icon {
+            path {
+              stroke: var(--primary-100);
+            }
+          }
+          .servicespage2_boxPara {
+            display: block;
+          }
+        }
       }
+    }
+    .servicespage2_prev,
+    .servicespage2_next {
+      cursor: pointer;
+      position: absolute;
+      top: rem(335px);
+      border-radius: 50%;
+      background: rgba(28, 37, 49, 0.32);
+      border: 2px solid var(--gray-100);
+      font-weight: bold;
+      font-size: rem(32px);
+      transition: 0.6s ease;
+      color: var(--white);
+      &:hover {
+        color: var(--primary-100);
+        background: rgba(28, 37, 49, 0.48);
+      }
+    }
+
+    .servicespage2_next {
+      right: 12%;
+      padding: rem(5px) rem(17px) rem(5px) rem(23px);
+    }
+
+    .servicespage2_prev {
+      left: 12%;
+      padding: 5px 19px 5px 20px;
+    }
+
+    /* On hover, add a semi-transparent black background */
+  }
+
+  .servicespage2_dotContainer {
+    span.servicespage2_dotBorder {
+      width: rem(24px);
+      height: rem(24px);
+      border: 1px solid var(--gray-100);
+      cursor: pointer;
+      display: block;
+      border-radius: rem(24px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.servicespage2_selectedDotBorder {
+        border: 1px solid var(--primary-100);
+      }
+      div.servicespage2_dotContent {
+        width: rem(18px);
+        height: rem(18px);
+        border-radius: rem(18px);
+        &.servicespage2_selectedDotContent {
+          background: var(--primary-100);
+        }
+      }
+    }
+
+    span.servicespage2_dotText {
+      font-size: rem(18px);
+    }
+
+    .servicespage2_divider {
+      width: 90%;
+      border: 1px solid var(--gray-100);
     }
   }
 

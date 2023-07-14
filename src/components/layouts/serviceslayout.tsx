@@ -4,10 +4,11 @@ import Contact from "../contact/contact";
 import ServicesPage1 from "../services/servicespage1";
 import Servicespage4 from "../services/servicespage4";
 import ServicesPage3 from "../services/servicespage3";
+import ServicesPage2 from "../services/servicespage2";
 
 const ServicesLayout = () => {
   return (
-    <Parallax pages={4}>
+    <Parallax pages={5}>
       <ParallaxLayer
         offset={0}
         speed={1}
@@ -26,7 +27,7 @@ const ServicesLayout = () => {
           backgroundColor: "var(--black-100)",
         }}
       >
-        <ServicesPage3 />
+        <ServicesPage2 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={2}
@@ -36,11 +37,21 @@ const ServicesLayout = () => {
           backgroundColor: "var(--black-100)",
         }}
       >
-        <Servicespage4 />
+        <ServicesPage3 />
       </ParallaxLayer>
       <ParallaxLayer
         offset={3}
         speed={0}
+        factor={0}
+        style={{
+          backgroundColor: "var(--black-100)",
+        }}
+      >
+        <Servicespage4 />
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={4}
+        speed={1}
         factor={0}
         style={{
           backgroundColor: "var(--black-100)",

@@ -1,9 +1,9 @@
 import React from 'react';
 import Wrapper from '../wrapper';
-import ClientFeedbackCarousel from '../common/ClientFeedbackCarousel';
 import Client from '../../images/client2.png';
 import { IClientFeedback } from '../../types/carouselTypes';
 import './aboutPage4.scss';
+import ClientFeedbackCarousel from '../common/ClientFeedbackCarousel';
 
 const AboutPage4 = () => {
     const data: IClientFeedback[] = [

@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @import "./color/color-palatte";
-@import "./fonts/font-face";
+@import "./fonts/fonts/font-face";
+@import "./helpers";
+// @import "./slick";
+// @import "./slickTheme";
 
 body {
   font-family: "DM Sans", sans-serif;

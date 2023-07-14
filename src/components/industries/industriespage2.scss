@@ -15,36 +15,6 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
-
-  .control-dots {
-    height: rem(24px);
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-
-    span.dotBorder {
-      width: rem(24px);
-      height: rem(24px);
-      border: 1px solid var(--gray-100);
-      cursor: pointer;
-      display: block;
-      border-radius: rem(24px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &.selectedDotBorder {
-        border: 1px solid var(--primary-100);
-      }
-      div.dotContent {
-        width: rem(18px);
-        height: rem(18px);
-        border-radius: rem(18px);
-        &.selectedDotContent {
-          background: var(--primary-100);
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1410px) {
