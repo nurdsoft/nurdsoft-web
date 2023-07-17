@@ -5,6 +5,7 @@ import { animated, useSpring } from '@react-spring/web';
 import useIntersectionObserver from '../common/intersectionObserver';
 import Stage from '../../images/stage.png';
 import Button from '../button';
+import { navigate } from "gatsby";
 
 const AboutPage5 = () => {
   const triggerRef = useRef<any>();
@@ -22,12 +23,16 @@ const AboutPage5 = () => {
     },
   });
 
+  const onHiringClick = () => {
+    navigate("/career/");
+  };
+
   return (
     <Wrapper>
       <div className='aboutPage5_parentContainer' ref={triggerRef} >
         <animated.div className="aboutPage5_animatedDiv" style={headerStyle}>
           <h1 className='aboutPage5_joinUs'>We’re Hiring<br/> Join Us</h1>
-          <Button buttonText='OPEN POSITION' />
+          <Button buttonText='OPEN POSITION' onClick={onHiringClick} />
         </animated.div>
         <img className='aboutPage5_stage' src={Stage} alt='stage' />
       </div>
