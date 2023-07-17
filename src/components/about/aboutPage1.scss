@@ -36,6 +36,45 @@
       height: rem(135px);
     }
   }
+
+  .aboutPage1_carousel {
+    max-width: calc(100vw - rem(40px));
+    width: 100%;
+    margin-top: rem(80px);
+    position: relative;
+
+    .aboutPage_hireUs{
+      padding: 0px 1.8125rem 0px 1.875rem;
+      border-radius: rem(96px);
+      background: var(--primary-100);
+      color: var(--white);
+      font-size: 1rem;
+      width: 7.5rem;
+      height: 7.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 1;
+      right: -30px;
+      top: -44px;
+      cursor: pointer;
+    }
+
+    .slick-slider{
+
+      .image_coniatiner{
+        overflow: hidden;
+        max-height: rem(438px);
+        padding: rem(10px);
+        .carouselImage{
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
 }
 
 @keyframes anim-lineUp {
@@ -65,6 +104,12 @@
           width: 135px;
           height: 1px;
           margin: 0 auto;
+        }
+      }
+      .aboutPage1_carousel {
+        .aboutPage_hireUs{
+          right: -10px;
+          top: -58px;
         }
       }
     }
