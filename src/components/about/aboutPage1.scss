@@ -38,12 +38,12 @@
   }
 
   .aboutPage1_carousel {
-    max-width: calc(100vw - rem(40px));
+    max-width: calc(100vw - 40px);
     width: 100%;
     margin-top: rem(80px);
     position: relative;
 
-    .aboutPage_hireUs{
+    .aboutPage1_hireUs{
       padding: 0px 1.8125rem 0px 1.875rem;
       border-radius: rem(96px);
       background: var(--primary-100);
@@ -63,7 +63,7 @@
 
     .slick-slider{
 
-      .image_coniatiner{
+      .image_container{
         overflow: hidden;
         max-height: rem(438px);
         padding: rem(10px);
@@ -107,7 +107,7 @@
         }
       }
       .aboutPage1_carousel {
-        .aboutPage_hireUs{
+        .aboutPage1_hireUs{
           right: -10px;
           top: -58px;
         }

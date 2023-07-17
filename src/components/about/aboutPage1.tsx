@@ -42,6 +42,23 @@ const AboutPage1 = () => {
     }]
   };
 
+  const carouselData = [{
+    img: Image1,
+    alt: "image1"
+  },{
+    img: Image2,
+    alt: "image2"
+  },{
+    img: Image3,
+    alt: "image3"
+  },{
+    img: Image4,
+    alt: "image4"
+  },{
+    img: Image5,
+    alt: "image5"
+  }]
+
   return (
     <Wrapper>
       <div className="aboutPage1_parentContainer">
@@ -58,23 +75,15 @@ const AboutPage1 = () => {
           </p>
         </div>
         <div className='aboutPage1_carousel'>
-          <div className='aboutPage_hireUs'>Hire Us</div>
+          <div className='aboutPage1_hireUs'>Hire Us</div>
           <Slider {...settings}>
-            <div className='image_coniatiner'>
-              <img className="carouselImage" src={Image1} alt='image1' />
-            </div>
-            <div className='image_coniatiner'>
-              <img className="carouselImage" src={Image2} alt='image2' />
-            </div>
-            <div className='image_coniatiner'>
-              <img className="carouselImage" src={Image3} alt='image3' />
-            </div>
-            <div className='image_coniatiner'>
-              <img className="carouselImage" src={Image4} alt='image4' />
-            </div>
-            <div className='image_coniatiner'>
-              <img className="carouselImage" src={Image5} alt='image5' />
-            </div>
+            {
+              carouselData.map(({img, alt}, index) => (
+                <div className='image_container' key={index}>
+                  <img className="carouselImage" src={img} alt={alt} />
+                </div>
+              ))
+            }
           </Slider>
         </div>
       </div>
