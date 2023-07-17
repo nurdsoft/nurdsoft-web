@@ -1,6 +1,10 @@
+@import "~sass-rem";
+
 .wrapperContainer {
-  display: grid;
-  grid-template-columns: 1fr minmax(min-content, 1100px) 1fr;
+  max-width: rem(1400px);
+  width: 98%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .wrapperLeftContainer {
