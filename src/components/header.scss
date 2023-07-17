@@ -6,54 +6,58 @@
   z-index: 99;
   border-bottom: 1px solid var(--dark-gray-100);
   background-color: var(--black-100);
-  .headerContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0 17px 0;
-    text-decoration: none !important;
-    .navBar {
-      .burgerMenu {
-        display: none;
-      }
-      .menuContainer {
-        display: flex;
-        gap: 33px;
-        font-size: rem(16px);
-        align-items: center;
-        padding-right: rem(154px);
-        a.menuLink {
-          color: var(--off-white-100);
-          text-decoration: none !important;
-          div.activeSpan {
-            margin-left: 0 !important;
-          }
-          span.withoutHover {
-            display: block;
-            margin-left: 12px;
-            text-transform: uppercase;
-          }
-          span.onHover {
-            display: none;
-          }
-          &:hover {
-            span.withoutHover {
-              display: none;
+  .wrapperContainer{
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 1280px) 1fr;
+    .headerContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0 17px 0;
+      text-decoration: none !important;
+      .navBar {
+        .burgerMenu {
+          display: none;
+        }
+        .menuContainer {
+          display: flex;
+          gap: 33px;
+          font-size: rem(16px);
+          align-items: center;
+          padding-right: rem(154px);
+          a.menuLink {
+            color: var(--off-white-100);
+            text-decoration: none !important;
+            div.activeSpan {
+              margin-left: 0 !important;
             }
-            span.onHover {
+            span.withoutHover {
               display: block;
-              color: var(--primary-100);
-              animation: 0.38s anim-lineUp ease-out 0.7s;
               margin-left: 12px;
               text-transform: uppercase;
+            }
+            span.onHover {
+              display: none;
+            }
+            &:hover {
+              span.withoutHover {
+                display: none;
+              }
+              span.onHover {
+                display: block;
+                color: var(--primary-100);
+                animation: 0.38s anim-lineUp ease-out 0.7s;
+                margin-left: 12px;
+                text-transform: uppercase;
+              }
             }
           }
         }
       }
     }
-  }
-
-  .burgerContainer {
-    display: none;
+  
+    .burgerContainer {
+      display: none;
+    }
   }
 }
 
