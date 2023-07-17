@@ -27,7 +27,7 @@ const Servicespage4 = () => {
           </div>
           <div className="servicespage4_item2">
             <div className="h-full">
-              <div className="cursor-pointer servicespage4_gridBox1  flex-col text-center items-center justify-center servicespage4_gridBorder">
+              <div className="cursor-pointer servicespage4_gridBox1 px-8  flex-col text-center items-center justify-center servicespage4_gridBorder">
                 <h4 className="servicespage4_industryTitle lineUp">Industry</h4>
                 <p className="servicespage4_industryPara lineUp">
                   We provide services to clients in a variety of industries

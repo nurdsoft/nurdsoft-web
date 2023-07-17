@@ -80,7 +80,7 @@
 
   .contact_footer {
     display: flex;
-    width: 66%;
+    min-width: rem(1190px);
     justify-content: space-between;
     position: fixed;
     bottom: rem(30px);

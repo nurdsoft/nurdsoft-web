@@ -6,9 +6,10 @@
   z-index: 99;
   border-bottom: 1px solid var(--dark-gray-100);
   background-color: var(--black-100);
-  .wrapperContainer{
+  .wrapperContainer {
     display: grid;
     grid-template-columns: 1fr minmax(min-content, 1280px) 1fr;
+    max-width: unset !important;
     .headerContainer {
       display: flex;
       justify-content: space-between;
@@ -54,7 +55,7 @@
         }
       }
     }
-  
+
     .burgerContainer {
       display: none;
     }

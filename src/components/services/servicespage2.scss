@@ -43,7 +43,7 @@
       .servicespage2_boxContainer {
         border: 1px solid var(--gray-100);
         padding: rem(32px);
-        width: rem(350px);
+        width: rem(375px);
         cursor: pointer;
         flex: 0 0 auto;
         height: rem(225px);
@@ -65,6 +65,7 @@
           margin-top: rem(4px);
           font-weight: 400;
           line-height: 30px;
+          overflow: hidden;
         }
         &:hover {
           background-color: var(--dark-gray-100);
@@ -72,6 +73,7 @@
           border-color: var(--dark-gray-100);
           border-style: solid;
           height: rem(400px);
+          overflow: hidden;
           .servicespage2_iconPurple {
             display: block;
           }
@@ -93,7 +95,7 @@
     .servicespage2_next {
       cursor: pointer;
       position: absolute;
-      top: rem(335px);
+      top: rem(300px);
       border-radius: 50%;
       background: rgba(28, 37, 49, 0.32);
       border: 2px solid var(--gray-100);
