@@ -25,6 +25,21 @@ const AboutPage1 = () => {
   },{
     img: Image5,
     alt: "image5"
+  },{
+    img: Image1,
+    alt: "image1"
+  },{
+    img: Image2,
+    alt: "image2"
+  },{
+    img: Image3,
+    alt: "image3"
+  },{
+    img: Image4,
+    alt: "image4"
+  },{
+    img: Image5,
+    alt: "image5"
   }]
 
   return (
@@ -48,11 +63,6 @@ const AboutPage1 = () => {
         </div>
         <div className='aboutPage1_carouselWrapper'>
           <div className='wrapper'>
-            {
-              carouselData.map(({img, alt}, index) => (
-                <img className="carouselImage" key={index} src={img} alt={alt} />
-              ))
-            }
             {
               carouselData.map(({img, alt}, index) => (
                 <img className="carouselImage" key={index} src={img} alt={alt} />
