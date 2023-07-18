@@ -1,0 +1,71 @@
+@import "~sass-rem";
+
+.careerPage3_parentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    &.fixed {
+        position: fixed;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        top: 91px;
+    }
+    .careerPage3_headingWrapper {
+        .careerPage3_heading {
+            background: linear-gradient(135deg, #6164fa 0%, #2cd7e5 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-size: rem(64px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 73px;
+            text-align: left;
+            margin-bottom: rem(64px);
+        }
+    }
+    .careerPage3_cardView_wrapper {
+        position: relative;
+        overflow: hidden;
+        .careerPage3_cardView{
+            padding-bottom: rem(832px);
+            overflow: hidden scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            height: 100%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .careerPage3_card{
+                width: rem(528px);
+                height: rem(208px);
+                border: 1px solid var(--gray-100);
+                margin: rem(20px) auto;
+                color: var(--off-white-100);
+                background-color: var(--black-100);
+                position: relative;
+                z-index: 2;
+                transition: all 0.2s;
+                &.fixed:nth-child(even) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    transform: rotate(3deg);
+                    z-index: 1;
+                }
+    
+                &.fixed:nth-child(odd) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    transform: rotate(-3deg);
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
