@@ -1,77 +1,104 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Wrapper from '../wrapper';
 import './careerPage3.scss';
 import Button from '../button';
 import { navigate } from 'gatsby';
+import useIntersectionObserver from '../common/intersectionObserver';
 
 const CareerPage3 = () => {
+  const elementsToStack = useRef(0)
+  const activatingFromOutside = useRef(true)
+
+  const triggerRef = useRef<any>()
+
+  const cardRef = useIntersectionObserver(triggerRef, {
+    threshold: 0.2,
+    freezeOnceVisible: false,
+    root: document.getElementById('career_scroller')
+  })
+
   const handleAboutUs = () => {
     navigate('/about/')
   }
 
   useEffect(() => {
-    let elementsToStack = 0
-    document.getElementById('career_scroller')?.addEventListener('scroll', () => {
-      const el = document.getElementById('careerPage3_parentContainer');
-      const scroller = document.getElementById('career_scroller');
-      const careerPageCardView = document.getElementById('careerPage3_cardView')
-      if(careerPageCardView){
-        careerPageCardView.style.overflow = 'hidden'
-      }
-      
-      if(el && el?.getBoundingClientRect().top < 93 && scroller?.style){
-        console.log("setting hidden 1", el?.getBoundingClientRect().top);
-        
-        scroller.style.overflow = 'hidden'
-        if(careerPageCardView){
-          careerPageCardView.style.overflow = 'hidden scroll'
-        }
-        document.getElementById('careerPage3_cardView')?.addEventListener( 'scroll', () => {
-          console.log(careerPageCardView?.scrollTop, 'scrolltop', elementsToStack);
-          
-          if(
-            (careerPageCardView &&
-            (careerPageCardView?.scrollHeight - careerPageCardView?.scrollTop) <= document.documentElement.clientHeight) ||
-            (careerPageCardView?.scrollTop === 0 && elementsToStack <= 0)
-          ){
-            scroller.style.overflow = 'hidden scroll'
-          }else{
-            scroller.style.overflow = 'hidden'
-          }
-          const cardsArray = Array.from(document.getElementsByClassName('careerPage3_card'))
-          if(careerPageCardView){
-            console.log(Math.floor(careerPageCardView.scrollTop / 208), careerPageCardView.scrollTop, elementsToStack, 'lol' )
-            if(careerPageCardView.scrollTop === 0 && elementsToStack >= 0) {
-              console.log("entering here", elementsToStack);
-              cardsArray[elementsToStack].classList.remove('fixed')
-              elementsToStack = elementsToStack - 1
-              if(elementsToStack >= 0){
-                careerPageCardView.scrollTop = 200
-              }
-              if(elementsToStack === 0){
-                careerPageCardView.style.paddingTop = `0px`
-              }
-            }
-            if(Math.floor(careerPageCardView.scrollTop / 208) >= 1 && elementsToStack < (cardsArray.length - 2)){
-              elementsToStack = elementsToStack + 1
-            }
-            for(let i = 0; i < cardsArray.length; i++){
-              if(i <= elementsToStack && !cardsArray[i].classList.contains('fixed') && elementsToStack < (cardsArray.length - 1)){
-                cardsArray[i].classList.add('fixed')
-                careerPageCardView.style.paddingTop = `${250}px`
-                console.log("setting scroll top 1", i, elementsToStack, cardsArray[i].classList.contains('fixed'), careerPageCardView.scrollTop);
-                careerPageCardView.scrollTop = 1
-              }
-            }
-          }
-        })
+    const scroller = document.getElementById('career_scroller');
+    const careerPageCardView = document.getElementById('careerPage3_cardView')
+    
+    if(cardRef && cardRef?.isIntersecting && scroller && careerPageCardView && activatingFromOutside.current){
+      scroller.scrollTo({
+        top: 2220,
+        behavior: 'smooth'
+      })
+      scroller.style.overflow = 'hidden'
+      careerPageCardView.style.overflow = 'hidden scroll'
+      careerPageCardView.scrollTop = 1
+      activatingFromOutside.current = false
+    }
+
+    scroller?.addEventListener('scroll', () => {
+      activatingFromOutside.current = true
+      if(elementsToStack.current < 0 ){
+        elementsToStack.current = 0
       }
     })
-  }, [])
+    
+    careerPageCardView?.addEventListener( 'scroll', () => {
+      if(!scroller || !careerPageCardView){
+        return
+      }
+      activatingFromOutside.current = false
+      if(
+        (careerPageCardView?.scrollHeight - careerPageCardView?.scrollTop) <= document.documentElement.clientHeight ||
+        (careerPageCardView?.scrollTop === 0 && elementsToStack.current <= 0)
+      ){
+        if((careerPageCardView?.scrollHeight - careerPageCardView?.scrollTop) <= document.documentElement.clientHeight){
+          scroller.scrollTo({
+            top: 3336,
+            behavior: 'smooth'
+          })
+          careerPageCardView.style.overflow = 'hidden'
+        } else if(careerPageCardView?.scrollTop === 0 && elementsToStack.current <= 0){
+          scroller.scrollTo({
+            top: 1049,
+            behavior: 'smooth'
+          })
+          careerPageCardView.style.overflow = 'hidden'
+        }
+        scroller.style.overflow = 'hidden scroll'
+      }
+      const cardsArray = Array.from(document.getElementsByClassName('careerPage3_card'))
+      if(careerPageCardView){
+        // logic to remove the fixed class
+        if(careerPageCardView.scrollTop === 0 && elementsToStack.current >= 0) {
+          cardsArray[elementsToStack.current].classList.remove('fixed')
+          if(elementsToStack.current === 0){
+            careerPageCardView.style.paddingTop = `0px`
+          }
+          if(elementsToStack.current >= 0){
+            careerPageCardView.scrollTop = 200
+          }
+          elementsToStack.current = elementsToStack.current - 1
+        }
+        // logic to increment the fixed elements
+        if(Math.floor(careerPageCardView.scrollTop / 208) >= 1 && elementsToStack.current < (cardsArray.length - 2)){
+          elementsToStack.current = elementsToStack.current + 1
+        }
+        // logic to add the fixed class
+        for(let i = 0; i < cardsArray.length; i++){
+          if(i <= elementsToStack.current && !cardsArray[i].classList.contains('fixed') && elementsToStack.current < (cardsArray.length - 1)){
+            cardsArray[i].classList.add('fixed')
+            careerPageCardView.style.paddingTop = `${250}px`
+            careerPageCardView.scrollTop = 1
+          }
+        }
+      }
+    })
+  }, [cardRef?.intersectionRatio])
 
   return (
     <Wrapper>
-      <div className="careerPage3_parentContainer" id="careerPage3_parentContainer">
+      <div className="careerPage3_parentContainer" ref={triggerRef} id="careerPage3_parentContainer">
         <div className='careerPage3_headingWrapper'>
           <h1 className='careerPage3_heading'>
             Open <br/> Position
