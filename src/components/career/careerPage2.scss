@@ -34,3 +34,33 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .careerPage2_parentContainer {
+    .companyPerks{
+      grid-template-columns: 1fr;
+      .perk{
+        &:nth-child(n + 2) {
+          border-top: none;
+          border-left: 1px solid var(--gray-100);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .careerPage2_parentContainer{
+    .companyPerks {
+      .perk {
+        padding: 32px;
+        .perkIcon {
+          width: 32px;
+        }
+        .perkLabel {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

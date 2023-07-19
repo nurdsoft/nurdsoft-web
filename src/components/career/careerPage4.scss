@@ -1,0 +1,60 @@
+@import "~sass-rem";
+
+.careerPage4_wrapper{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    padding-bottom: 93px;
+    .careerPage4_followUs {
+        display: flex;
+        padding: rem(64px);
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+        background-color: var(--dark-gray-100);
+        grid-column: span 2;
+        margin-top: auto;
+        flex: 1;
+        .careerPage4_tagline {
+            color: var(--primary-100);
+            font-size: rem(20px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+        .socialIcons_wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            .socialIcon{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .careerPage4_wrapper{
+        padding-bottom: rem(79px);
+        .careerPage4_followUs{
+            grid-column: span 1;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .careerPage4_followUs{
+        padding: rem(20px);
+        gap: 20px;
+        .socialIcons_wrapper{
+            .socialIcon{
+                width: rem(24px);
+            }
+        }
+    }
+}
