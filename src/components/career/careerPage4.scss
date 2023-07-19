@@ -39,8 +39,11 @@
 
 
 @media screen and (max-width: 960px) {
-    .careerPage4_followUs{
-        grid-column: span 1;
+    .careerPage4_wrapper{
+        padding-bottom: rem(79px);
+        .careerPage4_followUs{
+            grid-column: span 1;
+        }
     }
 }
 

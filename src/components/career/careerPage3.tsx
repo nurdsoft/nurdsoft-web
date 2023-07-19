@@ -90,10 +90,17 @@ const CareerPage3 = () => {
     const careerPageCardView = document.getElementById('careerPage3_cardView')
     
     if(cardRef && cardRef?.isIntersecting && scroller && careerPageCardView && activatingFromOutside.current){
-      scroller.scrollTo({
-        top: 2220,
-        behavior: 'smooth'
-      })
+      if(document.body.clientWidth <= 960){
+        scroller.scrollTo({
+          top: 2000,
+          behavior: 'smooth'
+        })
+      }else{
+        scroller.scrollTo({
+          top: 2220,
+          behavior: 'smooth'
+        })
+      }
       scroller.style.overflow = 'hidden'
       careerPageCardView.style.overflow = 'hidden scroll'
       careerPageCardView.scrollTop = 1
