@@ -13,11 +13,16 @@ const Button = ({
   isLinkButton?: boolean;
   showArrowIcon?: boolean;
   className?: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }) => {
   return (
     <div className={`buttonContainer ${className}`}>
-      <button onClick={() => onClick && onClick()} className="button">
+      <button
+        onClick={(ev: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
+          onClick && onClick(ev)
+        }
+        className="button"
+      >
         <span
           className={`circle ${
             isLinkButton ? "circleColorTransparent" : "circleColorPrimary"

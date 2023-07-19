@@ -1,0 +1,72 @@
+@import "~sass-rem";
+
+.workpage1_parentContainer {
+  padding: 0 rem(25px) rem(60px) rem(25px);
+  h4.workpage1_title {
+    font-size: rem(60px);
+    font-weight: 700;
+    line-height: 80px;
+    color: var(--white);
+    margin: rem(70px) 0;
+  }
+  .workpage1_cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 64px;
+
+    .workpage1_workBox {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      max-width: rem(568px);
+      min-width: rem(298px);
+      width: 100%;
+      flex-direction: column;
+      align-self: start;
+
+      &:nth-child(2n-1) {
+        margin-top: rem(73px);
+      }
+
+      .workpage1_cardImg {
+        padding: rem(20px) rem(20px) 0px rem(20px);
+        background-color: var(--dark-gray-100);
+        max-height: rem(369px);
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.4s all ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .workpage1_content {
+        .workpage1_caption {
+          font-size: rem(20px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: rem(58px);
+          color: var(--primary-100);
+          margin-top: rem(20px);
+        }
+
+        .workpage1_title {
+          font-size: rem(44px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: 58px;
+          color: var(--white);
+          margin-top: rem(12px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .workpage1_workBox {
+    &:nth-child(2n-1) {
+      margin-top: 0;
+    }
+  }
+}
