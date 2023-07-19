@@ -4,6 +4,9 @@ import './careerPage3.scss';
 import Button from '../button';
 import { navigate } from 'gatsby';
 import useIntersectionObserver from '../common/intersectionObserver';
+import { FACEBOOK, GITHUB, LINKEDIN, TWITTER } from '../../icons';
+import CareerCard from './careerCard';
+
 
 const CareerPage3 = () => {
   const elementsToStack = useRef(0)
@@ -24,6 +27,9 @@ const CareerPage3 = () => {
   useEffect(() => {
     const scroller = document.getElementById('career_scroller');
     const careerPageCardView = document.getElementById('careerPage3_cardView')
+
+    console.log(cardRef?.isIntersecting, activatingFromOutside.current);
+    
     
     if(cardRef && cardRef?.isIntersecting && scroller && careerPageCardView && activatingFromOutside.current){
       scroller.scrollTo({
@@ -81,14 +87,14 @@ const CareerPage3 = () => {
           elementsToStack.current = elementsToStack.current - 1
         }
         // logic to increment the fixed elements
-        if(Math.floor(careerPageCardView.scrollTop / 208) >= 1 && elementsToStack.current < (cardsArray.length - 2)){
+        if(Math.floor(careerPageCardView.scrollTop / 306) >= 1 && elementsToStack.current < (cardsArray.length - 2)){
           elementsToStack.current = elementsToStack.current + 1
         }
         // logic to add the fixed class
         for(let i = 0; i < cardsArray.length; i++){
           if(i <= elementsToStack.current && !cardsArray[i].classList.contains('fixed') && elementsToStack.current < (cardsArray.length - 1)){
             cardsArray[i].classList.add('fixed')
-            careerPageCardView.style.paddingTop = `${250}px`
+            careerPageCardView.style.paddingTop = `${332}px`
             careerPageCardView.scrollTop = 1
           }
         }
@@ -107,23 +113,16 @@ const CareerPage3 = () => {
         </div>
         <div className='careerPage3_cardView_wrapper'>
           <div className='careerPage3_cardView' id="careerPage3_cardView">
-            <div className='careerPage3_card' >1</div>
-            <div className='careerPage3_card' >2</div>
-            <div className='careerPage3_card' >3</div>
-            <div className='careerPage3_card' >4</div>
-            <div className='careerPage3_card' >5</div>
-            <div className='careerPage3_card' >6</div>
-            <div className='careerPage3_card' >7</div>
-            <div className='careerPage3_card' >8</div>
-            <div className='careerPage3_card' >9</div>
-            <div className='careerPage3_card' >10</div>
-            <div className='careerPage3_card' >11</div>
-            <div className='careerPage3_card' >12</div>
-            <div className='careerPage3_card' >13</div>
-            <div className='careerPage3_card' >14</div>
-            <div className='careerPage3_card' >15</div>
-            <div className='careerPage3_card' >16</div>
-            <div className='careerPage3_card' >17</div>
+            <CareerCard />
+          </div>
+        </div>
+        <div className='careerPage3_followUs'>
+          <p className='careerPage3_tagline'>Follow us on</p>
+          <div className='socialIcons_wrapper'>
+            <FACEBOOK className='socialIcon' />
+            <TWITTER className='socialIcon' />
+            <LINKEDIN className='socialIcon' />
+            <GITHUB className='socialIcon' />
           </div>
         </div>
       </div>

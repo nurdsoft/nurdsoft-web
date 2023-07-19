@@ -6,7 +6,7 @@ import CareerPage3 from "../career/careerPage3";
 
 const CareerLayout = () => {
   return (
-    <Parallax id="career_scroller" pages={4}>
+    <Parallax id="career_scroller" pages={3}>
       <ParallaxLayer
         offset={0}
         speed={0}
