@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Wrapper from '../wrapper';
 import './careerPage3.scss';
 import Button from '../button';
@@ -130,4 +130,4 @@ const CareerPage3 = () => {
   )
 }
 
-export default CareerPage3
+export default CareerPage3;
