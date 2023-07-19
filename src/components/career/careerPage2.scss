@@ -48,3 +48,19 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .careerPage2_parentContainer{
+    .companyPerks {
+      .perk {
+        padding: 32px;
+        .perkIcon {
+          width: 32px;
+        }
+        .perkLabel {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
