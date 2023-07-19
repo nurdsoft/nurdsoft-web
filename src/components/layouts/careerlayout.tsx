@@ -3,10 +3,11 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import CareerPage1 from "../career/careerPage1";
 import CareerPage2 from "../career/careerPage2";
 import CareerPage3 from "../career/careerPage3";
+import CareerPage4 from "../career/careerPage4";
 
 const CareerLayout = () => {
   return (
-    <Parallax id="career_scroller" pages={3}>
+    <Parallax id="career_scroller" pages={4}>
       <ParallaxLayer
         offset={0}
         speed={0}
@@ -36,6 +37,16 @@ const CareerLayout = () => {
         }}
       >
         <CareerPage3 />
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={3}
+        speed={0}
+        factor={0}
+        style={{
+          backgroundColor: "var(--black-100)",
+        }}
+      >
+        <CareerPage4 />
       </ParallaxLayer>
     </Parallax>
   );
