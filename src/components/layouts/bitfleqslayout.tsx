@@ -1,9 +1,9 @@
 import * as React from "react";
-import Bndpage from "../work/bnd/bndpage";
 import BreadCrumb from "../breadcrumb";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import BitFleqpage from "../work/bitfleq/bitfleqpage";
 
-const BndLayout = () => {
+const BitFleqsLayout = () => {
   return (
     <>
       <Parallax pages={2}>
@@ -18,12 +18,12 @@ const BndLayout = () => {
             paddingBottom: "50px",
           }}
         >
-          <BreadCrumb title="BnD" />
-          <Bndpage />
+          <BreadCrumb title="BITFLEQS" />
+          <BitFleqpage />
         </ParallaxLayer>
       </Parallax>
     </>
   );
 };
 
-export default BndLayout;
+export default BitFleqsLayout;

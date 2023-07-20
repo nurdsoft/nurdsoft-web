@@ -1,24 +1,27 @@
 import * as React from "react";
+import BreadCrumb from "../breadcrumb";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Workpage1 from "../work/workpage1";
+import AuditTrustPage from "../work/audit_trust/audittrustpage";
 
-const WorkLayout = () => {
+const AuditTrustLayout = () => {
   return (
-    <Parallax pages={1.1}>
+    <Parallax pages={2}>
       <ParallaxLayer
         offset={0}
-        speed={1}
-        factor={0}
+        speed={0}
+        factor={1}
         style={{
           backgroundColor: "var(--black-100)",
           height: "100%",
           overflow: "scroll",
+          paddingBottom: "50px",
         }}
       >
-        <Workpage1 />
+        <BreadCrumb title="AUDIT TRUST" />
+        <AuditTrustPage />
       </ParallaxLayer>
     </Parallax>
   );
 };
 
-export default WorkLayout;
+export default AuditTrustLayout;

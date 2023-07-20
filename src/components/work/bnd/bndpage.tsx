@@ -17,6 +17,7 @@ import Benefit3 from "../../../images/benefits3.png";
 import Benefit4 from "../../../images/benefits4.png";
 import Benefit5 from "../../../images/benefits5.png";
 import Button from "../../button";
+import { navigate } from "gatsby";
 
 const Bndpage = () => {
   const productStatementList = [
@@ -405,14 +406,24 @@ const Bndpage = () => {
 
           {/* link buttons */}
           <div className="bndpage_linkButtons flex justify-between mb-28">
-            <div className="bndpage_linkButtonsBoxContainer p-8">
+            <div
+              onClick={() => {
+                navigate("/work/audit_trust");
+              }}
+              className="bndpage_linkButtonsBoxContainer p-8"
+            >
               <ARROW_LEFT />
               <div>
                 <p className="offGray font-normal text-base">PREV</p>
                 <h4 className="white text-xl mt-4">Assessor Trust</h4>
               </div>
             </div>
-            <div className="bndpage_linkButtonsBoxContainer p-8">
+            <div
+              onClick={() => {
+                navigate("/work/bitfleq");
+              }}
+              className="bndpage_linkButtonsBoxContainer p-8"
+            >
               <div>
                 <p className="offGray font-normal text-base">NEXT</p>
                 <h4 className="white text-xl mt-4">BitFleqs</h4>
