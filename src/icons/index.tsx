@@ -10,7 +10,7 @@ export const LETTER_N = (props: React.SVGProps<SVGSVGElement>) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_349_1926)">
+      <g clipPath="url(#clip0_349_1926)">
         <path
           d="M65.7636 62.5411L76.7623 57.3896C77.908 56.8173 78.0227 55.3292 77.106 54.6421L16.4982 0.379347C16.0399 -0.0785656 15.3525 -0.0785656 14.7796 0.150392L1.14571 6.56119C0.572853 6.90461 0.229141 7.47702 0.229141 8.16387L0 109.134C0 110.393 1.26028 111.195 2.40598 110.622L14.665 104.898C15.2379 104.669 15.5816 103.982 15.5816 103.41L15.6962 22.8171C15.6962 21.4434 17.3002 20.6421 18.4459 21.5579L64.1596 62.4269C64.5033 62.6557 65.1906 62.7702 65.7636 62.5411Z"
           fill="#F2F3FF"
@@ -40,8 +40,8 @@ export const DOUBLE_QUOTE_PINK = (props: React.SVGProps<SVGSVGElement>) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M41.621 28.165C41.369 27.389 40.932 26.678 40.324 26.035C39.687 25.363 38.85 24.843 37.812 24.467C36.773 24.094 35.439 23.905 33.795 23.905H31.564C31.83 21.159 32.808 18.822 34.5 16.89C36.189 14.964 38.531 13.269 41.525 11.815L39.709 9.00098C35.767 10.68 32.394 13.136 29.592 16.38C26.791 19.627 25.396 22.844 25.396 26.035C25.396 29.463 26.205 32.152 27.836 34.093C29.467 36.034 31.803 37.001 34.84 37.001C36.767 37.001 38.441 36.358 39.865 35.073C41.287 33.79 42 32.287 42 30.573C42 29.746 41.875 28.941 41.621 28.165ZM21.225 28.165C20.971 27.389 20.535 26.678 19.926 26.035C19.291 25.363 18.453 24.843 17.414 24.467C16.377 24.094 15.043 23.905 13.398 23.905H11.166C11.433 21.159 12.41 18.822 14.101 16.89C15.791 14.964 18.135 13.269 21.127 11.815L19.312 9.00098C15.369 10.68 11.998 13.136 9.19501 16.38C6.39401 19.627 5 22.844 5 26.035C5 29.463 5.807 32.152 7.439 34.093C9.068 36.034 11.404 37.001 14.443 37.001C16.369 37.001 18.045 36.358 19.469 35.073C20.891 33.79 21.603 32.287 21.603 30.573C21.603 29.746 21.476 28.941 21.225 28.165Z"
         fill="url(#paint0_linear_463_9317)"
       />
@@ -152,16 +152,16 @@ export const EMPHATHISE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M40.9161 22.0754C42.0227 17.9528 44.3969 14.2822 47.7032 11.5825C53.9339 6.76356 60.7889 5.55544 68.0648 8.86758C75.3406 12.1797 79.1007 18.1524 79.793 25.9849C80.4174 32.772 77.8926 38.8669 74.1868 44.4324C68.9743 52.2784 62.1192 58.5362 54.6533 64.1424C50.7439 67.0609 46.6037 69.6536 42.5721 72.4091C42.1632 72.7579 41.6518 72.9638 41.1153 72.9957C40.5788 73.0275 40.0466 72.8835 39.5993 72.5856C28.7399 65.7984 18.5455 58.1968 10.428 48.1518C5.90778 42.532 2.66351 36.3149 2.05266 28.9576C1.76937 24.9786 2.64405 21.0027 4.57108 17.51C6.49811 14.0172 9.39508 11.1571 12.9121 9.27482C16.2675 7.54393 20.0518 6.82033 23.809 7.19123C27.5662 7.56214 31.136 9.01171 34.0882 11.3653C36.7597 13.6756 38.8361 16.5948 40.1423 19.8764C40.2509 20.4601 40.4953 21.0574 40.9161 22.0754Z"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M63.5969 13.7412C66.208 14.8915 68.445 16.7497 70.0547 19.1055C71.6644 21.4613 72.5826 24.2206 72.7053 27.0712"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M40.8323 43.5099C44.5808 43.5099 47.6195 40.4712 47.6195 36.7227C47.6195 32.9743 44.5808 29.9355 40.8323 29.9355C37.0839 29.9355 34.0452 32.9743 34.0452 36.7227C34.0452 40.4712 37.0839 43.5099 40.8323 43.5099Z"
@@ -188,23 +188,23 @@ export const DEFINE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M62.7566 29.5484C66.4426 36.1169 67.6435 43.7919 66.14 51.1724C64.6366 58.5528 60.5291 65.1465 54.5675 69.7497C48.6058 74.3529 41.1875 76.6587 33.6668 76.2461C26.1461 75.8335 19.0246 72.7301 13.6022 67.5023C8.17985 62.2746 4.81832 55.2712 4.13127 47.7705C3.44422 40.2699 5.47747 32.7724 9.85984 26.6465C14.2422 20.5206 20.6814 16.175 28.002 14.403C35.3226 12.631 43.0363 13.5506 49.7351 16.9942"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M35.3622 66.6049C47.3389 66.6049 57.0479 56.8958 57.0479 44.9191C57.0479 32.9424 47.3389 23.2334 35.3622 23.2334C23.3854 23.2334 13.6764 32.9424 13.6764 44.9191C13.6764 56.8958 23.3854 66.6049 35.3622 66.6049Z"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M47.4143 46.8689C48.4777 40.2222 43.9516 33.9719 37.3049 32.9084C30.6582 31.845 24.4079 36.3711 23.3445 43.0178C22.281 49.6645 26.8071 55.9148 33.4538 56.9783C40.1005 58.0417 46.3509 53.5156 47.4143 46.8689Z"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M40.2254 44.9192C40.2254 45.8809 39.9402 46.821 39.4059 47.6207C38.8716 48.4203 38.1121 49.0436 37.2236 49.4116C36.3351 49.7797 35.3574 49.8759 34.4142 49.6883C33.4709 49.5007 32.6045 49.0376 31.9245 48.3575C31.2444 47.6775 30.7813 46.8111 30.5937 45.8678C30.4061 44.9246 30.5023 43.9469 30.8704 43.0584C31.2384 42.1699 31.8617 41.4104 32.6613 40.8761C33.461 40.3418 34.4011 40.0566 35.3628 40.0566C36.6524 40.0566 37.8892 40.5689 38.8012 41.4809C39.7131 42.3928 40.2254 43.6296 40.2254 44.9192Z"
@@ -213,23 +213,23 @@ export const DEFINE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M64.0934 13.4204L35.3601 44.9197"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M52.0459 26.5803C52.0459 26.5803 49.5199 15.3143 50.6313 12.9651C51.7428 10.6159 60.4449 3 60.4449 3V16.893"
         stroke="white"
-        stroke-width="2.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M52.2367 26.6185C52.2367 26.6185 63.4648 29.3718 65.8392 28.2604C68.2137 27.1489 75.9432 18.611 75.9432 18.611L62.0502 18.3711"
         stroke="white"
-        stroke-width="2.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -248,72 +248,72 @@ export const IDEATE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M65.0154 27.0124C65.016 23.1385 64.1167 19.3173 62.3883 15.8503C60.6598 12.3833 58.1496 9.36526 55.0554 7.03417C51.9613 4.70308 48.3679 3.12271 44.5586 2.41766C40.7494 1.71261 36.8284 1.90217 33.1049 2.9714C29.3814 4.04063 25.9573 5.9603 23.1024 8.579C20.2476 11.1977 18.0402 14.4438 16.6543 18.0614C15.2683 21.679 14.7418 25.5691 15.1162 29.4249C15.4906 33.2807 16.7556 36.9969 18.8116 40.2802C22.157 45.6202 24.1642 47.8546 24.1642 54.1666V62.1702H55.8504V54.1666C55.8504 47.8546 57.8576 45.5697 61.2156 40.2802C63.7066 36.3038 65.0238 31.7047 65.0154 27.0124Z"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M39.7412 78.3165C35.6107 78.3132 31.6503 76.6708 28.7296 73.7501C25.8089 70.8294 24.1666 66.869 24.1632 62.7385V62.2588H55.7989C55.7956 66.5165 54.1027 70.5989 51.092 73.6096C48.0814 76.6203 43.9989 78.3132 39.7412 78.3165Z"
         stroke="white"
-        stroke-width="3.05"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3.05"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M44.1968 62.2582L49.2464 36.5684"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M35.7638 62.2582L30.7142 36.5684"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M32.8603 35.0539C34.112 34.3983 35.1109 33.3461 35.7007 32.0621C38.3644 26.8484 27.7981 27.4922 34.6908 35.1802"
         stroke="white"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M28.1144 35.1931C29.653 35.7746 31.359 35.7246 32.861 35.0542"
         stroke="white"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M51.8465 35.1931C50.3121 35.7738 48.6103 35.7239 47.1125 35.0542"
         stroke="white"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M34.5664 35.1924C35.986 35.7656 37.5736 35.7602 38.9893 35.1774C40.4049 34.5946 41.5362 33.4808 42.1408 32.0743C44.8045 26.8606 34.2382 27.5044 41.1435 35.1924"
         stroke="white"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M40.8909 35.1924C42.3108 35.7622 43.897 35.7552 45.3118 35.1728C46.7266 34.5904 47.8581 33.4786 48.4653 32.0743C51.1289 26.8606 40.55 27.5044 47.4553 35.1924"
         stroke="white"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M58.3615 26.3434C58.3615 23.9195 57.8678 21.521 56.9106 19.2942C55.9534 17.0674 54.5527 15.0588 52.7939 13.3909C51.0351 11.7231 48.955 10.4309 46.6805 9.59319C44.4061 8.75546 41.9848 8.38973 39.5643 8.51829"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -332,66 +332,66 @@ export const PROTOTYPE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M18 24.1127L27.3419 25.9992L30.9985 19.2544L38.6865 21.7611L43.2089 15.5073"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M43.1959 15.507L43.997 14.4087L61.4275 61.0793C62.007 62.6301 62.2752 64.28 62.2167 65.9345C62.1583 67.589 61.7742 69.2158 61.0866 70.7218C60.399 72.2278 59.4213 73.5835 58.2094 74.7114C56.9975 75.8393 55.5752 76.7173 54.0237 77.2952L51.6592 78.1867C50.1075 78.7665 48.4568 79.0349 46.8013 78.9766C45.1458 78.9183 43.5181 78.5344 42.0111 77.8468C40.504 77.1593 39.1472 76.1816 38.018 74.9695C36.8889 73.7575 36.0096 72.3349 35.4304 70.783L18 24.1124"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.8883 56.9712L33.8912 66.6749"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M61.5023 61.2988L35.5053 71.0025"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M58.1444 52.2935L32.1473 61.9971"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M27.3436 25.999L39.7348 59.1672"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M38.6865 21.7607L51.0778 54.9289"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M27.3813 2.54756C26.989 2.26777 26.5341 2.08846 26.0564 2.02537C25.5787 1.96227 25.0928 2.01731 24.6413 2.18566C24.1899 2.35401 23.7866 2.63052 23.4668 2.99097C23.1471 3.35143 22.9206 3.78482 22.8073 4.25314L20.5978 13.427L35.0564 8.02607L27.3813 2.54756Z"
         fill="white"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M43.9966 14.409L35.1328 8.10352L20.6225 13.5433L18.0383 24.1643"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -411,7 +411,7 @@ export const IMPLEMENT = (props: React.SVGProps<SVGSVGElement>) => {
         d="M23.6762 55.1275L6.86318 41.5761L6.86303 41.576C6.55539 41.3282 6.30651 41.0133 6.13528 40.6545C5.96405 40.2956 5.875 39.9023 5.875 39.5035C5.875 39.1048 5.96405 38.7114 6.13528 38.3526L5.34814 37.9769L6.13528 38.3525C6.30651 37.9937 6.55538 37.6789 6.86303 37.431L6.86318 37.4309L23.6762 23.8796L26.9625 28.0169L13.5556 38.8223L12.7103 39.5035L13.5556 40.1848L26.9625 50.9901L23.6762 55.1275ZM56.3238 23.8796L73.1368 37.4309L73.137 37.431C73.4446 37.6789 73.6935 37.9937 73.8647 38.3525C74.0359 38.7114 74.125 39.1048 74.125 39.5035C74.125 39.9022 74.0359 40.2956 73.8647 40.6545C73.6935 41.0133 73.4446 41.3282 73.137 41.576L73.1368 41.5761L56.3238 55.1275L53.0375 50.9901L66.4444 40.1848L67.2897 39.5035L66.4444 38.8223L53.0375 28.0169L56.3238 23.8796ZM44.2457 8.04564L49.3732 9.19362L35.7508 70.9544L30.6233 69.8064L44.2457 8.04564Z"
         fill="white"
         stroke="#030D15"
-        stroke-width="1.75"
+        strokeWidth="1.75"
       />
     </svg>
   );
@@ -430,128 +430,128 @@ export const TEST = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M61.2815 6.0166H24.3038C18.8361 6.0166 14.4037 10.449 14.4037 15.9167V64.0998C14.4037 69.5675 18.8361 73.9999 24.3038 73.9999H61.2815C66.7492 73.9999 71.1816 69.5675 71.1816 64.0998V15.9167C71.1816 10.449 66.7492 6.0166 61.2815 6.0166Z"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 17H20.8908"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 28.5874H20.8908"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 40.1616H20.8908"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 51.749H20.8908"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 63.3237H20.8908"
         stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 21.7539H52.254"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 18.0596L57.131 25.6324"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 25.6324L57.131 18.0596"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 35.1753H52.254"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6889 31.4814L59.0984 37.0841"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.0996 37.0838L57.3757 33.6113"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6889 44.1147L59.0984 49.7174"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.0996 49.7177L57.3757 46.2329"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 46.9102H52.254"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 58.6572H52.254"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 54.9756L57.131 62.5361"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 62.5361L57.131 54.9756"
         stroke="white"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -570,37 +570,37 @@ export const LAUNCH = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M46.8556 57.0917L46.5124 58.1319C46.328 58.6565 46.0421 59.1396 45.671 59.5537C45.2999 59.9678 44.8509 60.3047 44.3495 60.5453C43.8482 60.7858 43.3044 60.9252 42.7491 60.9555C42.1939 60.9859 41.6382 60.9065 41.1136 60.7221L27.5907 55.9787C27.0665 55.7954 26.5836 55.5105 26.1696 55.1404C25.7556 54.7703 25.4186 54.3221 25.1781 53.8216C24.9375 53.3212 24.7979 52.7781 24.7675 52.2236C24.737 51.6692 24.8162 51.1141 25.0005 50.5903L25.3438 49.55"
         stroke="white"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M44.6814 56.7589L27.268 50.6423C26.5227 50.3809 25.8363 49.9752 25.2478 49.4484C24.6594 48.9215 24.1804 48.2839 23.8385 47.572C23.4965 46.8601 23.2982 46.0877 23.2548 45.2991C23.2114 44.5105 23.3238 43.721 23.5856 42.9759L30.2118 24.1478C32.0465 18.9238 35.1694 14.247 39.2915 10.5504C43.4135 6.85384 48.4015 4.25691 53.7938 3C57.2097 7.34736 59.4766 12.4845 60.3855 17.9382C61.2945 23.3918 60.8163 28.9865 58.9949 34.2068L52.3687 53.0869C52.1063 53.8336 51.6991 54.5212 51.1704 55.1103C50.6416 55.6993 50.0018 56.1781 49.2876 56.5193C48.5733 56.8604 47.7988 57.0572 47.0084 57.0983C46.2179 57.1394 45.4272 57.0241 44.6814 56.7589Z"
         stroke="white"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M23.252 45.2643L14.9302 42.3517C14.2079 42.0972 13.6161 41.5665 13.2846 40.8762C12.9531 40.1858 12.909 39.3922 13.1619 38.6693L15.4296 32.2199C16.536 29.0668 18.6589 26.3708 21.4645 24.5556C24.2701 22.7405 27.5993 21.9091 30.9289 22.1921"
         stroke="white"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M51.5994 55.209L59.9212 58.1216C60.6372 58.3763 61.4249 58.3376 62.1127 58.0142C62.8004 57.6908 63.3326 57.1088 63.5932 56.3949L65.8609 49.9559C66.9662 46.8021 66.9929 43.3705 65.9366 40.1999C64.8804 37.0293 62.8011 34.2993 60.0252 32.4385"
         stroke="white"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M52.567 37.5877C51.8917 39.5141 50.6601 41.1969 49.0281 42.4233C47.3962 43.6496 45.4372 44.3643 43.399 44.4771C41.3607 44.5898 39.3348 44.0955 37.5776 43.0566C35.8204 42.0177 34.4107 40.481 33.527 38.6408C32.6434 36.8006 32.3253 34.7397 32.6131 32.7188C32.9009 30.6978 33.7818 28.8076 35.1441 27.2873C36.5064 25.767 38.289 24.685 40.2664 24.178C42.2438 23.6711 44.3271 23.762 46.2529 24.4393C48.8329 25.3467 50.9472 27.2413 52.1311 29.7067C53.3151 32.1722 53.4719 35.0068 52.567 37.5877Z"
         stroke="white"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M49.0308 36.3287C48.6015 37.5416 47.8225 38.6 46.7921 39.3705C45.7617 40.1411 44.5262 40.5891 43.2415 40.6581C41.9567 40.727 40.6802 40.4139 39.5733 39.7581C38.4664 39.1024 37.5785 38.1334 37.0217 36.9735C36.465 35.8136 36.2643 34.5147 36.4451 33.2409C36.6258 31.967 37.1798 30.7753 38.0372 29.816C38.8946 28.8567 40.017 28.173 41.2627 27.851C42.5084 27.529 43.8215 27.5833 45.0363 28.0069C45.8462 28.2893 46.5924 28.7289 47.2319 29.3005C47.8714 29.8722 48.3917 30.5645 48.7628 31.3377C49.134 32.111 49.3488 32.95 49.3947 33.8065C49.4407 34.663 49.3171 35.5201 49.0308 36.3287Z"
@@ -609,9 +609,9 @@ export const LAUNCH = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M53.2944 7.6499C53.2944 7.6499 58.3603 14.7858 57.0809 27.1957"
         stroke="white"
-        stroke-width="2.09"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M25.5111 56.2073L18.9888 65.1324C18.8962 65.3125 18.8582 65.5157 18.8794 65.7171C18.9006 65.9186 18.9802 66.1094 19.1083 66.2662C19.2365 66.4231 19.4076 66.5391 19.6007 66.6001C19.7938 66.6611 20.0006 66.6644 20.1955 66.6095L24.6268 64.5915C24.7884 64.5347 24.9615 64.5187 25.1307 64.5448C25.2999 64.571 25.46 64.6385 25.5969 64.7414C25.7338 64.8443 25.8431 64.9794 25.9153 65.1347C25.9874 65.29 26.0201 65.4608 26.0104 65.6317L24.0651 76.3356C24.059 76.5371 24.1115 76.7361 24.2164 76.9083C24.3212 77.0805 24.4738 77.2185 24.6557 77.3056C24.8375 77.3926 25.0407 77.4249 25.2406 77.3986C25.4405 77.3723 25.6284 77.2885 25.7815 77.1574L32.751 69.1061C32.8807 68.9829 33.0399 68.8953 33.2133 68.8516C33.3868 68.808 33.5685 68.8098 33.741 68.8568C33.9135 68.9039 34.071 68.9946 34.1983 69.1203C34.3255 69.2459 34.4182 69.4022 34.4674 69.5742L35.6533 75.9611C35.73 76.1552 35.8632 76.3217 36.0357 76.439C36.2083 76.5563 36.412 76.619 36.6207 76.619C36.8293 76.619 37.0331 76.5563 37.2056 76.439C37.3781 76.3217 37.5114 76.1552 37.5881 75.9611L38.3787 72.466C38.4448 72.2821 38.5614 72.1206 38.7151 71.9999C38.8688 71.8792 39.0534 71.8042 39.2477 71.7836C39.442 71.763 39.6382 71.7975 39.8139 71.8832C39.9895 71.969 40.1374 72.1024 40.2406 72.2683C40.3601 72.4395 40.5282 72.5708 40.7232 72.6452C40.9183 72.7195 41.1312 72.7335 41.3343 72.6853C41.5373 72.637 41.7212 72.5288 41.8619 72.3747C42.0027 72.2206 42.0938 72.0277 42.1234 71.8211L41.8426 61.7517"
@@ -636,16 +636,16 @@ export const EMPHATHISE_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M40.9161 22.0754C42.0227 17.9528 44.3969 14.2822 47.7032 11.5825C53.9339 6.76356 60.7889 5.55544 68.0648 8.86758C75.3406 12.1797 79.1007 18.1524 79.793 25.9849C80.4174 32.772 77.8926 38.8669 74.1868 44.4324C68.9743 52.2784 62.1192 58.5362 54.6533 64.1424C50.7439 67.0609 46.6037 69.6536 42.5721 72.4091C42.1632 72.7579 41.6518 72.9638 41.1153 72.9957C40.5788 73.0275 40.0466 72.8835 39.5993 72.5856C28.7399 65.7984 18.5455 58.1968 10.428 48.1518C5.90778 42.532 2.66351 36.3149 2.05266 28.9576C1.76937 24.9786 2.64405 21.0027 4.57108 17.51C6.49811 14.0172 9.39508 11.1571 12.9121 9.27482C16.2675 7.54393 20.0518 6.82033 23.809 7.19123C27.5662 7.56214 31.136 9.01171 34.0882 11.3653C36.7597 13.6756 38.8361 16.5948 40.1423 19.8764C40.2509 20.4601 40.4953 21.0574 40.9161 22.0754Z"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M63.5969 13.7412C66.208 14.8915 68.445 16.7497 70.0547 19.1055C71.6644 21.4613 72.5826 24.2206 72.7053 27.0712"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M40.8323 43.5099C44.5808 43.5099 47.6195 40.4712 47.6195 36.7227C47.6195 32.9743 44.5808 29.9355 40.8323 29.9355C37.0839 29.9355 34.0452 32.9743 34.0452 36.7227C34.0452 40.4712 37.0839 43.5099 40.8323 43.5099Z"
@@ -672,23 +672,23 @@ export const DEFINE_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M62.7566 29.5484C66.4426 36.1169 67.6435 43.7919 66.14 51.1724C64.6366 58.5528 60.5291 65.1465 54.5675 69.7497C48.6058 74.3529 41.1875 76.6587 33.6668 76.2461C26.1461 75.8335 19.0246 72.7301 13.6022 67.5023C8.17985 62.2746 4.81832 55.2712 4.13127 47.7705C3.44422 40.2699 5.47747 32.7724 9.85984 26.6465C14.2422 20.5206 20.6814 16.175 28.002 14.403C35.3226 12.631 43.0363 13.5506 49.7351 16.9942"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M35.3622 66.6049C47.3389 66.6049 57.0479 56.8958 57.0479 44.9191C57.0479 32.9424 47.3389 23.2334 35.3622 23.2334C23.3854 23.2334 13.6764 32.9424 13.6764 44.9191C13.6764 56.8958 23.3854 66.6049 35.3622 66.6049Z"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M47.4143 46.8689C48.4777 40.2222 43.9516 33.9719 37.3049 32.9084C30.6582 31.845 24.4079 36.3711 23.3445 43.0178C22.281 49.6645 26.8071 55.9148 33.4538 56.9783C40.1005 58.0417 46.3509 53.5156 47.4143 46.8689Z"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M40.2254 44.9192C40.2254 45.8809 39.9402 46.821 39.4059 47.6207C38.8716 48.4203 38.1121 49.0436 37.2236 49.4116C36.3351 49.7797 35.3574 49.8759 34.4142 49.6883C33.4709 49.5007 32.6045 49.0376 31.9245 48.3575C31.2444 47.6775 30.7813 46.8111 30.5937 45.8678C30.4061 44.9246 30.5023 43.9469 30.8704 43.0584C31.2384 42.1699 31.8617 41.4104 32.6613 40.8761C33.461 40.3418 34.4011 40.0566 35.3628 40.0566C36.6524 40.0566 37.8892 40.5689 38.8012 41.4809C39.7131 42.3928 40.2254 43.6296 40.2254 44.9192Z"
@@ -697,23 +697,23 @@ export const DEFINE_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M64.0934 13.4204L35.3601 44.9197"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M52.0459 26.5803C52.0459 26.5803 49.5199 15.3143 50.6313 12.9651C51.7428 10.6159 60.4449 3 60.4449 3V16.893"
         stroke="#6164fa"
-        stroke-width="2.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M52.2367 26.6185C52.2367 26.6185 63.4648 29.3718 65.8392 28.2604C68.2137 27.1489 75.9432 18.611 75.9432 18.611L62.0502 18.3711"
         stroke="#6164fa"
-        stroke-width="2.2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -732,72 +732,72 @@ export const IDEATE_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M65.0154 27.0124C65.016 23.1385 64.1167 19.3173 62.3883 15.8503C60.6598 12.3833 58.1496 9.36526 55.0554 7.03417C51.9613 4.70308 48.3679 3.12271 44.5586 2.41766C40.7494 1.71261 36.8284 1.90217 33.1049 2.9714C29.3814 4.04063 25.9573 5.9603 23.1024 8.579C20.2476 11.1977 18.0402 14.4438 16.6543 18.0614C15.2683 21.679 14.7418 25.5691 15.1162 29.4249C15.4906 33.2807 16.7556 36.9969 18.8116 40.2802C22.157 45.6202 24.1642 47.8546 24.1642 54.1666V62.1702H55.8504V54.1666C55.8504 47.8546 57.8576 45.5697 61.2156 40.2802C63.7066 36.3038 65.0238 31.7047 65.0154 27.0124Z"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M39.7412 78.3165C35.6107 78.3132 31.6503 76.6708 28.7296 73.7501C25.8089 70.8294 24.1666 66.869 24.1632 62.7385V62.2588H55.7989C55.7956 66.5165 54.1027 70.5989 51.092 73.6096C48.0814 76.6203 43.9989 78.3132 39.7412 78.3165Z"
         stroke="#6164fa"
-        stroke-width="3.05"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3.05"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M44.1968 62.2582L49.2464 36.5684"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M35.7638 62.2582L30.7142 36.5684"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M32.8603 35.0539C34.112 34.3983 35.1109 33.3461 35.7007 32.0621C38.3644 26.8484 27.7981 27.4922 34.6908 35.1802"
         stroke="#6164fa"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M28.1144 35.1931C29.653 35.7746 31.359 35.7246 32.861 35.0542"
         stroke="#6164fa"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M51.8465 35.1931C50.3121 35.7738 48.6103 35.7239 47.1125 35.0542"
         stroke="#6164fa"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M34.5664 35.1924C35.986 35.7656 37.5736 35.7602 38.9893 35.1774C40.4049 34.5946 41.5362 33.4808 42.1408 32.0743C44.8045 26.8606 34.2382 27.5044 41.1435 35.1924"
         stroke="#6164fa"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M40.8909 35.1924C42.3108 35.7622 43.897 35.7552 45.3118 35.1728C46.7266 34.5904 47.8581 33.4786 48.4653 32.0743C51.1289 26.8606 40.55 27.5044 47.4553 35.1924"
         stroke="#6164fa"
-        stroke-width="2.11"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.11"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M58.3615 26.3434C58.3615 23.9195 57.8678 21.521 56.9106 19.2942C55.9534 17.0674 54.5527 15.0588 52.7939 13.3909C51.0351 11.7231 48.955 10.4309 46.6805 9.59319C44.4061 8.75546 41.9848 8.38973 39.5643 8.51829"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -816,66 +816,66 @@ export const PROTOTYPE_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M18 24.1127L27.3419 25.9992L30.9985 19.2544L38.6865 21.7611L43.2089 15.5073"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M43.1959 15.507L43.997 14.4087L61.4275 61.0793C62.007 62.6301 62.2752 64.28 62.2167 65.9345C62.1583 67.589 61.7742 69.2158 61.0866 70.7218C60.399 72.2278 59.4213 73.5835 58.2094 74.7114C56.9975 75.8393 55.5752 76.7173 54.0237 77.2952L51.6592 78.1867C50.1075 78.7665 48.4568 79.0349 46.8013 78.9766C45.1458 78.9183 43.5181 78.5344 42.0111 77.8468C40.504 77.1593 39.1472 76.1816 38.018 74.9695C36.8889 73.7575 36.0096 72.3349 35.4304 70.783L18 24.1124"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.8883 56.9712L33.8912 66.6749"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M61.5023 61.2988L35.5053 71.0025"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M58.1444 52.2935L32.1473 61.9971"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M27.3436 25.999L39.7348 59.1672"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M38.6865 21.7607L51.0778 54.9289"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M27.3813 2.54756C26.989 2.26777 26.5341 2.08846 26.0564 2.02537C25.5787 1.96227 25.0928 2.01731 24.6413 2.18566C24.1899 2.35401 23.7866 2.63052 23.4668 2.99097C23.1471 3.35143 22.9206 3.78482 22.8073 4.25314L20.5978 13.427L35.0564 8.02607L27.3813 2.54756Z"
         fill="#6164fa"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M43.9966 14.409L35.1328 8.10352L20.6225 13.5433L18.0383 24.1643"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -895,7 +895,7 @@ export const IMPLEMENT_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
         d="M23.6762 55.1275L6.86318 41.5761L6.86303 41.576C6.55539 41.3282 6.30651 41.0133 6.13528 40.6545C5.96405 40.2956 5.875 39.9023 5.875 39.5035C5.875 39.1048 5.96405 38.7114 6.13528 38.3526L5.34814 37.9769L6.13528 38.3525C6.30651 37.9937 6.55538 37.6789 6.86303 37.431L6.86318 37.4309L23.6762 23.8796L26.9625 28.0169L13.5556 38.8223L12.7103 39.5035L13.5556 40.1848L26.9625 50.9901L23.6762 55.1275ZM56.3238 23.8796L73.1368 37.4309L73.137 37.431C73.4446 37.6789 73.6935 37.9937 73.8647 38.3525C74.0359 38.7114 74.125 39.1048 74.125 39.5035C74.125 39.9022 74.0359 40.2956 73.8647 40.6545C73.6935 41.0133 73.4446 41.3282 73.137 41.576L73.1368 41.5761L56.3238 55.1275L53.0375 50.9901L66.4444 40.1848L67.2897 39.5035L66.4444 38.8223L53.0375 28.0169L56.3238 23.8796ZM44.2457 8.04564L49.3732 9.19362L35.7508 70.9544L30.6233 69.8064L44.2457 8.04564Z"
         fill="#6164fa"
         stroke="transparent"
-        stroke-width="1.75"
+        strokeWidth="1.75"
       />
     </svg>
   );
@@ -914,128 +914,128 @@ export const TEST_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M61.2815 6.0166H24.3038C18.8361 6.0166 14.4037 10.449 14.4037 15.9167V64.0998C14.4037 69.5675 18.8361 73.9999 24.3038 73.9999H61.2815C66.7492 73.9999 71.1816 69.5675 71.1816 64.0998V15.9167C71.1816 10.449 66.7492 6.0166 61.2815 6.0166Z"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 17H20.8908"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 28.5874H20.8908"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 40.1616H20.8908"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 51.749H20.8908"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.70038 63.3237H20.8908"
         stroke="#6164fa"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 21.7539H52.254"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 18.0596L57.131 25.6324"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 25.6324L57.131 18.0596"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 35.1753H52.254"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6889 31.4814L59.0984 37.0841"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.0996 37.0838L57.3757 33.6113"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6889 44.1147L59.0984 49.7174"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.0996 49.7177L57.3757 46.2329"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 46.9102H52.254"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26.3339 58.6572H52.254"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 54.9756L57.131 62.5361"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M64.6915 62.5361L57.131 54.9756"
         stroke="#6164fa"
-        stroke-width="2.34"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.34"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -1054,37 +1054,37 @@ export const LAUNCH_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M46.8556 57.0917L46.5124 58.1319C46.328 58.6565 46.0421 59.1396 45.671 59.5537C45.2999 59.9678 44.8509 60.3047 44.3495 60.5453C43.8482 60.7858 43.3044 60.9252 42.7491 60.9555C42.1939 60.9859 41.6382 60.9065 41.1136 60.7221L27.5907 55.9787C27.0665 55.7954 26.5836 55.5105 26.1696 55.1404C25.7556 54.7703 25.4186 54.3221 25.1781 53.8216C24.9375 53.3212 24.7979 52.7781 24.7675 52.2236C24.737 51.6692 24.8162 51.1141 25.0005 50.5903L25.3438 49.55"
         stroke="#6164fa"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M44.6814 56.7589L27.268 50.6423C26.5227 50.3809 25.8363 49.9752 25.2478 49.4484C24.6594 48.9215 24.1804 48.2839 23.8385 47.572C23.4965 46.8601 23.2982 46.0877 23.2548 45.2991C23.2114 44.5105 23.3238 43.721 23.5856 42.9759L30.2118 24.1478C32.0465 18.9238 35.1694 14.247 39.2915 10.5504C43.4135 6.85384 48.4015 4.25691 53.7938 3C57.2097 7.34736 59.4766 12.4845 60.3855 17.9382C61.2945 23.3918 60.8163 28.9865 58.9949 34.2068L52.3687 53.0869C52.1063 53.8336 51.6991 54.5212 51.1704 55.1103C50.6416 55.6993 50.0018 56.1781 49.2876 56.5193C48.5733 56.8604 47.7988 57.0572 47.0084 57.0983C46.2179 57.1394 45.4272 57.0241 44.6814 56.7589Z"
         stroke="#6164fa"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M23.252 45.2643L14.9302 42.3517C14.2079 42.0972 13.6161 41.5665 13.2846 40.8762C12.9531 40.1858 12.909 39.3922 13.1619 38.6693L15.4296 32.2199C16.536 29.0668 18.6589 26.3708 21.4645 24.5556C24.2701 22.7405 27.5993 21.9091 30.9289 22.1921"
         stroke="#6164fa"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M51.5994 55.209L59.9212 58.1216C60.6372 58.3763 61.4249 58.3376 62.1127 58.0142C62.8004 57.6908 63.3326 57.1088 63.5932 56.3949L65.8609 49.9559C66.9662 46.8021 66.9929 43.3705 65.9366 40.1999C64.8804 37.0293 62.8011 34.2993 60.0252 32.4385"
         stroke="#6164fa"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M52.567 37.5877C51.8917 39.5141 50.6601 41.1969 49.0281 42.4233C47.3962 43.6496 45.4372 44.3643 43.399 44.4771C41.3607 44.5898 39.3348 44.0955 37.5776 43.0566C35.8204 42.0177 34.4107 40.481 33.527 38.6408C32.6434 36.8006 32.3253 34.7397 32.6131 32.7188C32.9009 30.6978 33.7818 28.8076 35.1441 27.2873C36.5064 25.767 38.289 24.685 40.2664 24.178C42.2438 23.6711 44.3271 23.762 46.2529 24.4393C48.8329 25.3467 50.9472 27.2413 52.1311 29.7067C53.3151 32.1722 53.4719 35.0068 52.567 37.5877Z"
         stroke="#6164fa"
-        stroke-width="2.69"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.69"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M49.0308 36.3287C48.6015 37.5416 47.8225 38.6 46.7921 39.3705C45.7617 40.1411 44.5262 40.5891 43.2415 40.6581C41.9567 40.727 40.6802 40.4139 39.5733 39.7581C38.4664 39.1024 37.5785 38.1334 37.0217 36.9735C36.465 35.8136 36.2643 34.5147 36.4451 33.2409C36.6258 31.967 37.1798 30.7753 38.0372 29.816C38.8946 28.8567 40.017 28.173 41.2627 27.851C42.5084 27.529 43.8215 27.5833 45.0363 28.0069C45.8462 28.2893 46.5924 28.7289 47.2319 29.3005C47.8714 29.8722 48.3917 30.5645 48.7628 31.3377C49.134 32.111 49.3488 32.95 49.3947 33.8065C49.4407 34.663 49.3171 35.5201 49.0308 36.3287Z"
@@ -1093,9 +1093,9 @@ export const LAUNCH_PURPLE = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M53.2944 7.6499C53.2944 7.6499 58.3603 14.7858 57.0809 27.1957"
         stroke="#6164fa"
-        stroke-width="2.09"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M25.5111 56.2073L18.9888 65.1324C18.8962 65.3125 18.8582 65.5157 18.8794 65.7171C18.9006 65.9186 18.9802 66.1094 19.1083 66.2662C19.2365 66.4231 19.4076 66.5391 19.6007 66.6001C19.7938 66.6611 20.0006 66.6644 20.1955 66.6095L24.6268 64.5915C24.7884 64.5347 24.9615 64.5187 25.1307 64.5448C25.2999 64.571 25.46 64.6385 25.5969 64.7414C25.7338 64.8443 25.8431 64.9794 25.9153 65.1347C25.9874 65.29 26.0201 65.4608 26.0104 65.6317L24.0651 76.3356C24.059 76.5371 24.1115 76.7361 24.2164 76.9083C24.3212 77.0805 24.4738 77.2185 24.6557 77.3056C24.8375 77.3926 25.0407 77.4249 25.2406 77.3986C25.4405 77.3723 25.6284 77.2885 25.7815 77.1574L32.751 69.1061C32.8807 68.9829 33.0399 68.8953 33.2133 68.8516C33.3868 68.808 33.5685 68.8098 33.741 68.8568C33.9135 68.9039 34.071 68.9946 34.1983 69.1203C34.3255 69.2459 34.4182 69.4022 34.4674 69.5742L35.6533 75.9611C35.73 76.1552 35.8632 76.3217 36.0357 76.439C36.2083 76.5563 36.412 76.619 36.6207 76.619C36.8293 76.619 37.0331 76.5563 37.2056 76.439C37.3781 76.3217 37.5114 76.1552 37.5881 75.9611L38.3787 72.466C38.4448 72.2821 38.5614 72.1206 38.7151 71.9999C38.8688 71.8792 39.0534 71.8042 39.2477 71.7836C39.442 71.763 39.6382 71.7975 39.8139 71.8832C39.9895 71.969 40.1374 72.1024 40.2406 72.2683C40.3601 72.4395 40.5282 72.5708 40.7232 72.6452C40.9183 72.7195 41.1312 72.7335 41.3343 72.6853C41.5373 72.637 41.7212 72.5288 41.8619 72.3747C42.0027 72.2206 42.0938 72.0277 42.1234 71.8211L41.8426 61.7517"
@@ -1158,13 +1158,13 @@ export const CAREER_HEART_ICON = (props: React.SVGProps<SVGSVGElement>) => {
         d="M42.5476 28.8989C42.5484 28.1713 42.4476 27.4471 42.2479 26.7474L42.2475 26.7462C41.9746 25.8122 41.4063 24.9919 40.6277 24.4083C39.8492 23.8246 38.9024 23.5091 37.9294 23.509V23.5089L37.9225 23.5091C36.9374 23.5433 35.9875 23.8842 35.2054 24.4843C34.4257 25.0825 33.8517 25.9085 33.5627 26.8477C33.4904 27.0241 33.3676 27.1753 33.2096 27.2823C33.0494 27.3907 32.8604 27.4486 32.667 27.4486C32.4735 27.4486 32.2845 27.3907 32.1243 27.2823C31.9663 27.1753 31.8435 27.0241 31.7712 26.8477C31.4822 25.9086 30.9081 25.0826 30.1284 24.4844C29.3464 23.8843 28.3965 23.5434 27.4114 23.5091L27.4114 23.509L27.4045 23.509C26.4315 23.5092 25.4848 23.8246 24.7062 24.4082C23.9276 24.9917 23.3591 25.8118 23.0858 26.7456L23.0858 26.7456L23.0854 26.747C22.8863 27.447 22.7857 28.1712 22.7864 28.899L22.7859 28.899L22.7868 28.9122C22.9783 31.7631 24.1064 34.4708 25.9956 36.6143C26.1549 36.8136 26.229 37.0678 26.2018 37.3216C26.1744 37.5768 26.0467 37.8107 25.8469 37.9717C25.6471 38.1328 25.3915 38.2079 25.1364 38.1805C24.8812 38.1531 24.6473 38.0255 24.4863 37.8257L24.4864 37.8256L24.4813 37.8197C22.3106 35.3316 21.0328 32.19 20.8504 28.8932C20.8502 27.9876 20.9759 27.0864 21.2241 26.2155C21.614 24.8777 22.427 23.7023 23.5411 22.8653C24.6554 22.0283 26.0109 21.5749 27.4045 21.573C28.4026 21.5747 29.386 21.8146 30.2729 22.2727C31.1598 22.7308 31.9246 23.394 32.5038 24.2071L32.6667 24.4359L32.8296 24.2071C33.4088 23.3939 34.1737 22.7307 35.0607 22.2726C35.9477 21.8145 36.9312 21.5747 37.9295 21.573C39.3229 21.5747 40.6783 22.028 41.7925 22.865C42.9065 23.7018 43.7194 24.8771 44.1092 26.2148C44.3585 27.0876 44.4845 27.9909 44.4835 28.8985V28.8987C44.4835 32.8058 42.2118 36.5339 39.5701 39.2973C38.2518 40.6763 36.8489 41.8069 35.607 42.5913C34.9861 42.9836 34.4081 43.2875 33.9036 43.4927C33.3958 43.6993 32.9759 43.8003 32.6668 43.8003C32.2992 43.8 31.8656 43.6874 31.4011 43.4983C30.939 43.3101 30.4589 43.0516 30.002 42.772C29.088 42.2127 28.2813 41.578 27.9173 41.2798L27.9172 41.2797C27.8189 41.1992 27.7373 41.1001 27.6772 40.9881C27.6171 40.8761 27.5797 40.7533 27.5671 40.6268C27.5544 40.5003 27.5668 40.3726 27.6036 40.2509C27.6403 40.1292 27.7006 40.0159 27.7811 39.9176L27.6263 39.7909L27.7811 39.9176C27.8616 39.8192 27.9607 39.7376 28.0727 39.6775L27.9782 39.5013L28.0727 39.6775C28.1848 39.6175 28.3075 39.58 28.434 39.5674C28.5605 39.5547 28.6882 39.5671 28.8099 39.6039C28.9295 39.64 29.041 39.6989 29.1382 39.7773C30.1314 40.7114 31.3149 41.4198 32.6076 41.8539L32.6432 41.8659L32.6807 41.8641C32.9073 41.8534 33.2272 41.7347 33.5922 41.5514C33.9661 41.3637 34.4143 41.0939 34.9072 40.7535C35.8932 40.0727 37.0679 39.1024 38.1965 37.9224C40.4472 35.5693 42.5475 32.3472 42.5476 28.8989ZM42.5476 28.8989L42.3476 28.8987M42.5476 28.8989C42.5476 28.8989 42.5476 28.8988 42.5476 28.8987H42.3476M42.3476 28.8987C42.3484 28.1897 42.2501 27.4841 42.0556 26.8023C41.7948 25.9098 41.2517 25.126 40.5078 24.5683C39.7638 24.0106 38.8592 23.7091 37.9294 23.709C36.9859 23.7418 36.0762 24.0683 35.3272 24.6429C34.5782 25.2176 34.0273 26.0118 33.7514 26.9147C33.6646 27.1314 33.515 27.3171 33.3217 27.4479C33.1284 27.5787 32.9004 27.6486 32.667 27.6486C32.4336 27.6486 32.2055 27.5787 32.0122 27.4479C31.8189 27.3171 31.6693 27.1314 31.5825 26.9147L42.3476 28.8987Z"
         fill="#6164FA"
         stroke="#F2F3FF"
-        stroke-width="0.4"
+        strokeWidth="0.4"
       />
       <path
         d="M32.0294 34.5178L32.19 34.6782L32.3289 34.4988L35.9891 29.7738L35.9896 29.7733C36.0672 29.6723 36.1641 29.5876 36.2745 29.5241C36.385 29.4606 36.5069 29.4195 36.6332 29.4033C36.7596 29.387 36.8879 29.3958 37.0108 29.4292C37.1338 29.4626 37.2489 29.52 37.3496 29.598C37.4503 29.676 37.5346 29.7731 37.5977 29.8838C37.6608 29.9945 37.7015 30.1165 37.7173 30.2429C37.7331 30.3694 37.7239 30.4976 37.69 30.6205C37.6561 30.7433 37.5984 30.8582 37.52 30.9586L37.5196 30.9592L33.0472 36.7324L33.0472 36.7324C32.9631 36.8411 32.8568 36.9306 32.7353 36.995C32.6139 37.0593 32.4802 37.0971 32.343 37.1058L32.3416 37.1059C32.3232 37.1072 32.3037 37.1077 32.2822 37.1077C32.0255 37.1075 31.7793 37.0055 31.5977 36.824C31.5977 36.824 31.5977 36.824 31.5977 36.824L29.0631 34.2894C29.0629 34.2892 29.0628 34.2891 29.0626 34.289C28.8833 34.1071 28.7831 33.8617 28.7839 33.6063C28.7847 33.3507 28.8866 33.1057 29.0673 32.925C29.2481 32.7442 29.493 32.6423 29.7486 32.6415C30.0041 32.6407 30.2495 32.7409 30.4313 32.9202C30.4315 32.9204 30.4316 32.9205 30.4318 32.9206L32.0294 34.5178Z"
         fill="#6164FA"
         stroke="#F2F3FF"
-        stroke-width="0.4"
+        strokeWidth="0.4"
       />
     </svg>
   );
@@ -1414,60 +1414,60 @@ export const DIGITAL_MARKETING_ICON = (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1938_7043)">
+      <g clipPath="url(#clip0_1938_7043)">
         <path
           d="M40.6875 1.3125H1.3125V32.8125H40.6875V1.3125Z"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M26.25 32.8125H15.75V40.6875H26.25V32.8125Z"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M10.5 40.6875H31.5"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M1.3125 24.9375H40.6875"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M7.875 15.75V17.0625C7.875 17.4106 8.01328 17.7444 8.25942 17.9906C8.50556 18.2367 8.8394 18.375 9.1875 18.375H11.8125C12.1606 18.375 12.4944 18.2367 12.7406 17.9906C12.9867 17.7444 13.125 17.4106 13.125 17.0625V14.4375C13.125 14.0894 12.9867 13.7556 12.7406 13.5094C12.4944 13.2633 12.1606 13.125 11.8125 13.125H9.1875"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M13.125 10.5V9.1875C13.125 8.8394 12.9867 8.50556 12.7406 8.25942C12.4944 8.01328 12.1606 7.875 11.8125 7.875H9.1875C8.8394 7.875 8.50556 8.01328 8.25942 8.25942C8.01328 8.50556 7.875 8.8394 7.875 9.1875V11.8125C7.875 12.1606 8.01328 12.4944 8.25942 12.7406C8.50556 12.9867 8.8394 13.125 9.1875 13.125H11.8125"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M23.625 18.375H18.375V7.875H23.625"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M18.375 13.125H23.625"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
         <path
           d="M32.8125 7.875H28.875C28.1501 7.875 27.5625 8.46263 27.5625 9.1875V17.0625C27.5625 17.7874 28.1501 18.375 28.875 18.375H32.8125C33.5374 18.375 34.125 17.7874 34.125 17.0625V9.1875C34.125 8.46263 33.5374 7.875 32.8125 7.875Z"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
@@ -1493,50 +1493,50 @@ export const TECH_PROJECT_MANAGER_ICON = (
       <path
         d="M30 10.5H18V7.5C18 5.85 19.35 4.5 21 4.5H27C28.65 4.5 30 5.85 30 7.5V10.5Z"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M18 7.5H9V43.5H39V7.5H30"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M24 16.5C20.7 16.5 18 19.2 18 22.5C18 25.8 20.7 28.5 24 28.5C27.3 28.5 30 25.8 30 22.5"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M25.5 15V21H31.5C31.5 17.7 28.8 15 25.5 15Z"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15 33H24"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15 37.5H18"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -1553,78 +1553,78 @@ export const SOFTWARE_ENGINEER_TESTING_ICON = (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1938_8522)">
+      <g clipPath="url(#clip0_1938_8522)">
         <path
           d="M4.3125 15.8125H23"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M23 15.8125H41.6875"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M23 2.875V43.125"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M23 38.8125H41.6875V7.1875H23"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M23 7.1875H4.3125V38.8125H23"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M32.3438 27.3125H28.75V23H32.3438C33.4938 23 34.5 24.0062 34.5 25.1562C34.5 26.3063 33.4938 27.3125 32.3438 27.3125Z"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M33.7812 31.625H28.75V27.3125H33.7812C34.9313 27.3125 35.9375 28.3187 35.9375 29.4688C35.9375 30.6188 34.9313 31.625 33.7812 31.625Z"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M8.625 31.625L13.6562 23L18.6875 31.625"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M10.0625 30.1875H17.25"
           stroke="#6164FA"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
@@ -1648,30 +1648,30 @@ export const UI_UX_DESIGNER_ICON = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M22 34.8333L34.8333 22L40.3333 27.5L27.5 40.3333L22 34.8333Z"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M33.0003 23.8327L30.2503 10.0827L3.66699 3.66602L10.0837 30.2493L23.8337 32.9993L33.0003 23.8327Z"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.66699 3.66602L17.5747 17.5737"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M20.1667 23.8333C22.1917 23.8333 23.8333 22.1917 23.8333 20.1667C23.8333 18.1416 22.1917 16.5 20.1667 16.5C18.1416 16.5 16.5 18.1416 16.5 20.1667C16.5 22.1917 18.1416 23.8333 20.1667 23.8333Z"
         stroke="#6164FA"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -1762,8 +1762,8 @@ export const SR_MOBILE_ENGINEER_ICON = (
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.2857 2H34.7143C37.0812 2 39 3.96995 39 6.4V41.6C39 44.0301 37.0812 46 34.7143 46H13.2857C10.9188 46 9 44.0301 9 41.6V6.4C9 3.96995 10.9188 2 13.2857 2ZM12.2857 5.4V42.6H24H35.7143V5.4H12.2857ZM24 39.4C22.8165 39.4 21.8571 38.415 21.8571 37.2C21.8571 35.985 22.8165 35 24 35C25.1835 35 26.1429 35.985 26.1429 37.2C26.1429 38.415 25.1835 39.4 24 39.4Z"
         fill="#6164FA"
       />
@@ -1816,23 +1816,23 @@ export const SR_SOFTWARE_ENGINEER_BE_ICON = (
       <path
         d="M24 15.5554C34.4935 15.5554 43.0001 12.7198 43.0001 9.22202C43.0001 5.72421 34.4935 2.88867 24 2.88867C13.5066 2.88867 5 5.72421 5 9.22202C5 12.7198 13.5066 15.5554 24 15.5554Z"
         stroke="#6164FA"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M43.0001 24C43.0001 27.5045 34.5556 30.3333 24 30.3333C13.4445 30.3333 5 27.5045 5 24"
         stroke="#6164FA"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5 9.2207V38.7763C5 42.2808 13.4445 45.1097 24 45.1097C34.5556 45.1097 43.0001 42.2808 43.0001 38.7763V9.2207"
         stroke="#6164FA"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -1901,7 +1901,7 @@ export const ARROW_WITH_GRADIENT = (props: React.SVGProps<SVGSVGElement>) => {
       <path
         d="M0 9H39M39 9L31 1M39 9L31 17"
         stroke="url(#paint0_linear_1392_9346)"
-        stroke-width="2.5"
+        strokeWidth="2.5"
       />
       <defs>
         <linearGradient

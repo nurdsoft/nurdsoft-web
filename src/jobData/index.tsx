@@ -17,6 +17,6 @@ const iconMap = {
   "businessAnalyst": <BUSINESS_ANALYST_ICON className='careerCardIcon' />,
   "productManager": <PROJECT_MANAGER_ICON className='careerCardIcon' />,
   "uiuxDesigner": <UI_UX_DESIGNER_ICON className='careerCardIcon' />
-}
+} as Record<string, any>
 
 export {iconMap};
