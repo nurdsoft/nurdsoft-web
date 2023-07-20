@@ -20,7 +20,7 @@ const CareerPage2 = () => {
   ]
   return (
     <Wrapper>
-      <div className="careerPage2_parentContainer">
+      <div className="careerPage2_parentContainer" id='careerPage2_parentContainer'>
         <div className='companyPerks'>
           {
             statsData.map((data, index) => (
