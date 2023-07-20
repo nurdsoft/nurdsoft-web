@@ -16,7 +16,7 @@ import BitFleqFeature2 from "../../../images/bitfleq_feature2.png";
 import BitFleqFeature3 from "../../../images/bitfleq_feature3.png";
 import BitFleqFeature4 from "../../../images/bitfleq_feature4.png";
 import Button from "../../button";
-import { navigate } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 const BitFleqpage = () => {
   const keyFeaturesList = [
@@ -337,7 +337,9 @@ const BitFleqpage = () => {
               <FOOTER_LINKEDIN className="cursor-pointer" />
               <FOOTER_GITHUB className="cursor-pointer" />
             </div>
-            <div className="text-xl offGray uppercase">privacy policy</div>
+            <div className="text-xl offGray uppercase">
+              <Link to="/privacy-policy">privacy policy</Link>
+            </div>
           </div>
         </div>
       </div>

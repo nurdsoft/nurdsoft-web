@@ -8,7 +8,7 @@ import ServicesPage2 from "../services/servicespage2";
 
 const ServicesLayout = () => {
   return (
-    <Parallax pages={5}>
+    <Parallax pages={5.08}>
       <ParallaxLayer
         offset={0}
         speed={1}
@@ -56,7 +56,6 @@ const ServicesLayout = () => {
         style={{
           backgroundColor: "var(--black-100)",
           height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <Contact />

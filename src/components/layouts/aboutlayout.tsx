@@ -9,7 +9,7 @@ import AboutPage3 from "../about/aboutPage3";
 
 const AboutLayout = () => {
   return (
-    <Parallax pages={6}>
+    <Parallax pages={6.15}>
       <ParallaxLayer
         offset={0}
         speed={0}

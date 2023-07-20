@@ -18,7 +18,7 @@ import AuditFeature4 from "../../../images/audit_feature4.png";
 import AuditFeature5 from "../../../images/audit_feature5.png";
 import AuditFeature6 from "../../../images/audit_feature6.png";
 import Button from "../../button";
-import { navigate } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 const AuditTrustPage = () => {
   const productStatementList = [
@@ -367,7 +367,9 @@ const AuditTrustPage = () => {
               <FOOTER_LINKEDIN className="cursor-pointer" />
               <FOOTER_GITHUB className="cursor-pointer" />
             </div>
-            <div className="text-xl offGray uppercase">privacy policy</div>
+            <div className="text-xl offGray uppercase">
+              <Link to="/privacy-policy">privacy policy</Link>
+            </div>
           </div>
         </div>
       </div>

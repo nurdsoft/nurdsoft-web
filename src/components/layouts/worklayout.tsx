@@ -4,7 +4,7 @@ import Workpage1 from "../work/workpage1";
 
 const WorkLayout = () => {
   return (
-    <Parallax pages={1.1}>
+    <Parallax pages={1.15}>
       <ParallaxLayer
         offset={0}
         speed={1}

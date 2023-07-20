@@ -17,7 +17,8 @@ import Benefit3 from "../../../images/benefits3.png";
 import Benefit4 from "../../../images/benefits4.png";
 import Benefit5 from "../../../images/benefits5.png";
 import Button from "../../button";
-import { navigate } from "gatsby";
+import { Link, navigate } from "gatsby";
+import Footer from "../../common/footer/footer";
 
 const Bndpage = () => {
   const productStatementList = [
@@ -445,16 +446,8 @@ const Bndpage = () => {
           </div>
 
           {/* footer */}
-
-          <div className="bndpage_footer flex justify-between w-100 items-center">
-            <div className="text-xl offGray uppercase">© Copyright 2023.</div>
-            <div className="flex gap-4 items-center">
-              <FOOTER_FACEBOOK className="cursor-pointer" />
-              <FOOTER_TWITTER className="cursor-pointer" />
-              <FOOTER_LINKEDIN className="cursor-pointer" />
-              <FOOTER_GITHUB className="cursor-pointer" />
-            </div>
-            <div className="text-xl offGray uppercase">privacy policy</div>
+          <div className="mt-28">
+            <Footer />
           </div>
         </div>
       </div>

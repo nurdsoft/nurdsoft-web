@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./contact.scss";
 import Wrapper from "../wrapper";
+import { Link } from "gatsby";
 
 const Contact = () => {
   // const buttonOptions = [
@@ -68,7 +69,9 @@ const Contact = () => {
                 <span className="ml-16">Carrer</span>
                 <span className="ml-16">About</span>
               </div>
-              <div>Privacy Policy</div>
+              <div className="cursor-pointer">
+                <Link to="/privacy-policy">Privacy Policy</Link>
+              </div>
             </div>
           </Wrapper>
         </div>

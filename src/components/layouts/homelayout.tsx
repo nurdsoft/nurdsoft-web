@@ -11,7 +11,7 @@ import Homepage6 from "../homepage/homepage6";
 
 const HomeLayout = () => {
   return (
-    <Parallax pages={8}>
+    <Parallax pages={8.09}>
       <ParallaxLayer
         speed={1}
         offset={0}

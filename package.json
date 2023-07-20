@@ -7,11 +7,12 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "npm run set-job-data && gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "npm run set-job-data && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "set-job-data": "node ./src/scripts/getJobData.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -38,6 +39,7 @@
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
     "gsap": "^3.12.2",
+    "node-fetch": "^3.3.1",
     "node-sass": "^9.0.0",
     "postcss": "^8.4.24",
     "react": "^18.2.0",

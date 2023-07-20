@@ -6,7 +6,7 @@ import Industriespage2 from "../industries/industriespage2";
 
 const IndustryLayout = () => {
   return (
-    <Parallax pages={3}>
+    <Parallax pages={3.15}>
       <ParallaxLayer
         speed={2}
         offset={0}
@@ -34,7 +34,6 @@ const IndustryLayout = () => {
         style={{
           backgroundColor: "var(--black-100)",
           height: "100vh",
-          paddingBottom: "40px",
         }}
       >
         <Contact />
