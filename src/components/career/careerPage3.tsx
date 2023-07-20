@@ -26,8 +26,9 @@ const CareerPage3 = () => {
   const handleScrollCardView = () => {
     const scroller = document.getElementById('career_scroller');
     const careerPageCardView = document.getElementById('careerPage3_cardView')
+    const section2 = document.getElementById('careerPage2_parentContainer')
 
-    if(!scroller || !careerPageCardView){
+    if(!scroller || !careerPageCardView || !section2){
       return
     }
     activatingFromOutside.current = false
@@ -43,7 +44,7 @@ const CareerPage3 = () => {
         careerPageCardView.style.overflow = 'hidden'
       } else if(careerPageCardView?.scrollTop === 0 && elementsToStack.current <= 0){
         scroller.scrollTo({
-          top: 1049,
+          top: section2?.getBoundingClientRect().top + scroller.scrollTop - 95,
           behavior: 'smooth'
         })
         careerPageCardView.style.overflow = 'hidden'
@@ -90,17 +91,10 @@ const CareerPage3 = () => {
     const careerPageCardView = document.getElementById('careerPage3_cardView')
     
     if(cardRef && cardRef?.isIntersecting && scroller && careerPageCardView && activatingFromOutside.current){
-      if(document.body.clientWidth <= 960){
-        scroller.scrollTo({
-          top: 2000,
-          behavior: 'smooth'
-        })
-      }else{
-        scroller.scrollTo({
-          top: 2220,
-          behavior: 'smooth'
-        })
-      }
+      scroller.scrollTo({
+        top: (scroller.scrollTop + careerPageCardView.getBoundingClientRect().top) - 94,
+        behavior: 'smooth'
+      })
       scroller.style.overflow = 'hidden'
       careerPageCardView.style.overflow = 'hidden scroll'
       careerPageCardView.scrollTop = 1
