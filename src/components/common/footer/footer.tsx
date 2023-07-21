@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import "./footer.scss";
 import {
   FOOTER_FACEBOOK,
   FOOTER_GITHUB,

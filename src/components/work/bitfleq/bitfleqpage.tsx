@@ -2,21 +2,14 @@ import React from "react";
 import "./bitfleqpage.scss";
 import Wrapper from "../../wrapper";
 import { StaticImage } from "gatsby-plugin-image";
-import {
-  ARROW_LEFT,
-  ARROW_RIGHT,
-  ARROW_WITH_GRADIENT,
-  FOOTER_FACEBOOK,
-  FOOTER_GITHUB,
-  FOOTER_LINKEDIN,
-  FOOTER_TWITTER,
-} from "../../../icons";
+import { ARROW_LEFT, ARROW_RIGHT, ARROW_WITH_GRADIENT } from "../../../icons";
 import BitFleqFeature1 from "../../../images/bitfleq_feature1.png";
 import BitFleqFeature2 from "../../../images/bitfleq_feature2.png";
 import BitFleqFeature3 from "../../../images/bitfleq_feature3.png";
 import BitFleqFeature4 from "../../../images/bitfleq_feature4.png";
 import Button from "../../button";
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
+import Footer from "../../common/footer/footer";
 
 const BitFleqpage = () => {
   const keyFeaturesList = [
@@ -329,17 +322,8 @@ const BitFleqpage = () => {
 
           {/* footer */}
 
-          <div className="bitfleqspage_footer flex justify-between w-100 items-center">
-            <div className="text-xl offGray uppercase">© Copyright 2023.</div>
-            <div className="flex gap-4 items-center">
-              <FOOTER_FACEBOOK className="cursor-pointer" />
-              <FOOTER_TWITTER className="cursor-pointer" />
-              <FOOTER_LINKEDIN className="cursor-pointer" />
-              <FOOTER_GITHUB className="cursor-pointer" />
-            </div>
-            <div className="text-xl offGray uppercase">
-              <Link to="/privacy-policy">privacy policy</Link>
-            </div>
+          <div className="mt-32">
+            <Footer />
           </div>
         </div>
       </div>
