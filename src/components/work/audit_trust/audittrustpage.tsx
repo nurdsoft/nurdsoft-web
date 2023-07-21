@@ -2,15 +2,7 @@ import React from "react";
 import "./audittrustpage.scss";
 import Wrapper from "../../wrapper";
 import { StaticImage } from "gatsby-plugin-image";
-import {
-  ARROW_LEFT,
-  ARROW_RIGHT,
-  CIRCLE_TICK,
-  FOOTER_FACEBOOK,
-  FOOTER_GITHUB,
-  FOOTER_LINKEDIN,
-  FOOTER_TWITTER,
-} from "../../../icons";
+import { ARROW_LEFT, ARROW_RIGHT, CIRCLE_TICK } from "../../../icons";
 import AuditFeature1 from "../../../images/audit_feature1.png";
 import AuditFeature2 from "../../../images/audit_feature2.png";
 import AuditFeature3 from "../../../images/audit_feature3.png";
@@ -18,7 +10,8 @@ import AuditFeature4 from "../../../images/audit_feature4.png";
 import AuditFeature5 from "../../../images/audit_feature5.png";
 import AuditFeature6 from "../../../images/audit_feature6.png";
 import Button from "../../button";
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
+import Footer from "../../common/footer/footer";
 
 const AuditTrustPage = () => {
   const productStatementList = [
@@ -359,17 +352,8 @@ const AuditTrustPage = () => {
 
           {/* footer */}
 
-          <div className="audittrustpage_footer flex justify-between w-100 items-center">
-            <div className="text-xl offGray uppercase">© Copyright 2023.</div>
-            <div className="flex gap-4 items-center">
-              <FOOTER_FACEBOOK className="cursor-pointer" />
-              <FOOTER_TWITTER className="cursor-pointer" />
-              <FOOTER_LINKEDIN className="cursor-pointer" />
-              <FOOTER_GITHUB className="cursor-pointer" />
-            </div>
-            <div className="text-xl offGray uppercase">
-              <Link to="/privacy-policy">privacy policy</Link>
-            </div>
+          <div className="mt-32">
+            <Footer />
           </div>
         </div>
       </div>
