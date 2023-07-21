@@ -1,0 +1,51 @@
+@import "../../styles/mixins";
+@import "~sass-rem";
+
+.jobDescription3_parentContainer {
+    margin: 6.25rem auto 1.875rem auto;
+    color: var(--off-white-100);
+    width: 95%;
+
+    .jobDescription3_header{
+        .section_title {
+            background: linear-gradient(135deg, #B62BF5 0%, #E52E2C 100%);
+            @include backgroundClip;
+            font-size: rem(64px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 74px;
+            margin-bottom: rem(67px);
+        }
+    }
+
+    .jobDescription3_bulletPoint {
+        @include BulletPoint;
+        align-items: flex-start;
+        margin-bottom: rem(32px);
+
+        .bulletPoint_data {
+            font-size: rem(20px);
+            font-style: italic;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .applyNow_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: rem(120px);
+        flex-wrap: wrap;
+        .socialIcons_wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            .socialIcon{
+                cursor: pointer;
+            }
+        }
+    }
+}
