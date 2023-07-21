@@ -23,9 +23,6 @@ const JobDescriptionPage3 = ({data}: any) => {
           ))
         }
         {
-
-        }
-        {
           data?.qualities?.length ?
           <></>:
           <div className='applyNow_wrapper'>
