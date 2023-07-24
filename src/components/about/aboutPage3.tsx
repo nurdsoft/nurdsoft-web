@@ -69,6 +69,11 @@ const AboutPage3 = () => {
                     key={geo.rsmKey}
                     geography={geo}
                     fill={"#0B2C46"}
+                    style={{
+                      default: { outline: "none" },
+                      hover: { outline: "none" },
+                      pressed: { outline: "none" },
+                    }}
                   />
                 );
               })
