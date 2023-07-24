@@ -84,7 +84,14 @@ const CareerPage3 = () => {
   }
 
   const handleScrollMainPage = () => {
+    const scroller = document.getElementById('career_scroller');
+    const careerPageCardView = document.getElementById('careerPage3_cardView')
+
+    if (!scroller || !careerPageCardView) return
     activatingFromOutside.current = true
+    if(scroller.scrollTop === (scroller.scrollTop + careerPageCardView.getBoundingClientRect().top) - 94){
+      scroller.style.overflow = 'hidden'
+    }
   }
 
   useEffect(() => {
@@ -96,7 +103,6 @@ const CareerPage3 = () => {
         top: (scroller.scrollTop + careerPageCardView.getBoundingClientRect().top) - 94,
         behavior: 'smooth'
       })
-      scroller.style.overflow = 'hidden'
       careerPageCardView.style.overflow = 'hidden scroll'
       careerPageCardView.scrollTop = 1
       activatingFromOutside.current = false
