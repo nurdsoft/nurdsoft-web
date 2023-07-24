@@ -5,8 +5,10 @@ import Footer from "../common/footer/footer";
 import { Link } from "gatsby";
 
 const PrivacyPolicyPage = () => {
-  const [hash, setHash] = useState(window.location.hash)
-  let [preventHashChange, setPreventHashChange] = useState(false)
+  const [hash, setHash] = useState(
+    typeof window !== "undefined" ? window.location.hash : ""
+  );
+  let [preventHashChange, setPreventHashChange] = useState(false);
 
   const policyDataPoints = [
     {
@@ -114,37 +116,53 @@ const PrivacyPolicyPage = () => {
   ];
 
   const handleScroll = () => {
-    const scroller = document.getElementById('privacypolicypage_parentContainer')
-    if(!scroller) return
-    if(scroller?.scrollTop === 0){
-      window.location.hash = ''
-    } else if( (scroller?.scrollHeight - scroller?.scrollTop - scroller?.clientHeight) === 0){
-      window.location.hash = `#${tableOfContentList[tableOfContentList.length - 1].id}`
+    const scroller = document.getElementById(
+      "privacypolicypage_parentContainer"
+    );
+    if (!scroller) return;
+    if (scroller?.scrollTop === 0) {
+      window.location.hash = "";
+    } else if (
+      scroller?.scrollHeight - scroller?.scrollTop - scroller?.clientHeight ===
+      0
+    ) {
+      window.location.hash = `#${
+        tableOfContentList[tableOfContentList.length - 1].id
+      }`;
     }
     tableOfContentList.forEach((tableItem) => {
-      const element = document.getElementById(tableItem.id)
-      if (!element) return
-      if(element.getBoundingClientRect().top < 141 && element.getBoundingClientRect().top > 89 && !preventHashChange ){
-        window.location.hash = (`#${tableItem.id}`)
+      const element = document.getElementById(tableItem.id);
+      if (!element) return;
+      if (
+        element.getBoundingClientRect().top < 141 &&
+        element.getBoundingClientRect().top > 89 &&
+        !preventHashChange
+      ) {
+        window.location.hash = `#${tableItem.id}`;
       }
-    })
-  }
+    });
+  };
 
   useEffect(() => {
-    const scroller = document.getElementById('privacypolicypage_parentContainer')
-    scroller?.addEventListener('scroll', handleScroll)
-    return () => scroller?.removeEventListener('scroll', handleScroll)
-  }, [])
+    const scroller = document.getElementById(
+      "privacypolicypage_parentContainer"
+    );
+    scroller?.addEventListener("scroll", handleScroll);
+    return () => scroller?.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
-    setPreventHashChange(true)
-    setHash(window.location.hash)
-    setPreventHashChange(false)
-  }, [window.location.hash])
+    setPreventHashChange(true);
+    setHash(window.location.hash);
+    setPreventHashChange(false);
+  }, [typeof window !== "undefined" && window.location.hash]);
 
   return (
     <Wrapper>
-      <div className="privacypolicypage_parentContainer" id="privacypolicypage_parentContainer">
+      <div
+        className="privacypolicypage_parentContainer"
+        id="privacypolicypage_parentContainer"
+      >
         <div className="flex gap-28">
           <div className="w-7/12 mt-32">
             <h4 className="privacypolicypage_title white text-6xl m-0 font-medium">
@@ -513,11 +531,15 @@ const PrivacyPolicyPage = () => {
                 return (
                   <li
                     key={data.id}
-                    className={`text-lg ${hash.split('#')[1] === data.id ? 'primary100' : 'offGray'} mt-2 font-normal cursor-pointer`}
+                    className={`text-lg ${
+                      hash.split("#")[1] === data.id ? "primary100" : "offGray"
+                    } mt-2 font-normal cursor-pointer`}
                   >
                     <Link
                       to={`/privacy-policy#${data.id}`}
-                      onClick={() => {setPreventHashChange(true)}}
+                      onClick={() => {
+                        setPreventHashChange(true);
+                      }}
                     >
                       &#8226; <span className="ml-4">{data.label}</span>
                     </Link>

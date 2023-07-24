@@ -42,7 +42,11 @@ const ServicesPage1 = () => {
               Win engagement through flawless design
             </p>
           </div>
-          <div className="servicespage1_ctaButton">Hire Us</div>
+          <div className="servicespage1_ctaButton">
+            <a href="mailto:hr@nurdsoft.co" target="_blank">
+              Hire Us
+            </a>
+          </div>
           <div className="servicespage1_boxContainer servicespage1_item3">
             <SERVICES_HOME_ICON_3 />
             <h4 className="servicepage1_boxTitle">Mobile Apps</h4>

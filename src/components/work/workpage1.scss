@@ -1,4 +1,5 @@
 @import "~sass-rem";
+@import "../../styles/mixins";
 
 .workpage1_parentContainer {
   padding: 0 rem(25px) rem(60px) rem(25px);
@@ -8,6 +9,7 @@
     line-height: 80px;
     color: var(--white);
     margin: rem(70px) 0;
+    @include lineUp;
   }
   .workpage1_cardsContainer {
     display: grid;
