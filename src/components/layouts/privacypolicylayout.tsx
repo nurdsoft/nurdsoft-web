@@ -7,8 +7,6 @@ const PrivacyPolicyLayout = () => {
       <div
         style={{
           backgroundColor: "var(--black-100)",
-          height: "100%",
-          overflow: "scroll",
         }}
       >
         <PrivacyPolicyPage />
