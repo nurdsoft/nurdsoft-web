@@ -12,7 +12,7 @@ const Header = () => {
   const [_showHamburgerMenu, _setShowHamburgerMenu] = useState(false);
 
   return (
-    <div className="header">
+    <div className="header" id="header">
       <Wrapper className="wrapperContainer">
         <>
           <div className="boxContainer">

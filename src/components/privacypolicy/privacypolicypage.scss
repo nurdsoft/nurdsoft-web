@@ -3,8 +3,15 @@
 
 .privacypolicypage_parentContainer {
   padding: 0 rem(25px) rem(30px) rem(25px);
-  height: 100vh;
+  height: calc(100vh - 91px);
   overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
   .privacypolicypage_dataCollectionType {
     .privacypolicypage_dataCollectionTitle {
       background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);

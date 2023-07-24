@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./privacypolicypage.scss";
 import Wrapper from "../wrapper";
 import Footer from "../common/footer/footer";
+import { Link } from "gatsby";
 
 const PrivacyPolicyPage = () => {
+  const [hash, setHash] = useState(window.location.hash)
+  let preventHashChange = false
+
   const policyDataPoints = [
     {
       title: "Service",
@@ -109,11 +113,41 @@ const PrivacyPolicyPage = () => {
     },
   ];
 
+  const handleScroll = () => {
+    const scroller = document.getElementById('privacypolicypage_parentContainer')
+    if(!scroller) return
+    
+    if(scroller?.scrollTop === 0){
+      window.location.hash = ''
+    } else if( (scroller?.scrollTop - scroller?.scrollHeight - scroller?.clientHeight) === 0){
+      window.location.hash = `#${tableOfContentList[tableOfContentList.length - 1].id}`
+    }
+    tableOfContentList.forEach((tableItem) => {
+      const element = document.getElementById(tableItem.id)
+      if (!element) return
+      if(element.getBoundingClientRect().top < 141 && element.getBoundingClientRect().top > 89 && !preventHashChange ){
+        window.location.hash = (`#${tableItem.id}`)
+      }
+    })
+  }
+
+  useEffect(() => {
+    const scroller = document.getElementById('privacypolicypage_parentContainer')
+    scroller?.addEventListener('scroll', handleScroll)
+    return () => scroller?.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    preventHashChange = true
+    setHash(window.location.hash)
+    preventHashChange = false
+  }, [window.location.hash])
+
   return (
     <Wrapper>
-      <div className="privacypolicypage_parentContainer  mt-32">
+      <div className="privacypolicypage_parentContainer" id="privacypolicypage_parentContainer">
         <div className="flex gap-28">
-          <div className="w-7/12">
+          <div className="w-7/12 mt-32">
             <h4 className="privacypolicypage_title white text-6xl m-0 font-medium">
               Privacy Policy
             </h4>
@@ -471,7 +505,7 @@ const PrivacyPolicyPage = () => {
 
             {/* footer */}
           </div>
-          <div className="privacypolicypage_tableOfContents p-8">
+          <div className="privacypolicypage_tableOfContents p-8 mt-32">
             <h4 className="white leading-normal text-lg m-0 font-medium">
               Table of Content
             </h4>
@@ -480,23 +514,14 @@ const PrivacyPolicyPage = () => {
                 return (
                   <li
                     key={data.id}
-                    className="text-lg offGray mt-2 font-normal cursor-pointer"
+                    className={`text-lg ${hash.split('#')[1] === data.id ? 'primary100' : 'offGray'} mt-2 font-normal cursor-pointer`}
                   >
-                    <a
-                      href={`#${data.id}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        (document as any)
-                          .querySelector(`#${data.id}`)
-                          .scrollIntoView({
-                            behavior: "smooth",
-                            block: "center",
-                            inline: "center",
-                          });
-                      }}
+                    <Link
+                      to={`/privacy-policy#${data.id}`}
+                      onClick={() => {preventHashChange = true}}
                     >
                       &#8226; <span className="ml-4">{data.label}</span>
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
