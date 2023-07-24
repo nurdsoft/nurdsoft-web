@@ -8,7 +8,7 @@ import CareerCard from './careerCard';
 
 
 const CareerPage3 = () => {
-  const elementsToStack = useRef(0)
+  const elementsToStack = useRef(-1)
   const activatingFromOutside = useRef(true)
 
   const triggerRef = useRef<any>()
@@ -59,15 +59,19 @@ const CareerPage3 = () => {
         if(elementsToStack.current === 0){
           careerPageCardView.style.paddingTop = `0px`
         }
-        if(elementsToStack.current >= 0){
+        if(elementsToStack.current > 0){
           careerPageCardView.scrollTop = 200
         }
         elementsToStack.current = elementsToStack.current - 1
       }
+
       // logic to increment the fixed elements
       if(Math.floor(careerPageCardView.scrollTop / 306) >= 1 && elementsToStack.current < (cardsArray.length - 2)){
         elementsToStack.current = elementsToStack.current + 1
+      }else if(careerPageCardView.scrollTop >= 5 && elementsToStack.current === -1){
+        elementsToStack.current = elementsToStack.current + 1
       }
+      
       // logic to add the fixed class
       for(let i = 0; i < cardsArray.length; i++){
         if(i <= elementsToStack.current && !cardsArray[i].classList.contains('fixed') && elementsToStack.current < (cardsArray.length - 1)){
@@ -81,9 +85,6 @@ const CareerPage3 = () => {
 
   const handleScrollMainPage = () => {
     activatingFromOutside.current = true
-    if(elementsToStack.current < 0 ){
-      elementsToStack.current = 0
-    }
   }
 
   useEffect(() => {
