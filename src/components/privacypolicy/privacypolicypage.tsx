@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 
 const PrivacyPolicyPage = () => {
   const [hash, setHash] = useState(window.location.hash)
-  let preventHashChange = false
+  let [preventHashChange, setPreventHashChange] = useState(false)
 
   const policyDataPoints = [
     {
@@ -116,10 +116,9 @@ const PrivacyPolicyPage = () => {
   const handleScroll = () => {
     const scroller = document.getElementById('privacypolicypage_parentContainer')
     if(!scroller) return
-    
     if(scroller?.scrollTop === 0){
       window.location.hash = ''
-    } else if( (scroller?.scrollTop - scroller?.scrollHeight - scroller?.clientHeight) === 0){
+    } else if( (scroller?.scrollHeight - scroller?.scrollTop - scroller?.clientHeight) === 0){
       window.location.hash = `#${tableOfContentList[tableOfContentList.length - 1].id}`
     }
     tableOfContentList.forEach((tableItem) => {
@@ -138,9 +137,9 @@ const PrivacyPolicyPage = () => {
   }, [])
 
   useEffect(() => {
-    preventHashChange = true
+    setPreventHashChange(true)
     setHash(window.location.hash)
-    preventHashChange = false
+    setPreventHashChange(false)
   }, [window.location.hash])
 
   return (
@@ -518,7 +517,7 @@ const PrivacyPolicyPage = () => {
                   >
                     <Link
                       to={`/privacy-policy#${data.id}`}
-                      onClick={() => {preventHashChange = true}}
+                      onClick={() => {setPreventHashChange(true)}}
                     >
                       &#8226; <span className="ml-4">{data.label}</span>
                     </Link>
