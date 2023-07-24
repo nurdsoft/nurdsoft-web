@@ -65,11 +65,17 @@ const Contact = () => {
             <div className="contact_footer">
               <div>© Copyright 2023.</div>
               <div>
-                <span>Work</span>
-                <span className="ml-16">Carrer</span>
-                <span className="ml-16">About</span>
+                <span className="contact_footer_links">
+                  <Link to="/work">Work</Link>
+                </span>
+                <span className="ml-16 contact_footer_links">
+                  <Link to="/career">Career</Link>
+                </span>
+                <span className="ml-16 contact_footer_links">
+                  <Link to="/about">About</Link>
+                </span>
               </div>
-              <div className="cursor-pointer">
+              <div className="cursor-pointer contact_footer_links">
                 <Link to="/privacy-policy">Privacy Policy</Link>
               </div>
             </div>

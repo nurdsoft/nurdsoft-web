@@ -87,6 +87,11 @@
     font-size: rem(16px);
     text-transform: uppercase;
     color: var(--off-white-100);
+    .contact_footer_links {
+      :hover {
+        color: var(--primary-100);
+      }
+    }
   }
 }
 
