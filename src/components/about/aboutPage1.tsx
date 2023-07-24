@@ -74,7 +74,7 @@ const AboutPage1 = () => {
         </div>
 
         <div className="aboutPage1_hireUs_wrapper">
-          <a href="mailto:hro@nurdsoft.co" target="_blank">
+          <a href="mailto:hr@nurdsoft.co" target="_blank">
             <div className="aboutPage1_hireUs">Hire Us</div>
           </a>
         </div>

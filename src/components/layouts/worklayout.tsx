@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Workpage1 from "../work/workpage1";
 
 const WorkLayout = () => {
