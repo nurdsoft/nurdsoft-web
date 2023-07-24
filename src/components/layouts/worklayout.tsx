@@ -4,15 +4,6 @@ import Workpage1 from "../work/workpage1";
 
 const WorkLayout = () => {
   return (
-    // <Parallax pages={1}>
-    //   <ParallaxLayer
-    //     offset={0}
-    //     speed={1}
-    //     factor={0}
-    //     style={{
-    //       backgroundColor: "var(--black-100)",
-    //     }}
-    //   >
     <div
       style={{
         backgroundColor: "var(--black-100)",
@@ -22,8 +13,6 @@ const WorkLayout = () => {
     >
       <Workpage1 />
     </div>
-    //   </ParallaxLayer>
-    // </Parallax>
   );
 };
 
