@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { useState } from "react";
 import * as React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Wrapper from "./wrapper";
 import NurdsoftImage from "../images/nurdsoft-logo-expanded.png";
@@ -71,19 +71,14 @@ const Header = () => {
                     <span className="withoutHover">WORK</span>
                     <span className="onHover">WORK</span>
                   </Link>
-                  <Link
-                    activeClassName="activeMenuLink"
-                    className="menuLink"
-                    to="/estimate_project/"
-                  >
-                    <div className="activeSpan">
-                      <Button
-                        buttonText="ESTIMATE PROJECT"
-                        isLinkButton={true}
-                        showArrowIcon={false}
-                      />
-                    </div>
-                  </Link>
+                  <div className="activeSpan">
+                    <Button
+                      buttonText="ESTIMATE PROJECT"
+                      isLinkButton={true}
+                      showArrowIcon={false}
+                      onClick={() => navigate('/estimate_project/')}
+                    />
+                  </div>  
                 </div>
               </div>
             </div>
