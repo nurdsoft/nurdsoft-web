@@ -17,3 +17,11 @@
     margin-bottom: rem(64px);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .aboutPage3_parentContainer {
+    .aboutPage3_heading {
+      font-size: 42px;
+    }
+  }
+}

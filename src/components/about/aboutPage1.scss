@@ -137,6 +137,9 @@
 
   @media screen and (max-width: 968px) {
     .aboutPage1_parentContainer{
+      .aboutPage1_heading {
+        font-size: rem(42px);
+      }
       .companyDescription {
         grid-template-columns: 1fr;
         .divider{
@@ -144,6 +147,12 @@
           width: 135px;
           height: 1px;
           margin: 0 auto;
+        }
+      }
+
+      .aboutPage1_hireUs_wrapper {
+        .aboutPage1_hireUs{
+          right: 50%;
         }
       }
       .aboutPage1_carousel {

@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import Wrapper from "../wrapper";
 import Client from "../../images/client2.png";
+import { animated, useSpring } from '@react-spring/web';
 import { IClientFeedback } from "../../types/carouselTypes";
 import "./aboutPage4.scss";
 import ClientFeedbackCarousel from "../common/clientFeedbackCarousel";
+import useIntersectionObserver from "../common/intersectionObserver";
 
 const AboutPage4 = () => {
+
+  const triggerRef = useRef<any>();
+
+  const dataRef = useIntersectionObserver(triggerRef, {
+    threshold: 0.2,
+    freezeOnceVisible: false
+  });
+
+  const headerStyle = useSpring({
+    config: { duration: 500 },
+    from: { opacity: 0, transform: 'translateY(100px) translateX(150px)' },
+    to: {
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+      transform: dataRef?.isIntersecting ? 'translateY(0px) translateX(0px)' : 'translateY(100px) translateX(150px)'
+    },
+  });
+
   const data: IClientFeedback[] = [
     {
       clientImg: Client,
@@ -24,10 +43,12 @@ const AboutPage4 = () => {
   ];
   return (
     <Wrapper id="aboutPage4_parentContainer" >
-      <div className="aboutPage4_parentContainer" >
-        <h1 className="heading">
-          What Our People <br /> Say About Us
-        </h1>
+      <div className="aboutPage4_parentContainer" ref={triggerRef} >
+        <animated.div className="aboutPage5_animatedDiv" style={headerStyle}>
+          <h1 className="heading">
+            What Our People <br /> Say About Us
+          </h1>
+        </animated.div>
         <ClientFeedbackCarousel data={data} />
       </div>
     </Wrapper>
