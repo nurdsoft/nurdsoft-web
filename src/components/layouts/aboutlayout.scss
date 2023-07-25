@@ -1,0 +1,41 @@
+.parallaxLayoutAbout{
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    #aboutPage1_parentContainer{
+        background: var(--black-100);
+    }
+    
+    #aboutPage2_parentContainer{
+        .aboutPage2_parentContainer{
+            background: var(--black-100);
+        }
+        &::after {
+            content: " ";
+            display: block;
+            height: calc(100vh - 91px);
+        }
+    }
+    
+    #aboutPage3_parentContainer {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        right: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: all 1s ease-in;
+    }
+    
+    #aboutPage4_parentContainer{
+        background: var(--black-100);
+    }
+}

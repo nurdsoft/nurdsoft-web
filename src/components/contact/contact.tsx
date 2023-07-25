@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <>
-      <Wrapper>
+      <Wrapper id="contact_parentContainer">
         <div className="contact_parentContainer">
           <div className="contact_gridContainer">
             <div className="contact_gridLeftContainer">

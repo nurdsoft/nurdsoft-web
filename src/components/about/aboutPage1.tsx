@@ -52,8 +52,8 @@ const AboutPage1 = () => {
   ];
 
   return (
-    <Wrapper>
-      <div className="aboutPage1_parentContainer">
+    <Wrapper id="aboutPage1_parentContainer" >
+      <div className="aboutPage1_parentContainer" >
         <h1 className="aboutPage1_heading">
           Life @<span className="blue">nurdsoft</span>
         </h1>

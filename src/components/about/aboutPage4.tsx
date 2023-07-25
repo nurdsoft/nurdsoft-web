@@ -23,8 +23,8 @@ const AboutPage4 = () => {
     },
   ];
   return (
-    <Wrapper>
-      <div className="aboutPage4_parentContainer">
+    <Wrapper id="aboutPage4_parentContainer" >
+      <div className="aboutPage4_parentContainer" >
         <h1 className="heading">
           What Our People <br /> Say About Us
         </h1>

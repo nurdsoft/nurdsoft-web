@@ -50,8 +50,8 @@ const markers: MapMarker[] = [
 const AboutPage3 = () => {
 
   return (
-    <Wrapper>
-      <div className='aboutPage3_parentContainer'>
+    <Wrapper id='aboutPage3_parentContainer' >
+      <div className='aboutPage3_parentContainer' >
         <h1 className="aboutPage3_heading">
           Globally <br/> Distributed Team
         </h1>
