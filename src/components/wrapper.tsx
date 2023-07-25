@@ -5,11 +5,13 @@ import "./wrapper.scss";
 const Wrapper = ({
   children,
   className,
+  id=''
 }: {
   children: JSX.Element;
   className?: string;
+  id?: string;
 }) => (
-  <div className={`wrapperContainer ${className}`}>
+  <div className={`wrapperContainer ${className}`} id={id}>
     <div></div>
     {children}
     <div></div>

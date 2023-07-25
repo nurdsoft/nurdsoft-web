@@ -4,6 +4,7 @@
     color: var(--off-white-100);
     width: 95%;
     margin: 0 auto;
+    background: var(--black-100);
 
     .description {
         margin-bottom: rem(120px);
@@ -68,6 +69,11 @@
 
 @media screen and (max-width: 768px) {
     .aboutPage2_parentContainer {
+        .description {
+            .descriptionText {
+                font-size: rem(24px);
+            }
+        }
         .companyStats{
             grid-template-columns: 1fr;
             .stat {

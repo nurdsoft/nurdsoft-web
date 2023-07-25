@@ -17,9 +17,10 @@ const AboutPage5 = () => {
 
   const headerStyle = useSpring({
     config: { duration: 500 },
-    from: { opacity: 0 },
+    from: { opacity: 0, transform: 'translateY(200px)' },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
+      transform: dataRef?.isIntersecting ? 'translateY(0px)' : 'translateY(200px)'
     },
   });
 
@@ -28,7 +29,7 @@ const AboutPage5 = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper id='aboutPage5_parentContainer' >
       <div className='aboutPage5_parentContainer' ref={triggerRef} >
         <animated.div className="aboutPage5_animatedDiv" style={headerStyle}>
           <h1 className='aboutPage5_joinUs'>We’re Hiring<br/> Join Us</h1>

@@ -19,8 +19,8 @@ const AboutPage2 = () => {
     }
   ]
   return (
-    <Wrapper>
-      <div className='aboutPage2_parentContainer'>
+    <Wrapper id='aboutPage2_parentContainer' >
+      <div className='aboutPage2_parentContainer' >
         <div className='description'>
           <p className='descriptionText'>Our team consists of warm, amazing and humble individuals who have worked for multiple Fortune 100 companies spanning across all major industries, playing an integral role in their success and scaling.</p>
           <Button buttonText="SCHEDULE CONSULTATION" />
