@@ -5,9 +5,10 @@ import Footer from "../common/footer/footer";
 import { Link } from "gatsby";
 
 const PrivacyPolicyPage = () => {
-  const [hash, setHash] = useState(
-    typeof window !== "undefined" ? window.location.hash : ""
-  );
+
+  if(typeof window === "undefined") return <></> ;
+
+  const [hash, setHash] = useState(window.location.hash);
   let [preventHashChange, setPreventHashChange] = useState(false);
 
   const policyDataPoints = [
@@ -155,7 +156,7 @@ const PrivacyPolicyPage = () => {
     setPreventHashChange(true);
     setHash(window.location.hash);
     setPreventHashChange(false);
-  }, [typeof window !== "undefined" && window.location.hash]);
+  }, [window.location.hash]);
 
   return (
     <Wrapper>
