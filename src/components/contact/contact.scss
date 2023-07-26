@@ -6,14 +6,14 @@
     padding: rem(40px) rem(25px);
     color: var(--off-white-100);
     .contact_formWrapper {
-      margin-bottom: 135px;
-      margin-top: 80px;
+      margin-bottom: rem(135px);
+      margin-top: rem(80px);
       .contact_formHeading {
-        font-size: 80px;
+        font-size: rem(80px);
         font-style: normal;
         font-weight: 700;
         line-height: 80px;
-        margin-bottom: 64px;
+        margin-bottom: rem(64px);
       }
 
       .flex_container {
@@ -21,11 +21,11 @@
         width: 100%;
 
         .contact_formLeft {
-          max-width: 320px;
+          max-width: rem(320px);
           width: 95%;
           margin: 0 auto;
           .small_text{
-            font-size: 18px;
+            font-size: rem(18px);
             font-style: normal;
             font-weight: 400;
             line-height: 27px; /* 150% */
@@ -33,24 +33,24 @@
           }
           .contact_formMailTo {
             color: var(--primary-100);
-            font-size: 24px;
+            font-size: rem(24px);
             font-style: normal;
             font-weight: 500;
             line-height: 36px; /* 150% */
             text-decoration-line: underline;
-            margin-top: 12px;
+            margin-top: rem(12px);
           }
           .socialIcons_wrapper{
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-top: 48px;
+            margin-top: rem(48px);
             .icon_container{
                 cursor: pointer;
                 background-color: var(--dark-gray-100);
-                border-radius: 24px;
-                width: 48px;
-                height: 48px;
+                border-radius: rem(24px);
+                width: rem(48px);
+                height: rem(48px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -64,16 +64,16 @@
             .contact_formField{
               display: flex;
               width: 100%;
-              gap: 16px;
+              gap: rem(16px);
               align-items: center;
-              margin-bottom: 40px;
+              margin-bottom: rem(40px);
               flex-wrap: wrap;
               &.column{
                 flex-direction: column;
                 align-items: flex-start;
               }
               .label{
-                font-size: 24px;
+                font-size: rem(24px);
                 font-style: normal;
                 font-weight: 500;
                 line-height: 36px;
@@ -82,13 +82,13 @@
                 border: none;
                 border-bottom: 1px solid var(--gray-100);
                 background: transparent;
-                font-size: 20px;
+                font-size: rem(20px);
                 font-style: italic;
                 font-weight: 400;
                 line-height: 30px;
                 flex: 1;
                 width: 100%;
-                min-width: 250px;
+                min-width: rem(250px);
                 &:focus{
                   outline: none;
                   border-bottom: 1px solid var(--off-white-100);
@@ -102,8 +102,8 @@
 
                 .option {
                   
-                  padding: 12px 16px;
-                  border-radius: 6px;
+                  padding: rem(12px) rem(16px);
+                  border-radius: rem(6px);
                   background: var(--off-white-100);
                   color: var(--primary-100);
   
@@ -117,7 +117,7 @@
                     flex-direction: column;
                     align-items: center;
                     gap: 8px;
-                    height: 21px;
+                    height: rem(21px);
                     overflow: hidden;
                     .animateUp{
                       transition: all 0.2s;
@@ -137,13 +137,13 @@
 
             .contact_formSubmit{
               display: flex;
-              padding: 16px 24px;
+              padding: rem(16px) rem(24px);
               justify-content: center;
               align-items: center;
               gap: 8px;
-              border-radius: 6px;
+              border-radius: rem(6px);
               background: var(--primary-100);
-              margin-top: 64px;
+              margin-top: rem(64px);
             }
           }
         }
