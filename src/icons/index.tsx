@@ -1958,6 +1958,22 @@ export const ARROW_RIGHT = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
+export const ARROW_RIGHT_SMALL = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_2121_2330)">
+        <path d="M14.9297 5.92969L20.9997 11.9997L14.9297 18.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 12H20.83" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_2121_2330">
+          <rect width="24" height="24" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
 export const FOOTER_FACEBOOK = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
