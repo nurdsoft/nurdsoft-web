@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Carousel } from "react-responsive-carousel";
 import Quotes from "../../images/quotes.svg";
 import "./clientFeedbackCarousel.scss";
@@ -28,10 +28,21 @@ const CustomIndicator = (
 };
 
 const ClientFeedbackCarousel = ({ data }: IClientCarouselData) => {
+
+  const previousSlide = useRef(0)
+
+  const animateCurrentSlide = (index: any) => {
+    const currentImage = document.getElementById(`slideClientImg${index}`)
+    const previousImage = document.getElementById(`slideClientImg${previousSlide.current}`)
+    if(!currentImage || !previousImage) return;
+    currentImage.classList.add('scaleUp')
+    previousImage.classList.remove('scaleUp')
+    previousSlide.current = index
+  }
   return (
     <Carousel
       // autoPlay={true}
-      infiniteLoop={true}
+      infiniteLoop={false}
       showArrows={false}
       selectedItem={0}
       showThumbs={false}
@@ -42,11 +53,12 @@ const ClientFeedbackCarousel = ({ data }: IClientCarouselData) => {
       axis="horizontal"
       showIndicators={true}
       renderIndicator={CustomIndicator}
+      onChange={animateCurrentSlide}
     >
       {data.map((feedback, index) => (
         <div key={index} className="clientFeedbackCarouselSlide">
           <div className="clientFeedbackCarouselSlideLeft">
-            <img src={feedback.clientImg} alt="slide1" />
+            <img src={feedback.clientImg} alt="slide1" id={`slideClientImg${index}`} />
           </div>
           <div className="clientFeedbackCarouselSlideRight">
             <img className="quote" src={Quotes} alt="quotes" />
