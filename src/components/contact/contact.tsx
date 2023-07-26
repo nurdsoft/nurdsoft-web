@@ -144,7 +144,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="contact_formRight">
+              {/* <div className="contact_formRight">
                 <div className="contact_formContainer">
                   <div className="contact_formField">
                     <p className="label">My name is</p>
@@ -219,7 +219,7 @@ const Contact = () => {
                   </button>
 
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="contact_footer">
