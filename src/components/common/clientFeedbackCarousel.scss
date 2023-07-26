@@ -30,6 +30,11 @@
   }
 }
 
+@keyframes scaleUpAnimation {
+  from {transform: scale(0.6);}
+  to {transform: scale(1.0);}
+}
+
 .clientFeedbackCarouselSlide {
   display: flex;
   gap: 67px;
@@ -48,6 +53,11 @@
 
     img {
       width: 100%;
+      &.scaleUp {
+        animation-name: scaleUpAnimation;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
+      }
     }
   }
 
