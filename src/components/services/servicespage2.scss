@@ -32,8 +32,16 @@
   .servicespage2_wrapper {
     width: 100%;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
+    padding-left: rem(30px);
+    // -webkit-overflow-scrolling: touch;
+    // scroll-behavior: smooth;
+    height: 400px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
     .servicespage2_slider {
       display: flex;
       gap: 40px;
@@ -176,6 +184,14 @@
 @media only screen and (max-width: 966px) {
   .servicespage2_parentContainer {
     padding: rem(25px) !important;
+    .servicespage2_flexContainer{
+      flex-direction: column;
+      gap: 32px;
+      .servicespage2_rightContainer{
+        width: 100%;
+        text-align: center;
+      }
+    }
     .servicespage2_gridContainer {
       display: flex !important;
       flex-direction: column;
