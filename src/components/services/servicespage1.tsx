@@ -23,7 +23,7 @@ const ServicesPage1 = () => {
   const triggerRef = useRef<any>();
 
   const dataRef = useIntersectionObserver(triggerRef, {
-    threshold: 0.7,
+    threshold: 0.5,
     freezeOnceVisible: false
   });
 
