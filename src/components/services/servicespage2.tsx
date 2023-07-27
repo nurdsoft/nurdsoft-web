@@ -20,6 +20,9 @@ import {
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const ServicesPage2 = () => {
+
+  if(typeof document === "undefined") return<></>;
+
   const [_counter, _setCounter] = React.useState(0);
 
   const boxArr = [
