@@ -95,18 +95,17 @@ a.activeMenuLink {
   .wrapperContainer {
     grid-template-columns: unset !important;
     .burgerContainer {
+      display: block !important;
       a.menuLink {
         color: var(--off-white-100);
         background: var(--primary-100);
         text-decoration: unset;
       }
-      display: block;
       animation: fadein 1s;
       div {
         text-align: center;
         padding: 12px;
-        background: var(--primary-100);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+        border-bottom: 1px solid var(--gray-100);
         &:hover {
           opacity: 0.5;
         }
@@ -116,13 +115,13 @@ a.activeMenuLink {
   .boxContainer {
     padding: 0 25px;
     background-color: rgba(0, 0, 0, 0.7) !important;
-  }
-  .headerContainer {
-    .navBar {
-      .burgerMenu {
-        display: block !important;
-        position: relative;
-        bottom: 3px;
+    .headerContainer {
+      .navBar {
+        .burgerMenu {
+          display: block !important;
+          position: relative;
+          bottom: 3px;
+        }
       }
     }
   }

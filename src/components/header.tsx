@@ -76,9 +76,9 @@ const Header = () => {
                       buttonText="ESTIMATE PROJECT"
                       isLinkButton={true}
                       showArrowIcon={false}
-                      onClick={() => navigate('/estimate_project/')}
+                      onClick={() => navigate("/estimate_project/")}
                     />
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
@@ -91,19 +91,19 @@ const Header = () => {
               tabIndex={-2}
               className="burgerContainer"
             >
-              <Link to="/services/">
+              <Link className="menuLink" to="/services/">
                 <div>SERVICES</div>
               </Link>
-              <Link to="/industry/">
+              <Link className="menuLink" to="/industry/">
                 <div>INDUSTRY</div>
               </Link>
-              <Link to="/about/">
+              <Link className="menuLink" to="/about/">
                 <div>ABOUT</div>
               </Link>
-              <Link to="/work/">
+              <Link className="menuLink" to="/work/">
                 <div>WORK</div>
               </Link>
-              <Link to="/estimate_project/">
+              <Link className="menuLink" to="/estimate_project/">
                 <div>ESTIMATE PROJECT</div>
               </Link>
             </div>
