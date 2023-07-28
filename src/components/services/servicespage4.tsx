@@ -33,7 +33,7 @@ const Servicespage4 = () => {
                   We provide services to clients in a variety of industries
                 </p>
               </div>
-              <div className="cursor-pointer servicespage4_gridBox3 pl-32">
+              <div className="cursor-pointer servicespage4_gridBox3 px-8">
                 <Button
                   onClick={() => {
                     navigate("/work/");
