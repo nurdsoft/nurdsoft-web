@@ -28,7 +28,7 @@
       background-image: url(../../images/abstract_wrapper.svg);
       background-repeat: no-repeat;
       background-size: contain;
-      padding: 160px 0px;
+      padding: rem(160px) 0px;
       .servicespage3_listContainer {
         .servicespage3_count {
           color: var(--off-gray);
@@ -69,7 +69,6 @@
         }
         .buttonContainer {
           justify-content: center;
-          margin-left: -250px;
         }
       }
     }
@@ -88,7 +87,7 @@
       
       .servicespage3_rightContainer{
         background-position-y: center;
-        padding: 20px 0px;
+        padding: rem(20px) 0px;
         .servicespage3_listContainer{ 
           .servicespage3_options{ 
             .servicespage3_optionsList {
