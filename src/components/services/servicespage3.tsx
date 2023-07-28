@@ -29,10 +29,6 @@ const ServicesPage3 = () => {
     "True partnership",
   ];
 
-  useEffect(() => {
-    console.log("inter", dataRef?.intersectionRatio)
-  }, [dataRef?.intersectionRatio])
-
   return (
     <Wrapper>
       <div className="servicespage3_parentContainer" id="servicespage3_parentContainer" ref={triggerRef}>
