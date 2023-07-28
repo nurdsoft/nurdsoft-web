@@ -23,6 +23,9 @@ const CareerPage4 = () => {
     },
   });
 
+  const handleOpen = (url: string) => {
+    window.open(url, '_blank');
+  }
   return (
     <Wrapper>
       <div className="careerPage4_wrapper" ref={triggerRef}>
@@ -31,21 +34,21 @@ const CareerPage4 = () => {
             <p className="careerPage4_tagline">Follow us on</p>
             <div className="socialIcons_wrapper">
               <FACEBOOK
-                onClick={() => window.open("https://www.facebook.com/nurdsoft")}
+                onClick={() => handleOpen("https://www.facebook.com/nurdsoft")}
                 className="socialIcon"
               />
               <TWITTER
-                onClick={() => window.open("https://www.twitter.com/nurdsoft")}
+                onClick={() => handleOpen("https://www.twitter.com/nurdsoft")}
                 className="socialIcon"
               />
               <LINKEDIN
                 onClick={() =>
-                  window.open("https://www.linkedin.com/company/nurdsoft")
+                  handleOpen("https://www.linkedin.com/company/nurdsoft")
                 }
                 className="socialIcon"
               />
               <GITHUB
-                onClick={() => window.open("https://www.github.com/nurdsoft")}
+                onClick={() => handleOpen("https://www.github.com/nurdsoft")}
                 className="socialIcon"
               />
             </div>

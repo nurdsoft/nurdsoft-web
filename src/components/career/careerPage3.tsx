@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { UIEvent, useEffect, useRef, useState } from 'react';
 import Wrapper from '../wrapper';
 import './careerPage3.scss';
 import Button from '../button';
@@ -85,7 +85,7 @@ const CareerPage3 = () => {
     }
   }
 
-  const handleScrollMainPage = (evt: any) => {
+  const handleScrollMainPage = (evt: Event) => {
 
     if(lockMainScroll.current){
       evt.preventDefault()
