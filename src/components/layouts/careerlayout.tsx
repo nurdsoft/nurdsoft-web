@@ -4,51 +4,16 @@ import CareerPage1 from "../career/careerPage1";
 import CareerPage2 from "../career/careerPage2";
 import CareerPage3 from "../career/careerPage3";
 import CareerPage4 from "../career/careerPage4";
+import './careerlayout.scss'
 
 const CareerLayout = () => {
   return (
-    <Parallax id="career_scroller" pages={4.2}>
-      <ParallaxLayer
-        offset={0}
-        speed={0}
-        factor={0}
-        style={{
-          backgroundColor: "var(--black-100)",
-        }}
-      >
-        <CareerPage1 />
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={1}
-        speed={0}
-        factor={0}
-        style={{
-          backgroundColor: "var(--black-100)",
-        }}
-      >
-        <CareerPage2 />
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={2}
-        speed={0}
-        factor={0}
-        style={{
-          backgroundColor: "var(--black-100)",
-        }}
-      >
-        <CareerPage3 />
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={3}
-        speed={0}
-        factor={0}
-        style={{
-          backgroundColor: "var(--black-100)",
-        }}
-      >
-        <CareerPage4 />
-      </ParallaxLayer>
-    </Parallax>
+    <div id="career_scroller" className="career_scroller">
+      <CareerPage1 />
+      <CareerPage2 />
+      <CareerPage3 />
+      <CareerPage4 />
+    </div>
   );
 };
 
