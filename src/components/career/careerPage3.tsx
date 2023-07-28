@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Wrapper from '../wrapper';
 import './careerPage3.scss';
 import Button from '../button';
@@ -10,6 +10,7 @@ import CareerCard from './careerCard';
 const CareerPage3 = () => {
   const elementsToStack = useRef(-1)
   const activatingFromOutside = useRef(true)
+  const lockMainScroll = useRef(false)
 
   const triggerRef = useRef<any>()
 
@@ -50,6 +51,7 @@ const CareerPage3 = () => {
         careerPageCardView.style.overflow = 'hidden'
       }
       scroller.style.overflow = 'hidden scroll'
+      lockMainScroll.current = false
     }
     const cardsArray = Array.from(document.getElementsByClassName('careerPage3_card'))
     if(careerPageCardView){
@@ -83,7 +85,11 @@ const CareerPage3 = () => {
     }
   }
 
-  const handleScrollMainPage = () => {
+  const handleScrollMainPage = (evt: any) => {
+
+    if(lockMainScroll.current){
+      evt.preventDefault()
+    }
     const scroller = document.getElementById('career_scroller');
     const scrollTopContainer = document.getElementById('careerPage3_parentContainer')
 
@@ -91,6 +97,7 @@ const CareerPage3 = () => {
     activatingFromOutside.current = true
     if(Math.floor(scrollTopContainer.getBoundingClientRect().top) === 91){
       scroller.style.overflow = 'hidden'
+      lockMainScroll.current = true
     }
   }
 
