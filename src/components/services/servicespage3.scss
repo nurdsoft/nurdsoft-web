@@ -7,8 +7,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-top: rem(90px);
-    gap: 10px;
+    margin-top: rem(200px);
+    margin-bottom: rem(200px);
+    gap: 120px;
     .servicespage3_titleDiv {
       background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
       -webkit-text-fill-color: transparent;
@@ -26,8 +27,8 @@
       align-items: flex-start;
       background-image: url(../../images/abstract_wrapper.svg);
       background-repeat: no-repeat;
-      height: 100vh;
       background-size: contain;
+      padding: 160px 0px;
       .servicespage3_listContainer {
         .servicespage3_count {
           color: var(--off-gray);
@@ -61,6 +62,42 @@
       display: flex !important;
       flex-direction: column;
       gap: 50px;
+      .servicespage3_leftContainer{
+        width: 100%;
+        .servicespage3_titleDiv {
+          text-align: center;
+        }
+        .buttonContainer {
+          justify-content: center;
+          margin-left: -250px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicespage3_parentContainer{ 
+    .servicespage3_gridContainer{ 
+
+      .servicespage3_leftContainer{ 
+        .servicespage3_titleDiv {
+          font-size: rem(42px);
+        }
+      } 
+      
+      .servicespage3_rightContainer{
+        background-position-y: center;
+        padding: 20px 0px;
+        .servicespage3_listContainer{ 
+          .servicespage3_options{ 
+            .servicespage3_optionsList {
+              font-size: rem(20px);
+              line-height: 24px;
+            }
+          }
+        }
+      }
     }
   }
 }
