@@ -16,23 +16,38 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      position: relative;
+      overflow: hidden;
       .servicespage4_showVideo {
-        display: none;
+        display: block;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease-in;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        .servicespage4_backgroundImg {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .servicespage4_hide {
+        transform: translateY(0px);
+        transition: all 0.5s ease-out;
       }
       &:hover {
-        padding: 0;
+        // padding: 0;
         align-items: unset;
         .servicespage4_showVideo {
-          display: block;
+          opacity: 1;
           padding: 0 !important;
-          .servicespage4_backgroundImg {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-          }
+          height: 100%;
+          width: 100%;
         }
         .servicespage4_hide {
-          display: none;
+          transform: translateY(115px);
         }
       }
     }
@@ -93,6 +108,8 @@
   transition: 0.4s;
   height: 50%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   h4.servicespage4_industryTitle {
     text-align: center;
     margin: rem(20px) 0;
@@ -136,5 +153,36 @@
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .servicespage4_gridBox1,
+  .servicespage4_gridBox3 {
+    h4.servicespage4_industryTitle {
+      font-size: rem(42px);
+    }
+  }
+}
+
+@media screen and ( max-width: 706px) {
+  .servicespage4_parentContainer{ 
+    .servicespage4_gridContainer{
+      display: flex;
+      flex-direction: column;
+      .servicespage4_item2{
+        border-bottom: none;
+      }
+      .servicespage4_gridBox1{
+        border-left: 1px solid var(--gray-100);
+        border-right: 1px solid var(--gray-100);
+        padding: 6rem 0px;
+      }
+      .servicespage4_gridBox3{
+        padding: 6rem 0px;
+        border-left: 1px solid var(--gray-100);
+        border-right: 1px solid var(--gray-100);
+      }
+    }
   }
 }
