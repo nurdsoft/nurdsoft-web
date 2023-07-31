@@ -7,14 +7,14 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 624px;
-        height: 624px;
+        width: rem(624px);
+        height: rem(624px);
         opacity: 0.2;
         transition: all 0.7s ease;
 
         &.scale {
-            width: 800px;
-            height: 800px;
+            width: rem(800px);
+            height: rem(800px);
         }
         svg.careerCardIcon {
             width: 100%;

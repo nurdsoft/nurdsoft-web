@@ -2,9 +2,8 @@ import React, { useRef } from 'react';
 import './jobDescriptionPage3.scss';
 import Wrapper from '../wrapper';
 import { CHECK_ICON } from '../../icons';
-import { FACEBOOK, GITHUB, LINKEDIN, TWITTER } from '../../icons';
-import Button from '../button';
 import useIntersectionObserver from '../common/intersectionObserver';
+import ApplyNowJD from './applyNowJD';
 
 
 const JobDescriptionPage3 = ({data}: any) => {
@@ -15,10 +14,6 @@ const JobDescriptionPage3 = ({data}: any) => {
     threshold: 0.5,
     freezeOnceVisible: false
   });
-
-  const handleOpen = (url: string) => {
-    window.open(url, '_blank');
-  }
   
   return (
     <Wrapper>
@@ -37,33 +32,7 @@ const JobDescriptionPage3 = ({data}: any) => {
         {
           data?.qualities?.length ?
           <></>:
-          <div className='applyNow_wrapper'>
-            <Button buttonText='APPLY NOW' />
-            <div className="socialIcons_wrapper">
-              <div className="socialIcon" >
-                <FACEBOOK
-                  onClick={() => handleOpen("https://www.facebook.com/nurdsoft")}
-                />
-              </div>
-              <div className="socialIcon" >
-                <TWITTER
-                  onClick={() => handleOpen("https://www.twitter.com/nurdsoft")}
-                />
-              </div>
-              <div className="socialIcon" >
-                <LINKEDIN
-                  onClick={() =>
-                    handleOpen("https://www.linkedin.com/company/nurdsoft")
-                  }
-                />
-              </div>
-              <div className="socialIcon" >
-                <GITHUB
-                  onClick={() => handleOpen("https://www.github.com/nurdsoft")}
-                />
-              </div>
-            </div>
-          </div>
+          <ApplyNowJD />
         }
       </div>
     </Wrapper>
