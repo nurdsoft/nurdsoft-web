@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './jobDescriptionPage3.scss';
 import Wrapper from '../wrapper';
 import { CHECK_ICON } from '../../icons';
-import { FACEBOOK, GITHUB, LINKEDIN, TWITTER } from '../../icons';
-import Button from '../button';
+import useIntersectionObserver from '../common/intersectionObserver';
+import ApplyNowJD from './applyNowJD';
 
 
 const JobDescriptionPage3 = ({data}: any) => {
+
+  const triggerRef = useRef<any>();
+
+  const dataRef = useIntersectionObserver(triggerRef, {
+    threshold: 0.5,
+    freezeOnceVisible: false
+  });
   
   return (
     <Wrapper>
       <div className="jobDescription3_parentContainer" >
-        <div className='jobDescription3_header'>
-          <h1 className='section_title'>Requirements </h1>
+        <div className='jobDescription3_header' ref={triggerRef}>
+          <h1 className={`section_title ${dataRef?.isIntersecting ? 'slide' : ''}`}>Requirements </h1>
         </div>
         {
           data.requirements.map((requirement: string, index: number) => (
@@ -25,15 +32,7 @@ const JobDescriptionPage3 = ({data}: any) => {
         {
           data?.qualities?.length ?
           <></>:
-          <div className='applyNow_wrapper'>
-            <Button buttonText='APPLY NOW' />
-            <div className='socialIcons_wrapper'>
-              <FACEBOOK className='socialIcon' />
-              <TWITTER className='socialIcon' />
-              <LINKEDIN className='socialIcon' />
-              <GITHUB className='socialIcon' />
-            </div>
-          </div>
+          <ApplyNowJD />
         }
       </div>
     </Wrapper>

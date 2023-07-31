@@ -15,6 +15,11 @@
             font-weight: 700;
             line-height: 74px;
             margin-bottom: rem(67px);
+            transition: all 1s ease;
+            transform: translateX(50%);
+            &.slide {
+                transform: translateX(0px)
+            }
         }
     }
 
@@ -28,6 +33,16 @@
             font-style: italic;
             font-weight: 400;
             line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jobDescription2_parentContainer {
+        .jobDescription2_header{
+            .section_title {
+                font-size: rem(42px);
+            }
         }
     }
 }
