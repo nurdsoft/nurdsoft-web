@@ -86,3 +86,16 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .jobDescription3_parentContainer {
+        .jobDescription3_header{
+            .section_title {
+                font-size: rem(42px);
+            }
+        }
+        .applyNow_wrapper{
+            gap: 30px;
+        }
+    }
+}
