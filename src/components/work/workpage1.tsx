@@ -5,6 +5,7 @@ import BitFleq from "../../images/showcase_nft.png";
 import BnD from "../../images/simplify_work.png";
 import AuditTrust from "../../images/slider_dashboard.png";
 import { Link } from "gatsby";
+import { ARROW_RIGHT_SMALL } from "../../icons";
 
 const Workpage1 = () => {
   const portfolioContainer = [
@@ -42,9 +43,17 @@ const Workpage1 = () => {
                       <img src={portfolio.img} alt="cardImg" />
                     </div>
                   </Link>
-                  <div className="workpage1_content">
-                    <p className="workpage1_caption">{portfolio.caption}</p>
-                    <p className="workpage1_title">{portfolio.title}</p>
+                  <div className="workpage1_contentWrapper">
+                    <div className="workpage1_content">
+                      <p className="workpage1_caption">{portfolio.caption}</p>
+                      <p className="workpage1_title">{portfolio.title}</p>
+                    </div>
+                    <div className="workpage1_gobtn">
+                      <Link to={portfolio.path} className="animate">
+                        <ARROW_RIGHT_SMALL className="workpage1_gobtnIcon" />
+                        <ARROW_RIGHT_SMALL className="workpage1_gobtnIcon" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               );
