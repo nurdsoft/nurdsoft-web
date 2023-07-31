@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./jobDescriptionPage4.scss";
 import Wrapper from "../wrapper";
 import { CHECK_ICON } from "../../icons";
 import Button from "../button";
 import { FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../icons";
+import useIntersectionObserver from "../common/intersectionObserver";
 
 const JobDescriptionPage4 = ({ data }: any) => {
+  const triggerRef = useRef<any>();
+
+  const dataRef = useIntersectionObserver(triggerRef, {
+    threshold: 0.5,
+    freezeOnceVisible: false
+  });
+
+  const handleOpen = (url: string) => {
+    window.open(url, '_blank');
+  }
+
   return (
     <Wrapper>
       <div className="jobDescription4_parentContainer">
-        <div className="jobDescription4_header">
-          <h1 className="section_title">Qualities </h1>
+        <div className="jobDescription4_header" ref={triggerRef} >
+          <h1 className={`section_title ${dataRef?.isIntersecting ? 'slide' : ''}`}>Qualities </h1>
         </div>
         {data.qualities.map((quality: string, index: number) => (
           <div className="jobDescription4_bulletPoint" key={index}>
@@ -21,24 +33,28 @@ const JobDescriptionPage4 = ({ data }: any) => {
         <div className="applyNow_wrapper">
           <Button buttonText="APPLY NOW" />
           <div className="socialIcons_wrapper">
-            <FACEBOOK
-              onClick={() => window.open("https://www.facebook.com/nurdsoft")}
-              className="socialIcon"
-            />
-            <TWITTER
-              onClick={() => window.open("https://www.twitter.com/nurdsoft")}
-              className="socialIcon"
-            />
-            <LINKEDIN
-              onClick={() =>
-                window.open("https://www.linkedin.com/company/nurdsoft")
-              }
-              className="socialIcon"
-            />
-            <GITHUB
-              onClick={() => window.open("https://www.github.com/nurdsoft")}
-              className="socialIcon"
-            />
+            <div className="socialIcon" >
+              <FACEBOOK
+                onClick={() => handleOpen("https://www.facebook.com/nurdsoft")}
+              />
+            </div>
+            <div className="socialIcon" >
+              <TWITTER
+                onClick={() => handleOpen("https://www.twitter.com/nurdsoft")}
+              />
+            </div>
+            <div className="socialIcon" >
+              <LINKEDIN
+                onClick={() =>
+                  handleOpen("https://www.linkedin.com/company/nurdsoft")
+                }
+              />
+            </div>
+            <div className="socialIcon" >
+              <GITHUB
+                onClick={() => handleOpen("https://www.github.com/nurdsoft")}
+              />
+            </div>
           </div>
         </div>
       </div>
