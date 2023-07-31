@@ -32,7 +32,7 @@ const Footer = () => {
           className="cursor-pointer"
         />
       </div>
-      <div className="text-base offGray uppercase">
+      <div className="text-base offGray uppercase footer_privacypolicy">
         <Link to="/privacy-policy">privacy policy</Link>
       </div>
     </div>

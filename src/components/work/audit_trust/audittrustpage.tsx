@@ -346,7 +346,7 @@ const AuditTrustPage = () => {
               Let's create an amazing product together!
             </h4>
             <a href="mailto:hr@nurdsoft.co">
-              <Button buttonText="EMAIL NOW" className="mr-32" />
+              <Button buttonText="EMAIL NOW" />
             </a>
           </div>
 

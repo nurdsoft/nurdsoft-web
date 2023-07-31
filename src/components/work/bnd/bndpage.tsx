@@ -2,22 +2,14 @@ import React from "react";
 import "./bndpage.scss";
 import Wrapper from "../../wrapper";
 import { StaticImage } from "gatsby-plugin-image";
-import {
-  ARROW_LEFT,
-  ARROW_RIGHT,
-  ARROW_WITH_GRADIENT,
-  FOOTER_FACEBOOK,
-  FOOTER_GITHUB,
-  FOOTER_LINKEDIN,
-  FOOTER_TWITTER,
-} from "../../../icons";
+import { ARROW_LEFT, ARROW_RIGHT, ARROW_WITH_GRADIENT } from "../../../icons";
 import Benefit1 from "../../../images/benefits1.png";
 import Benefit2 from "../../../images/benefits2.png";
 import Benefit3 from "../../../images/benefits3.png";
 import Benefit4 from "../../../images/benefits4.png";
 import Benefit5 from "../../../images/benefits5.png";
 import Button from "../../button";
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import Footer from "../../common/footer/footer";
 
 const Bndpage = () => {
@@ -441,7 +433,7 @@ const Bndpage = () => {
               Let's create an amazing product together!
             </h4>
             <a href="mailto:hr@nurdsoft.co">
-              <Button buttonText="EMAIL NOW" className="mr-32" />
+              <Button buttonText="EMAIL NOW" />
             </a>
           </div>
 

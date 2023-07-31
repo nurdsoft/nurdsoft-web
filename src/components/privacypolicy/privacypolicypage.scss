@@ -8,10 +8,18 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 
+  .privacypolicy_drodpownContainer {
+    display: none;
+  }
+
+  .privacypolicypage_containerWidth {
+    width: 58.3%;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
-  
+
   .privacypolicypage_dataCollectionType {
     .privacypolicypage_dataCollectionTitle {
       background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
@@ -55,5 +63,25 @@
     position: sticky;
     top: 0;
     left: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .privacypolicypage_parentContainer {
+    padding: 0 rem(35px) rem(30px) rem(25px);
+
+    .privacypolicy_drodpownContainer {
+      display: block;
+      margin: rem(40px) 0;
+      position: sticky;
+      top: 0px;
+    }
+
+    .privacypolicypage_containerWidth {
+      width: unset;
+    }
+    .privacypolicypage_tableOfContents {
+      display: none;
+    }
   }
 }

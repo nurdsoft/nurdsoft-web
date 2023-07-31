@@ -2,14 +2,96 @@ import React, { useEffect, useState } from "react";
 import "./privacypolicypage.scss";
 import Wrapper from "../wrapper";
 import Footer from "../common/footer/footer";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
+import Select from "react-select";
 
 const PrivacyPolicyPage = () => {
-
-  if(typeof window === "undefined") return <></> ;
+  if (typeof window === "undefined") return <></>;
 
   const [hash, setHash] = useState(window.location.hash);
   let [preventHashChange, setPreventHashChange] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<any>({
+    label: "Service",
+    id: "privacypolicy_service",
+  });
+
+  const customStyles = (): any => {
+    return {
+      control: (base: Record<string, string>) => ({
+        ...base,
+        fontFamily: "DM Sans",
+        borderColor: "var(--gray-100)",
+        fontSize: 13,
+        cursor: "pointer",
+        outline: "none",
+        boxShadow: "none",
+        padding: 12,
+        width: 348,
+        backgroundColor: "var(--white)",
+      }),
+      input: (base: Record<string, string>) => ({
+        ...base,
+        color: "var(--dark-gray-100)",
+      }),
+      valueContainer: (base: Record<string, string>) => ({
+        ...base,
+        backgroundColor: "var(--white)",
+        color: "var(--dark-gray-100)",
+      }),
+      menu: (base: Record<string, string>) => ({
+        ...base,
+        fontFamily: "DM Sans",
+        outline: "none",
+        borderRadius: "6px",
+        zIndex: "99999",
+        width: 348,
+        backgroundColor: "var(--white)",
+        "&:hover": {
+          backgroundColor: "var(--primary-100)",
+        },
+      }),
+      singleValue: (base: Record<string, unknown>) => {
+        return {
+          ...base,
+          color: "var(--gray-100)",
+          "&:hover": {
+            boxShadow: "none",
+            border: "none",
+            outline: "none",
+          },
+        };
+      },
+      dropdownIndicator: (base: Record<string, string>) => ({
+        ...base,
+        paddingTop: 0,
+        paddingBottom: 0,
+        paddingLeft: 12,
+        color: "var(--gray-100)",
+        "&:hover": {
+          color: "var(--gray-100)",
+        },
+      }),
+      clearIndicator: (base: Record<string, string>) => ({
+        ...base,
+        paddingTop: 0,
+        paddingBottom: 0,
+      }),
+      option: (
+        provided: Record<string, unknown>,
+        { isSelected }: Record<string, unknown>
+      ) => ({
+        ...provided,
+        fontSize: 14,
+        cursor: "pointer",
+        padding: 12,
+        color: "var(--dark-gray-100)",
+        backgroundColor: isSelected ? "var(--off-gray)" : "var(--white)",
+        "&:hover": {
+          backgroundColor: "var(--gray-200)",
+        },
+      }),
+    };
+  };
 
   const policyDataPoints = [
     {
@@ -56,7 +138,7 @@ const PrivacyPolicyPage = () => {
   ];
 
   const useOfDataList = [
-    " To provide and maintain the Service ",
+    "To provide and maintain the Service ",
     "To notify you about changes to our Service",
     "To allow you to participate in interactive features of our Service when you choose to do so",
     "To provide customer care and support",
@@ -158,6 +240,11 @@ const PrivacyPolicyPage = () => {
     setPreventHashChange(false);
   }, [window.location.hash]);
 
+  const onDropdownChange = (option: { label: string; id: string }): any => {
+    setSelectedOption(option);
+    navigate(`/privacy-policy#${option.id}`);
+  };
+
   return (
     <Wrapper>
       <div
@@ -165,7 +252,7 @@ const PrivacyPolicyPage = () => {
         id="privacypolicypage_parentContainer"
       >
         <div className="flex gap-28">
-          <div className="w-7/12 mt-32">
+          <div className="privacypolicypage_containerWidth mt-32">
             <h4 className="privacypolicypage_title white text-6xl m-0 font-medium">
               Privacy Policy
             </h4>
@@ -200,6 +287,20 @@ const PrivacyPolicyPage = () => {
               </a>
               .
             </p>
+            <div className="privacypolicy_drodpownContainer">
+              <Select
+                defaultValue={selectedOption}
+                onChange={(option: any) => {
+                  onDropdownChange && onDropdownChange(option);
+                }}
+                options={tableOfContentList}
+                styles={customStyles()}
+                getOptionValue={(option: Record<string, string>) => option.id}
+                components={{
+                  IndicatorSeparator: () => null,
+                }}
+              />
+            </div>
             {policyDataPoints.map(
               (policy: {
                 title: string;

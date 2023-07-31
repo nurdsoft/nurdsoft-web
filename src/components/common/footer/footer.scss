@@ -1,3 +1,17 @@
 .footerpage_footer {
-  width: 1200px;
+  width: rem(1200px);
+  .footer_privacypolicy {
+    a {
+      &:hover {
+        color: var(--primary-100);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footerpage_footer {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
