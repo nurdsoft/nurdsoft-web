@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import './jobDescriptionPage1.scss';
 import Wrapper from '../wrapper';
 import { DROP_PIN_ICON } from '../../icons';
@@ -12,6 +12,8 @@ const jobDescriptionPage1 = ({data}: any) => {
     threshold: 0.5,
     freezeOnceVisible: false
   });
+
+  const SVG = iconMap[data.icon as string]
 
   return (
     <Wrapper className='jobDescription1_wrapper'>
@@ -28,7 +30,7 @@ const jobDescriptionPage1 = ({data}: any) => {
           <p className='jobAbout'>{data.about}</p>
         </div>
         <div className={`abs_iconContainer ${dataRef?.isIntersecting ? '' : 'scale'}`}>
-          {iconMap[data.icon as string]}
+          <SVG className="careerCardIcon" fade={true} />
         </div>
       </>
     </Wrapper>
