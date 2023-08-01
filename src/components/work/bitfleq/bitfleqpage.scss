@@ -181,7 +181,7 @@
       }
     }
     .bitfleqspage_keyChallanges{
-      padding: 20px;
+      padding: rem(20px);
       .bitfleqspage_keyChallangesTitle{
         font-size: rem(32px);
         text-align: center;
@@ -210,7 +210,7 @@
             font-size: rem(20px);
           }
           .bitfleqspage_boxPara {
-            font-size: 18px;
+            font-size: rem(18px);
           }
         }
       }
@@ -229,7 +229,7 @@
         text-align: center;
         line-height: 42px;
         .primary100 {
-          margin-left: 8px;
+          margin-left: rem(8px);
         }
       }
     }
