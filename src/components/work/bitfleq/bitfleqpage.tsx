@@ -208,12 +208,12 @@ const BitFleqpage = () => {
                 src={"../../../images/art_collection2.png"}
                 alt="Art Collection 2"
               />
-              <StaticImage
-                className="bitfleqspage_artCollection3"
-                src={"../../../images/art_collection3.png"}
-                alt="Art Collection 3"
-              />
             </div>
+            <StaticImage
+              className="bitfleqspage_artCollection3 mt-20"
+              src={"../../../images/art_collection3.png"}
+              alt="Art Collection 3"
+            />
           </div>
 
           {/* Key Features */}
