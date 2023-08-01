@@ -1,13 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import "./color/color-palatte";
 @import "./fonts/fonts/font-face";
 @import "./helpers";
 // @import "./slick";
 // @import "./slickTheme";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html{
+html {
   overflow: hidden;
 }
 

@@ -5,11 +5,9 @@ import BndLayout from "../../components/layouts/bndlayout";
 
 const BnD: React.FC<PageProps> = () => {
   return (
-    <>
-      <Layout>
-        <BndLayout />
-      </Layout>
-    </>
+    <Layout>
+      <BndLayout />
+    </Layout>
   );
 };
 

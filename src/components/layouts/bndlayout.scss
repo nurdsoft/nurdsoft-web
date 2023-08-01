@@ -1,11 +1,11 @@
-.bnd_scroller{
-    overflow-y: scroll;
-    height: 100%;
-    position: relative;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+.bnd_scroller {
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

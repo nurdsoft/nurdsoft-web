@@ -1,15 +1,17 @@
-import React from "react";
 import "./bitfleqpage.scss";
-import Wrapper from "../../wrapper";
-import { StaticImage } from "gatsby-plugin-image";
+
 import { ARROW_LEFT, ARROW_RIGHT, ARROW_WITH_GRADIENT } from "../../../icons";
+
 import BitFleqFeature1 from "../../../images/bitfleq_feature1.png";
 import BitFleqFeature2 from "../../../images/bitfleq_feature2.png";
 import BitFleqFeature3 from "../../../images/bitfleq_feature3.png";
 import BitFleqFeature4 from "../../../images/bitfleq_feature4.png";
 import Button from "../../button";
-import { navigate } from "gatsby";
 import Footer from "../../common/footer/footer";
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import Wrapper from "../../wrapper";
+import { navigate } from "gatsby";
 
 const BitFleqpage = () => {
   const keyFeaturesList = [

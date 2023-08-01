@@ -1,16 +1,18 @@
-import React from "react";
 import "./bndpage.scss";
-import Wrapper from "../../wrapper";
-import { StaticImage } from "gatsby-plugin-image";
+
 import { ARROW_LEFT, ARROW_RIGHT, ARROW_WITH_GRADIENT } from "../../../icons";
+
 import Benefit1 from "../../../images/benefits1.png";
 import Benefit2 from "../../../images/benefits2.png";
 import Benefit3 from "../../../images/benefits3.png";
 import Benefit4 from "../../../images/benefits4.png";
 import Benefit5 from "../../../images/benefits5.png";
 import Button from "../../button";
-import { navigate } from "gatsby";
 import Footer from "../../common/footer/footer";
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import Wrapper from "../../wrapper";
+import { navigate } from "gatsby";
 
 const Bndpage = () => {
   const productStatementList = [
@@ -297,7 +299,8 @@ const Bndpage = () => {
           {/* Visual Design */}
           <div className="bndpage_visualDesign pt-16 pb-8">
             <h4 className="bndpage_visualDesignTitle text-5xl text-center mb-2 white">
-              {"Visual "} <span className="primary100">Design</span>{" (UI)"}
+              {"Visual "} <span className="primary100">Design</span>
+              {" (UI)"}
             </h4>
             <div className="bndpage_visualDesignImagesContainer flex flex-wrap gap-4 mt-16">
               <StaticImage

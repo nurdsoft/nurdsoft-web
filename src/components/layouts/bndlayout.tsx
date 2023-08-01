@@ -1,7 +1,9 @@
+import "./bndlayout.scss";
+
 import * as React from "react";
+
 import Bndpage from "../work/bnd/bndpage";
 import BreadCrumb from "../breadcrumb";
-import './bndlayout.scss'
 
 const BndLayout = () => {
   return (

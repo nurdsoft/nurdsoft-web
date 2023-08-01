@@ -1,6 +1,8 @@
-import * as React from "react";
-import Wrapper from "./wrapper";
 import "./breadcrumb.scss";
+
+import * as React from "react";
+
+import Wrapper from "./wrapper";
 import { navigate } from "gatsby";
 
 const BreadCrumb = ({ title }: { title: string }) => {

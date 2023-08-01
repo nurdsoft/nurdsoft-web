@@ -1,7 +1,8 @@
-import React from "react";
-import BreadCrumb from "../breadcrumb";
+import "./bitfleqslayout.scss";
+
 import BitFleqpage from "../work/bitfleq/bitfleqpage";
-import './bitfleqslayout.scss';
+import BreadCrumb from "../breadcrumb";
+import React from "react";
 
 const BitFleqsLayout = () => {
   return (

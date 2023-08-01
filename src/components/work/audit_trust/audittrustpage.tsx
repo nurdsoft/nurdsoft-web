@@ -1,8 +1,7 @@
-import React from "react";
 import "./audittrustpage.scss";
-import Wrapper from "../../wrapper";
-import { StaticImage } from "gatsby-plugin-image";
+
 import { ARROW_LEFT, ARROW_RIGHT, CIRCLE_TICK } from "../../../icons";
+
 import AuditFeature1 from "../../../images/audit_feature1.png";
 import AuditFeature2 from "../../../images/audit_feature2.png";
 import AuditFeature3 from "../../../images/audit_feature3.png";
@@ -10,8 +9,11 @@ import AuditFeature4 from "../../../images/audit_feature4.png";
 import AuditFeature5 from "../../../images/audit_feature5.png";
 import AuditFeature6 from "../../../images/audit_feature6.png";
 import Button from "../../button";
-import { navigate } from "gatsby";
 import Footer from "../../common/footer/footer";
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import Wrapper from "../../wrapper";
+import { navigate } from "gatsby";
 
 const AuditTrustPage = () => {
   const productStatementList = [

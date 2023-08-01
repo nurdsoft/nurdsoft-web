@@ -1,12 +1,15 @@
-import * as React from "react";
-import { Link } from "gatsby";
 import "./footer.scss";
+
+import * as React from "react";
+
 import {
   FOOTER_FACEBOOK,
   FOOTER_GITHUB,
   FOOTER_LINKEDIN,
   FOOTER_TWITTER,
 } from "../../../icons/index";
+
+import { Link } from "gatsby";
 
 const Footer = () => {
   return (
