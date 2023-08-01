@@ -7,21 +7,22 @@
     font-size: rem(56px);
     font-weight: 700;
     line-height: 74px;
-    width: 80%;
+    max-width: rem(917px);
+    width: 100%;
   }
-
+  
   .bndpage_imageContainer1 {
     .bndpage_bndImage {
       object-fit: cover;
       width: 100%;
     }
   }
-
+  
   .bndpage_keyChallanges {
     background-color: var(--dark-gray-100);
     border-radius: 16px;
   }
-
+  
   .bndpage_valueProposition {
     .bndpage_gridContainer {
       display: grid;
@@ -63,24 +64,40 @@
       }
     }
   }
-
-  .bndpage_resultsAndBenifits {
-    .bndpage_resultsAndBenifitsFlexContainer {
-      .bndpage_resultsAndBenifitsFlexBox {
-        border: 1px solid var(--gray-100);
-      }
-      .boxWidth {
-        width: 49%;
+  .bndpage_visualDesign{
+    .bndpage_visualDesignImagesContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .gatsby-image-wrapper {
+        &:last-child {
+          grid-column: 1 / span 2;
+        }
       }
     }
+    
   }
-
+  
+  .bndpage_resultsAndBenifits {
+    .bndpage_resultsAndBenifitsFlexContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .bndpage_resultsAndBenifitsFlexBox {
+        border: 1px solid var(--gray-100);
+        &:last-child {
+          grid-column: 1 / span 2;
+        }
+      }
+      
+    }
+  }
+  
   .bndpage_conclusion {
     background-color: var(--dark-gray-100);
   }
-
+  
   .bndpage_linkButtons {
     .bndpage_linkButtonsBoxContainer {
+      flex: 1;
       border: 1px solid var(--gray-100);
       display: flex;
       align-items: center;
@@ -93,5 +110,168 @@
       }
     }
   }
+  
+  .bndpage_emailBoxContainer {
+    h4.white {
+      max-width: rem(545px);
+      width: 100%;
+    }
+  }
+  
+}
 
+@media screen and (max-width: 768px) {
+  .bndpage_parentContainer {
+    .bndpage_title {
+      width: 100%;
+      font-size: rem(42px);
+      line-height: 52px;
+    }
+    .bndpage_implementationBuildDeploy {
+      .bndpage_bndImage {
+        display: none;
+      }
+      .bndpage_implementationTitle {
+        text-align: center;
+      }
+      .bndpage_implementationDescription{
+        width: 100%;
+      }
+    }
+    .bndpage_conclusion {
+      padding: rem(20px)
+    }
+    .bndpage_linkButtons {
+      flex-direction: column;
+      gap: 20px;
+      .bndpage_linkButtonsBoxContainer{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .bndpage_parentContainer {
+    .bndpage_title {
+      width: 100%;
+      font-size: rem(32px);
+      line-height: 42px;
+    }
+    .bndpage_productStatement{
+      .bndpage_productStatementTitle{
+        font-size: rem(30px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bndpage_productStatementDescription{
+        font-size: rem(18px);
+      }
+      .bndpage_productStatementList{
+        ol.offGray {
+          font-size: rem(18px);
+        }
+      }
+    }
+    .bndpage_keyChallanges {
+      padding: rem(20px);
+      .bndpage_keyChallangesTitle{
+        font-size: rem(32px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bndpage_keyChallangeDescription{
+        font-size: rem(18px);
+      }
+      .bndpage_keyChallangeListContainer {
+        font-size: rem(18px);
+        margin-bottom: 0;
+      }
+    }
+    .bndpage_valueProposition{
+      .bndpage_valuePropositionTitle {
+        font-size: rem(30px);
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bndpage_gridContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .bndpage_boxContainer{
+          margin: 0;
+          .bndpage_boxTitle{
+            font-size: rem(20px);
+          }
+          .bndpage_boxPara{
+            font-size: rem(18px);
+          }
+        }
+      }
+    }
+    .bndpage_implementationBuildDeploy {
+      .bndpage_implementationTitle {
+        font-size: rem(32px);
+        text-align: center;
+      }
+      .bndpage_implementationDescription {
+        font-size: rem(18px);
+      }
+    }
+    .bndpage_designThinkingProcess {
+      .bndpage_designThinkingProcessTitle {
+        font-size: rem(30px);
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+    .bndpage_howItWorks {
+      .bndpage_howItWorksTitle {
+        font-size: rem(30px);
+        text-align: center;
+        line-height: 40px;
+      }
+      .bndpage_howItWorksImagesContainer {
+        flex-direction: column;
+      }
+    }
+    .bndpage_visualDesign {
+      .bndpage_visualDesignTitle {
+        font-size: rem(30px);
+        text-align: center;
+        line-height: 40px;
+      }
+      .bndpage_visualDesignImagesContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .bndpage_resultsAndBenifits {
+      .bndpage_resultsAndBenifitsTitle {
+        font-size: rem(30px);
+        text-align: center;
+        line-height: 40px;
+      }
+      .bndpage_resultsAndBenifitsDescription {
+        font-size: rem(18px);
+      }
+      .bndpage_resultsAndBenifitsFlexContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .bndpage_conclusion {
+      .bndpage_conclusionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
+      }
+    }
+  }
 }
