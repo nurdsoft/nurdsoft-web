@@ -253,7 +253,7 @@ const PrivacyPolicyPage = () => {
       >
         <div className="flex gap-28">
           <div className="privacypolicypage_containerWidth mt-32">
-            <h4 className="privacypolicypage_title white text-6xl m-0 font-medium">
+            <h4 className="privacypolicypage_title white text-6xl m-0 font-bold">
               Privacy Policy
             </h4>
             <p className="text-lg offGray mt-12 italic">
@@ -311,7 +311,7 @@ const PrivacyPolicyPage = () => {
                   <React.Fragment key={policy.identifier}>
                     <h4
                       id={policy.identifier}
-                      className="privacypolicypage_title white mt-12 text-5xl m-0 font-medium"
+                      className="privacypolicypage_title white mt-12 text-5xl m-0 font-bold"
                     >
                       {policy.title}
                     </h4>
@@ -325,13 +325,13 @@ const PrivacyPolicyPage = () => {
             <div className="privacypolicypage_dataCollectionType mt-20">
               <h4
                 id="privacypolicy_dataCollectionTitle"
-                className="privacypolicypage_dataCollectionTitle white text-6xl m-0 font-medium"
+                className="privacypolicypage_dataCollectionTitle white text-6xl m-0 font-bold"
               >
                 Types of Data Collected
               </h4>
               <h4
                 id="privacypolicy_dataCollectionTitle_personaldata"
-                className="privacypolicypage_title white mt-12 text-5xl m-0 font-medium"
+                className="privacypolicypage_title white mt-12 text-5xl m-0 font-bold"
               >
                 Personal Data
               </h4>
@@ -360,13 +360,13 @@ const PrivacyPolicyPage = () => {
             <div className="privacypolicypage_cookiesDataUsage mt-20">
               <h4
                 id="privacypolicy_cookiesDataUsageTitle"
-                className="privacypolicypage_cookiesDataUsageTitle white leading-normal text-6xl m-0 font-medium"
+                className="privacypolicypage_cookiesDataUsageTitle white leading-normal text-6xl m-0 font-bold"
               >
                 Cookies and Usage Data
               </h4>
               <h4
                 id="privacypolicy_cookiesDataUsageTitle_usagedata"
-                className="privacypolicypage_title white mt-16 text-5xl m-0 font-medium"
+                className="privacypolicypage_title white mt-16 text-5xl m-0 font-bold"
               >
                 Usage Data
               </h4>
@@ -381,7 +381,7 @@ const PrivacyPolicyPage = () => {
               </p>
               <h4
                 id="privacypolicy_cookiesDataUsageTitle_tracking_cookies_data"
-                className="privacypolicypage_title white mt-12 text-5xl m-0 font-medium"
+                className="privacypolicypage_title white mt-12 text-5xl m-0 font-bold"
               >
                 Tracking & Cookies Data
               </h4>
@@ -403,7 +403,7 @@ const PrivacyPolicyPage = () => {
                 accept cookies, you may not be able to use some portions of our
                 Service.
               </p>
-              <h4 className="white mt-8 text-3xl m-0 font-medium">
+              <h4 className="white mt-8 text-3xl m-0 font-bold">
                 Example of cookies we use:
               </h4>
               <ul className="mt-8">
@@ -429,7 +429,7 @@ const PrivacyPolicyPage = () => {
                   </span>
                 </li>
               </ul>
-              <h4 className="white mt-8 text-3xl m-0 font-medium">
+              <h4 className="white mt-8 text-3xl m-0 font-bold">
                 Use of Data
               </h4>
               <p className="text-xl offGray mt-8 italic font-normal">
@@ -447,7 +447,7 @@ const PrivacyPolicyPage = () => {
                   );
                 })}
               </ul>
-              <h4 className="white mt-8 text-3xl m-0 font-medium">
+              <h4 className="white mt-8 text-3xl m-0 font-bold">
                 Transfer of Data
               </h4>
               <p className="text-xl offGray mt-8 font-normal">
@@ -485,11 +485,11 @@ const PrivacyPolicyPage = () => {
             >
               <h4
                 id="privacypolicy_disclosureOfDataTitle"
-                className="privacypolicypage_disclosureOfDataTitle white leading-normal text-6xl m-0 font-medium"
+                className="privacypolicypage_disclosureOfDataTitle white leading-normal text-6xl m-0 font-bold"
               >
                 Disclosure Of Data
               </h4>
-              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-medium">
+              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-bold">
                 Legal Requirements
               </h4>
               <p className="text-xl offGray mt-8 italic font-normal">
@@ -518,7 +518,7 @@ const PrivacyPolicyPage = () => {
             >
               <h4
                 id="privacypolicy_securityOfDataTitle"
-                className="privacypolicypage_securityOfDataTitle white leading-normal text-6xl m-0 font-medium"
+                className="privacypolicypage_securityOfDataTitle white leading-normal text-6xl m-0 font-bold"
               >
                 Security Of Data
               </h4>
@@ -529,7 +529,7 @@ const PrivacyPolicyPage = () => {
                 commercially acceptable means to protect your Personal Data, we
                 cannot guarantee its absolute security.
               </p>
-              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-medium">
+              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-bold">
                 Service Providers
               </h4>
               <p className="text-xl offGray mt-8 font-normal">
@@ -543,7 +543,7 @@ const PrivacyPolicyPage = () => {
                 perform these tasks on our behalf and are obligated not to
                 disclose or use it for any other purpose.
               </p>
-              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-medium">
+              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-bold">
                 Links to Other Sites
               </h4>
               <p className="text-xl offGray mt-8 italic font-normal">
@@ -557,7 +557,7 @@ const PrivacyPolicyPage = () => {
                 content, privacy policies, or practices of any third-party sites
                 or services.
               </p>
-              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-medium">
+              <h4 className="privacypolicypage_title white mt-16 text-5xl m-0 font-bold">
                 Children's Privacy
               </h4>
               <p className="text-xl offGray mt-8 italic font-normal">
@@ -573,7 +573,7 @@ const PrivacyPolicyPage = () => {
                 parental consent, we take steps to remove that information from
                 our servers.
               </p>
-              <h4 className="white mt-16 text-5xl m-0 font-medium">
+              <h4 className="white mt-16 text-5xl m-0 font-bold">
                 Changes to This Privacy Policy
               </h4>
               <p className="text-xl offGray mt-8 italic font-normal">
@@ -596,7 +596,7 @@ const PrivacyPolicyPage = () => {
               id="privacypolicy_contactUs"
               className="privacypolicypage_contactUs mt-20"
             >
-              <h4 className="privacypolicypage_contactUsTitle white leading-normal text-6xl m-0 font-medium">
+              <h4 className="privacypolicypage_contactUsTitle white leading-normal text-6xl m-0 font-bold">
                 Contact Us
               </h4>
               <p className="text-xl offGray mt-8">
@@ -625,7 +625,7 @@ const PrivacyPolicyPage = () => {
             {/* footer */}
           </div>
           <div className="privacypolicypage_tableOfContents p-8 mt-32">
-            <h4 className="white leading-normal text-lg m-0 font-medium">
+            <h4 className="white leading-normal text-lg m-0 font-bold">
               Table of Content
             </h4>
             <ul className="mt-4">

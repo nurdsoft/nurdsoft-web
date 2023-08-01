@@ -2,47 +2,47 @@
 @import "~sass-rem";
 
 .jobDescription2_parentContainer {
-    margin: 6.25rem auto 1.875rem auto;
-    color: var(--off-white-100);
-    width: 95%;
+  margin: 6.25rem rem(25px) 1.875rem rem(25px);
+  color: var(--off-white-100);
+  width: 95%;
 
-    .jobDescription2_header{
-        .section_title {
-            background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
-            @include backgroundClip;
-            font-size: rem(64px);
-            font-style: normal;
-            font-weight: 700;
-            line-height: 74px;
-            margin-bottom: rem(67px);
-            transition: all 1s ease;
-            transform: translateX(50%);
-            &.slide {
-                transform: translateX(0px)
-            }
-        }
+  .jobDescription2_header {
+    .section_title {
+      background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
+      @include backgroundClip;
+      font-size: rem(64px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 74px;
+      margin-bottom: rem(67px);
+      transition: all 1s ease;
+      transform: translateX(50%);
+      &.slide {
+        transform: translateX(0px);
+      }
     }
+  }
 
-    .jobDescription2_bulletPoint {
-        @include BulletPoint;
-        align-items: flex-start;
-        margin-bottom: rem(32px);
+  .jobDescription2_bulletPoint {
+    @include BulletPoint;
+    align-items: flex-start;
+    margin-bottom: rem(32px);
 
-        .bulletPoint_data {
-            font-size: rem(20px);
-            font-style: italic;
-            font-weight: 400;
-            line-height: 30px;
-        }
+    .bulletPoint_data {
+      font-size: rem(20px);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 30px;
     }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .jobDescription2_parentContainer {
-        .jobDescription2_header{
-            .section_title {
-                font-size: rem(42px);
-            }
-        }
+  .jobDescription2_parentContainer {
+    .jobDescription2_header {
+      .section_title {
+        font-size: rem(42px);
+      }
     }
+  }
 }

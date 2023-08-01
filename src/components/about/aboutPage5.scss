@@ -1,46 +1,47 @@
 @import "~sass-rem";
 
-.aboutPage5_parentContainer{
-    background: var(--black-100);
-    color: var(--off-white-100);
+.aboutPage5_parentContainer {
+  background: var(--black-100);
+  color: var(--off-white-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  .aboutPage5_joinUs {
+    background: linear-gradient(135deg, #b62bf5 0%, #e52e2c 100%);
+    font-size: rem(64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+  }
+  .aboutPage5_animatedDiv {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 120px;
+  }
+  .aboutPage5_stage {
+    max-width: rem(652px);
+    z-index: 1;
+  }
 
-    .aboutPage5_joinUs{
-        background: linear-gradient(135deg, #B62BF5 0%, #E52E2C 100%);
-        font-size: rem(64px);
-        font-style: normal;
-        font-weight: 700;
-        line-height: 74px;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        text-align: center;
-    }
-    .aboutPage5_animatedDiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 120px;
-    }
-    .aboutPage5_stage {
-        max-width: rem(652px);
-        z-index: 1;
-    }
-
-    .buttonContainer{
-        margin-right: auto;
-        margin-left: 23%;
-    }
+  .buttonContainer {
+    margin-right: auto;
+    margin-left: 23%;
+  }
 }
 
 @media screen and (max-width: 680px) {
-    .aboutPage5_parentContainer{
-        .aboutPage5_stage {
-            max-width: 95%;
-            margin: 0 auto;
-        }
+  .aboutPage5_parentContainer {
+    .aboutPage5_stage {
+      max-width: 95%;
+      margin: 0 auto;
     }
+  }
 }

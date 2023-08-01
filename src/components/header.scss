@@ -8,12 +8,12 @@
   background-color: var(--black-100);
   .wrapperContainer {
     display: grid;
-    grid-template-columns: 1fr minmax(min-content, 1280px) 1fr;
+    grid-template-columns: 1fr minmax(min-content, 1230px) 1fr;
     max-width: unset !important;
     .headerContainer {
       display: flex;
       justify-content: space-between;
-      padding: 25px 0 17px 0;
+      padding: rem(25px) 0 rem(17px) 0;
       text-decoration: none !important;
       .navBar {
         .burgerMenu {
@@ -104,7 +104,7 @@ a.activeMenuLink {
       animation: fadein 1s;
       div {
         text-align: center;
-        padding: 12px;
+        padding: rem(12px);
         border-bottom: 1px solid var(--gray-100);
         &:hover {
           opacity: 0.5;

@@ -1,14 +1,14 @@
 @import "~sass-rem";
 
 .servicespage1_parentContainer {
-  padding: 0 rem(8px) rem(60px) rem(8px);
+  padding: 0 rem(25px) rem(60px) rem(25px);
   margin-bottom: rem(120px);
 
   .servicespage1_gridContainer {
     .servicespage1_titleDiv {
       color: var(--off-white-100);
       letter-spacing: 0.04em;
-      font-weight: 500;
+      font-weight: 700;
       font-size: rem(62px);
       margin-top: rem(30px);
       grid-column: 1 / span 7;

@@ -1,8 +1,7 @@
 @import "~sass-rem";
 
 .dashboardParentContainer {
-  margin-left: rem(60px);
-  padding-bottom: rem(40px);
+  padding: 0 rem(25px) rem(40px) rem(25px);
   height: 100%;
 
   .softwareDiv {

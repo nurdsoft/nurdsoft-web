@@ -2,7 +2,7 @@
 @import "~sass-rem";
 
 .jobDescription3_parentContainer {
-    margin: 6.25rem auto 1.875rem auto;
+    margin: 6.25rem rem(25px) 1.875rem rem(25px);
     color: var(--off-white-100);
     width: 95%;
 

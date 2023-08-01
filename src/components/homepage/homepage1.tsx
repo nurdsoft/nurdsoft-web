@@ -2,6 +2,7 @@ import * as React from "react";
 import "./homepage1.scss";
 import Button from "../button";
 import Wrapper from "../wrapper";
+import { navigate } from "gatsby";
 
 const Homepage1 = () => {
   return (
@@ -13,7 +14,10 @@ const Homepage1 = () => {
               We’re a software and services company that builds and transforms
               businesses using technologies, data and AI.
             </div>
-            <Button buttonText="WHO WE ARE" />
+            <Button
+              buttonText="WHO WE ARE"
+              onClick={() => navigate("/about/")}
+            />
           </div>
           <div className="mt-36 imageContainer">
             <img

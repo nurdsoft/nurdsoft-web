@@ -1,7 +1,7 @@
 @import "~sass-rem";
 
 .homepage4_parentContainer {
-  padding: 0 rem(25px) rem(60px) rem(25px);
+  padding: 0 rem(25px) rem(30px) rem(25px);
   h4.homepage4_servicesHeading {
     text-align: center;
     margin: rem(50px) 0;
@@ -29,13 +29,14 @@
         display: block !important;
       }
       .homepage4_textContainer {
-        padding: rem(20px);
-        margin-top: rem(18px);
+        padding: rem(24px) rem(32px);
+        // margin-top: rem(18px);
         background-image: url("../../images/services.png");
         background-repeat: no-repeat;
-        p.homepage4_description {
-          padding-bottom: rem(16px);
-        }
+        border: 1px solid var(--gray-100);
+        // p.homepage4_description {
+        //   padding-bottom: rem(16px);
+        // }
       }
     }
     .homepage4_textContainer {
@@ -47,14 +48,12 @@
         font-size: rem(30px);
         color: var(--white);
         font-weight: 700;
-        line-height: 48px;
       }
       p.homepage4_description {
-        padding-top: rem(8px);
         font-size: rem(16px);
         color: var(--off-gray);
         font-weight: 400;
-        line-height: 27px;
+        line-height: 25px;
       }
     }
   }
