@@ -66,8 +66,8 @@ const Bndpage = () => {
     <Wrapper>
       <div className="bndpage_parentContainer">
         <h4 className="bndpage_title">
-          Leveraging <span className="primary100 mx-4">BuildnDeploy.co</span>
-          for Streamlined Software Development and Deployment
+          Leveraging <span className="primary100">BuildnDeploy.co</span>
+          {" for Streamlined Software Development and Deployment"}
         </h4>
         <div className="bndpage_imageContainer1 mt-12">
           <StaticImage
@@ -131,7 +131,7 @@ const Bndpage = () => {
             </div>
           </div>
         </div>
-        <div className="bndpage_valueProposition pt-16 pb-8 pl-12">
+        <div className="bndpage_valueProposition pt-16 pb-8">
           <h4 className="bndpage_valuePropositionTitle text-5xl text-center mb-2 white">
             Value <span className="primary100 mr-2">Proposition</span>
           </h4>
@@ -197,8 +197,8 @@ const Bndpage = () => {
           <div className="flex justify-items-start items-start">
             <div>
               <h4 className="bndpage_implementationTitle text-5xl mb-2 white">
-                Implementation of
-                <span className="primary100 ml-4">BuildnDeploy.co</span>
+                {"Implementation of "}
+                <span className="primary100">BuildnDeploy.co</span>
               </h4>
               <p className="bndpage_implementationDescription mb-8 mt-8 w-7/12 text-xl offGray font-normal">
                 To overcome these challenges, BND decided to implement
@@ -297,7 +297,7 @@ const Bndpage = () => {
           {/* Visual Design */}
           <div className="bndpage_visualDesign pt-16 pb-8">
             <h4 className="bndpage_visualDesignTitle text-5xl text-center mb-2 white">
-              Visual <span className="primary100 mx-2">Design</span>(UI)
+              {"Visual "} <span className="primary100">Design</span>{" (UI)"}
             </h4>
             <div className="bndpage_visualDesignImagesContainer flex flex-wrap gap-4 mt-16">
               <StaticImage
