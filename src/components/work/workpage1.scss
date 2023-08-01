@@ -21,7 +21,7 @@
       justify-content: center;
       align-items: left;
       max-width: rem(568px);
-      min-width: rem(298px);
+      min-width: rem(240px);
       width: 100%;
       flex-direction: column;
       align-self: start;
@@ -116,10 +116,45 @@
   }
 }
 
-@media only screen and (max-width: 680px) {
-  .workpage1_workBox {
-    &:nth-child(2n-1) {
-      margin-top: 0;
+@media only screen and (max-width: 966px) {
+  .workpage1_parentContainer{
+    .workpage1_cardsContainer {
+      .workpage1_workBox {
+        .workpage1_contentWrapper{ 
+          .workpage1_content{
+            .workpage1_title {
+              font-size: rem(32px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .workpage1_parentContainer{
+    .workpage1_cardsContainer {
+      display: flex;
+      flex-direction: column;
+
+      .workpage1_workBox {
+        margin: 0 auto;
+        &:nth-child(2n-1) {
+            margin-top: 0;
+        }
+
+        &:nth-child(n+2){
+          margin-top: rem(84px);
+        }
+        .workpage1_contentWrapper{ 
+          .workpage1_content{
+            .workpage1_title {
+              font-size: rem(32px);
+            }
+          }
+        }
+      }
     }
   }
 }
