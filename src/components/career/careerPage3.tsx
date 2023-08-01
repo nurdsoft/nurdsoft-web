@@ -8,6 +8,8 @@ import CareerCard from './careerCard';
 
 
 const CareerPage3 = () => {
+  if(typeof document === "undefined") return<></>;
+
   const elementsToStack = useRef(-1)
   const activatingFromOutside = useRef(true)
   const lockMainScroll = useRef(false)
