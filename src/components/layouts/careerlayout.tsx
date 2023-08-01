@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import CareerPage1 from "../career/careerPage1";
 import CareerPage2 from "../career/careerPage2";
 import CareerPage3 from "../career/careerPage3";
