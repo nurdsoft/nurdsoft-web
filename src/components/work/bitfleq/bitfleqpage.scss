@@ -7,7 +7,7 @@
     font-size: rem(56px);
     font-weight: 700;
     line-height: 74px;
-    width: 80%;
+    max-width: rem(820px);
   }
 
   .bitfleqspage_introduction {
@@ -17,6 +17,14 @@
   .bitfleqspage_keyChallanges {
     background-color: var(--dark-gray-100);
     border-radius: 16px;
+  }
+
+  .bitfleqspage_artCollection {
+    .bitfleqspage_artCollectionImagesContainer{
+      .bitfleqspage_artCollection2, .bitfleqspage_artCollection1{
+        flex: 1;
+      }
+    }
   }
 
   .bitfleqspage_valueProposition {
@@ -63,9 +71,11 @@
 
   .bitfleqspage_keyFeatures {
     .bitfleqspage_keyFeaturesFlexContainer {
+      justify-content: center;
       .bitfleqspage_keyFeaturesFlexBox {
         border: 1px solid var(--gray-100);
-        width: 49%;
+        max-width: rem(552px);
+        width: 100%;
       }
     }
   }
@@ -85,6 +95,150 @@
       transition: 0.4s all ease;
       &:hover {
         transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1173px) {
+  .bitfleqspage_parentContainer{ 
+    .bitfleqspage_keyFeatures{ 
+      .bitfleqspage_keyFeaturesFlexContainer{
+        .bitfleqspage_keyFeaturesFlexBox{
+          max-width: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bitfleqspage_parentContainer{ 
+    .bitfleqspage_title {
+      width: 100%;
+      font-size: rem(42px);
+      line-height: 52px;
+      span.primary100{
+        margin: 0;
+      }
+    }
+    .bitfleqspage_introduction, .bitfleqspage_conclusion{
+      padding: 40px 20px;
+    }
+    .bitfleqspage_valueProposition{
+      .bitfleqspage_gridContainer {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        .bitfleqspage_boxContainer{
+          flex: 1;
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+    .bitfleqspage_emailBoxContainer{
+      h4.white {
+        width: 100%;
+      }
+    }
+    .bitfleqspage_linkButtons {
+      flex-direction: column;
+      gap: 20px;
+      .bitfleqspage_linkButtonsBoxContainer{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bitfleqspage_parentContainer{ 
+    .bitfleqspage_title {
+      width: 100%;
+      font-size: rem(32px);
+      line-height: 42px;
+    }
+    .bitfleqspage_introduction{
+      .bitfleqspage_introductionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
+      }
+    }
+    .bitfleqspage_productStatement{
+      .bitfleqspage_productStatementTitle{
+        font-size: rem(30px);
+        text-align: center;
+        .primary100{
+          margin: 0;
+        }
+      }
+      .bitfleqspage_productStatementDescription{
+        font-size: rem(18px);
+        text-align: center;
+      }
+    }
+    .bitfleqspage_keyChallanges{
+      padding: 20px;
+      .bitfleqspage_keyChallangesTitle{
+        font-size: rem(32px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bitfleqspage_keyChallangeDescription{
+        font-size: rem(18px);
+      }
+      .bitfleqspage_keyChallangeListContainer{
+        font-size: rem(18px);
+        margin-bottom: 0;
+      }
+    }
+    .bitfleqspage_valueProposition{
+      .bitfleqspage_valuePropositionTitle{
+        font-size: rem(30px);
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bitfleqspage_gridContainer {
+        .bitfleqspage_boxContainer {
+          .bitfleqspage_boxTitle {
+            font-size: rem(20px);
+          }
+          .bitfleqspage_boxPara {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .bitfleqspage_artCollection {
+      .bitfleqspage_artCollectionTitle {
+        font-size: rem(30px);
+        .primary100 {
+          margin: 0;
+        }
+      }
+    }
+    .bitfleqspage_keyFeatures{
+      .bitfleqspage_keyFeaturesTitle {
+        font-size: rem(30px);
+        text-align: center;
+        line-height: 42px;
+        .primary100 {
+          margin-left: 8px;
+        }
+      }
+    }
+    .bitfleqspage_conclusion{
+      .bitfleqspage_conclusionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
       }
     }
   }
