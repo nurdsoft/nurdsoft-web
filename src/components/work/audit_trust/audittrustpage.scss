@@ -7,7 +7,8 @@
     font-size: rem(56px);
     font-weight: 700;
     line-height: 74px;
-    width: 80%;
+    max-width: rem(984px);
+    width: 100%;
   }
 
   .audittrustpage_introduction {
@@ -61,11 +62,24 @@
     }
   }
 
+  .audittrustpage_assessorDashboard{
+    .audittrustpage_assessorDashboardImagesContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .gatsby-image-wrapper {
+        &:first-child {
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+  }
+
   .audittrustpage_keyFeatures {
     .audittrustpage_keyFeaturesFlexContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       .audittrustpage_keyFeaturesFlexBox {
         border: 1px solid var(--gray-100);
-        width: 49%;
       }
     }
   }
@@ -74,10 +88,18 @@
     background-color: var(--dark-gray-100);
   }
 
+  .audittrustpage_emailBoxContainer {
+    h4.white {
+      max-width: rem(545px);
+      width: 100%;
+    }
+  }
+
   .audittrustpage_linkButtons {
     .audittrustpage_linkButtonsBoxContainer {
       border: 1px solid var(--gray-100);
       display: flex;
+      flex: 1;
       align-items: center;
       justify-content: space-between;
       flex-grow: 0.45;
@@ -85,6 +107,144 @@
       transition: 0.4s all ease;
       &:hover {
         transform: scale(1.05);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .audittrustpage_parentContainer {
+    .audittrustpage_title {
+      width: 100%;
+      font-size: rem(42px);
+      line-height: 52px;
+    }
+
+    .audittrustpage_introduction{
+      padding: rem(20px);
+    }
+
+    .audittrustpage_conclusion {
+      padding: rem(20px);
+    }
+
+    .audittrustpage_keyServices {
+      padding: rem(48px);
+      .audittrustpage_keyServicesListContainer {
+        margin-bottom: 0;
+      }
+    }
+
+    .audittrustpage_linkButtons {
+      flex-direction: column;
+      gap: 20px;
+      .audittrustpage_linkButtonsBoxContainer{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .audittrustpage_parentContainer {
+    .audittrustpage_title {
+      width: 100%;
+      font-size: rem(32px);
+      line-height: 42px;
+    }
+
+    .audittrustpage_introduction {
+      .audittrustpage_introductionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
+      }
+    }
+
+    .audittrustpage_productStatement{
+      .audittrustpage_productStatementTitle{
+        font-size: rem(30px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .audittrustpage_productStatementDescription{
+        font-size: rem(18px);
+      }
+      .audittrustpage_productStatementList{
+        ol.offGray {
+          font-size: rem(18px);
+        }
+      }
+    }
+
+    .audittrustpage_keyServices {
+      padding: rem(20px);
+      .audittrustpage_keyServicesTitle{
+        font-size: rem(32px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .audittrustpage_keyServicesListContainer {
+        font-size: rem(18px);
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+    }
+
+    .audittrustpage_valueProposition{
+      .audittrustpage_valuePropositionTitle {
+        font-size: rem(30px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bndpage_implementationDescription {
+        margin: rem(48px) 0 0 0;
+        width: 100%;
+      }
+      .audittrustpage_auditImage {
+        display: none;
+      }
+    }
+
+    .audittrustpage_assessorDashboard {
+      .audittrustpage_assessorDashboardTitle {
+        font-size: rem(30px);
+        text-align: center;
+      }
+      .audittrustpage_assessorDashboardImagesContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .audittrustpage_keyFeatures {
+      .audittrustpage_keyFeaturesTitle {
+        font-size: rem(30px);
+        text-align: center;
+      }
+      .audittrustpage_keyFeaturesFlexContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .audittrustpage_conclusion {
+      .audittrustpage_conclusionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
       }
     }
   }

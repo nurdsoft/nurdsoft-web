@@ -1,0 +1,11 @@
+.auditTrust_scroller {
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

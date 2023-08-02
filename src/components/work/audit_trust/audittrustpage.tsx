@@ -76,9 +76,9 @@ const AuditTrustPage = () => {
     <Wrapper>
       <div className="audittrustpage_parentContainer">
         <h4 className="audittrustpage_title">
-          One Platform to Manage Your
-          <span className="primary100 mx-4">Security Program</span>and
-          <span className="primary100 mx-4">Compliance</span>Posture.
+          {"One Platform to Manage Your "}
+          <span className="primary100">Security Program</span>{" and "}
+          <span className="primary100">Compliance</span>{" Posture."}
         </h4>
         <div className="audittrustpage_imageContainer1 mt-12">
           <StaticImage
