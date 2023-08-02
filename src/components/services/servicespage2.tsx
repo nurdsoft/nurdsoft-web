@@ -18,6 +18,7 @@ import {
   TEST_PURPLE,
 } from "../../icons";
 import useIntersectionObserver from "../common/intersectionObserver";
+import { isMobileDevice } from "../../utils/utils";
 
 const ServicesPage2 = () => {
 
@@ -146,7 +147,6 @@ const ServicesPage2 = () => {
     
   }
 
-
   useEffect(() => {
     const scroller = document.getElementById('parallaxLayoutServices')
     const processCarouselContainer = document.getElementById('servicespage2_parentContainer')
@@ -164,7 +164,10 @@ const ServicesPage2 = () => {
       activatingFromOutside.current = false
     }
 
-    scroller?.addEventListener('scroll', handleScrollMainPage)
+    
+    if(!isMobileDevice()){
+      scroller?.addEventListener('scroll', handleScrollMainPage)
+    }
 
   }, [dataRef?.intersectionRatio])
 
