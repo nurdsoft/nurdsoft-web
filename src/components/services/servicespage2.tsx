@@ -146,6 +146,15 @@ const ServicesPage2 = () => {
     
   }
 
+  function isMobileDevice() {
+    const mobileKeywords = [
+      'Mobi', 'Android', 'iPhone', 'iPad', 'BlackBerry',
+      'Windows Phone', 'webOS', 'Mobile Safari', 'Opera Mini'
+    ];
+  
+    return mobileKeywords.some(keyword => navigator.userAgent.includes(keyword));
+  }
+
 
   useEffect(() => {
     const scroller = document.getElementById('parallaxLayoutServices')
@@ -164,7 +173,10 @@ const ServicesPage2 = () => {
       activatingFromOutside.current = false
     }
 
-    scroller?.addEventListener('scroll', handleScrollMainPage)
+    
+    if(!isMobileDevice()){
+      scroller?.addEventListener('scroll', handleScrollMainPage)
+    }
 
   }, [dataRef?.intersectionRatio])
 

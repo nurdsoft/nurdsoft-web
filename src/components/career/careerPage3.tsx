@@ -10,6 +10,9 @@ const CareerPage3 = () => {
   const elementsToStack = useRef(-1);
   const activatingFromOutside = useRef(true);
   const lockMainScroll = useRef(false);
+  const scrollLockingPos = 91;
+  const scrollingToTop = useRef(false);
+  const scrollingToBottom = useRef(false);
 
   const triggerRef = useRef<any>();
 
@@ -34,6 +37,9 @@ const CareerPage3 = () => {
     if (!scroller || !careerPageCardView || !section2) {
       return;
     }
+    if(!lockMainScroll.current){
+      return
+    }
     activatingFromOutside.current = false;
     if (
       careerPageCardView?.scrollHeight - careerPageCardView?.scrollTop <=
@@ -44,6 +50,8 @@ const CareerPage3 = () => {
         careerPageCardView?.scrollHeight - careerPageCardView?.scrollTop <=
         1556
       ) {
+        scrollingToBottom.current = true
+        scroller.style.overflow = "hidden scroll";
         scroller.scrollTo({
           top: 3336,
           behavior: "smooth",
@@ -53,13 +61,15 @@ const CareerPage3 = () => {
         careerPageCardView?.scrollTop === 0 &&
         elementsToStack.current <= 0
       ) {
+        scrollingToTop.current = true
+        scroller.style.overflow = "hidden scroll";
         scroller.scrollTo({
           top: 0,
           behavior: "smooth",
         });
         careerPageCardView.style.overflow = "hidden";
       }
-      scroller.style.overflow = "hidden scroll";
+      activatingFromOutside.current = true
       lockMainScroll.current = false;
     }
     const cardsArray = Array.from(
@@ -116,8 +126,17 @@ const CareerPage3 = () => {
     );
 
     if (!scroller || !scrollTopContainer) return;
-    activatingFromOutside.current = true;
-    if (Math.floor(scrollTopContainer.getBoundingClientRect().top) === 91) {
+    if(Math.floor(scrollTopContainer.getBoundingClientRect().top) !== scrollLockingPos){
+      scrollingToBottom.current = false
+      scrollingToTop.current = false
+    }
+    
+    if (
+      Math.floor(scrollTopContainer.getBoundingClientRect().top) === scrollLockingPos && 
+      activatingFromOutside.current &&
+      !scrollingToTop.current && !scrollingToBottom.current
+    ) {
+      activatingFromOutside.current = false;
       scroller.style.overflow = "hidden";
       lockMainScroll.current = true;
     }
@@ -137,12 +156,11 @@ const CareerPage3 = () => {
         top:
           scroller.scrollTop +
           scrollTopContainer.getBoundingClientRect().top -
-          94,
+          scrollLockingPos,
         behavior: "smooth",
       });
       careerPageCardView.style.overflow = "hidden scroll";
       careerPageCardView.scrollTop = 1;
-      activatingFromOutside.current = false;
     }
 
     scroller?.addEventListener("scroll", handleScrollMainPage);
