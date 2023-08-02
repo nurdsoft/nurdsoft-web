@@ -147,6 +147,8 @@ const ServicesPage2 = () => {
   }
 
   function isMobileDevice() {
+    if(typeof navigator === "undefined") return;
+    
     const mobileKeywords = [
       'Mobi', 'Android', 'iPhone', 'iPad', 'BlackBerry',
       'Windows Phone', 'webOS', 'Mobile Safari', 'Opera Mini'
