@@ -18,6 +18,7 @@ import {
   TEST_PURPLE,
 } from "../../icons";
 import useIntersectionObserver from "../common/intersectionObserver";
+import { isMobileDevice } from "../../utils/utils";
 
 const ServicesPage2 = () => {
 
@@ -145,18 +146,6 @@ const ServicesPage2 = () => {
     }
     
   }
-
-  function isMobileDevice() {
-    if(typeof navigator === "undefined") return;
-    
-    const mobileKeywords = [
-      'Mobi', 'Android', 'iPhone', 'iPad', 'BlackBerry',
-      'Windows Phone', 'webOS', 'Mobile Safari', 'Opera Mini'
-    ];
-  
-    return mobileKeywords.some(keyword => navigator.userAgent.includes(keyword));
-  }
-
 
   useEffect(() => {
     const scroller = document.getElementById('parallaxLayoutServices')
