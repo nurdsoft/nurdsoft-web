@@ -21,17 +21,18 @@
     margin-top: rem(60px);
     cursor: pointer;
     .homepage4_lottieContainer {
-      display: none;
+      opacity: 0;
     }
     &:hover {
       .homepage4_lottieContainer {
         transform: rotate(-25deg);
-        display: block !important;
+        opacity: 1 !important;
       }
       .homepage4_textContainer {
         padding: rem(24px) rem(32px);
         // margin-top: rem(18px);
         background-image: url("../../images/services.png");
+        background-size: cover;
         background-repeat: no-repeat;
         border: 1px solid var(--gray-100);
         // p.homepage4_description {
@@ -40,8 +41,9 @@
       }
     }
     .homepage4_textContainer {
+      padding: rem(24px) rem(32px);
+      border: 1px solid transparent;
       transition: all 0.4s ease-out;
-      padding: 0;
       margin-top: 0;
       width: 100%;
       h4.homepage4_heading {
@@ -62,5 +64,29 @@
 @keyframes slide-right {
   to {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage4_parentContainer {
+    .homepage4_boxContainer {
+      .homepage4_lottieContainer {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .homepage4_parentContainer {
+    .homepage4_boxContainer {
+      flex-direction: column;
+      .w-1\/5{
+        width: 100%;
+      }
+      .homepage4_lottieContainer {
+        opacity: 1;
+      }
+    }
   }
 }
