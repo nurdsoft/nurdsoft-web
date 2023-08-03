@@ -1,3 +1,38 @@
+@import "../../styles/mixins";
+
 .scrolling-images-container {
   display: block;
+  margin: 120px auto;
+  .homepage6_title {
+    background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
+    @include backgroundClip;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+    transform: translateY(215px);
+    opacity: 0;
+    transition: all 0.7s ease;
+    &.animate {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  .image-wrapper {
+    position: relative;
+    .azure {
+      position: absolute;
+      top: 27%;
+      width: 23%;
+      left: 9%;
+    }
+    .terraform {
+      position: absolute;
+      top: 15%;
+      width: 23%;
+      right: 20%;
+    }
+  }
 }
