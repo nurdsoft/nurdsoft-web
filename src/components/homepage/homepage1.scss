@@ -41,3 +41,15 @@
     transform: translateY(0%);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .homepage1_parentContainer {
+    &> .flex {
+      flex-direction: column-reverse;
+      .imageContainer {
+        top: auto;
+        right: auto;
+      }
+    }
+  }
+}
