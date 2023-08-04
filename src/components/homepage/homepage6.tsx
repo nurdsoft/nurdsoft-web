@@ -26,7 +26,6 @@ const Homepage6 = () => {
   });
 
   useEffect(() => {
-    console.log(dataRef?.intersectionRatio);
     const title = document.getElementById("homepage6_title")
     const azure = document.getElementById("azure")
     const terraform = document.getElementById("terraform")

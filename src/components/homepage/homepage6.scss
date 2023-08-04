@@ -3,11 +3,11 @@
 
 .scrolling-images-container {
   display: block;
-  margin: 120px auto;
+  margin: rem(120px) auto;
   .homepage6_title {
     background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
     @include backgroundClip;
-    font-size: 80px;
+    font-size: rem(80px);
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
