@@ -1,15 +1,23 @@
-/* eslint-disable no-undef */
-import { useState } from "react";
+import "./header.scss";
+
 import * as React from "react";
+
 import { Link, navigate } from "gatsby";
+
+import Button from "./button";
+import NurdsoftImage from "../images/nurdsoft-logo-expanded.png";
 import { StaticImage } from "gatsby-plugin-image";
 import Wrapper from "./wrapper";
-import NurdsoftImage from "../images/nurdsoft-logo-expanded.png";
-import "./header.scss";
-import Button from "./button";
+/* eslint-disable no-undef */
+import { useState } from "react";
 
 const Header = () => {
   const [_showHamburgerMenu, _setShowHamburgerMenu] = useState(false);
+
+  const handleProjectEstimate = (evt: React.SyntheticEvent) => {
+    evt.preventDefault()
+    navigate("/#contact-us")
+  }
 
   return (
     <div className="header" id="header">
@@ -76,7 +84,7 @@ const Header = () => {
                       buttonText="ESTIMATE PROJECT"
                       isLinkButton={true}
                       showArrowIcon={false}
-                      onClick={() => navigate("/estimate_project/")}
+                      onClick={handleProjectEstimate}
                     />
                   </div>
                 </div>
@@ -103,9 +111,9 @@ const Header = () => {
               <Link className="menuLink" to="/work/">
                 <div>WORK</div>
               </Link>
-              <Link className="menuLink" to="/estimate_project/">
+              <a className="menuLink" onClick={handleProjectEstimate}>
                 <div>ESTIMATE PROJECT</div>
-              </Link>
+              </a>
             </div>
           )}
         </>
