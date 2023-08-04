@@ -54,7 +54,7 @@ const Homepage6 = () => {
           <h1 className="homepage6_title" id="homepage6_title" >Awards & <br />Certifications</h1>
           <div className="image-wrapper" ref={podiumTriggerRef} >
             <StaticImage
-              src="../../images/podium.svg"
+              src="../../images/PodiumNew.svg"
               alt="podium image"
               quality={100}
             />
