@@ -1,3 +1,64 @@
+@import "../../styles/mixins";
+@import "~sass-rem";
+
 .scrolling-images-container {
   display: block;
+  margin: rem(120px) auto;
+  .homepage6_title {
+    background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
+    @include backgroundClip;
+    font-size: rem(80px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+    transform: translateY(215px);
+    opacity: 0;
+    transition: all 1s ease;
+    &.animate {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    .azure {
+      position: absolute;
+      top: 27%;
+      width: 23%;
+      left: 9%;
+      transform: translateY(380px);
+      opacity: 0;
+      transition: all 1s ease;
+      &.animate {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    .terraform {
+      position: absolute;
+      top: 15%;
+      width: 23%;
+      right: 20%;
+      transform: translateY(450px);
+      opacity: 0;
+      transition: all 1s ease;
+      &.animate {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .scrolling-images-container {
+    .homepage6_title {
+      width: 100%;
+      font-size: rem(42px);
+      line-height: 52px;
+    }
+  }
 }

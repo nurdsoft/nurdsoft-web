@@ -11,7 +11,7 @@ import './homelayout.scss';
 
 const HomeLayout = () => {
   return (
-    <div className="home_scroller">
+    <div className="home_scroller" id="home_scroller">
       <Dashboard />
       <Homepage1 />
       <Homepage2 />
