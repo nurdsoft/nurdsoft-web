@@ -1,15 +1,17 @@
-import * as React from "react";
 import "./homepage2.scss";
-import Wrapper from "../wrapper";
-import { StaticImage } from "gatsby-plugin-image";
-import { Carousel } from "react-responsive-carousel";
 import "../../styles/carousel.scss";
-import SliderLeftPanel from "../slider/sliderleftpanel";
-import SliderRightPanel from "../slider/sliderrightpanel";
-import { useBreakpoint } from "gatsby-plugin-breakpoints";
-import ResponsiveSliderPanel from "../slider/responsivesliderpanel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import * as React from "react";
+
+import { Carousel } from "react-responsive-carousel";
+import ResponsiveSliderPanel from "../slider/responsivesliderpanel";
+import SliderLeftPanel from "../slider/sliderleftpanel";
+import SliderRightPanel from "../slider/sliderrightpanel";
+import { StaticImage } from "gatsby-plugin-image";
+import Wrapper from "../wrapper";
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
 const Homepage2 = () => {
   const breakpoints = useBreakpoint();
@@ -75,6 +77,8 @@ const Homepage2 = () => {
           stopOnHover={false}
           axis="horizontal"
           showIndicators={false}
+          preventMovementUntilSwipeScrollTolerance={true}
+          swipeScrollTolerance={50}
         >
           <ResponsiveSliderPanel
             headerLinkText="WEB3"
