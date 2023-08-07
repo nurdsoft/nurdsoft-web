@@ -101,30 +101,20 @@ const Servicespage2 = () => {
   });
   
   const scrollHorizontally = debounce((evt: any) => {
-    console.log("we are here", fromTop.current, disableRef.current)
     const scroller = document.getElementById('parallaxLayoutServices')
     if(!scroller) return;
     scroller.style.overflow = 'hidden'
     evt.preventDefault();
     if(disableRef.current && ![6, 0].includes(_counter.current.current)) return;
-    console.log(_counter);
-    
     if(_counter.current.previous !== _counter.current.current){
       disableRef.current = true
     }
-
-    console.log(evt.deltaY);
-    
-    
     if(evt.deltaY > 0){
-      console.log('got here');
-      
       document.getElementById('move_right')?.click()
       if(_counter.current.current === 6){
         _counter.current = {current: 7, previous: 6}
       }
     }else{
-      console.log('got here as well');
       document.getElementById('move_left')?.click()
       if(_counter.current.current === 0){
         _counter.current = {current: -1, previous: 0}
@@ -132,16 +122,12 @@ const Servicespage2 = () => {
     }
 
     if(_counter.current.current === 7){
-      console.log('here');
-      
       scroller.style.overflowY = 'scroll'
       activatingFromOutside.current = true
       fromTop.current = false
       _counter.current = {previous: 6, current: 6}
       scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
     }else if(_counter.current.current === -1){
-      console.log('there');
-      
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
         top: 0,
@@ -162,8 +148,6 @@ const Servicespage2 = () => {
     const processCarouselContainer = document.getElementById('servicespage2_parentContainer')
   
     if(!scroller || !processCarouselContainer) return;
-    console.log(Math.floor(processCarouselContainer.getBoundingClientRect().top));
-    
     if([90, 91].includes(Math.floor(processCarouselContainer.getBoundingClientRect().top))){
       scroller.style.overflow = 'hidden'
       scroller.addEventListener("wheel", debouceHandleHorizontalScroll)
@@ -174,8 +158,6 @@ const Servicespage2 = () => {
   useEffect(() => {
     const scroller = document.getElementById('parallaxLayoutServices')
     const processCarouselContainer = document.getElementById('servicespage2_parentContainer')
-    console.log('scrolling');
-    
     if(dataRef && dataRef?.isIntersecting && scroller && processCarouselContainer){
       scroller.scrollTo({
         top: (scroller.scrollTop + processCarouselContainer.getBoundingClientRect().top) - 91,
