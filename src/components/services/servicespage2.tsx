@@ -91,8 +91,10 @@ const Servicespage2 = () => {
   const triggerRef = useRef<any>();
   const fromTop = useRef<boolean>(true)
   const activatingFromOutside = useRef(true)
-  const disableRef = useRef(false)
+  const disableRef = useRef(true)
   const [width, _] = useWindowSize();
+  const horizontalScrollFunctionRun = useRef(0)
+  const scrollLockingPos = 91;
   
   let dataRef = useIntersectionObserver(triggerRef, {
     threshold: 0.4,
@@ -101,8 +103,10 @@ const Servicespage2 = () => {
   });
   
   const scrollHorizontally = debounce((evt: any) => {
+    horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
-    if(!scroller) return;
+    const servicePage3 = document.getElementById("servicespage3_parentContainer")
+    if(!scroller || !servicePage3 || horizontalScrollFunctionRun.current < 2) return;
     scroller.style.overflow = 'hidden'
     evt.preventDefault();
     if(disableRef.current && ![6, 0].includes(_counter.current.current)) return;
@@ -111,21 +115,34 @@ const Servicespage2 = () => {
     }
     if(evt.deltaY > 0){
       document.getElementById('move_right')?.click()
+      if(_counter.current.current < 7){
+        _counter.current = {previous: _counter.current.current, current: _counter.current.current + 1}
+      }
       if(_counter.current.current === 6){
         _counter.current = {current: 7, previous: 6}
       }
     }else{
       document.getElementById('move_left')?.click()
+      if(_counter.current.current > 0){
+        _counter.current = {previous: _counter.current.current, current: _counter.current.current - 1}
+      }
       if(_counter.current.current === 0){
         _counter.current = {current: -1, previous: 0}
       }
     }
 
+    if(horizontalScrollFunctionRun.current < 8) return
+
     if(_counter.current.current === 7){
       scroller.style.overflowY = 'scroll'
+      scroller.scrollTo({
+        top: (servicePage3.getBoundingClientRect().top + scroller.scrollTop) - scrollLockingPos,
+        behavior: 'smooth'
+      })
       activatingFromOutside.current = true
       fromTop.current = false
-      _counter.current = {previous: 6, current: 6}
+      // _counter.current = {previous: 6, current: 6}
+      disableRef.current = true
       scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
     }else if(_counter.current.current === -1){
       scroller.style.overflowY = 'scroll'
@@ -135,10 +152,11 @@ const Servicespage2 = () => {
       })
       activatingFromOutside.current = true
       fromTop.current = true
-      _counter.current = {previous: 0, current: 0}
+      // _counter.current = {previous: 0, current: 0}
+      disableRef.current = true
       scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
     }
-  }, 40)
+  }, 100)
 
   const debouceHandleHorizontalScroll = useCallback((evt: Event) => scrollHorizontally(evt), []);
 
@@ -146,9 +164,12 @@ const Servicespage2 = () => {
     
     const scroller = document.getElementById('parallaxLayoutServices')
     const processCarouselContainer = document.getElementById('servicespage2_parentContainer')
-  
+    disableRef.current = true
     if(!scroller || !processCarouselContainer) return;
-    if([90, 91].includes(Math.floor(processCarouselContainer.getBoundingClientRect().top))){
+    if(
+      [scrollLockingPos].includes(Math.round(processCarouselContainer.getBoundingClientRect().top)) && 
+      horizontalScrollFunctionRun.current === 0
+    ){
       scroller.style.overflow = 'hidden'
       scroller.addEventListener("wheel", debouceHandleHorizontalScroll)
     }
@@ -160,7 +181,7 @@ const Servicespage2 = () => {
     const processCarouselContainer = document.getElementById('servicespage2_parentContainer')
     if(dataRef && dataRef?.isIntersecting && scroller && processCarouselContainer){
       scroller.scrollTo({
-        top: (scroller.scrollTop + processCarouselContainer.getBoundingClientRect().top) - 91,
+        top: (scroller.scrollTop + processCarouselContainer.getBoundingClientRect().top) - scrollLockingPos,
         behavior: 'smooth'
       })
     }
@@ -168,6 +189,10 @@ const Servicespage2 = () => {
     
     if(!isMobileDevice()){
       scroller?.addEventListener('scroll', handleScrollMainPage)
+      scroller?.addEventListener('scrollend', () => {
+        disableRef.current = false
+        horizontalScrollFunctionRun.current = 0
+      })
     }
 
   }, [dataRef?.isIntersecting])
@@ -222,7 +247,6 @@ const Servicespage2 = () => {
               )
           }
           onChange={(index, _) => {
-            _counter.current = {previous: _counter.current.current, current: index}
             if(index !== 0){
               setCurrentActiveItem(index)
             }
