@@ -1,10 +1,12 @@
+import './servicelayout.scss';
+
 import * as React from "react";
+
 import Contact from "../contact/contact";
 import ServicesPage1 from "../services/servicespage1";
-import Servicespage4 from "../services/servicespage4";
-import ServicesPage3 from "../services/servicespage3";
 import ServicesPage2 from "../services/servicespage2";
-import './servicelayout.scss';
+import ServicesPage3 from "../services/servicespage3";
+import Servicespage4 from "../services/servicespage4";
 
 const ServicesLayout = () => {
   return (
