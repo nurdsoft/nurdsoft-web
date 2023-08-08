@@ -103,8 +103,6 @@ const Servicespage2 = () => {
   });
   
   const scrollHorizontally = debounce((evt: any) => {
-    console.log('ran :', horizontalScrollFunctionRun);
-    
     horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
     const servicePage3 = document.getElementById("servicespage3_parentContainer")
@@ -126,7 +124,6 @@ const Servicespage2 = () => {
         _counter.current = {previous: _counter.current.current, current: _counter.current.current - 1}
       }
     }
-    console.log(_counter.current);
     
 
     if(horizontalScrollFunctionRun.current < 5) return
