@@ -103,10 +103,12 @@ const Servicespage2 = () => {
   });
   
   const scrollHorizontally = debounce((evt: any) => {
+    console.log('ran :', horizontalScrollFunctionRun);
+    
     horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
     const servicePage3 = document.getElementById("servicespage3_parentContainer")
-    if(!scroller || !servicePage3 || horizontalScrollFunctionRun.current < 2) return;
+    if(!scroller || !servicePage3 || horizontalScrollFunctionRun.current < 1) return;
     scroller.style.overflow = 'hidden'
     evt.preventDefault();
     if(disableRef.current && ![6, 0].includes(_counter.current.current)) return;
@@ -131,7 +133,7 @@ const Servicespage2 = () => {
       }
     }
 
-    if(horizontalScrollFunctionRun.current < 8) return
+    if(horizontalScrollFunctionRun.current < 5) return
 
     if(_counter.current.current === 7){
       scroller.style.overflowY = 'scroll'
