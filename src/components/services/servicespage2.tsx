@@ -120,22 +120,18 @@ const Servicespage2 = () => {
       if(_counter.current.current < 7){
         _counter.current = {previous: _counter.current.current, current: _counter.current.current + 1}
       }
-      if(_counter.current.current === 6){
-        _counter.current = {current: 7, previous: 6}
-      }
     }else{
       document.getElementById('move_left')?.click()
       if(_counter.current.current > 0){
         _counter.current = {previous: _counter.current.current, current: _counter.current.current - 1}
       }
-      if(_counter.current.current === 0){
-        _counter.current = {current: -1, previous: 0}
-      }
     }
+    console.log(_counter.current);
+    
 
     if(horizontalScrollFunctionRun.current < 5) return
 
-    if(_counter.current.current === 7){
+    if(_counter.current.current === 6){
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
         top: (servicePage3.getBoundingClientRect().top + scroller.scrollTop) - scrollLockingPos,
@@ -146,7 +142,7 @@ const Servicespage2 = () => {
       // _counter.current = {previous: 6, current: 6}
       disableRef.current = true
       scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
-    }else if(_counter.current.current === -1){
+    }else if(_counter.current.current === 0){
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
         top: 0,
