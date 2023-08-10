@@ -104,6 +104,7 @@ const Servicespage2 = () => {
   });
   
   const scrollHorizontallyCopy = (evt: any) => {
+    var isTouchPad = evt.wheelDeltaY ? evt.wheelDeltaY === -3 * evt.deltaY : evt.deltaMode === 0
     // logic fo one directional flow 
     if((fromTop.current && !(evt.deltaY >= 0)) || (!fromTop.current && (evt.deltaY >= 0))){
       return
@@ -121,7 +122,8 @@ const Servicespage2 = () => {
       }
     }
     // 50 is our threshhold that after 50 wheel invocation we scroll once
-    if(wheelTriggerCount.current % 50 !== 0) return
+    const invocationThreshold = isTouchPad ? 50 : 6
+    if(wheelTriggerCount.current % invocationThreshold !== 0) return
     // this determine how many times we have scrolled req for locking the parent scroller
     horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
