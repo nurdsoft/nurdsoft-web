@@ -120,8 +120,8 @@ const Servicespage2 = () => {
         document.getElementById('move_left')?.click()
       }
     }
-    // 80 is our threshhold that after 80 wheel invocation we scroll once
-    if(wheelTriggerCount.current % 80 !== 0) return
+    // 50 is our threshhold that after 50 wheel invocation we scroll once
+    if(wheelTriggerCount.current % 50 !== 0) return
     // this determine how many times we have scrolled req for locking the parent scroller
     horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
