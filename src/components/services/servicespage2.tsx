@@ -21,7 +21,6 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 import { Carousel } from "react-responsive-carousel";
 import Wrapper from "../wrapper";
-import { debounce } from "lodash";
 import { isMobileDevice } from "../../utils/utils";
 import useIntersectionObserver from "../common/intersectionObserver";
 import { useWindowSize } from "../common/screenSizeObserver";
@@ -90,11 +89,13 @@ const Servicespage2 = () => {
   const [currentActiveItem, setCurrentActiveItem] = useState(1)
   const triggerRef = useRef<any>();
   const fromTop = useRef<boolean>(true)
-  const activatingFromOutside = useRef(true)
+  const initialRender = useRef(false)
   const disableRef = useRef(true)
   const [width, _] = useWindowSize();
   const horizontalScrollFunctionRun = useRef(0)
   const scrollLockingPos = 91;
+  const wheelTriggerCount = useRef(0)
+  const [removeHorizontalScrollListner, setRemoveHorizontalScrollListener] = useState(false)
   
   let dataRef = useIntersectionObserver(triggerRef, {
     threshold: 0.4,
@@ -102,20 +103,39 @@ const Servicespage2 = () => {
     root: !(typeof document === "undefined") ? document.getElementById('parallaxLayoutServices') : null
   });
   
-  const scrollHorizontally = debounce((evt: any) => {
+  const scrollHorizontallyCopy = (evt: any) => {
+    // logic fo one directional flow 
+    if((fromTop.current && !(evt.deltaY >= 0)) || (!fromTop.current && (evt.deltaY >= 0))){
+      return
+    }
+    // this is our threshold vvalue to determine when to scroll
+    wheelTriggerCount.current += 1
+
+    // this part initialize the carousel
+    if(wheelTriggerCount.current === 1 && !initialRender.current){
+      initialRender.current = true
+      if(fromTop.current){
+        document.getElementById('move_right')?.click()
+      }else{
+        document.getElementById('move_left')?.click()
+      }
+    }
+    // 80 is our threshhold that after 80 wheel invocation we scroll once
+    if(wheelTriggerCount.current % 80 !== 0) return
+    // this determine how many times we have scrolled req for locking the parent scroller
     horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
     const servicePage3 = document.getElementById("servicespage3_parentContainer")
-    if(!scroller || !servicePage3 || horizontalScrollFunctionRun.current < 1) return;
+    if(!scroller || !servicePage3 ) return;
     scroller.style.overflow = 'hidden'
     evt.preventDefault();
     if(disableRef.current && ![6, 0].includes(_counter.current.current)) return;
     if(_counter.current.previous !== _counter.current.current){
       disableRef.current = true
     }
-    if(evt.deltaY > 0){
+    if(evt.deltaY >= 0){
       document.getElementById('move_right')?.click()
-      if(_counter.current.current < 7){
+      if(_counter.current.current < 6){
         _counter.current = {previous: _counter.current.current, current: _counter.current.current + 1}
       }
     }else{
@@ -124,36 +144,32 @@ const Servicespage2 = () => {
         _counter.current = {previous: _counter.current.current, current: _counter.current.current - 1}
       }
     }
-    
-
-    if(horizontalScrollFunctionRun.current < 5) return
-
     if(_counter.current.current === 6){
+      document.getElementById('move_right')?.click()
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
         top: (servicePage3.getBoundingClientRect().top + scroller.scrollTop) - scrollLockingPos,
         behavior: 'smooth'
       })
-      activatingFromOutside.current = true
       fromTop.current = false
-      // _counter.current = {previous: 6, current: 6}
       disableRef.current = true
-      scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
+      setRemoveHorizontalScrollListener(true)
+      _counter.current = {previous: 6, current: 6}
     }else if(_counter.current.current === 0){
+      document.getElementById('move_left')?.click()
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
         top: 0,
         behavior: 'smooth'
       })
-      activatingFromOutside.current = true
       fromTop.current = true
-      // _counter.current = {previous: 0, current: 0}
       disableRef.current = true
-      scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
+      setRemoveHorizontalScrollListener(true)
+      _counter.current = {previous: 0, current: 0}
     }
-  }, 100)
+  }
 
-  const debouceHandleHorizontalScroll = useCallback((evt: Event) => scrollHorizontally(evt), []);
+  const debouceHandleHorizontalScroll = useCallback((evt: Event) => scrollHorizontallyCopy(evt), []);
 
   const handleScrollMainPage = () => {
     
@@ -167,6 +183,7 @@ const Servicespage2 = () => {
     ){
       scroller.style.overflow = 'hidden'
       scroller.addEventListener("wheel", debouceHandleHorizontalScroll)
+      setRemoveHorizontalScrollListener(false)
     }
   }
 
@@ -191,6 +208,15 @@ const Servicespage2 = () => {
     }
 
   }, [dataRef?.isIntersecting])
+
+  useEffect(() => {
+    const scroller = document.getElementById('parallaxLayoutServices')
+    if(removeHorizontalScrollListner){
+      wheelTriggerCount.current = 0
+      initialRender.current = false
+      scroller?.removeEventListener('wheel', debouceHandleHorizontalScroll)
+    }
+  }, [removeHorizontalScrollListner])
 
   const setPercentage = () => {
     if(width > 1200){
