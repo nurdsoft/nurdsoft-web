@@ -9,7 +9,7 @@
   "scripts": {
     "develop": "npm run set-job-data && gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "npm run set-job-data && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "set-job-data": "node ./src/scripts/getJobData.mjs",
