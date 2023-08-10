@@ -77,14 +77,17 @@ const AuditTrustPage = () => {
       <div className="audittrustpage_parentContainer">
         <h4 className="audittrustpage_title">
           {"One Platform to Manage Your "}
-          <span className="primary100">Security Program</span>{" and "}
-          <span className="primary100">Compliance</span>{" Posture."}
+          <span className="primary100">Security Program</span>
+          {" and "}
+          <span className="primary100">Compliance</span>
+          {" Posture."}
         </h4>
-        <div className="audittrustpage_imageContainer1 mt-12">
+        <div className="audittrustpage_imageContainer1 flex justify-center mt-12">
           <StaticImage
-            className="audittrustpage_audittrustImage"
+            className="audittrustpage_audittrustImage rounded-xl"
             src={"../../../images/audit_dashboard.png"}
             alt="Audit Dashboard"
+            width={1000}
           />
         </div>
 
@@ -206,33 +209,36 @@ const AuditTrustPage = () => {
             <h4 className="audittrustpage_assessorDashboardTitle text-5xl text-center mb-2 white">
               Assessor <span className="primary100 ml-2">Dashboard</span>
             </h4>
-            <div className="audittrustpage_assessorDashboardImagesContainer flex flex-wrap gap-6 mt-20">
+            <div className="mt-20 mb-6 flex justify-center">
               <StaticImage
                 className="audittrustpage_assessorDashboard1"
                 src={"../../../images/assessor_dashboard1.png"}
                 alt="Assessor Dashboard 1"
+                width={1000}
               />
+            </div>
+            <div className="audittrustpage_assessorDashboardImagesContainer flex flex-wrap gap-6">
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard2"
+                className="audittrustpage_assessorDashboard2 rounded-xl"
                 src={"../../../images/assessor_dashboard2.png"}
                 alt="Assessor Dashboard 2"
               />
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard3"
+                className="audittrustpage_assessorDashboard3 rounded-xl"
                 src={"../../../images/assessor_dashboard3.png"}
                 alt="Assessor Dashboard 3"
               />
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard4"
+                className="audittrustpage_assessorDashboard4 rounded-xl"
                 src={"../../../images/assessor_dashboard4.png"}
                 alt="Assessor Dashboard 4"
               />
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard4"
+                className="audittrustpage_assessorDashboard4 rounded-xl"
                 src={"../../../images/assessor_dashboard4.png"}
                 alt="Assessor Dashboard 4"
               />

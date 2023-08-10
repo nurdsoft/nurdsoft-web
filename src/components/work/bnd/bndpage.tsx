@@ -71,11 +71,12 @@ const Bndpage = () => {
           Leveraging <span className="primary100">BuildnDeploy.co</span>
           {" for Streamlined Software Development and Deployment"}
         </h4>
-        <div className="bndpage_imageContainer1 mt-12">
+        <div className="bndpage_imageContainer1 flex justify-center mt-12">
           <StaticImage
-            className="bndpage_bndImage"
+            className="bndpage_bndImage rounded-xl"
             src={"../../../images/bnd-large.png"}
             alt="Build & Deploy"
+            width={1000}
           />
         </div>
         <div className="bndpage_productStatement mt-16">
@@ -210,7 +211,7 @@ const Bndpage = () => {
               </p>
             </div>
             <StaticImage
-              width={700}
+              width={500}
               className="bndpage_bndImage"
               src={"../../../images/implementation.png"}
               alt="Implementation"
@@ -224,11 +225,14 @@ const Bndpage = () => {
               (e.g., Git), enabling efficient code management, branch merging,
               and version control across different environments.
             </p>
-            <StaticImage
-              className="bndpage_bndImage"
-              src={"../../../images/implementation_general.png"}
-              alt="Implementation"
-            />
+            <div className="flex justify-center">
+              <StaticImage
+                className="bndpage_bndImage rounded-xl"
+                src={"../../../images/implementation_general.png"}
+                alt="Implementation"
+                width={1100}
+              />
+            </div>
             <p className="bndpage_implementationDescription mb-8 mt-16 text-base offGray font-normal">
               <small className="mr-2 text-base">b.</small>
               <b className="mr-2">Environment Setup:</b>BuildnDeploy.co
@@ -237,11 +241,14 @@ const Bndpage = () => {
               staging, and production environments through a user-friendly
               interface.
             </p>
-            <StaticImage
-              className="bndpage_bndImage"
-              src={"../../../images/environment_variables.png"}
-              alt="Environment Variables"
-            />
+            <div className="flex justify-center">
+              <StaticImage
+                width={1100}
+                className="bndpage_bndImage rounded-xl"
+                src={"../../../images/environment_variables.png"}
+                alt="Environment Variables"
+              />
+            </div>
             <p className="bndpage_implementationDescription mb-8 mt-16 text-base offGray font-normal">
               <small className="mr-2 text-base">c.</small>
               <b className="mr-2">Automated Testing and Deployment:</b>
@@ -251,11 +258,14 @@ const Bndpage = () => {
               pipelines, and automatically deploy new features and bug fixes to
               different environments.
             </p>
-            <StaticImage
-              className="bndpage_bndImage "
-              src={"../../../images/build_process.png"}
-              alt="Build Process"
-            />
+            <div className="flex justify-center">
+              <StaticImage
+                className="bndpage_bndImage rounded-xl"
+                src={"../../../images/build_process.png"}
+                alt="Build Process"
+                width={1100}
+              />
+            </div>
           </div>
 
           {/* Design thinking Process */}
@@ -263,11 +273,12 @@ const Bndpage = () => {
             <h4 className="bndpage_designThinkingProcessTitle text-5xl text-center mb-2 white">
               Design Thinking <span className="primary100 mr-2">Process</span>
             </h4>
-            <div className="bndpage_designThinkingProcessImageContainer mt-16">
+            <div className="bndpage_designThinkingProcessImageContainer flex justify-center mt-16">
               <StaticImage
                 className="bndpage_designThinkingProcessImage"
                 src={"../../../images/design_thinking_process.png"}
                 alt="Design thinking Process"
+                width={940}
               />
             </div>
           </div>
@@ -304,31 +315,34 @@ const Bndpage = () => {
             </h4>
             <div className="bndpage_visualDesignImagesContainer flex flex-wrap gap-4 mt-16">
               <StaticImage
-                className="bndpage_visualDesign1"
+                className="bndpage_visualDesign1 rounded-xl"
                 width={605}
                 src={"../../../images/visual_design1.png"}
                 alt="Visual Design 1"
               />
               <StaticImage
                 width={605}
-                className="bndpage_visualDesign2"
+                className="bndpage_visualDesign2 rounded-xl"
                 src={"../../../images/visual_design2.png"}
                 alt="Visual Design 2"
               />
               <StaticImage
                 width={605}
-                className="bndpage_visualDesign3"
+                className="bndpage_visualDesign3 rounded-xl"
                 src={"../../../images/visual_design7.png"}
                 alt="Visual Design 3"
               />
               <StaticImage
                 width={605}
-                className="bndpage_visualDesign4"
+                className="bndpage_visualDesign4 rounded-xl"
                 src={"../../../images/visual_design8.png"}
                 alt="Visual Design 4"
               />
+            </div>
+            <div className="flex justify-center items-center mt-4">
               <StaticImage
-                className="bndpage_visualDesign5"
+                width={1000}
+                className="bndpage_visualDesign5 rounded-xl"
                 src={"../../../images/visual_design9.png"}
                 alt="Visual Design 5"
               />

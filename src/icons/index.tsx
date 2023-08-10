@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import { CustomSvgProps } from "../types/industryTypes";
 
 type ExtendedSvgProps = React.SVGProps<SVGSVGElement> & CustomSvgProps
@@ -57,8 +58,8 @@ export const DOUBLE_QUOTE_PINK = (props: ExtendedSvgProps) => {
           y2="10.8997"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B62BF5" />
-          <stop offset="1" stop-color="#E62E2C" />
+          <stop stopColor="#B62BF5" />
+          <stop offset="1" stopColor="#E62E2C" />
         </linearGradient>
       </defs>
     </svg>
@@ -1915,8 +1916,8 @@ export const ARROW_WITH_GRADIENT = (props: ExtendedSvgProps) => {
           y2="4.67002"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6164FA" />
-          <stop offset="1" stop-color="#2CD7E6" />
+          <stop stopColor="#6164FA" />
+          <stop offset="1" stopColor="#2CD7E6" />
         </linearGradient>
       </defs>
     </svg>
@@ -1964,9 +1965,9 @@ export const ARROW_RIGHT = (props: ExtendedSvgProps) => {
 export const ARROW_RIGHT_SMALL = (props: ExtendedSvgProps) => {
   return (
     <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_2121_2330)">
-        <path d="M14.9297 5.92969L20.9997 11.9997L14.9297 18.0697" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M4 12H20.83" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <g clipPath="url(#clip0_2121_2330)">
+        <path d="M14.9297 5.92969L20.9997 11.9997L14.9297 18.0697" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 12H20.83" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
       </g>
       <defs>
         <clipPath id="clip0_2121_2330">
@@ -2079,7 +2080,7 @@ export const CIRCLE_TICK = (props: ExtendedSvgProps) => {
 export const DROP_PIN_ICON = (props: ExtendedSvgProps) => {
   return (
     <svg {...props} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_1743_21828)">
+      <g clipPath="url(#clip0_1743_21828)">
         <path d="M16 29.0001C15.8684 29.0009 15.738 28.9756 15.6161 28.9259C15.4943 28.8761 15.3835 28.8028 15.29 28.7101L8.22004 21.7101C7.1993 20.6961 6.38921 19.4902 5.83641 18.1618C5.28361 16.8335 4.99902 15.4089 4.99902 13.9701C4.99902 12.5313 5.28361 11.1067 5.83641 9.77837C6.38921 8.45001 7.1993 7.24411 8.22004 6.2301C10.2921 4.18308 13.0874 3.03516 16 3.03516C18.9127 3.03516 21.708 4.18308 23.78 6.2301C24.8008 7.24411 25.6109 8.45001 26.1637 9.77837C26.7165 11.1067 27.0011 12.5313 27.0011 13.9701C27.0011 15.4089 26.7165 16.8335 26.1637 18.1618C25.6109 19.4902 24.8008 20.6961 23.78 21.7101L16.71 28.7101C16.6166 28.8028 16.5058 28.8761 16.3839 28.9259C16.2621 28.9756 16.1316 29.0009 16 29.0001ZM16 5.0001C13.6133 4.99424 11.322 5.93667 9.63004 7.6201C8.79676 8.44818 8.13546 9.43288 7.6842 10.5175C7.23293 11.6022 7.00062 12.7653 7.00062 13.9401C7.00062 15.1149 7.23293 16.278 7.6842 17.3627C8.13546 18.4473 8.79676 19.432 9.63004 20.2601L16 26.5901L22.37 20.2601C23.2033 19.432 23.8646 18.4473 24.3159 17.3627C24.7671 16.278 24.9995 15.1149 24.9995 13.9401C24.9995 12.7653 24.7671 11.6022 24.3159 10.5175C23.8646 9.43288 23.2033 8.44818 22.37 7.6201C20.6781 5.93667 18.3868 4.99424 16 5.0001Z" fill="#6164FA"/>
         <path d="M16 19C15.0111 19 14.0444 18.7068 13.2222 18.1574C12.3999 17.6079 11.759 16.8271 11.3806 15.9134C11.0022 14.9998 10.9031 13.9945 11.0961 13.0246C11.289 12.0546 11.7652 11.1637 12.4645 10.4645C13.1637 9.76521 14.0546 9.289 15.0246 9.09608C15.9945 8.90315 16.9998 9.00217 17.9134 9.3806C18.8271 9.75904 19.6079 10.3999 20.1574 11.2222C20.7068 12.0444 21 13.0111 21 14C21 15.3261 20.4732 16.5979 19.5355 17.5355C18.5979 18.4732 17.3261 19 16 19ZM16 11C15.4067 11 14.8266 11.1759 14.3333 11.5056C13.8399 11.8352 13.4554 12.3038 13.2284 12.852C13.0013 13.4001 12.9419 14.0033 13.0576 14.5853C13.1734 15.1672 13.4591 15.7018 13.8787 16.1213C14.2982 16.5409 14.8328 16.8266 15.4147 16.9424C15.9967 17.0581 16.5999 16.9987 17.1481 16.7716C17.6962 16.5446 18.1648 16.1601 18.4944 15.6667C18.8241 15.1734 19 14.5933 19 14C19 13.2044 18.6839 12.4413 18.1213 11.8787C17.5587 11.3161 16.7957 11 16 11Z" fill="#6164FA"/>
       </g>
@@ -2095,8 +2096,8 @@ export const DROP_PIN_ICON = (props: ExtendedSvgProps) => {
 export const CHECK_ICON = (props: ExtendedSvgProps) => {
   return (
     <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986" stroke="#6164FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M22 4L12 14.01L9 11.01" stroke="#6164FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 11.0799V11.9999C21.9988 14.1563 21.3005 16.2545 20.0093 17.9817C18.7182 19.7088 16.9033 20.9723 14.8354 21.5838C12.7674 22.1952 10.5573 22.1218 8.53447 21.3744C6.51168 20.6271 4.78465 19.246 3.61096 17.4369C2.43727 15.6279 1.87979 13.4879 2.02168 11.3362C2.16356 9.18443 2.99721 7.13619 4.39828 5.49694C5.79935 3.85768 7.69279 2.71525 9.79619 2.24001C11.8996 1.76477 14.1003 1.9822 16.07 2.85986" stroke="#6164FA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M22 4L12 14.01L9 11.01" stroke="#6164FA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }

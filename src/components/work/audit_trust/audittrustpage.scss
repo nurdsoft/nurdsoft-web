@@ -64,8 +64,6 @@
 
   .audittrustpage_assessorDashboard{
     .audittrustpage_assessorDashboardImagesContainer{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       .gatsby-image-wrapper {
         &:first-child {
           grid-column: 1 / span 2;

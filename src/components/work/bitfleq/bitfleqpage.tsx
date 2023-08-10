@@ -48,11 +48,12 @@ const BitFleqpage = () => {
           Revolutionizing Supply Chain Management with{" "}
           <span className="primary100 mx-4">Blockchain Technology</span>
         </h4>
-        <div className="bitfleqspage_imageContainer1 mt-12">
+        <div className="bitfleqspage_imageContainer1 flex items-center justify-center mt-12">
           <StaticImage
-            className="bitfleqspage_bitfleqsImage"
+            className="bitfleqspage_bitfleqsImage rounded-xl"
             src={"../../../images/bitfleqs-large.png"}
             alt="Bitfleqs"
+            width={1000}
           />
         </div>
 
@@ -199,23 +200,26 @@ const BitFleqpage = () => {
             </h4>
             <div className="bitfleqspage_artCollectionImagesContainer flex flex-wrap gap-6 mt-20">
               <StaticImage
-                className="bitfleqspage_artCollection1"
-                width={609}
+                className="bitfleqspage_artCollection1 rounded-xl"
+                width={590}
                 src={"../../../images/art_collection1.png"}
                 alt="Art Collection 1"
               />
               <StaticImage
-                width={597}
-                className="bitfleqspage_artCollection2"
+                width={500}
+                className="bitfleqspage_artCollection2 rounded-xl"
                 src={"../../../images/art_collection2.png"}
                 alt="Art Collection 2"
               />
             </div>
-            <StaticImage
-              className="bitfleqspage_artCollection3 mt-20"
-              src={"../../../images/art_collection3.png"}
-              alt="Art Collection 3"
-            />
+            <div className="flex justify-center items-center">
+              <StaticImage
+                width={1000}
+                className="bitfleqspage_artCollection3 mt-20 rounded-xl"
+                src={"../../../images/art_collection3.png"}
+                alt="Art Collection 3"
+              />
+            </div>
           </div>
 
           {/* Key Features */}

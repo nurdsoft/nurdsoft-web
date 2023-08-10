@@ -10,19 +10,18 @@
     max-width: rem(917px);
     width: 100%;
   }
-  
+
   .bndpage_imageContainer1 {
     .bndpage_bndImage {
       object-fit: cover;
-      width: 100%;
     }
   }
-  
+
   .bndpage_keyChallanges {
     background-color: var(--dark-gray-100);
     border-radius: 16px;
   }
-  
+
   .bndpage_valueProposition {
     .bndpage_gridContainer {
       display: grid;
@@ -64,19 +63,16 @@
       }
     }
   }
-  .bndpage_visualDesign{
+  .bndpage_visualDesign {
     .bndpage_visualDesignImagesContainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
       .gatsby-image-wrapper {
         &:last-child {
           grid-column: 1 / span 2;
         }
       }
     }
-    
   }
-  
+
   .bndpage_resultsAndBenifits {
     .bndpage_resultsAndBenifitsFlexContainer {
       display: grid;
@@ -87,14 +83,13 @@
           grid-column: 1 / span 2;
         }
       }
-      
     }
   }
-  
+
   .bndpage_conclusion {
     background-color: var(--dark-gray-100);
   }
-  
+
   .bndpage_linkButtons {
     .bndpage_linkButtonsBoxContainer {
       flex: 1;
@@ -110,14 +105,13 @@
       }
     }
   }
-  
+
   .bndpage_emailBoxContainer {
     h4.white {
       max-width: rem(545px);
       width: 100%;
     }
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -134,17 +128,17 @@
       .bndpage_implementationTitle {
         text-align: center;
       }
-      .bndpage_implementationDescription{
+      .bndpage_implementationDescription {
         width: 100%;
       }
     }
     .bndpage_conclusion {
-      padding: rem(20px)
+      padding: rem(20px);
     }
     .bndpage_linkButtons {
       flex-direction: column;
       gap: 20px;
-      .bndpage_linkButtonsBoxContainer{
+      .bndpage_linkButtonsBoxContainer {
         width: 100%;
       }
     }
@@ -158,18 +152,18 @@
       font-size: rem(32px);
       line-height: 42px;
     }
-    .bndpage_productStatement{
-      .bndpage_productStatementTitle{
+    .bndpage_productStatement {
+      .bndpage_productStatementTitle {
         font-size: rem(30px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
-      .bndpage_productStatementDescription{
+      .bndpage_productStatementDescription {
         font-size: rem(18px);
       }
-      .bndpage_productStatementList{
+      .bndpage_productStatementList {
         ol.offGray {
           font-size: rem(18px);
         }
@@ -177,14 +171,14 @@
     }
     .bndpage_keyChallanges {
       padding: rem(20px);
-      .bndpage_keyChallangesTitle{
+      .bndpage_keyChallangesTitle {
         font-size: rem(32px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
-      .bndpage_keyChallangeDescription{
+      .bndpage_keyChallangeDescription {
         font-size: rem(18px);
       }
       .bndpage_keyChallangeListContainer {
@@ -192,23 +186,23 @@
         margin-bottom: 0;
       }
     }
-    .bndpage_valueProposition{
+    .bndpage_valueProposition {
       .bndpage_valuePropositionTitle {
         font-size: rem(30px);
         .primary100 {
           margin: 0;
         }
       }
-      .bndpage_gridContainer{
+      .bndpage_gridContainer {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .bndpage_boxContainer{
+        .bndpage_boxContainer {
           margin: 0;
-          .bndpage_boxTitle{
+          .bndpage_boxTitle {
             font-size: rem(20px);
           }
-          .bndpage_boxPara{
+          .bndpage_boxPara {
             font-size: rem(18px);
           }
         }
@@ -266,10 +260,10 @@
       }
     }
     .bndpage_conclusion {
-      .bndpage_conclusionTitle{
+      .bndpage_conclusionTitle {
         font-size: rem(30px);
       }
-      p.offGray{
+      p.offGray {
         font-size: rem(18px);
       }
     }
