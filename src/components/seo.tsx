@@ -13,7 +13,7 @@ export default function Seo({description, title, type, image, url}: ISeo) {
   return (
     <>
       <meta charSet="utf-8" />
-      <title>{title ? title : "Nurdsoft"}</title>
+      <title>{title || "Nurdsoft"}</title>
       <meta
         key="og:image"
         name="og:image"
