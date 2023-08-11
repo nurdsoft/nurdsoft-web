@@ -17,21 +17,21 @@ export default function Seo({description, title, type, image, url}: ISeo) {
       <meta
         key="og:image"
         name="og:image"
-        content={image ? image : `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
+        content={image || `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
       />
-      <meta key="og:title" property="og:title" content={title ? title : "Nurdsoft"} />
-      <meta key="og:type" property="og:type" content={type ? type : "website"} />
-      <meta key="title" property="title" content={title ? title : "Nurdsoft"} />
-      <meta name="description" content={description ? description : "Software Engineering Studio"} />
+      <meta key="og:title" property="og:title" content={title || "Nurdsoft"} />
+      <meta key="og:type" property="og:type" content={type || "website"} />
+      <meta key="title" property="title" content={title || "Nurdsoft"} />
+      <meta name="description" content={description || "Software Engineering Studio"} />
       <meta
         key="og:description"
         property="og:description"
-        content={description ? description : "Software Engineering Studio"}
+        content={description || "Software Engineering Studio"}
       />
       <meta
         key="og:url"
         property="og:url"
-        content={url ? url : "https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co"}
+        content={url || "https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co"}
       />
     </>
   );
