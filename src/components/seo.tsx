@@ -1,57 +1,38 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+interface ISeo {
+  description?: string;
+  title?: string;
+  type?: string;
+  image?: string;
+  url?: string;
+}
 
-export default function Seo() {
-  const metas = [
-    {
-      name: `description`,
-      content: "Software Engineering Studio",
-    },
-    {
-      property: `og:title`,
-      content: "Nurdsoft",
-    },
-    {
-      property: `og:description`,
-      content: `Software Engineering Studio`,
-    },
-    {
-      property: `og:type`,
-      content: `website`,
-    },
-    {
-      property: `og:image`,
-      content: `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`,
-    },
-    {
-      property: `og:url`,
-      content: "https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co",
-    },
-  ];
+export default function Seo({description, title, type, image, url}: ISeo) {
+  
 
   return (
-    <Helmet title="Nurdsoft" meta={metas}>
+    <>
       <meta charSet="utf-8" />
-      <title>Nurdsoft</title>
+      <title>{title ? title : "Nurdsoft"}</title>
       <meta
         key="og:image"
         name="og:image"
-        content={`https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
+        content={image || `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
       />
-      <meta key="og:title" property="og:title" content="Nurdsoft" />
-      <meta key="og:type" property="og:type" content="website" />
-      <meta key="title" property="title" content="Nurdsoft" />
-      <meta name="description" content="Software Engineering Studio" />
+      <meta key="og:title" property="og:title" content={title || "Nurdsoft"} />
+      <meta key="og:type" property="og:type" content={type || "website"} />
+      <meta key="title" property="title" content={title || "Nurdsoft"} />
+      <meta name="description" content={description || "Software Engineering Studio"} />
       <meta
         key="og:description"
         property="og:description"
-        content="Software Engineering Studio"
+        content={description || "Software Engineering Studio"}
       />
       <meta
         key="og:url"
         property="og:url"
-        content="https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co"
+        content={url || "https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co"}
       />
-    </Helmet>
+    </>
   );
 }

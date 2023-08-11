@@ -46,7 +46,6 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <>
-      <Seo />
       {_step === 0 ? (
         <main className="pageStyles flex justify-center items-center">
           <div>
@@ -65,3 +64,7 @@ const IndexPage: React.FC<PageProps> = () => {
 //BND-343
 
 export default IndexPage;
+
+export const Head = () => (
+  <Seo />
+)
