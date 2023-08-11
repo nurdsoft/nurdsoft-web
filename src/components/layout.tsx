@@ -4,7 +4,6 @@ import "../styles/style.scss";
 import * as React from "react";
 
 import Header from "./header";
-import Seo from "./seo";
 
 const Layout = ({ children }: { children: JSX.Element }) => {
   const [headerHeight, setHeaderHeight] = React.useState(0);
@@ -28,7 +27,6 @@ const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <>
       <main className="layoutContainer">
-        <Seo />
         <Header />
         <div style={{ height: `calc(100vh - ${headerHeight}px)` }}>
           {children}
