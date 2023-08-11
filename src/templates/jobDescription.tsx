@@ -17,24 +17,17 @@ const JobDescription = () => {
 
 export default JobDescription
 
-export const Head = () => {
-  const [jobData, setJobData] = useState<any>();
-
+export const Head = (props: any) => {
+  
   const typedJobDataJSON = jobDataJSON as Record<
-    string,
-    Record<string, string | string[]>
+  string,
+  Record<string, string | string[]>
   >;
-
-  useEffect(() => {
-    const splitPathName = window.location.pathname.split("/");
-    const slug = splitPathName[2];
-    setJobData(typedJobDataJSON[`${slug}`]);
-  }, []);
 
   return (
     <Seo
-      title={`Nurdsoft - ${jobData?.position}`}
-      description={jobData?.about}
+      title={`Nurdsoft - ${typedJobDataJSON[`${props?.pageContext?.slug}`]?.position}`}
+      description={typedJobDataJSON[`${props?.pageContext?.slug}`]?.about as string}
     />
   )
 }
