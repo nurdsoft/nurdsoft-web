@@ -10,9 +10,15 @@ interface IndustryPageCardProps {
 interface CustomSvgProps {
     fade?: boolean;
 }
-
+interface IJobDescripttionContext  {
+    pageContext: Record<
+        string,
+        Record<string, string | string[]>
+    >
+}
 export {
     IndustryPageCardProps,
     IndustryData,
     CustomSvgProps,
+    IJobDescripttionContext,
 }

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-
+import { IJobDescripttionContext } from '../types/industryTypes'
 import JobDescriptionlayout from '../components/layouts/jobDescriptionlayout'
 import Layout from '../components/layout'
+import React from 'react'
 import Seo from '../components/seo'
-import jobDataJSON from "../../job_data.json";
 
 const JobDescription = () => {
   return (
@@ -17,17 +16,12 @@ const JobDescription = () => {
 
 export default JobDescription
 
-export const Head = (props: any) => {
-  
-  const typedJobDataJSON = jobDataJSON as Record<
-  string,
-  Record<string, string | string[]>
-  >;
+export const Head = ({pageContext}: IJobDescripttionContext) => {
 
   return (
     <Seo
-      title={`Nurdsoft - ${typedJobDataJSON[`${props?.pageContext?.slug}`]?.position}`}
-      description={typedJobDataJSON[`${props?.pageContext?.slug}`]?.about as string}
+      title={`Nurdsoft - ${pageContext?.data?.position}`}
+      description={pageContext?.data?.about as string}
     />
   )
 }
