@@ -51,12 +51,16 @@
       max-width: 400px;
     }
 
-    .carousel{
+    .slick-slider{
       .slider-wrapper{
         height: auto !important;
       }
-      .slide {
+  
+      .slick-slide {
         top: 0;
+        & > div {
+          padding: 5px;
+        }
         .servicespage2_boxContainer {
           border: 1px solid var(--gray-100);
           padding: rem(32px);

@@ -1,5 +1,6 @@
 import "./servicespage2.scss";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import {
   DEFINE,
@@ -19,7 +20,7 @@ import {
 } from "../../icons";
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
-import { Carousel } from "react-responsive-carousel";
+import Slider from "react-slick";
 import Wrapper from "../wrapper";
 import { isMobileDevice } from "../../utils/utils";
 import useIntersectionObserver from "../common/intersectionObserver";
@@ -96,6 +97,7 @@ const Servicespage2 = () => {
   const scrollLockingPos = 91;
   const wheelTriggerCount = useRef(0)
   const [removeHorizontalScrollListner, setRemoveHorizontalScrollListener] = useState(false)
+  const extremePos = useRef(6)
   
   let dataRef = useIntersectionObserver(triggerRef, {
     threshold: 0.4,
@@ -105,48 +107,34 @@ const Servicespage2 = () => {
   
   const scrollHorizontallyCopy = (evt: any) => {
     var isTouchPad = evt.wheelDeltaY ? evt.wheelDeltaY === -3 * evt.deltaY : evt.deltaMode === 0
-    // logic fo one directional flow 
-    if((fromTop.current && !(evt.deltaY >= 0)) || (!fromTop.current && (evt.deltaY >= 0))){
-      return
-    }
     // this is our threshold vvalue to determine when to scroll
     wheelTriggerCount.current += 1
-
-    // this part initialize the carousel
-    if(wheelTriggerCount.current === 1 && !initialRender.current){
-      initialRender.current = true
-      if(fromTop.current){
-        document.getElementById('move_right')?.click()
-      }else{
-        document.getElementById('move_left')?.click()
-      }
-    }
     // 50 is our threshhold that after 50 wheel invocation we scroll once
     const invocationThreshold = isTouchPad ? 50 : 6
     if(wheelTriggerCount.current % invocationThreshold !== 0) return
     // this determine how many times we have scrolled req for locking the parent scroller
-    horizontalScrollFunctionRun.current += 1
+    // horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
     const servicePage3 = document.getElementById("servicespage3_parentContainer")
     if(!scroller || !servicePage3 ) return;
     scroller.style.overflow = 'hidden'
     evt.preventDefault();
-    if(disableRef.current && ![6, 0].includes(_counter.current.current)) return;
-    if(_counter.current.previous !== _counter.current.current){
-      disableRef.current = true
-    }
+    if(disableRef.current && ![extremePos.current, 0].includes(_counter.current.current)) return;
     if(evt.deltaY >= 0){
       document.getElementById('move_right')?.click()
-      if(_counter.current.current < 6){
+      if(_counter.current.current < extremePos.current){
+        horizontalScrollFunctionRun.current = _counter.current.current + 1
         _counter.current = {previous: _counter.current.current, current: _counter.current.current + 1}
       }
     }else{
       document.getElementById('move_left')?.click()
       if(_counter.current.current > 0){
         _counter.current = {previous: _counter.current.current, current: _counter.current.current - 1}
+        horizontalScrollFunctionRun.current = extremePos.current - _counter.current.current
       }
     }
-    if(_counter.current.current === 6){
+    
+    if(_counter.current.current === extremePos.current){
       document.getElementById('move_right')?.click()
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
@@ -156,7 +144,7 @@ const Servicespage2 = () => {
       fromTop.current = false
       disableRef.current = true
       setRemoveHorizontalScrollListener(true)
-      _counter.current = {previous: 6, current: 6}
+      _counter.current = {previous: extremePos.current, current: extremePos.current}
     }else if(_counter.current.current === 0){
       document.getElementById('move_left')?.click()
       scroller.style.overflowY = 'scroll'
@@ -220,14 +208,37 @@ const Servicespage2 = () => {
     }
   }, [removeHorizontalScrollListner])
 
-  const setPercentage = () => {
+  useEffect(() => {
     if(width > 1200){
-      return 33
-    }else if(width > 600 && width <= 1200){
-      return 50
+      extremePos.current = 6
+    }else if(width > 650 && width <= 1200){
+      extremePos.current = 7
     }else{
-      return 100
+      extremePos.current = 8
     }
+  }, [width])
+
+  const setSlidesToShow = () => {
+    if(width > 1200){
+      return 3
+    }else if(width > 650 && width <= 1200){
+      return 2
+    }else{
+      return 1
+    }
+  }
+
+  const CustomNextArrow = (props: any) => {
+    const {onClick} = props
+    return (
+      <button type="button" id="move_right" onClick={onClick} />
+    )
+  }
+  const CustomPrevArrow = (props: any) => {
+    const {onClick} = props
+    return (
+      <button type="button" id="move_left" onClick={onClick} />
+    )
   }
   
   return (
@@ -246,36 +257,24 @@ const Servicespage2 = () => {
           </div>
         </div>
         <div className="servicespage2_wrapper mt-24">
-          <Carousel
-            infiniteLoop={false}
-            centerMode
-            centerSlidePercentage={setPercentage()}
-            showArrows
-            showIndicators={false}
-            dynamicHeight
-            stopOnHover
-            swipeable
-            showThumbs={false}
-            showStatus={false}
-            preventMovementUntilSwipeScrollTolerance={true}
-            swipeScrollTolerance={50}
-            renderArrowPrev={(onClickHandler, hasPrev, label) =>
-              hasPrev && (
-                  <button type="button" id="move_left" onClick={onClickHandler} title={label} />
-              )
-          }
-          renderArrowNext={(onClickHandler, hasNext, label) =>
-              hasNext && (
-                  <button type="button" id="move_right" onClick={onClickHandler} title={label} />
-              )
-          }
-          onChange={(index, _) => {
-            if(index !== 0){
-              setCurrentActiveItem(index)
-            }
-            disableRef.current = false
-          }}
-          
+          <Slider
+            dots={false}
+            infinite={false}
+            slidesToShow={setSlidesToShow()}
+            slidesToScroll={1}
+            nextArrow={<CustomNextArrow />}
+            prevArrow={<CustomPrevArrow />} 
+            beforeChange={() => {
+              disableRef.current = true
+            }}
+            afterChange={(index: number) => {
+              disableRef.current = false
+              if(width > 1200){
+                setCurrentActiveItem(index + 2)
+              }else{
+                setCurrentActiveItem(index)
+              }
+            }}
           >
             {boxArr.map(
               (
@@ -301,7 +300,7 @@ const Servicespage2 = () => {
                 );
               }
             )}
-          </Carousel>
+          </Slider>
         </div>
         <div className="flex items-center">
           {sliderCaptions.map((slider: string, index: number) => {
