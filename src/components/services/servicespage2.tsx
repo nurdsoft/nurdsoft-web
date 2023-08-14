@@ -113,7 +113,6 @@ const Servicespage2 = () => {
     const invocationThreshold = isTouchPad ? 50 : 6
     if(wheelTriggerCount.current % invocationThreshold !== 0) return
     // this determine how many times we have scrolled req for locking the parent scroller
-    // horizontalScrollFunctionRun.current += 1
     const scroller = document.getElementById('parallaxLayoutServices')
     const servicePage3 = document.getElementById("servicespage3_parentContainer")
     if(!scroller || !servicePage3 ) return;
@@ -133,7 +132,6 @@ const Servicespage2 = () => {
         horizontalScrollFunctionRun.current = extremePos.current - _counter.current.current
       }
     }
-    
     if(_counter.current.current === extremePos.current){
       document.getElementById('move_right')?.click()
       scroller.style.overflowY = 'scroll'
