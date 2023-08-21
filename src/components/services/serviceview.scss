@@ -1,0 +1,49 @@
+.servicespage5_serviceWrapper{
+    height: calc(100vh - 90px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--off-white-100);
+    overflow: hidden;
+    gap: 32px;
+
+    $elements: 10;
+    @for $i from 1 to $elements {
+        &:nth-child(#{$i}) {
+            .image_contianer{
+                background: url('../../images/service#{$i}.png');
+                max-height: 40vh;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                position: relative;
+                transform: translateY(calc(74vh - 90px));
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    .service_heading{
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 74px; 
+        max-width: 450px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .service_description {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 150% */
+        letter-spacing: 0.72px;
+        max-width: 730px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
