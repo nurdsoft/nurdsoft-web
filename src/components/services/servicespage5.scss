@@ -37,3 +37,11 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 996px) {
+    .servicespage5_parentContainer {
+        .servicespage5_menu {
+            display: none;
+        }
+    }
+}

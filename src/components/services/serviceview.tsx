@@ -3,6 +3,7 @@ import './serviceview.scss'
 import React, { useEffect, useRef } from 'react'
 
 import useIntersectionObserver from '../common/intersectionObserver';
+import { useWindowSize } from '../common/screenSizeObserver';
 
 interface IServiceView {
     heading: string;
@@ -18,6 +19,7 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
     const stopTransformation = useRef<any>(false)
     const previousOffset = useRef<number>(0)
     const scrollingUp = useRef<boolean>(true)
+    const [width, _] = useWindowSize()
 
     const dataRef = useIntersectionObserver(triggerRef, {
         threshold: Array.from({ length: 101 }, (_, index) => +(index * 0.01).toFixed(2)),
@@ -48,23 +50,26 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
         if(!menu || !contentArea) return
         
         // logic to lock and unlock side menu
-        if(intersectionRatio === 100 || (currentActiveSlide >= 1 && currentActiveSlide < 8)){
-            menu.classList.add('fixed')
-            contentArea.style.paddingLeft = '282px'
-        }
-        if(
-            (currentActiveSlide === (index - 1) && index === 9 && intersectionRatio === 100) ||
-            (currentActiveSlide === 0 && intersectionRatio < 100 && !scrollingUp.current)
-        ){
-            menu.classList.remove('fixed')
-            contentArea.style.paddingLeft = '0px'
-            console.log(currentActiveSlide === 8);
-            
-            if(currentActiveSlide === 8){
-                menu.style.alignSelf = 'flex-end'
-            }else{
-                menu.style.alignSelf = 'flex-start'
+        if(width > 966){
+            if(intersectionRatio === 100 || (currentActiveSlide >= 1 && currentActiveSlide < 8)){
+                menu.classList.add('fixed')
+                contentArea.style.paddingLeft = '282px'
             }
+            if(
+                (currentActiveSlide === (index - 1) && index === 9 && intersectionRatio === 100) ||
+                (currentActiveSlide === 0 && intersectionRatio < 100 && !scrollingUp.current)
+            ){
+                menu.classList.remove('fixed')
+                contentArea.style.paddingLeft = '0px'
+                
+                if(currentActiveSlide === 8){
+                    menu.style.alignSelf = 'flex-end'
+                }else{
+                    menu.style.alignSelf = 'flex-start'
+                }
+            }
+        }else{
+            contentArea.style.paddingLeft = '0px'
         }
         
         if(!stopTransformation.current){
@@ -80,7 +85,7 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
         }
         if(
             (intersectionRatio < 2 && index > 1) ||
-            (intersectionRatio === 12 && index === 1)
+            (intersectionRatio <= 12 && index === 1 && !scrollingUp.current)
         ){
             imageRef.current.style.opacity = 0
             imageRef.current.style.transform = `translateY(74vh - 90px)`

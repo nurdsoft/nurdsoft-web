@@ -21,7 +21,7 @@ const ServicesPage5 = () => {
         },
         {
             heading: 'Artificial Intelligence',
-            description: 'Artificial Intelligence refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human cognitive abilities, such as learning, reasoning, problem-solving, and decision-making.',
+            description: 'Artificial Intelligence refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human cognitive abilities.',
         },
         {
             heading: 'E-Commerce',
@@ -37,7 +37,7 @@ const ServicesPage5 = () => {
         },
         {
             heading: 'Enterprise Platforms',
-            description: 'Enterprise platforms are comprehensive software systems that support critical business functions, like resource planning, customer management, and collaboration. They enhance efficiency, data management, and communication across large organizations.',
+            description: 'Enterprise platforms are comprehensive software systems that support critical business functions. They enhance efficiency, data management, and communication across large organizations.',
         },
         {
             heading: 'Blockchain',
