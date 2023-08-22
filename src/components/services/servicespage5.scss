@@ -1,0 +1,47 @@
+@import "~sass-rem";
+
+.servicespage5_parentContainer {
+    display: flex;
+    gap: 32px;
+
+    .servicespage5_menu{
+        max-width: rem(250px);
+        width: 100%;
+        padding: rem(20px);
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 90px);
+        color: var(--off-white-100);
+        &.fixed {
+            position: fixed;
+            top: 90px;
+        }
+
+        .menuItem {
+            font-size: rem(17px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            transition: all 0.5s ease;
+
+            &.active {
+                color: var(--primary-100);
+            }
+        }
+    }
+
+    .servicespage5_content{
+        flex: 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .servicespage5_parentContainer {
+        .servicespage5_menu {
+            display: none;
+        }
+    }
+}

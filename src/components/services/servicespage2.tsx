@@ -146,10 +146,6 @@ const Servicespage2 = () => {
     }else if(_counter.current.current === 0){
       document.getElementById('move_left')?.click()
       scroller.style.overflowY = 'scroll'
-      scroller.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      })
       fromTop.current = true
       disableRef.current = true
       setRemoveHorizontalScrollListener(true)
