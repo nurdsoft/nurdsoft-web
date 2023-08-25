@@ -1,4 +1,7 @@
+import './worklayout.scss'
+
 import * as React from "react";
+
 import Workpage1 from "../work/workpage1";
 
 const WorkLayout = () => {
@@ -9,6 +12,8 @@ const WorkLayout = () => {
         height: "100%",
         overflowY: "auto",
       }}
+      className="parallaxWorkLayout"
+      id="parallaxWorkLayout"
     >
       <Workpage1 />
     </div>
