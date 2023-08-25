@@ -6,12 +6,18 @@ import Button from "../button";
 import { navigate } from "gatsby";
 
 interface IStackableCard {
-  work: any;
+  work: {
+    img: any,
+    caption: string;
+    title: string;
+    path: string;
+    description: string;
+  };
   index: number;
 }
 
 const StackableCard = ({work, index}: IStackableCard) => {
-  const triggerRef = useRef<any>()
+  const triggerRef = useRef<HTMLDivElement>(null)
   const TOP_THRESHOLD = 150
   const BOTTOM_THRESHOLD = 200
 
