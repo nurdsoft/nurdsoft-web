@@ -46,7 +46,7 @@ const Workpage1 = () => {
   useEffect(() => {
     const stack = document.getElementById('workpage1_stack')
     if(!stack) return    
-    stack.style.paddingBottom = `${window.innerHeight - 400}px`
+    stack.style.paddingBottom = `500px`
   }, [window])
 
   return (
