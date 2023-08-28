@@ -42,32 +42,16 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
         })
     }
 
-    useEffect(() => {
+    const handleServiceViewScrolling = () => {
         if(!imageRef.current || !dataRef) return
         const intersectionRatio = +(dataRef.intersectionRatio)?.toFixed(2) * 100
-        const menu = document.getElementsByClassName('servicespage5_menu')[0] as HTMLElement
+        const wrapper = document.getElementById("servicespage5_parentContainer")
         const contentArea = document.getElementById('servicespage5_content')
-        if(!menu || !contentArea) return
+        if(!contentArea || !wrapper) return
         
         // logic to lock and unlock side menu
         if(width > 966){
-            if(intersectionRatio === 100 || (currentActiveSlide >= 1 && currentActiveSlide < 8)){
-                menu.classList.add('fixed')
-                contentArea.style.paddingLeft = '282px'
-            }
-            if(
-                (currentActiveSlide === (index - 1) && index === 9 && intersectionRatio === 100) ||
-                (currentActiveSlide === 0 && intersectionRatio < 100 && !scrollingUp.current)
-            ){
-                menu.classList.remove('fixed')
-                contentArea.style.paddingLeft = '0px'
-                
-                if(currentActiveSlide === 8){
-                    menu.style.alignSelf = 'flex-end'
-                }else{
-                    menu.style.alignSelf = 'flex-start'
-                }
-            }
+            wrapper.style.overflow = "unset"
         }else{
             contentArea.style.paddingLeft = '0px'
         }
@@ -90,6 +74,17 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
             imageRef.current.style.opacity = 0
             imageRef.current.style.transform = `translateY(74vh - 90px)`
             stopTransformation.current = false
+        }
+    }
+
+    useEffect(() => {
+        handleServiceViewScrolling()
+        const scroller = document.getElementById('parallaxLayoutServices')
+        if(!scroller) return;
+        scroller.addEventListener('scroll', handleServiceViewScrolling)
+
+        return () => {
+            scroller.removeEventListener('scroll', handleServiceViewScrolling)
         }
     }, [dataRef?.intersectionRatio])
 
