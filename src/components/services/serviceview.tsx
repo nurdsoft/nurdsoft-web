@@ -43,11 +43,17 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
     }
 
     const handleServiceViewScrolling = () => {
-        if(!imageRef.current || !dataRef) return
-        const intersectionRatio = +(dataRef.intersectionRatio)?.toFixed(2) * 100
+        const service = triggerRef.current as HTMLDivElement
+        if(!imageRef.current || !dataRef || !service) return
+        // const intersectionRatio = +(dataRef.intersectionRatio)?.toFixed(2) * 100
         const wrapper = document.getElementById("servicespage5_parentContainer")
         const contentArea = document.getElementById('servicespage5_content')
-        if(!contentArea || !wrapper) return
+        const scrollerHeight = (document.getElementById('parallaxLayoutServices') as HTMLDivElement).offsetHeight
+        const serviceTop = (triggerRef.current as HTMLDivElement).getBoundingClientRect().top
+        const actialIntersectionRatio = ((scrollerHeight - serviceTop) / scrollerHeight)* 100
+        const intersectionRatio = actialIntersectionRatio * 1.4
+        
+        if(!contentArea || !wrapper || actialIntersectionRatio > 200) return
         
         // logic to lock and unlock side menu
         if(width > 966){
@@ -56,7 +62,7 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
             contentArea.style.paddingLeft = '0px'
         }
         
-        if(!stopTransformation.current){
+        if(!stopTransformation.current ){
             imageRef.current.style.opacity = 1
             imageRef.current.style.transform = `translateY(${(74 - (1.4 * (intersectionRatio / 2) + 8))}vh)`
         }
@@ -64,17 +70,14 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
             stopTransformation.current = true
         }
         
-        if(intersectionRatio > 50){
+        if(actialIntersectionRatio > 51 || (actialIntersectionRatio > 100 && actialIntersectionRatio < 150)){
             setCurrentActiveSlide(index - 1)
         }
-        if(
-            (intersectionRatio < 2 && index > 1) ||
-            (intersectionRatio <= 12 && index === 1 && !scrollingUp.current)
-        ){
-            imageRef.current.style.opacity = 0
-            imageRef.current.style.transform = `translateY(74vh - 90px)`
-            stopTransformation.current = false
-        }
+        // console.log();
+        
+        // if(currentActiveSlide+1 > index && scrollingUp.current && !dataRef.isIntersecting){
+        //     console.log("hide", index)
+        // }
     }
 
     useEffect(() => {
