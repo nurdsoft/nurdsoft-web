@@ -37,10 +37,10 @@
                     position: absolute;
                     left: -23px;
                     top: -10px;
-                    width: 48px;
-                    height: 48px;
+                    width: rem(48px);
+                    height: rem(48px);
                     z-index: -1;
-                    border-radius: 30px;
+                    border-radius: rem(30px);
                     background-color: var(--off-white-100);
                     opacity: 0.12;
                 }

@@ -59,7 +59,7 @@
       .slick-slide {
         top: 0;
         & > div {
-          padding: 10px;
+          padding: rem(10px);
         }
         .servicespage2_boxContainer {
           border: 1px solid var(--gray-100);
