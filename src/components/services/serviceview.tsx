@@ -73,11 +73,14 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
         if(actialIntersectionRatio > 51 || (actialIntersectionRatio > 100 && actialIntersectionRatio < 150)){
             setCurrentActiveSlide(index - 1)
         }
-        // console.log();
-        
-        // if(currentActiveSlide+1 > index && scrollingUp.current && !dataRef.isIntersecting){
-        //     console.log("hide", index)
-        // }
+        if(
+            (intersectionRatio < 2 && index > 1) ||
+            (intersectionRatio <= 12 && index === 1 && !scrollingUp.current)
+        ){
+            imageRef.current.style.opacity = 0
+            imageRef.current.style.transform = `translateY(74vh - 90px)`
+            stopTransformation.current = false
+        }
     }
 
     useEffect(() => {

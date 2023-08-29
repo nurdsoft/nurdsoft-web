@@ -12,8 +12,8 @@ const ServicesPage5 = () => {
             description: 'Creating software for specific needs, like mobile apps or web tools, combining coding, testing, and deployment. Enhancing efficiency and user experience across industries.',
         },
         {
-            heading: 'Metaverse',
-            description: 'The metaverse is a virtual shared space where users interact, socialize, and engage through avatars, combining elements of the physical and digital worlds for various activities and experiences.',
+            heading: 'Data & Analytics',
+            description: 'Data & analytics involves collecting, processing, and interpreting data to gain insights and make informed decisions across industries and domains.',
         },
         {
             heading: 'Metaverse',

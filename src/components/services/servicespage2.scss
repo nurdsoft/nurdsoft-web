@@ -32,7 +32,7 @@
   .servicespage2_wrapper {
     width: 100%;
     overflow-x: hidden;
-    padding-left: rem(30px);
+    // padding-left: rem(30px);
     // -webkit-overflow-scrolling: touch;
     // scroll-behavior: smooth;
     height: 400px;
@@ -59,7 +59,7 @@
       .slick-slide {
         top: 0;
         & > div {
-          padding: 5px;
+          padding: 10px;
         }
         .servicespage2_boxContainer {
           border: 1px solid var(--gray-100);
