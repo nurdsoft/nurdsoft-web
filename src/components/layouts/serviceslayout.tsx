@@ -14,9 +14,9 @@ const ServicesLayout = () => {
     <div className="parallaxLayoutServices" id="parallaxLayoutServices">
       <ServicesPage1 />
       <ServicesPage5 />
-      <ServicesPage2 />
+      {React.useMemo(() => <ServicesPage2 />, [])}
       <ServicesPage3 />
-      <Servicespage4 />
+      {/* <Servicespage4 /> */}
       <Contact />
     </div>
   );

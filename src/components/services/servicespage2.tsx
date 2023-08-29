@@ -18,7 +18,7 @@ import {
   TEST,
   TEST_PURPLE,
 } from "../../icons";
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import Slider from "react-slick";
 import Wrapper from "../wrapper";
@@ -100,7 +100,7 @@ const Servicespage2 = () => {
   const extremePos = useRef(6)
   
   let dataRef = useIntersectionObserver(triggerRef, {
-    threshold: 0.4,
+    threshold: [0.4, 0.5],
     freezeOnceVisible: false,
     root: !(typeof document === "undefined") ? document.getElementById('parallaxLayoutServices') : null
   });
@@ -150,10 +150,13 @@ const Servicespage2 = () => {
       disableRef.current = true
       setRemoveHorizontalScrollListener(true)
       _counter.current = {previous: 0, current: 0}
+    }else{
+      disableRef.current = false
     }
   }
 
-  const debouceHandleHorizontalScroll = useCallback((evt: Event) => scrollHorizontallyCopy(evt), []);
+  // const debouceHandleHorizontalScroll = useCallback((evt: Event) => scrollHorizontallyCopy(evt), []);
+  const debouceHandleHorizontalScroll = useMemo(() => (evt: Event) => scrollHorizontallyCopy(evt), [])
 
   const handleScrollMainPage = () => {
     
@@ -189,6 +192,12 @@ const Servicespage2 = () => {
         disableRef.current = false
         horizontalScrollFunctionRun.current = 0
       })
+    }
+    
+    return () => {
+      scroller?.removeEventListener('scroll', handleScrollMainPage)
+      scroller?.removeEventListener("wheel", debouceHandleHorizontalScroll)
+
     }
 
   }, [dataRef?.isIntersecting])
@@ -250,7 +259,43 @@ const Servicespage2 = () => {
             </p>
           </div>
         </div>
-        <div className="servicespage2_wrapper mt-24">
+        <div className="flex items-center max-w-[60%] ml-auto mr-auto mt-24">
+          {sliderCaptions.map((slider: string, index: number) => {
+            return (
+              <div className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>
+                <span
+                  className={`servicespage2_dotBorder ${
+                    Math.ceil(currentActiveItem / 2) - 1 === index ? "servicespage2_selectedDotBorder" : ""
+                  }`}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <div
+                    className={`servicespage2_dotContent ${
+                      Math.ceil(currentActiveItem / 2) - 1 === index
+                        ? "servicespage2_selectedDotContent"
+                        : ""
+                    }`}
+                  ></div>
+                </span>
+                <span
+                  className={`${
+                    Math.ceil(currentActiveItem / 2) - 1 === index
+                    ? "primary100" : "offGray"
+                  } servicespage2_dotText`}
+                >
+                  {slider}
+                </span>
+                {index !== sliderCaptions.length - 1 && (
+                  <span className="flex-1">
+                    <hr className="servicespage2_divider" />
+                  </span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <div className="servicespage2_wrapper mt-10">
           <Slider
             dots={false}
             infinite={false}
@@ -295,42 +340,6 @@ const Servicespage2 = () => {
               }
             )}
           </Slider>
-        </div>
-        <div className="flex items-center">
-          {sliderCaptions.map((slider: string, index: number) => {
-            return (
-              <div className="servicespage2_dotContainer flex flex-1 items-center gap-4 mt-8">
-                <span
-                  className={`servicespage2_dotBorder ${
-                    Math.ceil(currentActiveItem / 2) - 1 === index ? "servicespage2_selectedDotBorder" : ""
-                  }`}
-                  role="button"
-                  tabIndex={0}
-                >
-                  <div
-                    className={`servicespage2_dotContent ${
-                      Math.ceil(currentActiveItem / 2) - 1 === index
-                        ? "servicespage2_selectedDotContent"
-                        : ""
-                    }`}
-                  ></div>
-                </span>
-                <span
-                  className={`${
-                    Math.ceil(currentActiveItem / 2) - 1 === index
-                    ? "primary100" : "offGray"
-                  } servicespage2_dotText`}
-                >
-                  {slider}
-                </span>
-                {index !== sliderCaptions.length - 1 && (
-                  <span className="flex-1">
-                    <hr className="servicespage2_divider" />
-                  </span>
-                )}
-              </div>
-            );
-          })}
         </div>
       </div>
     </Wrapper>
