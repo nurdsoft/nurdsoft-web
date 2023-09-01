@@ -2,8 +2,10 @@ import './homelayout.scss';
 
 import React, { useEffect } from "react";
 
+import { Background } from '../../images/background';
+import { BackgroundLine } from '../../images/backgroundLine';
 import Contact from "../contact/contact";
-import Dashboard from "../dashboard";
+import HeroSection from '../homepage/herosection';
 import Homepage1 from "../homepage/homepage1";
 import Homepage2 from "../homepage/homepage2";
 import Homepage3 from "../homepage/homepage3";
@@ -25,7 +27,7 @@ const HomeLayout = () => {
   }, [window?.location?.hash])
   return (
     <div className="home_scroller" id="home_scroller">
-      <Dashboard />
+      <HeroSection />
       <Homepage1 />
       <Homepage2 />
       <Homepage3 />
@@ -33,6 +35,10 @@ const HomeLayout = () => {
       <Homepage6 />
       <Homepage5 />
       <Contact />
+      <div className='universalBackgroundWrapper'>
+        <Background className='universalBackground'/>
+        <BackgroundLine className='universalBackgroundLine'/>
+      </div>
     </div>
   );
 };
