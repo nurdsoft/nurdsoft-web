@@ -39,7 +39,7 @@ const IndexPage: React.FC<PageProps> = () => {
       {_step === 0 ? (
         <main className="pageStyles flex justify-center items-center">
           <div className="w-full h-auto">
-            <img className="w-full h-auto" src={heroGif} alt="heroGIf" />
+            <img loading="eager" className="w-full h-auto" src={heroGif} alt="heroGIf" />
           </div>
         </main>
       ) : (
