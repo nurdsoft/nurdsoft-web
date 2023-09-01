@@ -16,7 +16,7 @@
   // font style
   color: var(--off-white-100);
   font-family: "Poppins", "DM Sans", sans-serif;
-  font-size: 75px;
+  font-size: rem(75px);
   font-style: normal;
   font-weight: 700;
   line-height: 80px; /* 106.667% */
@@ -29,7 +29,7 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      height: 80px;
+      height: rem(80px);
       width: 100%;
       left: 0;
       .left {
@@ -51,7 +51,7 @@
     .lineOne {
   
       font-family: "Poppins";
-      font-size: 64px;
+      font-size: rem(64px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,8 +79,8 @@
   
     .animated-line {
   
-      margin: 40px auto;
-      font-size: 64px;
+      margin: rem(40px) auto;
+      font-size: rem(64px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -100,8 +100,8 @@
       .fading-child {
       
         position: relative;
-        width: 250px;
-        height: 80px;
+        width: rem(250px);
+        height: rem(80px);
   
         h1 {
       
@@ -139,7 +139,7 @@
     
     .lineThree {
       font-family: "Poppins";
-      font-size: 64px;
+      font-size: rem(64px);
       animation: springRight 1.5s ease-out forwards;
     }
 
@@ -189,13 +189,13 @@
   .herosection_parentContainer{ 
     .hero_text{
       .lineOne {
-        font-size: 48px;
+        font-size: rem(48px);
       }
       .animated-line {
-        font-size: 48px;
+        font-size: rem(48px);
       }
       .lineThree {
-        font-size: 48px;
+        font-size: rem(48px);
       }
     }
   }
@@ -206,13 +206,13 @@
     height: calc(100vh - 78px);
     .hero_text{
       .lineOne {
-        font-size: 42px;
+        font-size: rem(42px);
       }
       .animated-line {
-        font-size: 42px;
+        font-size: rem(42px);
       }
       .lineThree {
-        font-size: 42px;
+        font-size: rem(42px);
       }
     }
   }
@@ -225,14 +225,14 @@
         display: none;
       }
       .lineOne {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: rem(36px);
+        line-height: rem(40px);
       }
       .animated-line {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: rem(36px);
+        line-height: rem(40px);
         .fading-child {
-          width: 160px;
+          width: rem(160px);
           height: 1.1em;
           h1{
             span {
@@ -243,8 +243,8 @@
         }
       }
       .lineThree {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: rem(36px);
+        line-height: rem(40px);
       }
     }
   }
