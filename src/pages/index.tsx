@@ -1,8 +1,7 @@
 import * as React from "react";
 import { type PageProps } from "gatsby";
 import Layout from "../components/layout";
-import * as animationData from "../animations/logo.json";
-import Lottie from "react-lottie";
+import heroGif from "../animations/heroAnim.gif"
 import Seo from "../components/seo";
 import HomeLayout from "../components/layouts/homelayout";
 import "../styles/style.scss";
@@ -15,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
       if (_step === 0) {
         _setStep((step) => step + 1);
       }
-    }, 2500);
+    }, 2700);
   }, []);
 
   React.useEffect(() => {
@@ -35,21 +34,12 @@ const IndexPage: React.FC<PageProps> = () => {
     };
   }, [_step]);
 
-  const defaultOptions = {
-    loop: false,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <>
       {_step === 0 ? (
         <main className="pageStyles flex justify-center items-center">
-          <div>
-            <Lottie options={defaultOptions} />
+          <div className="w-full h-auto">
+            <img className="w-full h-auto" src={heroGif} alt="heroGIf" />
           </div>
         </main>
       ) : (
