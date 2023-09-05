@@ -418,14 +418,14 @@ const Bndpage = () => {
           <div className="bndpage_linkButtons flex justify-between mb-28">
             <div
               onClick={() => {
-                navigate("/work/audit_trust");
+                navigate("/work/logixa");
               }}
               className="bndpage_linkButtonsBoxContainer p-8"
             >
               <ARROW_LEFT />
               <div>
                 <p className="offGray font-normal text-base">PREV</p>
-                <h4 className="white text-xl mt-4">Assessor Trust</h4>
+                <h4 className="white text-xl mt-4">Logixa</h4>
               </div>
             </div>
             <div

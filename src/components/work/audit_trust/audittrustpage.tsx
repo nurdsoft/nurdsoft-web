@@ -334,13 +334,13 @@ const AuditTrustPage = () => {
             </div>
             <div
               onClick={() => {
-                navigate("/work/bnd");
+                navigate("/work/logixa");
               }}
               className="audittrustpage_linkButtonsBoxContainer p-8"
             >
               <div>
                 <p className="offGray font-normal text-base">NEXT</p>
-                <h4 className="white text-xl mt-4">Build’n Deploy</h4>
+                <h4 className="white text-xl mt-4">Logixa</h4>
               </div>
               <ARROW_RIGHT />
             </div>

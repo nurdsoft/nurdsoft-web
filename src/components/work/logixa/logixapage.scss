@@ -1,0 +1,199 @@
+@import "~sass-rem";
+
+.logixapage_parentContainer {
+  padding: 0 rem(25px) rem(30px) rem(25px);
+  .logixapage_title {
+    color: var(--white);
+    font-size: rem(56px);
+    font-weight: 700;
+    line-height: 74px;
+    max-width: rem(917px);
+    width: 100%;
+  }
+
+  .logixapage_imageContainer1 {
+    .logixapage_bndImage {
+      object-fit: cover;
+    }
+  }
+
+  .logixapage_conclusion {
+    background-color: var(--dark-gray-100);
+  }
+
+  .logixapage_keyServices {
+    background-color: var(--dark-gray-100);
+    border-radius: 16px;
+  }
+
+  .logixapage_keyFeatures {
+    .logixapage_keyFeaturesFlexContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .logixapage_keyFeaturesFlexBox {
+        border: 1px solid var(--gray-100);
+      }
+    }
+  }
+
+  .logixapage_emailBoxContainer {
+    h4.white {
+      max-width: rem(545px);
+      width: 100%;
+    }
+  }
+
+  .logixapage_linkButtons {
+    .logixapage_linkButtonsBoxContainer {
+      border: 1px solid var(--gray-100);
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 0.45;
+      cursor: pointer;
+      transition: 0.4s all ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .logixapage_parentContainer {
+    .logixapage_title {
+      width: 100%;
+      font-size: rem(42px);
+      line-height: 52px;
+    }
+
+    .logixapage_introduction{
+      padding: rem(20px);
+    }
+
+    .logixapage_conclusion {
+      padding: rem(20px);
+    }
+
+    .logixapage_keyServices {
+      padding: rem(48px);
+      .logixapage_keyServicesListContainer {
+        margin-bottom: 0;
+      }
+    }
+
+    .logixapage_linkButtons {
+      flex-direction: column;
+      gap: 20px;
+      .logixapage_linkButtonsBoxContainer{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .logixapage_parentContainer {
+    .logixapage_title {
+      width: 100%;
+      font-size: rem(32px);
+      line-height: 42px;
+    }
+
+    .logixapage_introduction {
+      .logixapage_introductionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
+      }
+    }
+
+    .logixapage_productStatement{
+      .logixapage_productStatementTitle{
+        font-size: rem(30px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .logixapage_productStatementDescription{
+        font-size: rem(18px);
+      }
+      .logixapage_productStatementList{
+        ol.offGray {
+          font-size: rem(18px);
+        }
+      }
+    }
+
+    .logixapage_keyServices {
+      padding: rem(20px);
+      .logixapage_keyServicesTitle{
+        font-size: rem(32px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .logixapage_keyServicesListContainer {
+        font-size: rem(18px);
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+    }
+
+    .logixapage_valueProposition{
+      .logixapage_valuePropositionTitle {
+        font-size: rem(30px);
+        text-align: center;
+        .primary100 {
+          margin: 0;
+        }
+      }
+      .bndpage_implementationDescription {
+        margin: rem(48px) 0 0 0;
+        width: 100%;
+      }
+      .logixapage_auditImage {
+        display: none;
+      }
+    }
+
+    .logixapage_assessorDashboard {
+      .logixapage_assessorDashboardTitle {
+        font-size: rem(30px);
+        text-align: center;
+      }
+      .logixapage_assessorDashboardImagesContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .logixapage_keyFeatures {
+      .logixapage_keyFeaturesTitle {
+        font-size: rem(30px);
+        text-align: center;
+      }
+      .logixapage_keyFeaturesFlexContainer {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .logixapage_conclusion {
+      .logixapage_conclusionTitle{
+        font-size: rem(30px);
+      }
+      p.offGray{
+        font-size: rem(18px);
+      }
+    }
+  }
+}
