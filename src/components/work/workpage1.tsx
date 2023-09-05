@@ -38,7 +38,7 @@ const Workpage1 = () => {
       img: Logixa,
       caption: "Transportation & Logistics",
       title: "Logixa",
-      path: "/work",
+      path: "/work/logixa",
       description: "Revolutionizing Shipment Management Solutions for Enhanced Logistics and Seamless Supply Chain Operations"
     },
   ];
