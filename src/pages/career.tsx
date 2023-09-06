@@ -18,6 +18,6 @@ export default CareerPage;
 
 export const Head = () => (
   <Seo
-    title="Nurdsoft - Career"
+    title="Nurdsoft - Careers"
   />
 )

@@ -1,7 +1,9 @@
-import * as React from "react";
 import "./homepage3.scss";
-import Wrapper from "../wrapper";
+
+import * as React from "react";
+
 import { StaticImage } from "gatsby-plugin-image";
+import Wrapper from "../wrapper";
 
 const Homepage3 = () => {
   return (
@@ -19,14 +21,14 @@ const Homepage3 = () => {
           </div>
           <div className="item2">
             <div className="h-full">
-              <div className="cursor-pointer gridBox1 gridBorder">
+              <div className="gridBox1 gridBorder">
                 <StaticImage
                   src="../../images/disney.png"
                   quality={100}
                   alt="Deluxe"
                 />
               </div>
-              <div className="cursor-pointer gridBox3">
+              <div className="gridBox3">
                 <StaticImage
                   src="../../images/ticket-master.png"
                   quality={100}
