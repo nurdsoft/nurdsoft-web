@@ -1,8 +1,10 @@
-import * as React from "react";
 import "./homepage5.scss";
-import Wrapper from "../wrapper";
-import { StaticImage } from "gatsby-plugin-image";
+
+import * as React from "react";
+
 import { DOUBLE_QUOTE_PINK } from "../../icons";
+import { StaticImage } from "gatsby-plugin-image";
+import Wrapper from "../wrapper";
 
 const Homepage5 = () => {
   return (
@@ -12,7 +14,7 @@ const Homepage5 = () => {
           <div className="homepage5_parentContainer">
             <div className="homepage5_reviewDiv">READ OUR REVIEWS</div>
             <div className="homepage5_textContainer homepage5_lineUp">
-              We Create an Intelligent
+              We Create Intelligent
               <span className="ml-4 homepage5_imageBlock">
                 <StaticImage
                   src="../../images/img.png"

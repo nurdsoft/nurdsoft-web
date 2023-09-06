@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
 import "./contact.scss";
-import Wrapper from "../wrapper";
+
 import { ARROW_RIGHT_SMALL, FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../icons";
+import React, { useState } from "react";
+
+import { Link } from "gatsby";
+import Wrapper from "../wrapper";
 
 const Contact = () => {
 
@@ -229,7 +231,7 @@ const Contact = () => {
                 <Link to="/work">Work</Link>
               </span>
               <span className="ml-16 contact_footer_links">
-                <Link to="/career">Career</Link>
+                <Link to="/career">Careers</Link>
               </span>
               <span className="ml-16 contact_footer_links">
                 <Link to="/about">About</Link>
