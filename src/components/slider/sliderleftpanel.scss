@@ -1,32 +1,45 @@
 @import "~sass-rem";
 
 .sliderleftpanel_parentContainer {
-  .sliderleftpanel_headerLink {
-    color: var(--primary-100);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: left;
-    font-size: rem(20px);
-    margin-bottom: rem(38px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  .left {
+    flex: 1;
+    .sliderleftpanel_headerLink {
+      color: var(--primary-100);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: left;
+      font-size: rem(20px);
+      margin-bottom: rem(38px);
+    }
+  
+    .sliderleftpanel_title {
+      font-size: rem(52px);
+      color: var(--white);
+      text-align: left;
+      font-weight: 700;
+      line-height: 48px;
+      margin-bottom: rem(36px);
+    }
+  
+    .sliderleftpanel_description {
+      margin: rem(18px) 0 rem(12px) 0;
+      font-size: rem(16px);
+      color: var(--off-gray);
+      font-weight: 400;
+      text-align: left;
+      line-height: 27px;
+    }
   }
 
-  .sliderleftpanel_title {
-    font-size: rem(52px);
-    color: var(--white);
-    text-align: left;
-    font-weight: 700;
-    line-height: 48px;
-    margin-bottom: rem(36px);
-  }
-
-  .sliderleftpanel_description {
-    margin: rem(18px) 0 rem(12px) 0;
-    font-size: rem(16px);
-    color: var(--off-gray);
-    font-weight: 400;
-    text-align: left;
-    line-height: 27px;
+  .right {
+    flex: 1;
   }
 }
 
