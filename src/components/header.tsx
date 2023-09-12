@@ -59,8 +59,8 @@ const Header = () => {
                     className="menuLink"
                     to="/industry/"
                   >
-                    <span className="withoutHover">INDUSTRY</span>
-                    <span className="onHover">INDUSTRY</span>
+                    <span className="withoutHover">INDUSTRIES</span>
+                    <span className="onHover">INDUSTRIES</span>
                   </Link>
                   <Link
                     activeClassName="activeMenuLink"
