@@ -73,7 +73,6 @@ const HeroSection = () => {
 
   useEffect(() => {
     const fadingChild = Array.from(document.getElementsByClassName('fading-child')[0].children)
-    console.log("ran again");
     intervalRef.current.forEach((intervalId) => {
       clearInterval(intervalId)
     })
@@ -114,7 +113,6 @@ const HeroSection = () => {
 
   useEffect(() => {
     const lineOne = Array.from(document.getElementsByClassName('lineOne')[0].children) as HTMLSpanElement[]
-    console.log("ran again");
     intervalGradRef.current.forEach((intervalId) => {
       clearInterval(intervalId)
     })
