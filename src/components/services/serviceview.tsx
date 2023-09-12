@@ -11,9 +11,10 @@ interface IServiceView {
     index: number;
     setCurrentActiveSlide: React.Dispatch<React.SetStateAction<number>>
     currentActiveSlide: number
+    id: string
 }
 
-const ServiceView = ({heading, description, index, setCurrentActiveSlide, currentActiveSlide}: IServiceView) => {
+const ServiceView = ({heading, description, index, setCurrentActiveSlide, currentActiveSlide, id}: IServiceView) => {
     const triggerRef = useRef<any>();
     const imageRef = useRef<any>();
     const stopTransformation = useRef<any>(false)
@@ -99,7 +100,7 @@ const ServiceView = ({heading, description, index, setCurrentActiveSlide, curren
     }, [])
 
     return (
-        <div className='servicespage5_serviceWrapper' ref={triggerRef}>
+        <div className='servicespage5_serviceWrapper' id={id} ref={triggerRef}>
             <div className='image_contianer' ref={imageRef}></div>
             <h2 className='service_heading'>{heading}</h2>
             <p className='service_description'>{description}</p>

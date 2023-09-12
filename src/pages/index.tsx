@@ -1,52 +1,52 @@
 import * as React from "react";
 import { type PageProps } from "gatsby";
 import Layout from "../components/layout";
-import heroGif from "../animations/heroAnim.gif"
+// import heroGif from "../animations/heroAnim.gif"
 import Seo from "../components/seo";
 import HomeLayout from "../components/layouts/homelayout";
 import "../styles/style.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
-  const [_step, _setStep] = React.useState<number>(0);
+  // const [_step, _setStep] = React.useState<number>(0);
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      if (_step === 0) {
-        _setStep((step) => step + 1);
-      }
-    }, 2700);
-  }, []);
+  // React.useEffect(() => {
+  //   setTimeout(() => {
+  //     if (_step === 0) {
+  //       _setStep((step) => step + 1);
+  //     }
+  //   }, 2700);
+  // }, []);
 
-  React.useEffect(() => {
-    const keyDownHandler = (event: any) => {
-      if (_step === 1) {
-        event.preventDefault();
-        _setStep((step) => step + 1);
-      }
-    };
+  // React.useEffect(() => {
+  //   const keyDownHandler = (event: any) => {
+  //     if (_step === 1) {
+  //       event.preventDefault();
+  //       _setStep((step) => step + 1);
+  //     }
+  //   };
 
-    document.addEventListener("keydown", keyDownHandler);
-    document.addEventListener("click", keyDownHandler);
+  //   document.addEventListener("keydown", keyDownHandler);
+  //   document.addEventListener("click", keyDownHandler);
 
-    return () => {
-      document.removeEventListener("keydown", keyDownHandler);
-      document.removeEventListener("click", keyDownHandler);
-    };
-  }, [_step]);
+  //   return () => {
+  //     document.removeEventListener("keydown", keyDownHandler);
+  //     document.removeEventListener("click", keyDownHandler);
+  //   };
+  // }, [_step]);
 
   return (
     <>
-      {_step === 0 ? (
+      {/* {_step === 0 ? (
         <main className="pageStyles flex justify-center items-center">
           <div className="w-full h-auto">
             <img loading="eager" className="w-full h-auto" src={heroGif} alt="heroGIf" />
           </div>
         </main>
       ) : (
-        <Layout>
-          <HomeLayout />
-        </Layout>
-      )}
+      )} */}
+      <Layout>
+        <HomeLayout />
+      </Layout>
     </>
   );
 };
