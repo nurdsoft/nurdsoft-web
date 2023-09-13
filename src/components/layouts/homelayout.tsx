@@ -2,8 +2,6 @@ import './homelayout.scss';
 
 import React, { useEffect } from "react";
 
-import { Background } from '../../images/background';
-import { BackgroundLine } from '../../images/backgroundLine';
 import Contact from "../contact/contact";
 import HeroSection from '../homepage/herosection';
 import Homepage1 from "../homepage/homepage1";
@@ -33,10 +31,6 @@ const HomeLayout = () => {
       <Homepage4 />
       <Homepage5 />
       <Contact />
-      <div className='universalBackgroundWrapper'>
-        <Background className='universalBackground'/>
-        <BackgroundLine className='universalBackgroundLine'/>
-      </div>
     </div>
   );
 };
