@@ -1,7 +1,7 @@
 @import "~sass-rem";
 
 #herosection_parentContainer {
-  pointer-events: none;
+  // pointer-events: none;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,11 +11,13 @@
   height: calc(100vh - 91px);
   color: var(--off-white-100);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  overflow: hidden;
   // font style
   color: var(--off-white-100);
-  font-family: "Poppins", "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: rem(75px);
   font-style: normal;
   font-weight: 700;
@@ -24,33 +26,11 @@
   text-align: center;
 
   .hero_text {
-    .arrow {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      height: rem(80px);
-      width: 100%;
-      left: 0;
-      .left {
-        position: absolute;
-        transform-origin: center center;
-        transform-style: preserve-3d;
-        transform: rotate(-90deg) translateX(29px) translateY(21px);
-        transition: all 1s ease-out;
-      }
-      .right {
-        position: absolute;
-        transform-origin: center center;
-        transform-style: preserve-3d;
-        transform: rotate(-90deg) translateY(-49px) translateX(10px);
-        transition: all 1s ease-out;
-      }
-    }
+    margin-top: auto;
+    margin-bottom: auto;
 
     .lineOne {
-  
-      font-family: "Poppins";
+      font-family: "DM Sans Bold", sans-serif;
       font-size: rem(64px);
       display: flex;
       justify-content: center;
@@ -88,8 +68,6 @@
       animation: springLeft 1.5s ease-out forwards;
   
       & > h1 {
-  
-        font-family: "Poppins";
         background: linear-gradient(138deg, #6164FA 0%, #2CD7E5 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -104,8 +82,6 @@
         height: rem(80px);
   
         h1 {
-      
-          font-family: "Poppins";
           display: flex;
           justify-content: center;
           align-items: center;
@@ -138,11 +114,57 @@
     }
     
     .lineThree {
-      font-family: "Poppins";
+      font-family: "DM Sans Light", sans-serif;
       font-size: rem(64px);
       animation: springRight 1.5s ease-out forwards;
+      font-weight: 100;
     }
 
+  }
+
+  .rating-wrapper {
+    width: 100%;
+    padding: 10px;
+    & > p {
+      font-size: rem(20px);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+    }
+
+    .rating-box-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: rem(48px);
+      width: 100%;
+      .rating-box {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 98%;
+          height: 95%;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          transform: translate(-50%, -50%);
+          background: linear-gradient(180deg, rgb(34, 41, 45) 0%, rgb(3, 9, 14) 100%);
+        }
+        max-width: 280px;
+        max-height: 100px;
+        position: relative;
+        background: linear-gradient(180deg, #3f474d 0%, transparent 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        & > img {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
   }
   
 }
@@ -221,9 +243,6 @@
 @media screen and (max-width: 768px) {
   .herosection_parentContainer {
     .hero_text{
-      .arrow {
-        display: none;
-      }
       .lineOne {
         font-size: rem(36px);
         line-height: rem(40px);
@@ -245,6 +264,14 @@
       .lineThree {
         font-size: rem(36px);
         line-height: rem(40px);
+      }
+    }
+    .rating-wrapper {
+      .rating-box-wrapper {
+        gap: 10px;
+        .rating-box {
+          padding: 20px;
+        }
       }
     }
   }

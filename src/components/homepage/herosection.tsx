@@ -1,23 +1,22 @@
 import './herosection.scss'
 
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
+import Exdone from '../../images/exdone.png'
 import HeroDesignIcon from '../../images/heroDesignIcon.svg'
 import HeroDevelopIcon from '../../images/heroDevelopIcon.svg'
 import HeroOptimizeIcon from '../../images/heroOptimizeIcon.svg'
 import HeroSettingsIcon from '../../images/heroSettingsIcon.svg'
 import HeroSyncIcon from '../../images/heroSyncIcon.svg'
-import NArrowLeft from '../../images/nleft.svg'
-import NArrowRight from '../../images/nright.svg'
+import Startsup from '../../images/startsup.png'
+import Teamtalk from '../../images/teamtalk.png'
 import Wrapper from '../wrapper'
-import { useWindowSize } from '../common/screenSizeObserver'
 
 const HeroSection = () => {
 
   if(typeof window === 'undefined' || typeof document === 'undefined') return <></>
   
   const [pageBlur, setPageBlur] = useState(false)
-  const [width, height] = useWindowSize()
 
   // ref for fading child start
   const intervalRef = useRef<NodeJS.Timer[]>([])
@@ -134,15 +133,6 @@ const HeroSection = () => {
   }, [pageBlur])
   // animation logic for gradient animation text end
 
-  useLayoutEffect(() => {
-    const codeArrowLeft = document.getElementById('codeArrowLeft')
-    const codeArrowRight = document.getElementById('codeArrowRight')
-    if(!codeArrowLeft || !codeArrowRight) return
-    const documentWidth = (document.getElementsByClassName('herosection_parentContainer')[0] as HTMLDivElement).offsetWidth
-    codeArrowLeft.style.transform = `translateX(${documentWidth/2 - 55}px)`
-    codeArrowRight.style.transform = `translateX(-${documentWidth/2 - 55}px)`
-  }, [width, height])
-
   useEffect(() => {
     if(!document.hidden && pageBlur){
       setPageBlur(false)
@@ -155,10 +145,6 @@ const HeroSection = () => {
     <Wrapper id='herosection_parentContainer'>
       <div className="herosection_parentContainer">
         <div className='hero_text'>
-          <div className='arrow'>
-            <img className='left' id='codeArrowLeft' src={NArrowLeft} alt='left' />
-            <img className='right' id='codeArrowRight' src={NArrowRight} alt='right' />
-          </div>
           <h1 className='lineOne'>
             <span>Software</span>
             <span>engineering</span>
@@ -178,6 +164,20 @@ const HeroSection = () => {
             </div>
           </div>
           <h1 className='lineThree'>stunning online experiences</h1>
+        </div>
+        <div className='rating-wrapper'>
+          <p>Take a look at our reviews</p>
+          <div className='rating-box-wrapper'>
+            <div className='rating-box'>
+              <img src={Startsup} alt='startsup' />
+            </div>
+            <div className='rating-box'>
+              <img src={Exdone} alt='exdone' />
+            </div>
+            <div className='rating-box'>
+              <img src={Teamtalk} alt='teamtalk' />
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>
