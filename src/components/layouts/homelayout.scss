@@ -4,41 +4,6 @@
     position: relative;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    .universalBackgroundWrapper{
-        // position: relative;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        z-index: 0;
-        overflow: hidden;
-        .universalBackgroundLine {
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            width: 100%;
-            min-width: 1200px;
-            height: auto;
-        }
-        .universalBackground {
-            position: relative;
-            z-index: 2;
-            opacity: 0.5;
-            width: 100%;
-            min-width: 1200px;
-            height: auto;
-            & > path {
-                transition: all 2s ease;
-                &:hover {
-                    fill: url(#gradientHighlight);
-                }
-            }
-    
-            linearGradient#gradientHighlight{
-                stop-color: linear-gradient(138deg, #6164FA 0%, #2CD7E5 100%);
-                stop-opacity: 1;
-            }
-        }
-    }
 
     &::-webkit-scrollbar {
         display: none;
