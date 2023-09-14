@@ -1,10 +1,13 @@
 @import "~sass-rem";
 
 #contact_parentContainer{
-  background: var(--black-100);
+  // background: var(--black-100);
+  z-index: unset;
   .contact_parentContainer {
     padding: rem(40px) rem(25px);
     color: var(--off-white-100);
+    z-index: 1;
+    position: relative;
     .contact_formWrapper {
       margin-bottom: rem(135px);
       margin-top: rem(80px);
@@ -21,7 +24,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        text-align: center;
+        // text-align: center;
 
         .contact_formLeft {
           max-width: rem(320px);
@@ -48,7 +51,7 @@
             align-items: center;
             gap: 12px;
             margin-top: rem(48px);
-            justify-content: center;
+            // justify-content: center;
             .icon_container{
                 cursor: pointer;
                 background-color: var(--dark-gray-100);

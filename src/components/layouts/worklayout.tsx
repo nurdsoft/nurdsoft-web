@@ -2,13 +2,13 @@ import './worklayout.scss'
 
 import * as React from "react";
 
+import Background from '../common/background';
 import Workpage1 from "../work/workpage1";
 
 const WorkLayout = () => {
   return (
     <div
       style={{
-        backgroundColor: "var(--black-100)",
         height: "100%",
         overflowY: "auto",
       }}
@@ -16,6 +16,7 @@ const WorkLayout = () => {
       id="parallaxWorkLayout"
     >
       <Workpage1 />
+      {React.useMemo(() => (<Background />), [])}
     </div>
   );
 };

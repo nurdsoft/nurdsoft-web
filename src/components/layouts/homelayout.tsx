@@ -1,14 +1,14 @@
 import './homelayout.scss';
 
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 
+import Background from '../common/background';
 import Contact from "../contact/contact";
 import HeroSection from '../homepage/herosection';
 import Homepage1 from "../homepage/homepage1";
 import Homepage2 from "../homepage/homepage2";
 import Homepage3 from "../homepage/homepage3";
 import Homepage4 from "../homepage/homepage4";
-import Homepage5 from "../homepage/homepage5";
 
 const HomeLayout = () => {
   if(typeof window === "undefined") return <></>;
@@ -29,8 +29,8 @@ const HomeLayout = () => {
       <Homepage2 />
       <Homepage3 />
       <Homepage4 />
-      <Homepage5 />
       <Contact />
+      {useMemo(() => (<Background />), [])}
     </div>
   );
 };

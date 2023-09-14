@@ -279,7 +279,7 @@ const LogixaPage = () => {
             <h4 className="white text-center text-5xl w-6/12">
               Let's create an amazing product together!
             </h4>
-            <a href="mailto:hr@nurdsoft.co">
+            <a target="_blank" referrerPolicy="no-referrer" href="mailto:Hello@nurdsoft.co">
               <Button buttonText="EMAIL NOW" />
             </a>
           </div>
