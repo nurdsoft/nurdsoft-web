@@ -125,6 +125,7 @@
   .rating-wrapper {
     width: 100%;
     padding: 10px;
+    margin-bottom: 40px;
     & > p {
       font-size: rem(20px);
       font-style: normal;
@@ -226,6 +227,9 @@
 @media screen and (max-width: 966px) {
   .herosection_parentContainer {
     height: calc(100vh - 78px);
+    .rating-wrapper{
+      margin-bottom: 0;
+    }
     .hero_text{
       .lineOne {
         font-size: rem(42px);
