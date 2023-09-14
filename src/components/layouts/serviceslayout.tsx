@@ -7,7 +7,8 @@ import ServicesPage1 from "../services/servicespage1";
 import ServicesPage2 from "../services/servicespage2";
 import ServicesPage3 from "../services/servicespage3";
 import ServicesPage5 from '../services/servicespage5';
-import Servicespage4 from "../services/servicespage4";
+
+// import Servicespage4 from "../services/servicespage4";
 
 const ServicesLayout = () => {
   return (

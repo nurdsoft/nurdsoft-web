@@ -17,7 +17,7 @@ const CareerCard = ({data, dataKey, index}: ICareerCard) => {
   const TOP_THRESHOLD = 160
   const BOTTOM_THRESHOLD = 200
 
-  const handleStackScroll = (e: Event) => {
+  const handleStackScroll = () => {
     const trigger = triggerRef.current as HTMLElement
     const cardDistFromTop = trigger.getBoundingClientRect().top
     
