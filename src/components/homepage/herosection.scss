@@ -37,12 +37,12 @@
       align-items: center;
       gap: 18px;
       flex-wrap: wrap;
-      opacity: 0;
-      animation-name: fadeIn;
-      animation-delay: 1s;
-      animation-duration: 0.5s;
-      animation-timing-function: ease;
-      animation-fill-mode: forwards;
+      // opacity: 0;
+      // animation-name: fadeIn;
+      // animation-delay: 1s;
+      // animation-duration: 0.5s;
+      // animation-timing-function: ease;
+      // animation-fill-mode: forwards;
   
       .animate {
   
@@ -65,7 +65,7 @@
       justify-content: center;
       align-items: center;
       gap: 16px;
-      animation: springLeft 1.5s ease-out forwards;
+      // animation: springLeft 1.5s ease-out forwards;
   
       & > h1 {
         background: linear-gradient(138deg, #6164FA 0%, #2CD7E5 100%);
@@ -116,7 +116,7 @@
     .lineThree {
       font-family: "DM Sans Light", sans-serif;
       font-size: rem(64px);
-      animation: springRight 1.5s ease-out forwards;
+      // animation: springRight 1.5s ease-out forwards;
       font-weight: 100;
     }
 

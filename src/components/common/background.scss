@@ -1,0 +1,56 @@
+.universalBackgroundWrapper{
+  // position: relative;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  height: 100%;
+
+  .leftHue {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: scaleX(-1);
+      height: 100%;
+      z-index: 2;
+  }
+
+  .gridCanvas {
+    width: 100%;
+    height: 100%;
+    --Xpos: 50vw;
+    --Ypos: 50vh;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      background-color: var(--black-100);
+      background: radial-gradient(
+        circle 12em at var(--Xpos) var(--Ypos),
+        rgba(0,0,0,0.6),
+        var(--black-100)
+      );
+      z-index: 1;
+    }
+    .grid-cell {
+      width: 72px;
+      height: 72px;
+      border: 1px solid #6164fa;
+      border-radius: 8px;
+      position: fixed;
+      z-index: 0;
+    }
+  }
+
+  .rightHue {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      z-index: 2;
+  }
+}

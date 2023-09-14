@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+    z-index: 3 !important;
 
     span.dotBorder {
       width: rem(24px);

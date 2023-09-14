@@ -20,9 +20,6 @@ const CareerCard = ({data, dataKey, index}: ICareerCard) => {
   const handleStackScroll = (e: Event) => {
     const trigger = triggerRef.current as HTMLElement
     const cardDistFromTop = trigger.getBoundingClientRect().top
-    if(index === 0){
-      console.log(cardDistFromTop);
-    }
     
     if(cardDistFromTop < BOTTOM_THRESHOLD){
       const rotationPercentage = +(((BOTTOM_THRESHOLD - cardDistFromTop) / (BOTTOM_THRESHOLD - TOP_THRESHOLD)) * 100).toFixed(2)

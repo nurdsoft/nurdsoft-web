@@ -15,6 +15,9 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
+  .carousel .control-dots  {
+    z-index: 3;
+  }
 }
 
 @media screen and (max-width: 1410px) {

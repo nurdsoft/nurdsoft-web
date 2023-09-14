@@ -40,6 +40,7 @@
 
   .aboutPage1_hireUs_wrapper{
     position: relative;
+    z-index: 3;
     .aboutPage1_hireUs {
       padding: 0px rem(29px) 0px rem(30px);
       border-radius: 96px;
@@ -78,7 +79,7 @@
       border-radius: 50%;
       left: calc(-1 * var(--v-offset));
       right: calc(-1 * var(--v-offset));
-      z-index: 1;
+      z-index: 2;
     }
   
     &:before {
@@ -102,7 +103,7 @@
       height: 400px;
       min-width: 405px;
       animation: scrollHorizontally 20s linear infinite;
-
+      z-index: 1;
     }
   }
 }

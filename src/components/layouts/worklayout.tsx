@@ -8,7 +8,6 @@ const WorkLayout = () => {
   return (
     <div
       style={{
-        backgroundColor: "var(--black-100)",
         height: "100%",
         overflowY: "auto",
       }}

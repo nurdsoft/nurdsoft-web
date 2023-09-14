@@ -1,7 +1,8 @@
 import './homelayout.scss';
 
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 
+import Background from '../common/background';
 import Contact from "../contact/contact";
 import HeroSection from '../homepage/herosection';
 import Homepage1 from "../homepage/homepage1";
@@ -31,6 +32,7 @@ const HomeLayout = () => {
       <Homepage4 />
       <Homepage5 />
       <Contact />
+      {useMemo(() => (<Background />), [])}
     </div>
   );
 };

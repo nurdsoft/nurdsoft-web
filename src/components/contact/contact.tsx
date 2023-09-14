@@ -114,7 +114,7 @@ const Contact = () => {
             <div className="flex_container">
               <div className="contact_formLeft">
                 <p className="small_text">Send us a message</p>
-                <a className="contact_formMailTo" href="mailto:hello@nurdsoft.co">
+                <a target="_blank" referrerPolicy="no-referrer" className="contact_formMailTo" href="mailto:hello@nurdsoft.co">
                   hello@nurdsoft.co
                 </a>
                 <div className="socialIcons_wrapper">
@@ -146,7 +146,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="contact_formRight">
+              <div className="contact_formRight">
                 <div className="contact_formContainer">
                   <div className="contact_formField">
                     <p className="label">My name is</p>
@@ -221,7 +221,7 @@ const Contact = () => {
                   </button>
 
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="contact_footer">
