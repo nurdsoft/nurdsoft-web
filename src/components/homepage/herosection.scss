@@ -139,21 +139,21 @@
       margin-top: rem(48px);
       width: 100%;
       .rating-box {
-        &::before {
-          content: "";
-          position: absolute;
-          width: 98%;
-          height: 95%;
-          left: 50%;
-          top: 50%;
-          z-index: 1;
-          transform: translate(-50%, -50%);
-          background: linear-gradient(180deg, rgb(34, 41, 45) 0%, rgb(3, 9, 14) 100%);
-        }
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   width: 98%;
+        //   height: 95%;
+        //   left: 50%;
+        //   top: 50%;
+        //   z-index: 1;
+        //   transform: translate(-50%, -50%);
+        //   background: linear-gradient(180deg, rgb(34, 41, 45) 0%, rgb(3, 9, 14) 100%);
+        // }
         max-width: 280px;
         max-height: 100px;
         position: relative;
-        background: linear-gradient(180deg, #3f474d 0%, transparent 100%);
+        // background: linear-gradient(180deg, #3f474d 0%, transparent 100%);
         display: flex;
         justify-content: center;
         align-items: center;

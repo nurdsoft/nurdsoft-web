@@ -1,12 +1,14 @@
-import React, {useRef} from "react";
-import { animated, useSpring } from '@react-spring/web';
 import "./servicespage1.scss";
-import Wrapper from "../wrapper";
+
+import React, {useRef} from "react";
 import {
   SERVICES_HOME_ICON_1,
   SERVICES_HOME_ICON_2,
   SERVICES_HOME_ICON_3,
 } from "../../icons";
+import { animated, useSpring } from '@react-spring/web';
+
+import Wrapper from "../wrapper";
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const ServicesPage1 = () => {
@@ -63,7 +65,7 @@ const ServicesPage1 = () => {
                 </p>
               </div>
               <div className="servicespage1_ctaButton">
-                <a href="mailto:hr@nurdsoft.co" target="_blank">
+                <a target="_blank" referrerPolicy="no-referrer" href="mailto:Hello@nurdsoft.co">
                   Hire Us
                 </a>
               </div>

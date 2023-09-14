@@ -2,14 +2,14 @@ import './herosection.scss'
 
 import React, { useEffect, useRef, useState } from 'react'
 
-import Exdone from '../../images/exdone.png'
+import ClutchImg from "../../images/clutch.svg"
+import GlassdoorImg from "../../images/glassdoor.svg"
+import GoogleImg from "../../images/googleIcon.png"
 import HeroDesignIcon from '../../images/heroDesignIcon.svg'
 import HeroDevelopIcon from '../../images/heroDevelopIcon.svg'
 import HeroOptimizeIcon from '../../images/heroOptimizeIcon.svg'
 import HeroSettingsIcon from '../../images/heroSettingsIcon.svg'
 import HeroSyncIcon from '../../images/heroSyncIcon.svg'
-import Startsup from '../../images/startsup.png'
-import Teamtalk from '../../images/teamtalk.png'
 import Wrapper from '../wrapper'
 
 const HeroSection = () => {
@@ -169,13 +169,13 @@ const HeroSection = () => {
           <p>Take a look at our reviews</p>
           <div className='rating-box-wrapper'>
             <div className='rating-box'>
-              <img src={Startsup} alt='startsup' />
+              <img src={ClutchImg} alt='ClutchImg' />
             </div>
             <div className='rating-box'>
-              <img src={Exdone} alt='exdone' />
+              <img src={GoogleImg} alt='GoogleImg' />
             </div>
             <div className='rating-box'>
-              <img src={Teamtalk} alt='teamtalk' />
+              <img src={GlassdoorImg} alt='GlassdoorImg' />
             </div>
           </div>
         </div>

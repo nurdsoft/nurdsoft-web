@@ -2,6 +2,7 @@ import './servicelayout.scss';
 
 import * as React from "react";
 
+import Background from '../common/background';
 import Contact from "../contact/contact";
 import ServicesPage1 from "../services/servicespage1";
 import ServicesPage2 from "../services/servicespage2";
@@ -19,6 +20,7 @@ const ServicesLayout = () => {
       <ServicesPage3 />
       {/* <Servicespage4 /> */}
       <Contact />
+      {React.useMemo(() => (<Background />), [])}
     </div>
   );
 };

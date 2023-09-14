@@ -8,6 +8,7 @@
   .companyPerks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background: var(--black-100);
 
     .perk {
       padding: rem(48px) rem(40px);
