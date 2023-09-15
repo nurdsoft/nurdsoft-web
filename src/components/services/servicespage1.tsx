@@ -9,6 +9,7 @@ import {
 import { animated, useSpring } from '@react-spring/web';
 
 import Wrapper from "../wrapper";
+import { navigate } from "gatsby";
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const ServicesPage1 = () => {
@@ -38,6 +39,11 @@ const ServicesPage1 = () => {
     },
   });
 
+  const handleHireUs = (e: any) => {
+    e.preventDefault()
+    navigate('/#contact-us')
+  }
+
   return (
     <Wrapper>
       <div className="servicespage1_parentContainer" ref={triggerRef} >
@@ -64,10 +70,10 @@ const ServicesPage1 = () => {
                   Win engagement through flawless design
                 </p>
               </div>
-              <div className="servicespage1_ctaButton">
-                <a target="_blank" referrerPolicy="no-referrer" href="mailto:Hello@nurdsoft.co">
+              <div onClick={handleHireUs} className="servicespage1_ctaButton">
+                <p>
                   Hire Us
-                </a>
+                </p>
               </div>
               <div className="servicespage1_boxContainer servicespage1_item3">
                 <SERVICES_HOME_ICON_3 />

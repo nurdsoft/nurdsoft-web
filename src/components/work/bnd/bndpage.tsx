@@ -64,6 +64,10 @@ const Bndpage = () => {
     },
   ];
 
+  const handleEmailNow = () => {
+    navigate('/#contact-us')
+  }
+
   return (
     <Wrapper>
       <div className="bndpage_parentContainer">
@@ -449,9 +453,7 @@ const Bndpage = () => {
             <h4 className="white text-center text-5xl w-6/12">
               Let's create an amazing product together!
             </h4>
-            <a target="_blank" referrerPolicy="no-referrer" href="mailto:Hello@nurdsoft.co">
-              <Button buttonText="EMAIL NOW" />
-            </a>
+            <Button onClick={handleEmailNow} buttonText="INQUIRE NOW" />
           </div>
 
           {/* footer */}

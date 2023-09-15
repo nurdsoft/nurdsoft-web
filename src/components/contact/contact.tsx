@@ -1,9 +1,10 @@
 import "./contact.scss";
 
 import { ARROW_RIGHT_SMALL, FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../icons";
+import { Link, navigate } from "gatsby";
 import React, { useState } from "react";
 
-import { Link } from "gatsby";
+import Button from "../button";
 import Wrapper from "../wrapper";
 
 const Contact = () => {
@@ -103,6 +104,10 @@ const Contact = () => {
     if(!isFormValid) return
   }
 
+  const handleOpenPosition = () => {
+    navigate('/career')
+  }
+
   return (
     <>
       <Wrapper id="contact_parentContainer">
@@ -112,40 +117,6 @@ const Contact = () => {
               <p>Let’s Talk</p>
             </div>
             <div className="flex_container">
-              <div className="contact_formLeft">
-                <p className="small_text">Send us a message</p>
-                <a target="_blank" referrerPolicy="no-referrer" className="contact_formMailTo" href="mailto:hello@nurdsoft.co">
-                  hello@nurdsoft.co
-                </a>
-                <div className="socialIcons_wrapper">
-                  <div className="icon_container">
-                    <FACEBOOK
-                      onClick={() => window.open("https://www.facebook.com/nurdsoft")}
-                      className="socialIcon"
-                    />
-                  </div>
-                  <div className="icon_container">
-                    <TWITTER
-                      onClick={() => window.open("https://www.twitter.com/nurdsoft")}
-                      className="socialIcon"
-                    />
-                  </div>
-                  <div className="icon_container">
-                    <LINKEDIN
-                      onClick={() =>
-                        window.open("https://www.linkedin.com/company/nurdsoft")
-                      }
-                      className="socialIcon"
-                    />
-                  </div>
-                  <div className="icon_container">
-                    <GITHUB
-                      onClick={() => window.open("https://www.github.com/nurdsoft")}
-                      className="socialIcon"
-                    />
-                  </div>
-                </div>
-              </div>
               <div className="contact_formRight">
                 <div className="contact_formContainer">
                   <div className="contact_formField">
@@ -214,11 +185,18 @@ const Contact = () => {
                     <p className="label">Contact me back at</p>
                     <input onChange={(e) => handleFormValue('email', e.target.value)} className="inputBox" type="email" placeholder="Your Email" />
                   </div>
-
-                  <button className="contact_formSubmit" onClick={handleSubmitForm}>
-                    <p>SUBMIT</p>
-                    <ARROW_RIGHT_SMALL />
-                  </button>
+                  <div className="submitWrapper">
+                    <button className="contact_formSubmit" onClick={handleSubmitForm}>
+                      <p>SUBMIT</p>
+                      <ARROW_RIGHT_SMALL />
+                    </button>
+                    <div className="flex">
+                      <Button onClick={handleOpenPosition} buttonText="Open Positions" />
+                      <div className="highlightedText">
+                        WE'RE HIRING
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
@@ -226,16 +204,33 @@ const Contact = () => {
           </div>
           <div className="contact_footer">
             <div>© Copyright 2023.</div>
-            <div>
-              <span className="contact_footer_links">
-                <Link to="/work">Work</Link>
-              </span>
-              <span className="ml-16 contact_footer_links">
-                <Link to="/career">Careers</Link>
-              </span>
-              <span className="ml-16 contact_footer_links">
-                <Link to="/about">About</Link>
-              </span>
+            <div className="socialIcons_wrapper">
+              <div className="icon_container">
+                <FACEBOOK
+                  onClick={() => window.open("https://www.facebook.com/nurdsoft")}
+                  className="socialIcon"
+                />
+              </div>
+              <div className="icon_container">
+                <TWITTER
+                  onClick={() => window.open("https://www.twitter.com/nurdsoft")}
+                  className="socialIcon"
+                />
+              </div>
+              <div className="icon_container">
+                <LINKEDIN
+                  onClick={() =>
+                    window.open("https://www.linkedin.com/company/nurdsoft")
+                  }
+                  className="socialIcon"
+                />
+              </div>
+              <div className="icon_container">
+                <GITHUB
+                  onClick={() => window.open("https://www.github.com/nurdsoft")}
+                  className="socialIcon"
+                />
+              </div>
             </div>
             <div className="cursor-pointer contact_footer_links">
               <Link to="/privacy-policy">Privacy Policy</Link>
