@@ -25,72 +25,6 @@
         justify-content: center;
         // text-align: center;
 
-        .contact_formLeft {
-          max-width: rem(320px);
-          width: 95%;
-          // margin: 0 auto;
-          .small_text{
-            font-size: rem(18px);
-            font-style: normal;
-            font-weight: 400;
-            line-height: 27px; /* 150% */
-            letter-spacing: 0.72px;
-          }
-          .contact_formMailTo {
-            color: var(--primary-100);
-            font-size: rem(24px);
-            font-style: normal;
-            font-weight: 500;
-            line-height: 36px; /* 150% */
-            text-decoration-line: underline;
-            margin-top: rem(12px);
-          }
-          .socialIcons_wrapper{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-top: rem(48px);
-            // justify-content: center;
-            .icon_container{
-                cursor: pointer;
-                background-color: var(--dark-gray-100);
-                border-radius: rem(24px);
-                width: rem(48px);
-                height: rem(48px);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                svg{
-                    z-index: 1;
-                    position: relative;
-                }
-                &::before{
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-radius: 50%;
-                    background: var(--primary-100);
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    transition: all 0.3s ease-in;
-                }
-
-                &:hover {
-                    &::before {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
-          }
-        }
-
         .contact_formRight{
           flex: 1;
           .contact_formContainer{
@@ -191,9 +125,53 @@
       font-size: rem(16px);
       text-transform: uppercase;
       color: var(--off-white-100);
+      align-items: center;
       .contact_footer_links {
         :hover {
           color: var(--primary-100);
+        }
+      }
+      .socialIcons_wrapper{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        // justify-content: center;
+        .icon_container{
+            cursor: pointer;
+            background-color: var(--dark-gray-100);
+            border-radius: rem(24px);
+            width: rem(48px);
+            height: rem(48px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            svg{
+                z-index: 1;
+                position: relative;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                background: var(--primary-100);
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s ease-in;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
       }
     }
