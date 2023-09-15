@@ -3,6 +3,7 @@ import './background.scss'
 import React, { useLayoutEffect, useRef } from 'react'
 
 import Hue from "../../images/hue.png"
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Background = () => {
   const gridRef = useRef<HTMLDivElement>(null)
@@ -56,9 +57,9 @@ const Background = () => {
 
   return (
     <div className='universalBackgroundWrapper'>
-      <img src={Hue} className='leftHue' alt='leftHue' />
+      <StaticImage placeholder="blurred" src="../../images/hue.png" className='leftHue' alt='leftHue' />
       <div id='gridCanvas' ref={gridRef} className='gridCanvas'></div>
-      <img src={Hue} className='rightHue' alt='rightHue' />
+      <StaticImage placeholder="blurred" src="../../images/hue.png" className='rightHue' alt='rightHue' />
     </div>
   )
 }
