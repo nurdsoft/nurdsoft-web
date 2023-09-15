@@ -1,9 +1,10 @@
 import "./contact.scss";
 
 import { ARROW_RIGHT_SMALL, FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../icons";
+import { Link, navigate } from "gatsby";
 import React, { useState } from "react";
 
-import { Link } from "gatsby";
+import Button from "../button";
 import Wrapper from "../wrapper";
 
 const Contact = () => {
@@ -103,6 +104,10 @@ const Contact = () => {
     if(!isFormValid) return
   }
 
+  const handleOpenPosition = () => {
+    navigate('/career')
+  }
+
   return (
     <>
       <Wrapper id="contact_parentContainer">
@@ -180,11 +185,18 @@ const Contact = () => {
                     <p className="label">Contact me back at</p>
                     <input onChange={(e) => handleFormValue('email', e.target.value)} className="inputBox" type="email" placeholder="Your Email" />
                   </div>
-
-                  <button className="contact_formSubmit" onClick={handleSubmitForm}>
-                    <p>SUBMIT</p>
-                    <ARROW_RIGHT_SMALL />
-                  </button>
+                  <div className="submitWrapper">
+                    <button className="contact_formSubmit" onClick={handleSubmitForm}>
+                      <p>SUBMIT</p>
+                      <ARROW_RIGHT_SMALL />
+                    </button>
+                    <div className="flex">
+                      <Button onClick={handleOpenPosition} buttonText="Open Positions" />
+                      <div className="highlightedText">
+                        WE'RE HIRING
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
