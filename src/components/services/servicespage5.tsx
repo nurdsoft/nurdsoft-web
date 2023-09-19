@@ -62,7 +62,7 @@ const ServicesPage5 = () => {
                 <div className='servicespage5_menu'>
                     {
                         servicesData.map(({heading, hash}, index) => (
-                            <a href={`#${hash}`} className={`menuItem ${currentActiveSlide === index && "active"}`}>{heading}</a>
+                            <a href={`#${hash}`} key={index} className={`menuItem ${currentActiveSlide === index && "active"}`}>{heading}</a>
                         ))
                     }
                 </div>

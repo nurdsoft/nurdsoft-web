@@ -2,7 +2,6 @@ import './background.scss'
 
 import React, { useLayoutEffect, useRef } from 'react'
 
-import Hue from "../../images/hue.png"
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Background = () => {

@@ -31,48 +31,55 @@ const boxArr = [
     icon: <EMPHATHISE className="servicepage2_Icon" />,
     iconHover: <EMPHATHISE_PURPLE className="servicepage2_IconHover" />,
     text: "Emphathise",
+    classGroup: "understand",
     paraText:
-      "Emphathise is the first stage of design thinking process, where the focus is on understanding the needs, feelings, and experiences of the users or stakeholders.",
+    "Emphathise is the first stage of design thinking process, where the focus is on understanding the needs, feelings, and experiences of the users or stakeholders.",
   },
   {
     icon: <DEFINE className="servicepage2_Icon" />,
     iconHover: <DEFINE_PURPLE className="servicepage2_IconHover" />,
     text: "Define",
+    classGroup: "understand",
     paraText:
-      "In the define stage, designers analyze and synthesize the information gathered during the emphatize stage.",
+    "In the define stage, designers analyze and synthesize the information gathered during the emphatize stage.",
   },
   {
     icon: <IDEATE className="servicepage2_Icon" />,
     iconHover: <IDEATE_PURPLE className="servicepage2_IconHover" />,
     text: "Ideate",
+    classGroup: "understand",
     paraText:
-      "Brainstorming sessions, sketches, mind mapping, and other techniques, are used to encourage free thinking and explore different possibilities.",
+    "Brainstorming sessions, sketches, mind mapping, and other techniques, are used to encourage free thinking and explore different possibilities.",
   },
   {
     icon: <PROTOTYPE className="servicepage2_Icon" />,
     iconHover: <PROTOTYPE_PURPLE className="servicepage2_IconHover" />,
     text: "Prototype",
+    classGroup: "explore",
     paraText:
-      "The purpose of prototyping is to quickly test and interate on different solutions, allowing designers to gather feedback, learn and define their designs.",
+    "The purpose of prototyping is to quickly test and interate on different solutions, allowing designers to gather feedback, learn and define their designs.",
   },
   {
     icon: <IMPLEMENT className="servicepage2_Icon" />,
     iconHover: <IMPLEMENT_PURPLE className="servicepage2_IconHover" />,
     text: "Implement",
+    classGroup: "explore",
     paraText:
-      "The implement stage is where design solution is put into action. It invloves executing the plans and strategies developed during the earlier stages.",
+    "The implement stage is where design solution is put into action. It invloves executing the plans and strategies developed during the earlier stages.",
   },
   {
     icon: <TEST className="servicepage2_Icon" />,
     iconHover: <TEST_PURPLE className="servicepage2_IconHover" />,
     text: "Test",
+    classGroup: "materialise",
     paraText:
-      "Testing helps identify strengths, weaknesses, and areas for improvement in the design, allowing designers to make informed refinements before moving forward.",
+    "Testing helps identify strengths, weaknesses, and areas for improvement in the design, allowing designers to make informed refinements before moving forward.",
   },
   {
     icon: <LAUNCH className="servicepage2_Icon" />,
     iconHover: <LAUNCH_PURPLE className="servicepage2_Icon" />,
     text: "Launch",
+    classGroup: "materialise",
     paraText:
       "The launch stage marks the implementation or release of the final solution to the intended audience or market.",
   },
@@ -82,12 +89,14 @@ const sliderCaptions = ["Understand", "Explore", "Materialise"];
 
 
 const Servicespage2 = () => {
+
+  const classes = ['understand', 'explore', 'materialise']
   
   const _counter = useRef({
     current: 0,
     previous: 0,
   });
-  const [currentActiveItem, setCurrentActiveItem] = useState(1)
+  const [currentActiveItem, setCurrentActiveItem] = useState(0)
   const triggerRef = useRef<any>();
   const fromTop = useRef<boolean>(true)
   const initialRender = useRef(false)
@@ -97,7 +106,7 @@ const Servicespage2 = () => {
   const scrollLockingPos = 91;
   const wheelTriggerCount = useRef(0)
   const [removeHorizontalScrollListner, setRemoveHorizontalScrollListener] = useState(false)
-  const extremePos = useRef(6)
+  const extremePos = useRef(3)
   
   let dataRef = useIntersectionObserver(triggerRef, {
     threshold: [0.4, 0.5],
@@ -120,20 +129,26 @@ const Servicespage2 = () => {
     evt.preventDefault();
     if(disableRef.current && ![extremePos.current, 0].includes(_counter.current.current)) return;
     if(evt.deltaY >= 0){
-      document.getElementById('move_right')?.click()
+      // document.getElementById('move_right')?.click()
+      if(_counter.current.current < 2){
+        setCurrentActiveItem(_counter.current.current + 1)
+      }
       if(_counter.current.current < extremePos.current){
         horizontalScrollFunctionRun.current = _counter.current.current + 1
         _counter.current = {previous: _counter.current.current, current: _counter.current.current + 1}
       }
     }else{
-      document.getElementById('move_left')?.click()
+      // document.getElementById('move_left')?.click()
+      if(_counter.current.current > 0){
+        setCurrentActiveItem(_counter.current.current - 1)
+      }
       if(_counter.current.current > 0){
         _counter.current = {previous: _counter.current.current, current: _counter.current.current - 1}
         horizontalScrollFunctionRun.current = extremePos.current - _counter.current.current
       }
     }
     if(_counter.current.current === extremePos.current){
-      document.getElementById('move_right')?.click()
+      // document.getElementById('move_right')?.click()
       scroller.style.overflowY = 'scroll'
       scroller.scrollTo({
         top: (servicePage3.getBoundingClientRect().top + scroller.scrollTop) - scrollLockingPos,
@@ -144,7 +159,7 @@ const Servicespage2 = () => {
       setRemoveHorizontalScrollListener(true)
       _counter.current = {previous: extremePos.current, current: extremePos.current}
     }else if(_counter.current.current === 0){
-      document.getElementById('move_left')?.click()
+      // document.getElementById('move_left')?.click()
       scroller.style.overflowY = 'scroll'
       fromTop.current = true
       disableRef.current = true
@@ -212,36 +227,34 @@ const Servicespage2 = () => {
   }, [removeHorizontalScrollListner])
 
   useEffect(() => {
-    if(width > 1200){
-      extremePos.current = 6
-    }else if(width > 650 && width <= 1200){
-      extremePos.current = 7
-    }else{
-      extremePos.current = 8
-    }
-  }, [width])
+    if(currentActiveItem < 0 || currentActiveItem > 2  || isMobileDevice()) return
+    console.log('not mobile');
+    
+    const classGroup = classes[currentActiveItem]
+    classes.forEach((item, _) => {
+      const itemGroup = document.getElementsByClassName(item) as unknown as HTMLDivElement[]
+      console.log(itemGroup)
+      for(let i =0; i< itemGroup.length; i++){
+        if(item === classGroup){
+          // itemGroup[i].style.display = 'flex'
+          itemGroup[i].style.height = 'inherit'
+          itemGroup[i].style.padding = '2rem'
+          itemGroup[i].style.margin = '20px auto'
+          itemGroup[i].style.opacity = '1'
+        }else{
+          itemGroup[i].style.height = '0'
+          itemGroup[i].style.padding = '0'
+          itemGroup[i].style.margin = '0px auto'
+          itemGroup[i].style.opacity = '0'
+        }
+      }
+    })
+  }, [currentActiveItem])
 
-  const setSlidesToShow = () => {
-    if(width > 1200){
-      return 3
-    }else if(width > 650 && width <= 1200){
-      return 2
-    }else{
-      return 1
-    }
-  }
-
-  const CustomNextArrow = (props: any) => {
-    const {onClick} = props
-    return (
-      <button type="button" id="move_right" onClick={onClick} />
-    )
-  }
-  const CustomPrevArrow = (props: any) => {
-    const {onClick} = props
-    return (
-      <button type="button" id="move_left" onClick={onClick} />
-    )
+  const handleDotClick = (index: number) => {
+    _counter.current = {previous: _counter.current.current, current: index}
+    setCurrentActiveItem(index)
+    horizontalScrollFunctionRun.current = index
   }
   
   return (
@@ -260,19 +273,19 @@ const Servicespage2 = () => {
           </div>
         </div>
         <div className="flex items-center max-w-[60%] ml-auto mr-auto mt-24">
-          {sliderCaptions.map((slider: string, index: number) => {
+          {!isMobileDevice() && sliderCaptions.map((slider: string, index: number) => {
             return (
-              <div className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>
+              <div onClick={() => {handleDotClick(index)}} className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>
                 <span
                   className={`servicespage2_dotBorder ${
-                    Math.ceil(currentActiveItem / 2) - 1 === index ? "servicespage2_selectedDotBorder" : ""
+                    currentActiveItem === index ? "servicespage2_selectedDotBorder" : ""
                   }`}
                   role="button"
                   tabIndex={0}
                 >
                   <div
                     className={`servicespage2_dotContent ${
-                      Math.ceil(currentActiveItem / 2) - 1 === index
+                      currentActiveItem === index
                         ? "servicespage2_selectedDotContent"
                         : ""
                     }`}
@@ -280,7 +293,7 @@ const Servicespage2 = () => {
                 </span>
                 <span
                   className={`${
-                    Math.ceil(currentActiveItem / 2) - 1 === index
+                    currentActiveItem === index
                     ? "primary100" : "offGray"
                   } servicespage2_dotText`}
                 >
@@ -296,50 +309,43 @@ const Servicespage2 = () => {
           })}
         </div>
         <div className="servicespage2_wrapper mt-10">
-          <Slider
-            dots={false}
-            infinite={false}
-            slidesToShow={setSlidesToShow()}
-            slidesToScroll={1}
-            nextArrow={<CustomNextArrow />}
-            prevArrow={<CustomPrevArrow />} 
-            beforeChange={() => {
-              disableRef.current = true
-            }}
-            afterChange={(index: number) => {
-              disableRef.current = false
-              if(width > 1200){
-                setCurrentActiveItem(index + 2)
-              }else{
-                setCurrentActiveItem(index)
-              }
-            }}
-          >
-            {boxArr.map(
-              (
-                item: {
-                  icon: JSX.Element;
-                  iconHover: JSX.Element;
-                  text: string;
-                  paraText: string;
-                },
-                index: number
+          {
+            !isMobileDevice() &&
+            currentActiveItem > 0 &&
+            <div className="upperIndicator"></div>
+          }
+          {boxArr.map(
+            (
+              item: {
+                icon: JSX.Element;
+                iconHover: JSX.Element;
+                text: string;
+                paraText: string;
+                classGroup: string;
+              },
+              index: number
               ) => {
                 return (
-                  <div key={index} className="servicespage2_boxContainer">
+                  <div key={index} className={`servicespage2_boxContainer ${item.classGroup}`}>
+                  <div>
                     <span className="servicespage2_iconWhite">{item.icon}</span>
                     <span className="servicespage2_iconPurple">
                       {item.iconHover}
                     </span>
-                    <div className="servicespage2_boxText mt-8">
-                      {item.text}
-                    </div>
-                    <p className="servicespage2_boxPara">{item.paraText}</p>
                   </div>
-                );
-              }
-            )}
-          </Slider>
+                  <div className="servicespage2_boxText">
+                    {item.text}
+                  </div>
+                  <p className="servicespage2_boxPara">{item.paraText}</p>
+                </div>
+              );
+            }
+          )}
+          {
+            !isMobileDevice() &&
+            currentActiveItem < 2 &&
+            <div className="lowerIndicator"></div>
+          }
         </div>
       </div>
     </Wrapper>
