@@ -227,7 +227,9 @@ const Servicespage2 = () => {
   }, [removeHorizontalScrollListner])
 
   useEffect(() => {
-    if(currentActiveItem < 0 || currentActiveItem > 2) return
+    if(currentActiveItem < 0 || currentActiveItem > 2  || isMobileDevice()) return
+    console.log('not mobile');
+    
     const classGroup = classes[currentActiveItem]
     classes.forEach((item, _) => {
       const itemGroup = document.getElementsByClassName(item) as unknown as HTMLDivElement[]
@@ -271,7 +273,7 @@ const Servicespage2 = () => {
           </div>
         </div>
         <div className="flex items-center max-w-[60%] ml-auto mr-auto mt-24">
-          {sliderCaptions.map((slider: string, index: number) => {
+          {!isMobileDevice() && sliderCaptions.map((slider: string, index: number) => {
             return (
               <div onClick={() => {handleDotClick(index)}} className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>
                 <span
@@ -308,6 +310,7 @@ const Servicespage2 = () => {
         </div>
         <div className="servicespage2_wrapper mt-10">
           {
+            !isMobileDevice() &&
             currentActiveItem > 0 &&
             <div className="upperIndicator"></div>
           }
@@ -339,6 +342,7 @@ const Servicespage2 = () => {
             }
           )}
           {
+            !isMobileDevice() &&
             currentActiveItem < 2 &&
             <div className="lowerIndicator"></div>
           }
