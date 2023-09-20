@@ -120,22 +120,36 @@
                 background: var(--primary-100);
                 margin-right: auto;
               }
-
-              .highlightedText {
-                color: var(--primary-100);
-                background-color: #202831;
-                padding: 12px 24px;
-                border-radius: 48px;
-                font-size: 12px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 20px;
-              }
             }
 
           }
         }
+      }
+    }
+
+    .contact_subFooter {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: rem(50px);
+
+      a {
+        margin-left: 30px;
+      }
+      
+      .link-wrapper {
+        display: flex;
+        gap: rem(16px);
+        justify-content: center;
+        align-items: center; 
+        margin-top: rem(50px);
+        // margin-left: 30px;
+      }
+    }
+    .contact_footer_links {
+      :hover {
+        color: var(--primary-100);
       }
     }
   
@@ -146,11 +160,6 @@
       text-transform: uppercase;
       color: var(--off-white-100);
       align-items: center;
-      .contact_footer_links {
-        :hover {
-          color: var(--primary-100);
-        }
-      }
       .socialIcons_wrapper{
         display: flex;
         align-items: center;
@@ -213,29 +222,16 @@
     }
   }
 }
-@media screen and (max-width: 562px) {
+@media screen and (max-width: 580px) {
   #contact_parentContainer {
     .contact_parentContainer {
-      .contact_formWrapper {
-        .flex_container {
-          .contact_formRight {
-            .contact_formContainer {
-              .submitWrapper {
-                flex-direction: column;
-                & > .flex{
-                  margin-right: auto;
-                  flex-direction: column;
-                  justify-content: flex-start;
-                  gap: 32px;
-
-                  .highlightedText {
-                    margin: 0;
-                    width: max-content;
-                  }
-                }
-              }
-            }
-          }
+      .contact_subFooter {
+        a {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .link-wrapper {
+          gap: rem(12px);
         }
       }
       .contact_footer {
