@@ -28,12 +28,14 @@
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  padding: 0 1.5625rem 2.5rem;
 
   .hero_text {
     margin-top: rem(200px);
     margin-bottom: auto;
     height: 100%;
     position: relative;
+    width: 100%;
 
     .lineOne {
       font-family: "DM Sans Bold", sans-serif;
