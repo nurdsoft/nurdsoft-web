@@ -5,7 +5,7 @@ import * as React from "react";
 import { Link, navigate } from "gatsby";
 
 import Button from "./button";
-import NurdsoftImage from "../images/nurdsoft-logo-expanded.png";
+import { NURDSOFT_SMALL_ICON } from "../icons";
 import { StaticImage } from "gatsby-plugin-image";
 import Wrapper from "./wrapper";
 /* eslint-disable no-undef */
@@ -27,7 +27,7 @@ const Header = () => {
             <div className="headerContainer">
               <div>
                 <Link to="/">
-                  <img src={NurdsoftImage} width={200} alt="Nurdsoft Logo" />
+                  <NURDSOFT_SMALL_ICON height="40" width="40" className="ml-5" />
                 </Link>
               </div>
               <div className="navBar">

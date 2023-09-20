@@ -5,6 +5,7 @@ import { Link, navigate } from "gatsby";
 import React, { useState } from "react";
 
 import Button from "../button";
+import { StaticImage } from "gatsby-plugin-image";
 import Wrapper from "../wrapper";
 
 const Contact = () => {
@@ -190,15 +191,25 @@ const Contact = () => {
                       <p>SUBMIT</p>
                       <ARROW_RIGHT_SMALL />
                     </button>
-                    <div className="flex">
-                      <Button onClick={handleOpenPosition} buttonText="Open Positions" />
-                      <div className="highlightedText">
-                        WE'RE HIRING
-                      </div>
-                    </div>
                   </div>
 
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="contact_subFooter">
+            <Link to="/">
+              <StaticImage width={200} src="../../images/nurdsoft-logo-expanded.png" placeholder="blurred" alt="nurdsoft" />
+            </Link>
+            <div className="link-wrapper">
+              <div className="cursor-pointer contact_footer_links">
+                <Link to="/about">ABOUT US</Link>
+              </div>
+              <div className="cursor-pointer contact_footer_links">
+                <Link to="/work">WORK</Link>
+              </div>
+              <div className="cursor-pointer contact_footer_links">
+                <Link to="/career">CAREERS</Link>
               </div>
             </div>
           </div>
