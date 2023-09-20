@@ -228,12 +228,10 @@ const Servicespage2 = () => {
 
   useEffect(() => {
     if(currentActiveItem < 0 || currentActiveItem > 2  || isMobileDevice()) return
-    console.log('not mobile');
     
     const classGroup = classes[currentActiveItem]
     classes.forEach((item, _) => {
       const itemGroup = document.getElementsByClassName(item) as unknown as HTMLDivElement[]
-      console.log(itemGroup)
       for(let i =0; i< itemGroup.length; i++){
         if(item === classGroup){
           // itemGroup[i].style.display = 'flex'
