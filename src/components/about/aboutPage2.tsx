@@ -1,23 +1,30 @@
-import React from 'react';
-import Wrapper from '../wrapper';
 import './aboutPage2.scss';
+
+import React, { useMemo } from 'react';
+
 import Button from '../button';
+import CounterBox from './CounterBox';
+import Wrapper from '../wrapper';
 
 const AboutPage2 = () => {
   const statsData = [
     {
-      number: 17,
-      label: "Talented People"
+      number: 93,
+      label: "Client Satisfaction Ratio",
+      specialChar: '%'
     },
     {
-      number: 120,
-      label: "Delivered Projects"
+      number: 64,
+      label: "Delivered Projects",
+      specialChar: '+'
     },
     {
       number: 12,
-      label: "Expertise years"
+      label: "Years of Expertise",
+      specialChar: '+'
     }
   ]
+  
   return (
     <Wrapper id='aboutPage2_parentContainer' >
       <div className='aboutPage2_parentContainer' >
@@ -28,10 +35,12 @@ const AboutPage2 = () => {
         <div className='companyStats'>
           {
             statsData.map((data, index) => (
-              <div className='stat' key={index}>
-                <p className='statNumber'>{data.number}+</p>
-                <p className='statLabel'>{data.label}</p>
-              </div>
+              useMemo(() => <CounterBox 
+              number={data.number} 
+              label={data.label} 
+              specialChar={data.specialChar} 
+              key={index} 
+            />, [])
             ))
           }
         </div>

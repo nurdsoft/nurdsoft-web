@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
-import Wrapper from "../wrapper";
-import Client from "../../images/client2.png";
-import { animated, useSpring } from '@react-spring/web';
-import { IClientFeedback } from "../../types/carouselTypes";
 import "./aboutPage4.scss";
+
+import React, { useRef } from "react";
+import { animated, useSpring } from '@react-spring/web';
+
+import Client from "../../images/client2.png";
 import ClientFeedbackCarousel from "../common/clientFeedbackCarousel";
+import { IClientFeedback } from "../../types/carouselTypes";
+import Wrapper from "../wrapper";
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const AboutPage4 = () => {
@@ -46,7 +48,7 @@ const AboutPage4 = () => {
       <div className="aboutPage4_parentContainer" ref={triggerRef} >
         <animated.div className="aboutPage5_animatedDiv" style={headerStyle}>
           <h1 className="heading">
-            What Our People <br /> Say About Us
+            What Our Team <br /> Say About Us
           </h1>
         </animated.div>
         <ClientFeedbackCarousel data={data} />

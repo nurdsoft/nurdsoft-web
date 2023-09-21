@@ -1,16 +1,18 @@
-import React from 'react';
 import './aboutpage3.scss';
-import India from '../../images/india.png';
-import America from '../../images/america.png';
-import Philippines from '../../images/phillipines.png';
-import Russia from '../../images/russia.png';
-import Wrapper from '../wrapper';
+
 import {
   ComposableMap,
   Geographies,
   Geography,
   Marker,
 } from "react-simple-maps";
+import React, { useEffect } from 'react';
+
+import America from '../../images/america.png';
+import India from '../../images/india.png';
+import Philippines from '../../images/phillipines.png';
+import Russia from '../../images/russia.png';
+import Wrapper from '../wrapper';
 import geoUrl from './features.json'
 
 interface MapMarker {
@@ -49,9 +51,29 @@ const markers: MapMarker[] = [
 
 const AboutPage3 = () => {
 
+  const getScrollTop = () => {
+    const page3 = document.getElementById('aboutPage3_wrapper');
+    if(!page3) return;
+    const page3Top = page3.getBoundingClientRect().top;
+    const pageHeight = page3.getBoundingClientRect().height;
+    
+    if(page3Top < (pageHeight) && page3Top > 0){
+      const opacity = ((pageHeight - page3Top) / pageHeight) * 2
+      page3.style.opacity = opacity.toFixed(1);
+    }
+  }
+
+  useEffect(() => {
+    if(typeof document === 'undefined') return;
+    document.getElementById('parallaxLayoutAbout')?.addEventListener('scroll', getScrollTop);
+    return () => {
+      document.getElementById('parallaxLayoutAbout')?.removeEventListener('scroll', getScrollTop);
+    }
+  }, [])
+
   return (
     <Wrapper id='aboutPage3_parentContainer' >
-      <div className='aboutPage3_parentContainer' >
+      <div className='aboutPage3_parentContainer' id='aboutPage3_wrapper' >
         <h1 className="aboutPage3_heading">
           Globally <br/> Distributed Team
         </h1>

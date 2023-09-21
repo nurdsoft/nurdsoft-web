@@ -30,11 +30,6 @@
       letter-spacing: 0.72px;
       max-width: 1280px;
     }
-    .divider{
-      background: radial-gradient(180.06% 141.38% at 100.00% 0.00%, rgba(106, 108, 108, 0.00) 0%, #6A6C6C 50.31%, rgba(106, 108, 108, 0.00) 100%);
-      width: rem(1px);
-      height: rem(135px);
-    }
   }
 
   .aboutPage1_hireUs_wrapper{
@@ -137,16 +132,17 @@
 
   @media screen and (max-width: 968px) {
     .aboutPage1_parentContainer{
+      margin: 0;
+      width: 100%;
       .aboutPage1_heading {
         font-size: rem(42px);
+        padding: 0px 16px;
       }
       .companyDescription {
-        grid-template-columns: 1fr;
-        .divider{
-          transform: rotateY(360deg);
-          width: 135px;
-          height: 1px;
-          margin: 0 auto;
+        .companyDescriptionText{
+          font-size: rem(20px);
+          line-height: rem(30px);
+          padding: 0px 16px;
         }
       }
 

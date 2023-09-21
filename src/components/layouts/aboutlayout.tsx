@@ -11,28 +11,7 @@ import Background from "../common/background";
 import Contact from "../contact/contact";
 
 const AboutLayout = () => {
-  const handleParallaxScroll = () => {
-    const section2 = document.getElementsByClassName('aboutPage2_parentContainer')[0]
-    const scroller = document.getElementById('parallaxLayoutAbout')
-    const section3 = document.getElementById('aboutPage3_parentContainer')
-    if (!section2 || !scroller || !section3) return
-
-    if(
-      Math.abs(section2?.getBoundingClientRect().bottom) <= scroller?.clientHeight
-    ){
-      section3.style.opacity = '1'
-    }else if(
-      (Math.abs(section2?.getBoundingClientRect().bottom) - 20) > scroller?.clientHeight
-    ){
-      section3.style.opacity = '0'
-    }
-  }
-
-  useEffect(() => {
-    const scroller = document.getElementById('parallaxLayoutAbout')
-    scroller?.addEventListener('scroll', handleParallaxScroll)
-    return () => scroller?.removeEventListener('scroll', handleParallaxScroll)
-  }, [])
+  
 
   return (  
     <div className="parallaxLayoutAbout" id="parallaxLayoutAbout">
