@@ -5,30 +5,89 @@
 
   .servicespage3_gridContainer {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin: rem(200px) auto;
     gap: 120px;
-    .servicespage3_titleDiv {
-      background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      letter-spacing: 0.04em;
-      font-weight: 700;
-      font-size: rem(58px);
-      margin-top: rem(30px);
-      grid-column: 1 / span 5;
-      line-height: 1.2em;
-      grid-row: 2;
+
+    .servicespage3_leftContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 120px;
+      width: 100%;
+      flex-wrap: wrap;
+      .servicespage3_titleDiv {
+        background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        font-size: rem(58px);
+        line-height: 1.2em;
+      }
     }
     .servicespage3_rightContainer {
       align-items: flex-start;
-      background-image: url(../../images/abstract_wrapper.svg);
       background-repeat: no-repeat;
       background-size: contain;
-      padding: rem(160px) 0px;
+      width: 100%;
       .servicespage3_listContainer {
+        width: 100%;
+        .servicespage3_boxContainer {
+          border: 1px solid var(--gray-300);
+          padding: rem(32px);
+          background: var(--black-100);
+          display: flex;
+          align-items: flex-start;
+          gap: 32px;
+          flex-wrap: wrap;
+          width: 93%;
+          cursor: pointer;
+          height: inherit;
+          margin: rem(20px) auto;
+          transition: all 0.3s ease-in-out;
+          .servicespage3_iconPurple {
+            display: none;
+          }
+          .servicespage3_boxText {
+            font-size: rem(28px);
+            color: var(--white);
+            font-weight: 500;
+            line-height: 48px;
+            min-width: 250px;
+          }
+          .servicespage3_boxPara {
+            font-size: rem(18px);
+            color: var(--off-gray);
+            margin-top: rem(4px);
+            font-weight: 400;
+            line-height: 30px;
+            min-width: 260px;
+            flex: 1;
+            max-width: 485px;
+            margin-left: auto;
+          }
+          &:hover {
+            background-color: var(--dark-gray-100);
+            border-width: 0 1px 1px 0;
+            border-color: var(--dark-gray-100);
+            border-style: solid;
+            .servicespage3_iconPurple {
+              display: block;
+            }
+            .servicespage3_iconWhite {
+              display: none;
+            }
+            .servicepage3_Icon {
+              path {
+                stroke: var(--primary-100);
+              }
+            }
+          }
+        }
         .servicespage3_count {
           color: var(--off-gray);
           font-size: rem(18px);
@@ -68,6 +127,16 @@
         }
         .buttonContainer {
           justify-content: center;
+        }
+      }
+      .servicespage3_rightContainer {
+        .servicespage3_listContainer {
+          .servicespage3_boxContainer {
+            flex-direction: column;
+            .servicespage3_boxPara{
+              margin: 0;
+            }
+          }
         }
       }
     }
