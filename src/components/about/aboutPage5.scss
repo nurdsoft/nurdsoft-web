@@ -1,12 +1,17 @@
 @import "~sass-rem";
 
+#aboutPage5_parentContainer {
+  height: 100%;
+}
+
 .aboutPage5_parentContainer {
-  background: var(--black-100);
   color: var(--off-white-100);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  height: 100%;
+  justify-content: center;
 
   .aboutPage5_joinUs {
     background: linear-gradient(135deg, #b62bf5 0%, #e52e2c 100%);

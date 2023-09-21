@@ -1,17 +1,18 @@
-import React, { useRef} from 'react'
 import './aboutPage5.scss'
-import Wrapper from '../wrapper';
+
+import React, { useRef } from 'react'
 import { animated, useSpring } from '@react-spring/web';
-import useIntersectionObserver from '../common/intersectionObserver';
-import Stage from '../../images/stage.png';
+
 import Button from '../button';
+import Wrapper from '../wrapper';
 import { navigate } from "gatsby";
+import useIntersectionObserver from '../common/intersectionObserver';
 
 const AboutPage5 = () => {
   const triggerRef = useRef<any>();
 
   const dataRef = useIntersectionObserver(triggerRef, {
-    threshold: 0.8,
+    threshold: 0.5,
     freezeOnceVisible: false
   });
 
@@ -35,7 +36,6 @@ const AboutPage5 = () => {
           <h1 className='aboutPage5_joinUs'>We’re Hiring<br/> Join Us</h1>
           <Button buttonText='OPEN POSITION' onClick={onHiringClick} />
         </animated.div>
-        <img className='aboutPage5_stage' src={Stage} alt='stage' />
       </div>
     </Wrapper>
   )

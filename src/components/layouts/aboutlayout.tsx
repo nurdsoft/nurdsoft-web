@@ -40,7 +40,7 @@ const AboutLayout = () => {
       <AboutPage2 />
       <AboutPage3 />
       <AboutPage4 />
-      <AboutPage5 />
+      {React.useMemo(() => (<AboutPage5 />), [])}
       <Contact />
       {React.useMemo(() => (<Background />), [])}
     </div>

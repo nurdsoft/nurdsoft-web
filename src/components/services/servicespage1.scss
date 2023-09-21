@@ -54,7 +54,6 @@
         align-content: center;
         justify-content: center;
         gap: 32px;
-        cursor: pointer;
         transition: 0.6s all ease;
         margin-top: rem(-60px);
         &:hover {
@@ -114,7 +113,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
         height: fit-content;
         padding: rem(23px);
         flex-wrap: wrap;

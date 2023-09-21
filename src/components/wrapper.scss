@@ -3,6 +3,7 @@
 .wrapperContainer {
   max-width: rem(1280px);
   margin: 0 auto;
+  overflow: unset;
   overflow-x: hidden;
   z-index: 1;
   position: relative;

@@ -1,9 +1,10 @@
 @import "~sass-rem";
 
 .aboutPage3_parentContainer {
-  background: var(--black-100);
+  // background: var(--black-100);
   width: 95%;
   margin: 0 auto;
+  margin-top: rem(120px);
   .aboutPage3_heading {
     background: linear-gradient(135deg, #6164fa 0%, #2cd7e5 100%);
     background-clip: text;
