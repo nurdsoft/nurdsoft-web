@@ -56,7 +56,7 @@ const AboutPage1 = () => {
     <Wrapper id="aboutPage1_parentContainer" >
       <div className="aboutPage1_parentContainer" >
         <h1 className="aboutPage1_heading">
-          Life @<span className="blue">nurdsoft</span>
+          Life @<span className="blue"> Nurdsoft</span>
         </h1>
         <div className="companyDescription">
           <p className="companyDescriptionText">
@@ -67,11 +67,6 @@ const AboutPage1 = () => {
           </p>
         </div>
 
-        <div className="aboutPage1_hireUs_wrapper">
-          <a href="mailto:hr@nurdsoft.co" target="_blank">
-            <div className="aboutPage1_hireUs">Hire Us</div>
-          </a>
-        </div>
         <div className="aboutPage1_carouselWrapper">
           <div className="wrapper">
             {carouselData.map(({ img, alt }, index) => (

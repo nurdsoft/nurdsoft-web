@@ -9,6 +9,7 @@ import {
 import React, { useEffect } from 'react';
 
 import America from '../../images/america.png';
+import Brazil from '../../images/brazil.png';
 import India from '../../images/india.png';
 import Philippines from '../../images/phillipines.png';
 import Russia from '../../images/russia.png';
@@ -45,7 +46,7 @@ const markers: MapMarker[] = [
   {
     name: "South America",
     coordinates: [-58.261509, -13.938301],
-    flag: America,
+    flag: Brazil,
   },
 ];
 

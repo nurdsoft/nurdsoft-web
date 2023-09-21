@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
-import { Carousel } from "react-responsive-carousel";
-import Quotes from "../../images/quotes.svg";
 import "./clientFeedbackCarousel.scss";
+
+import React, { useRef } from "react";
+
+import { Carousel } from "react-responsive-carousel";
 import { IClientCarouselData } from "../../types/carouselTypes";
+import Quotes from "../../images/quotes.svg";
 
 const CustomIndicator = (
   onClickHandler: any,
@@ -54,6 +56,8 @@ const ClientFeedbackCarousel = ({ data }: IClientCarouselData) => {
       showIndicators={true}
       renderIndicator={CustomIndicator}
       onChange={animateCurrentSlide}
+      preventMovementUntilSwipeScrollTolerance={true}
+      swipeScrollTolerance={50}
     >
       {data.map((feedback, index) => (
         <div key={index} className="clientFeedbackCarouselSlide">

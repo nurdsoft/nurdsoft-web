@@ -32,28 +32,6 @@
     }
   }
 
-  .aboutPage1_hireUs_wrapper{
-    position: relative;
-    z-index: 3;
-    .aboutPage1_hireUs {
-      padding: 0px rem(29px) 0px rem(30px);
-      border-radius: 96px;
-      background: var(--primary-100);
-      color: var(--white);
-      font-size: rem(16px);
-      width: rem(120px);
-      height: rem(120px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      cursor: pointer;
-      right: 200px;
-      bottom: -198px;
-      z-index: 2;
-    }
-  }
-
   .aboutPage1_carouselWrapper{
     width: 100%;
     overflow: hidden;
@@ -146,11 +124,6 @@
         }
       }
 
-      .aboutPage1_hireUs_wrapper {
-        .aboutPage1_hireUs{
-          right: 50%;
-        }
-      }
       .aboutPage1_carousel {
         .aboutPage1_hireUs{
           right: -10px;
