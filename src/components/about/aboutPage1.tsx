@@ -1,11 +1,12 @@
-import React from "react";
 import "./aboutPage1.scss";
-import Wrapper from "../wrapper";
+
 import Image1 from "../../images/aboutCarousel1.png";
 import Image2 from "../../images/aboutCarousel2.png";
 import Image3 from "../../images/aboutCarousel3.png";
 import Image4 from "../../images/aboutCarousel4.png";
 import Image5 from "../../images/aboutCarousel5.png";
+import React from "react";
+import Wrapper from "../wrapper";
 
 const AboutPage1 = () => {
   const carouselData = [
@@ -59,17 +60,10 @@ const AboutPage1 = () => {
         </h1>
         <div className="companyDescription">
           <p className="companyDescriptionText">
-            Nurdsoft is a software engineering studio specializing in bespoke
-            software for businesses of all sizes including early stage startups.
-            It was formed by like minded entrepreneurs realizing the need for
-            customized software across industries to build a first in its class
-            software engineering studio.
-          </p>
-          <div className="divider"></div>
-          <p className="companyDescriptionText">
-            Our team consists of warm, amazing and humble individuals who have
-            worked for multiple Fortune 100 companies spanning across all major
-            industries, playing an integral role in their success and scaling.
+            Nurdsoft is a software engineering studio specializing in bespoke software 
+            for businesses of all sizes including early stage startups. It was formed by 
+            like minded entrepreneurs realizing the need for customized software across 
+            industries to build a first in its class software engineering studio.
           </p>
         </div>
 

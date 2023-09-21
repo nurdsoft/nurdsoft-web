@@ -11,7 +11,7 @@
   pointer-events: none;
 
   .leftHue {
-      position: absolute;
+      position: absolute !important;
       left: 0;
       top: 0;
       transform: scaleX(-1);
@@ -53,7 +53,7 @@
   }
 
   .rightHue {
-      position: absolute;
+      position: absolute !important;
       right: 0;
       top: 0;
       height: 100%;

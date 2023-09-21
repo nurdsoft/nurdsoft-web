@@ -18,9 +18,8 @@ import {
   TEST,
   TEST_PURPLE,
 } from "../../icons";
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 
-import Slider from "react-slick";
 import Wrapper from "../wrapper";
 import { isMobileDevice } from "../../utils/utils";
 import useIntersectionObserver from "../common/intersectionObserver";
