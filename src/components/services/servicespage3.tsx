@@ -25,13 +25,6 @@ const ServicesPage3 = () => {
     },
   });
 
-  const options = [
-    "Flexible work terms",
-    "Hungry and Unstoppable",
-    "Full-stack, Fully-managed",
-    "True partnership",
-  ];
-
   const boxArr = [
     {
       icon: <FLEXIBLE_TIME_ICON className="servicepage3_Icon" />,
