@@ -9,8 +9,6 @@ import ServicesPage2 from "../services/servicespage2";
 import ServicesPage3 from "../services/servicespage3";
 import ServicesPage5 from '../services/servicespage5';
 
-// import Servicespage4 from "../services/servicespage4";
-
 const ServicesLayout = () => {
   return (
     <div className="parallaxLayoutServices" id="parallaxLayoutServices">
@@ -18,7 +16,6 @@ const ServicesLayout = () => {
       <ServicesPage5 />
       {React.useMemo(() => <ServicesPage2 />, [])}
       <ServicesPage3 />
-      {/* <Servicespage4 /> */}
       <Contact />
       {React.useMemo(() => (<Background />), [])}
     </div>

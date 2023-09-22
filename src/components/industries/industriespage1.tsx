@@ -1,49 +1,43 @@
+import "./industriespage1.scss";
+
+import { IndustryData } from "../../types/industryTypes";
 import React from "react";
 import Wrapper from "../wrapper";
-import "./industriespage1.scss";
-import CyberSecurity from "../../components/videos/cyber_security_industry.gif";
-import Blockchain from "../../components/videos/blockchain_industry.gif";
-import RealEstate from "../../components/videos/real_estate_industry.gif";
-import Healthcare from "../../components/videos/healthcare_industry.gif";
-import Fintech from "../../components/videos/fintech_industry.gif";
-import Crypto from "../../components/videos/crypto_industry.gif";
-import { IndustryData } from "../../types/industryTypes";
-import Industrypagecard from "./industrypagecard";
 
 const Industriespage1 = () => {
   const data: IndustryData[] = [
     {
-      img: CyberSecurity,
+      img: '',
       title: "Cyber Security",
       description:
         "Understand the problem set and ideate to conceptualize a product and vision. Understand the problem set and ideate to conceptualize a product and vision.",
     },
     {
-      img: Blockchain,
+      img: '',
       title: "Blockchain",
       description:
         "Blockchain is a decentralized and distributed ledger technology that enables the secure and transparent recording of transactions across multiple computers or nodes.",
     },
     {
-      img: RealEstate,
+      img: '',
       title: "Real Estate",
       description:
         "Real estate refers to property consisting of land and the buildings or structures on it, along with the natural resources present on or beneath the land. It is a vast and diverse industry that encompasses residential, commercial, industrial, and agricultural properties.",
     },
     {
-      img: Healthcare,
+      img: '',
       title: "Healthcare",
       description:
         "The healthcare sector comprises various entities, including hospitals, clinics, primary care providers, specialists, laboratories, pharmaceutical companies, and healthcare professionals such as doctors, nurses, technicians, and therapists.",
     },
     {
-      img: Fintech,
+      img: '',
       title: "Fintech",
       description:
         "Understand the problem set and ideate to conceptualize a product and vision. Understand the problem set and ideate to conceptualize a product and vision.",
     },
     {
-      img: Crypto,
+      img: '',
       title: "Crypto",
       description:
         "Fintech companies leverage cutting-edge technologies such as artificial intelligence, big data analytics, blockchain, cloud computing, and mobile applications to offer a diverse array of financial products and services.",
@@ -52,15 +46,7 @@ const Industriespage1 = () => {
   return (
     <Wrapper>
       <div className="industryPage1_parentContainer">
-        <h1 className="industryPage1_heading industryPage1_lineUp">
-          Software <span className="blue">solutions</span>
-          <br /> for every sector
-        </h1>
-        <div className="cardsContainer">
-          {data.map((cardData: IndustryData, index: number) => (
-            <Industrypagecard data={cardData} key={index} />
-          ))}
-        </div>
+        <p>industry page 1</p>
       </div>
     </Wrapper>
   );
