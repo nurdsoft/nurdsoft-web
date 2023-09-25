@@ -220,6 +220,12 @@
   }
 }
 
+.parallaxLayoutIndustry {
+  .contact_footer {
+    margin-bottom: 64px;
+  }
+} 
+
 @media screen and (max-width: 968px) {
   #contact_parentContainer{
     .contact_parentContainer {
@@ -252,6 +258,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        margin-bottom: 58px;
       }
     }
   }

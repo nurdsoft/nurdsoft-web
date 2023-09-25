@@ -4,6 +4,7 @@
     position: relative;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-top: 100vh;
 
     &::-webkit-scrollbar {
         display: none;

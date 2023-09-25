@@ -92,7 +92,11 @@ const Industriespage1 = () => {
       <div className="industryPage1_parentContainer">
         <Slider
           easing={undefined}
-          speed={0}
+          autoplay
+          speed={1000}
+          pauseOnDotsHover
+          pauseOnFocus
+          pauseOnHover
           infinite={false}
           ref={IndustrySlider}
           arrows={false}
