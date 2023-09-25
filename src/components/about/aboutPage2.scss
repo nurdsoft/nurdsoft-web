@@ -26,8 +26,8 @@
         .stat {
             padding: rem(48px) rem(40px);
             display: flex;
-            flex-direction: column;
-            gap: rem(32px);
+            align-items: center;
+            gap: 20px;
             border: 1px solid var(--gray-100);
                 transition: 0.6s all ease;
             &:nth-child(n + 2){
@@ -38,18 +38,31 @@
                 padding: rem(12px) rem(44px) rem(44px) rem(44px);
             }
 
-            .statNumber {
-                font-size: rem(48px);
-                font-style: normal;
-                font-weight: 500;
-                line-height: rem(58px); 
+            .icon {
+                max-width: 80px;
+                svg {
+                    width: 100%;
+                    height: auto;
+                }
             }
 
-            .statLabel {
-                font-size: rem(24px);
-                font-style: normal;
-                font-weight: 400;
-                line-height: rem(36px);
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: rem(16px);
+                .statNumber {
+                    font-size: rem(32px);
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: rem(40px); 
+                }
+    
+                .statLabel {
+                    font-size: rem(18px);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: rem(24px);
+                }
             }
         }
     }

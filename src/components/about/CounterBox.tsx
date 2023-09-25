@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { ReactNode, useEffect, useRef, useState } from 'react'
 
 import useIntersectionObserver from '../common/intersectionObserver';
 
@@ -6,8 +6,9 @@ interface ICounterBox {
   number: number;
   label: string;
   specialChar: string;
+  icon: ReactNode;
 }
-const CounterBox = ({number, label, specialChar}: ICounterBox) => {
+const CounterBox = ({number, label, specialChar, icon}: ICounterBox) => {
 
   const triggerRef = useRef<any>()
   const [incrementingNum, setIncrementingNum] = useState(0)
@@ -52,8 +53,13 @@ const CounterBox = ({number, label, specialChar}: ICounterBox) => {
 
   return (
     <div className='stat' ref={triggerRef}>
-      <p className='statNumber'>{incrementingNum}{specialChar}</p>
-      <p className='statLabel'>{label}</p>
+      <div className='icon'>
+        {icon}
+      </div>
+      <div className='text'>
+        <p className='statNumber'>{incrementingNum}{specialChar}</p>
+        <p className='statLabel'>{label}</p>
+      </div>
     </div>
   )
 }

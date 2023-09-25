@@ -1,5 +1,6 @@
 import './aboutPage2.scss';
 
+import { BADGE_ICONS, CLIENT_STATISF_ICONS, DELIVERED_PROJ_ICONS } from '../../icons';
 import React, { useMemo } from 'react';
 
 import Button from '../button';
@@ -11,17 +12,20 @@ const AboutPage2 = () => {
     {
       number: 93,
       label: "Client Satisfaction Ratio",
-      specialChar: '%'
+      specialChar: '%',
+      icon: <CLIENT_STATISF_ICONS />
     },
     {
       number: 64,
       label: "Delivered Projects",
-      specialChar: '+'
+      specialChar: '+',
+      icon: <DELIVERED_PROJ_ICONS />
     },
     {
       number: 12,
       label: "Years of Expertise",
-      specialChar: '+'
+      specialChar: '+',
+      icon: <BADGE_ICONS />
     }
   ]
   
@@ -40,6 +44,7 @@ const AboutPage2 = () => {
               label={data.label} 
               specialChar={data.specialChar} 
               key={index} 
+              icon={data.icon}
             />, [])
             ))
           }

@@ -1,11 +1,13 @@
-import * as React from "react";
 import "./homepage4.scss";
-import Wrapper from "../wrapper";
-import Lottie from "react-lottie";
+
+import * as React from "react";
 import * as discoverJson from "../../animations/discover.json";
-import * as uiuxJson from "../../animations/ui_ux.json";
-import * as mvpJSON from "../../animations/mvp.json";
 import * as implementationJSON from "../../animations/implementation.json";
+import * as mvpJSON from "../../animations/mvp.json";
+import * as uiuxJson from "../../animations/ui_ux.json";
+
+import Lottie from "react-lottie";
+import Wrapper from "../wrapper";
 
 const Homepage4 = () => {
   const defaultOptions = {
@@ -46,7 +48,7 @@ const Homepage4 = () => {
   return (
     <Wrapper>
       <div className="homepage4_parentContainer">
-        <h4 className="homepage4_servicesHeading">Services</h4>
+        <h4 className="homepage4_servicesHeading">Expertise</h4>
         <div>
           {servicesContainer.map((serviceBlock: Record<string, any>, index: number) => {
             return (
