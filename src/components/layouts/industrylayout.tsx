@@ -14,7 +14,7 @@ const IndustryLayout = () => {
       <IndustriesHeroPage />
       <Industriespage1 />
       <Industriespage2 />
-      <Contact />
+      <Contact scrollerId='parallaxLayoutIndustry' />
       {React.useMemo(() => (<Background />), [])}
     </div>
   );

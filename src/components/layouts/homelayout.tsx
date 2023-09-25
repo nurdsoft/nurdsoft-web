@@ -29,7 +29,7 @@ const HomeLayout = () => {
       <Homepage2 />
       <Homepage3 />
       <Homepage4 />
-      <Contact />
+      <Contact scrollerId='home_scroller' />
       {useMemo(() => (<Background />), [])}
     </div>
   );

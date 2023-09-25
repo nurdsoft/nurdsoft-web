@@ -16,7 +16,7 @@ const ServicesLayout = () => {
       <ServicesPage5 />
       {React.useMemo(() => <ServicesPage2 />, [])}
       <ServicesPage3 />
-      <Contact />
+      <Contact scrollerId='parallaxLayoutServices' />
       {React.useMemo(() => (<Background />), [])}
     </div>
   );

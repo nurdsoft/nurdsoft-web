@@ -20,7 +20,7 @@ const AboutLayout = () => {
       <AboutPage3 />
       <AboutPage4 />
       {React.useMemo(() => (<AboutPage5 />), [])}
-      <Contact />
+      <Contact scrollerId='parallaxLayoutAbout' />
       {React.useMemo(() => (<Background />), [])}
     </div>
   );
