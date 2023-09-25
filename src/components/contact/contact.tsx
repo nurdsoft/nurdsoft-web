@@ -4,11 +4,13 @@ import { ARROW_RIGHT_SMALL, FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../ic
 import { Link, navigate } from "gatsby";
 import React, { useState } from "react";
 
-import Button from "../button";
 import { StaticImage } from "gatsby-plugin-image";
 import Wrapper from "../wrapper";
 
-const Contact = () => {
+interface IContact {
+  scrollerId: string;
+}
+const Contact = ({scrollerId = ''}: IContact) => {
 
   const [formValue, setFormValue] = useState<any>({
     name: "",
@@ -105,8 +107,11 @@ const Contact = () => {
     if(!isFormValid) return
   }
 
-  const handleOpenPosition = () => {
-    navigate('/career')
+  const handleBackToTop = () => {
+    const scroller = document.getElementById(`${scrollerId}`)
+    if(scroller){
+      scroller.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    }
   }
 
   return (
@@ -211,6 +216,9 @@ const Contact = () => {
               <div className="cursor-pointer contact_footer_links">
                 <Link to="/career">CAREERS</Link>
               </div>
+              <div className="cursor-pointer contact_footer_links">
+                <Link to="/privacy-policy">PRIVACY POLICY</Link>
+              </div>
             </div>
           </div>
           <div className="contact_footer">
@@ -243,8 +251,8 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="cursor-pointer contact_footer_links">
-              <Link to="/privacy-policy">Privacy Policy</Link>
+            <div onClick={handleBackToTop} className="cursor-pointer contact_footer_links">
+              <p>BACK TO TOP <span className="backToTop"><ARROW_RIGHT_SMALL /></span></p>
             </div>
           </div>
         </div>

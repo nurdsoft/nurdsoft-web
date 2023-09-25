@@ -3,6 +3,11 @@
 #industryHeroPage_parentContainer {
   height: 100%;
   overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+  max-width: none;
+  left: 0;
+  top: 0;
 }
 
 .industryHeroPage_parentContainer {
@@ -17,6 +22,9 @@
     font-family: "DM Sans Bold", sans-serif;
     font-size: 4rem;
     text-align: left;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .ribbonWrapper {
@@ -27,10 +35,10 @@
       width: 100%;
       display: inline-block;
       transform-origin: 41%;
-      transform: rotate(16deg);
-  
+      transform: rotateZ(347deg);
+      
       &.transparent {
-        transform: rotateZ(347deg);
+        transform: rotate(13deg);
       }
       & > div {
         display: inline-block;
@@ -55,7 +63,7 @@
           .bulletPoint {
             display: inline-block;
             align-items: center;
-            gap: 16px;
+            margin: 0 8px;
             .circle {
               width: 24px;
               height: 24px;

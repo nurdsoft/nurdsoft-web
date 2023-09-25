@@ -1,155 +1,219 @@
 @import "~sass-rem";
 
-.industryPage1_parentContainer {
-  margin: 6.25rem rem(25px) 1.875rem rem(25px);
-  color: var(--off-white-100);
+// .industryPage1_parentContainer {
+//   margin: 6.25rem rem(25px) 1.875rem rem(25px);
+//   color: var(--off-white-100);
 
-  .industrySliderWrapper {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 48px;
+//   .industrySliderWrapper {
+//     display: flex !important;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     gap: 48px;
 
-    .industrySlide {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      gap: 48px;
+//     .industrySlide {
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column;
+//       align-items: center;
+//       width: 100%;
+//       gap: 48px;
 
-      .content {
-        display: flex;
-        justify-content: space-between;
+//       .content {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//         flex-wrap: wrap;
+//         gap: 32px;
+//         position: relative; 
+
+//         &.animateRight {
+//           animation: slideRight 0.5s ease-out forwards;
+//         }
+//         &.animateLeft {
+//           animation: slideLeft 0.5s ease-out forwards;
+//         }
+
+//         h1 {
+//           font-size: 48px;
+//           font-style: normal;
+//           font-weight: 700;
+//           line-height: 58px;
+//           background: var(--gradients-blue, linear-gradient(92deg, #6164FA 0%, #2CD7E5 100%));
+//           background-clip: text;
+//           -webkit-background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//         }
+//         p {
+//           font-size: 20px;
+//           font-style: normal;
+//           font-weight: 400;
+//           line-height: 30px;
+//           max-width: 624px;
+//           min-width: 250px;
+//           width: 100%;
+//           flex: 1;
+//         }
+//       }
+
+//       .industryImage {
+//         width: 100%;
+//         max-width: 1000px; 
+//         position: relative;
+//         padding-bottom: 56.25%;
+//         overflow: hidden;
+//         background-size: contain;
+//         background-position-y: center;
+//         background-position-x: center;
+//         background-repeat: no-repeat;
+
+//         &.animate {
+//           animation: fadeIn 0.5s ease-in-out forwards;
+//         }
+//       }
+//     }
+
+//     .sliderFooter {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       font-size: 18px;
+//       font-style: normal;
+//       font-weight: 500;
+//       line-height: normal;
+//       letter-spacing: 0.72px;
+//       text-transform: uppercase;
+//       color: var(--off-white-100);
+//       width: 100%;
+
+
+//       .footerLink {
+//         display: flex;
+//         align-items: center;
+//         gap: 8px;
+//         cursor: pointer;
+//         &:hover {
+//           color: var(--primary-100);
+
+//           svg {
+//             path {
+//               stroke: var(--primary-100);
+//             }
+//           }
+//         }
+
+//         .leftArrow {
+//           transform: rotate(180deg);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @keyframes fadeIn {
+//   from {
+//       opacity: 0; 
+//   }
+//   to {
+//       opacity: 1; 
+//   }
+// }
+
+// @keyframes slideRight {
+//   from {
+//       right: -100%; 
+//   }
+//   to {
+//       right: 0; 
+//   }
+// }
+
+// @keyframes slideLeft {
+//   from {
+//       left: -100%; 
+//       opacity: 0; 
+//   }
+//   to {
+//       left: 0; 
+//       opacity: 1; 
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .industryPage1_parentContainer {
+//     .industrySliderWrapper {
+//       .industrySlide {
+//         .content {
+//           flex-direction: column;
+//         }
+//       }
+//       .sliderFooter {
+//         font-size: 12px;
+//       }
+//     }
+//   }
+// }
+
+@import "~sass-rem";
+
+#industriespage1_parentContainer{
+  overflow: unset !important;
+}
+
+.industriespage1_parentContainer {
+    display: flex;
+    gap: 32px;
+
+    .industriespage1_menu{
+        max-width: rem(250px);
         width: 100%;
-        flex-wrap: wrap;
-        gap: 32px;
-        position: relative; 
-
-        &.animateRight {
-          animation: slideRight 0.5s ease-out forwards;
-        }
-        &.animateLeft {
-          animation: slideLeft 0.5s ease-out forwards;
-        }
-
-        h1 {
-          font-size: 48px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 58px;
-          background: var(--gradients-blue, linear-gradient(92deg, #6164FA 0%, #2CD7E5 100%));
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        p {
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 30px;
-          max-width: 624px;
-          min-width: 250px;
-          width: 100%;
-          flex: 1;
-        }
-      }
-
-      .industryImage {
-        width: 100%;
-        max-width: 1000px; 
-        position: relative;
-        padding-bottom: 56.25%;
-        overflow: hidden;
-        background-size: contain;
-        background-position-y: center;
-        background-position-x: center;
-        background-repeat: no-repeat;
-
-        &.animate {
-          animation: fadeIn 0.5s ease-in-out forwards;
-        }
-      }
-    }
-
-    .sliderFooter {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 0.72px;
-      text-transform: uppercase;
-      color: var(--off-white-100);
-      width: 100%;
-
-
-      .footerLink {
+        padding: rem(20px);
         display: flex;
-        align-items: center;
-        gap: 8px;
-        cursor: pointer;
-        &:hover {
-          color: var(--primary-100);
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 90px);
+        color: var(--off-white-100);
+        position: sticky;
+        top: calc(90px - 100vh);
 
-          svg {
-            path {
-              stroke: var(--primary-100);
+        .menuItem {
+            font-size: rem(17px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            transition: all 0.5s ease;
+            position: relative;
+            z-index: 1;
+
+            &.active {
+                color: var(--primary-100);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -23px;
+                    top: -10px;
+                    width: rem(48px);
+                    height: rem(48px);
+                    z-index: -1;
+                    border-radius: rem(30px);
+                    background-color: var(--off-white-100);
+                    opacity: 0.12;
+                }
             }
-          }
         }
-
-        .leftArrow {
-          transform: rotate(180deg);
-        }
-      }
     }
-  }
-}
 
-@keyframes fadeIn {
-  from {
-      opacity: 0; 
-  }
-  to {
-      opacity: 1; 
-  }
-}
-
-@keyframes slideRight {
-  from {
-      right: -100%; 
-  }
-  to {
-      right: 0; 
-  }
-}
-
-@keyframes slideLeft {
-  from {
-      left: -100%; 
-      opacity: 0; 
-  }
-  to {
-      left: 0; 
-      opacity: 1; 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .industryPage1_parentContainer {
-    .industrySliderWrapper {
-      .industrySlide {
-        .content {
-          flex-direction: column;
-        }
-      }
-      .sliderFooter {
-        font-size: 12px;
-      }
+    .industriespage1_content{
+        flex: 1;
+        width: 100%;
     }
-  }
+}
+
+@media screen and (max-width: 996px) {
+    .industriespage1_parentContainer {
+        .industriespage1_menu {
+            display: none;
+        }
+    }
 }
