@@ -15,7 +15,7 @@
     @for $i from 1 to $elements {
         &:nth-child(#{$i}) {
             .image_contianer{
-                background: url('../../images/industries/industry#{$i}.jpg');
+                background: url('../../images/Industries/industry#{$i}.jpg');
                 max-height: 35vh;
                 height: 100%;
                 background-repeat: no-repeat;
