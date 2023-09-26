@@ -216,9 +216,6 @@ const Contact = ({scrollerId = ''}: IContact) => {
               <div className="cursor-pointer contact_footer_links">
                 <Link to="/career">CAREERS</Link>
               </div>
-              <div className="cursor-pointer contact_footer_links">
-                <Link to="/privacy-policy">PRIVACY POLICY</Link>
-              </div>
             </div>
           </div>
           <div className="contact_footer">
@@ -251,9 +248,10 @@ const Contact = ({scrollerId = ''}: IContact) => {
                 />
               </div>
             </div>
-            <div onClick={handleBackToTop} className="cursor-pointer contact_footer_links">
-              <p>BACK TO TOP <span className="backToTop"><ARROW_RIGHT_SMALL /></span></p>
+            <div className="cursor-pointer contact_footer_links">
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
+            <span onClick={handleBackToTop} className="backToTop"><ARROW_RIGHT_SMALL /></span>
           </div>
         </div>
       </Wrapper>
