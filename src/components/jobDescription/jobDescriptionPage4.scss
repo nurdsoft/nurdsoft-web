@@ -8,8 +8,7 @@
 
     .jobDescription4_header{
         .section_title {
-            background: linear-gradient(135deg, #6164FA 0%, #E73BF3 100%);
-            @include backgroundClip;
+            color: var(--primary-100);
             font-size: rem(64px);
             font-style: normal;
             font-weight: 700;

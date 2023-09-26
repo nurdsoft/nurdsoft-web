@@ -16,7 +16,6 @@
       flex-direction: column;
       gap: rem(32px);
       border: 1px solid var(--gray-100);
-      cursor: pointer;
       transition: 0.5s all ease;
       &:nth-child(n + 2) {
         border-left: none;

@@ -1,10 +1,11 @@
+import './careerPage1.scss';
+
 import React from 'react';
 import Wrapper from '../wrapper';
-import './careerPage1.scss';
 
 const CareerPage1 = () => {
   return (
-    <Wrapper>
+    <Wrapper id="careerPage1_parentContainer">
       <div className="careerPage1_parentContainer">
         <h1 className="careerPage1_heading">
           Build your <span className="blue">career</span> <br />
