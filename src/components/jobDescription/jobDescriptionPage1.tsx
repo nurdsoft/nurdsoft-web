@@ -32,13 +32,14 @@ const jobDescriptionPage1 = ({data}: any) => {
     <Wrapper className='jobDescription1_wrapper'>
       <>
         <div className="jobDescription1_parentContainer" ref={triggerRef} >
-            <Link to='/career'>
-              <div className='goback_btn'>
-                BACK TO CAREERS
-              </div>
-            </Link>
           <div className='jobDescription1_header'>
-            <p className='jobCategory'>{data.category}</p>
+            <p className='jobCategory'>
+              <Link to='/career'>
+                <span className='prevLink'>CAREER &gt;</span>
+              </Link>
+              {" "}
+              {data.category}
+            </p>
             <h1 className='jobPosition'>{data.position}</h1>
           </div>
           <div className='jobLocation_wrapper'>

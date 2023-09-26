@@ -32,37 +32,6 @@
   position: relative;
   z-index: 1;
 
-  .goback_btn {
-    font-size: 12px;
-    padding: 8px;
-    display: flex;
-    width: fit-content;
-    cursor: pointer;
-    line-height: 12px;
-    margin-left: 16px;
-    margin-bottom: 20px;
-    color: var(--primary-100);
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0px;
-      top: -6px;
-      height: 39px;
-      z-index: -1;
-      border-radius: 1.875rem;
-      background-color: var(--off-white-100);
-      opacity: 0.12;
-      width: 41px;
-      transition: all 0.2s ease;
-    }
-    
-    &:hover {
-      &::before {
-        width: 155px;
-      }
-    }
-  }
-
   .jobDescription1_header {
     .jobCategory {
       color: var(--primary-100);
@@ -72,6 +41,9 @@
       line-height: normal;
       letter-spacing: 0.8px;
       text-transform: uppercase;
+      .prevLink {
+        color: var(--off-white-100);
+      }
     }
     .jobPosition {
       max-width: rem(800px);
