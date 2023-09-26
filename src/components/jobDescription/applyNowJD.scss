@@ -1,51 +1,33 @@
 @import "~sass-rem";
 
 .applyNow_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     margin-top: rem(120px);
     flex-wrap: wrap;
-    .socialIcons_wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        .socialIcon{
-            cursor: pointer;
-            border-radius: rem(24px);
-            background: var(--dark-gray-100);
-            width: rem(48px);
-            height: rem(48px);
-            padding: rem(8px);
-            position: relative;
-            svg{
-                z-index: 1;
-                position: relative;
-            }
-            &::before{
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-radius: 50%;
-                background: var(--primary-100);
-                top: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                top: 50%;
-                transform: translateY(-50%);
-                transition: all 0.3s ease-in;
-            }
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--dark-gray-100);
+    .extrasmall {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        color: var(--primary-100);
+    }
+    .mainText {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58px; 
+        text-align: center;
 
-            &:hover {
-                &::before {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
+        .primary {
+            color: var(--primary-100);
+            cursor: pointer;
         }
     }
 }

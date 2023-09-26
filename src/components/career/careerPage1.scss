@@ -1,9 +1,23 @@
 @import "~sass-rem";
 
+
+
+#careerPage1_parentContainer {
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 6.25rem 0 1.875rem 0;
+}
+
 .careerPage1_parentContainer {
-  margin: 6.25rem auto 1.875rem auto;
+  margin: 0 auto;
   color: var(--off-white-100);
   width: 95%;
+  background-image: url('../../images/careerHeroBg.svg');
+  background-size: contain;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 
   .careerPage1_heading {
     font-size: rem(64px);
@@ -24,5 +38,11 @@
     line-height: 27px; /* 150% */
     letter-spacing: 0.72px;
     max-width: rem(843px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #careerPage1_parentContainer {
+    height: auto;
   }
 }

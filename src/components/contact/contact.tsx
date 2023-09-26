@@ -9,8 +9,9 @@ import Wrapper from "../wrapper";
 
 interface IContact {
   scrollerId: string;
+  showform?: boolean; 
 }
-const Contact = ({scrollerId = ''}: IContact) => {
+const Contact = ({scrollerId = '', showform = true}: IContact) => {
 
   const [formValue, setFormValue] = useState<any>({
     name: "",
@@ -118,90 +119,93 @@ const Contact = ({scrollerId = ''}: IContact) => {
     <>
       <Wrapper id="contact_parentContainer">
         <div className="contact_parentContainer">
-          <div className="contact_formWrapper">
-            <div className="contact_formHeading">
-              <p>Let’s Talk</p>
-            </div>
-            <div className="flex_container">
-              <div className="contact_formRight">
-                <div className="contact_formContainer">
-                  <div className="contact_formField">
-                    <p className="label">My name is</p>
-                    <input onChange={(e) => handleFormValue('name', e.target.value)} className="inputBox" type="text" placeholder="Your Name" />
-                  </div>
-
-                  <div className="contact_formField">
-                    <p className="label">I am looking to build</p>
-                    <div className="optionWrapper">
-                      {
-                        platformOptions.map((platform, index) => (
-                          <button 
-                            onClick={(e) => {
-                              e.preventDefault()
-                              handleFormValue('platform', platform.value)
-                            }} 
-                            className={`
-                              option 
-                              ${formValue.platform === platform.value ? 'active' : ''}
-                            `} 
-                            key={index}
-                          >
-                            <p className="optionText">
-                              <span className="animateUp">{platform.text}</span>
-                              <span className="animateUp">{platform.text}</span>
-                            </p>
-                          </button>
-                        ))
-                      }
+          {
+            showform &&
+            <div className="contact_formWrapper">
+              <div className="contact_formHeading">
+                <p>Let’s Talk</p>
+              </div>
+              <div className="flex_container">
+                <div className="contact_formRight">
+                  <div className="contact_formContainer">
+                    <div className="contact_formField">
+                      <p className="label">My name is</p>
+                      <input onChange={(e) => handleFormValue('name', e.target.value)} className="inputBox" type="text" placeholder="Your Name" />
                     </div>
-                  </div>
 
-                  <div className="contact_formField column">
-                    <p className="label">What can we help you with?</p>
-                    <input onChange={(e) => handleFormValue('message', e.target.value)}  className="inputBox" type="text" placeholder="Type your message here..." />
-                  </div>
-
-                  <div className="contact_formField">
-                    <p className="label">My budget is</p>
-                    <div className="optionWrapper">
-                      {
-                        budgetOptions.map((budget, index) => (
-                          <button 
-                            onClick={(e) => {
-                              e.preventDefault()
-                              handleFormValue('budget', budget.value)
-                            }} 
-                            className={`
-                              option 
-                              ${formValue.budget === budget.value ? 'active' : ''}
-                            `} 
-                            key={index}
-                          >
-                            <p className="optionText">
-                              <span className="animateUp">{budget.text}</span>
-                              <span className="animateUp">{budget.text}</span>
-                            </p>
-                          </button>
-                        ))
-                      }
+                    <div className="contact_formField">
+                      <p className="label">I am looking to build</p>
+                      <div className="optionWrapper">
+                        {
+                          platformOptions.map((platform, index) => (
+                            <button 
+                              onClick={(e) => {
+                                e.preventDefault()
+                                handleFormValue('platform', platform.value)
+                              }} 
+                              className={`
+                                option 
+                                ${formValue.platform === platform.value ? 'active' : ''}
+                              `} 
+                              key={index}
+                            >
+                              <p className="optionText">
+                                <span className="animateUp">{platform.text}</span>
+                                <span className="animateUp">{platform.text}</span>
+                              </p>
+                            </button>
+                          ))
+                        }
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="contact_formField">
-                    <p className="label">Contact me back at</p>
-                    <input onChange={(e) => handleFormValue('email', e.target.value)} className="inputBox" type="email" placeholder="Your Email" />
-                  </div>
-                  <div className="submitWrapper">
-                    <button className="contact_formSubmit" onClick={handleSubmitForm}>
-                      <p>SUBMIT</p>
-                      <ARROW_RIGHT_SMALL />
-                    </button>
-                  </div>
+                    <div className="contact_formField column">
+                      <p className="label">What can we help you with?</p>
+                      <input onChange={(e) => handleFormValue('message', e.target.value)}  className="inputBox" type="text" placeholder="Type your message here..." />
+                    </div>
 
+                    <div className="contact_formField">
+                      <p className="label">My budget is</p>
+                      <div className="optionWrapper">
+                        {
+                          budgetOptions.map((budget, index) => (
+                            <button 
+                              onClick={(e) => {
+                                e.preventDefault()
+                                handleFormValue('budget', budget.value)
+                              }} 
+                              className={`
+                                option 
+                                ${formValue.budget === budget.value ? 'active' : ''}
+                              `} 
+                              key={index}
+                            >
+                              <p className="optionText">
+                                <span className="animateUp">{budget.text}</span>
+                                <span className="animateUp">{budget.text}</span>
+                              </p>
+                            </button>
+                          ))
+                        }
+                      </div>
+                    </div>
+
+                    <div className="contact_formField">
+                      <p className="label">Contact me back at</p>
+                      <input onChange={(e) => handleFormValue('email', e.target.value)} className="inputBox" type="email" placeholder="Your Email" />
+                    </div>
+                    <div className="submitWrapper">
+                      <button className="contact_formSubmit" onClick={handleSubmitForm}>
+                        <p>SUBMIT</p>
+                        <ARROW_RIGHT_SMALL />
+                      </button>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          }
           <div className="contact_subFooter">
             <Link to="/">
               <StaticImage width={200} src="../../images/nurdsoft-logo-expanded.png" placeholder="blurred" alt="nurdsoft" />
