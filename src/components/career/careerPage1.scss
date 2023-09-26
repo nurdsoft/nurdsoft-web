@@ -44,5 +44,8 @@
 @media screen and (max-width: 768px) {
   #careerPage1_parentContainer {
     height: auto;
+    .careerPage1_parentContainer {
+      background-image: none;
+    }
   }
 }
