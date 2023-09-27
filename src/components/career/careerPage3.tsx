@@ -1,11 +1,9 @@
 import "./careerPage3.scss";
 
-import Button from "../button";
 import CareerCard from "./careerCard";
 import React from "react";
 import Wrapper from "../wrapper";
 import jobDataJSON from "../../../job_data.json";
-import { navigate } from "gatsby";
 
 const CareerPage3 = () => {
 
@@ -13,10 +11,6 @@ const CareerPage3 = () => {
     string,
     Record<string, string | string[]>
   >;
-
-  const handleAboutUs = () => {
-    navigate("/about/");
-  };
 
   return (
     <Wrapper id="careerPage3">
@@ -26,9 +20,8 @@ const CareerPage3 = () => {
       >
         <div className="careerPage3_headingWrapper">
           <h1 className="careerPage3_heading">
-            Open <br /> Position
+            Open Position
           </h1>
-          <Button buttonText="ABOUT US" onClick={handleAboutUs} />
         </div>
         <div className="careerPage3_cardView_wrapper">
           <div className="careerPage3_cardView" id="careerPage3_cardView">

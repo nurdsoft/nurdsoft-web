@@ -33,6 +33,12 @@
 }
 @media screen and (max-width: 768px) {  
     .applyNow_wrapper{
+        padding: 20px;
         gap: 30px;
+
+        .mainText {
+            font-size: rem(24px);
+            line-height: rem(34px);
+        }
     }
 }
