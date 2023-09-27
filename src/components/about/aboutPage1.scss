@@ -108,7 +108,7 @@
     }
   }
 
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 966px) {
     .aboutPage1_parentContainer{
       margin: 0;
       width: 100%;
@@ -129,6 +129,21 @@
           right: -10px;
           top: -58px;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .aboutPage1_parentContainer{
+      .wrapper {
+        img {
+          height: 300px;
+          width: auto;
+          min-width: 300px;
+        } 
+      }
+      .aboutPage1_heading {
+        margin: 40px 0px;
       }
     }
   }

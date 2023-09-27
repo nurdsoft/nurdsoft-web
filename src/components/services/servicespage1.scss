@@ -198,9 +198,12 @@
       .servicespage1_titleDiv {
         font-size: rem(48px);
       }
-      .servicespage1_boxContainer{
-        .servicepage1_boxTitle {
-          font-size: rem(32px);
+      .servicespage1_grid {
+        .servicespage1_boxContainer{
+          .servicepage1_boxTitle {
+            font-size: rem(32px);
+            line-height: rem(42px);
+          }
         }
       }
     }

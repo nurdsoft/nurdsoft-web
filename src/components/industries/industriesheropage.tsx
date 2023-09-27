@@ -1,7 +1,6 @@
 import './industriesheropage.scss'
 
 import React from 'react'
-import Slider from 'react-slick'
 import Wrapper from '../wrapper'
 
 const IndustriesHeroPage = () => {

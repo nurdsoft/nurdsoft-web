@@ -46,6 +46,10 @@
     height: auto;
     .careerPage1_parentContainer {
       background-image: none;
+      .careerPage1_heading {
+        font-size: rem(48px);
+        line-height: 58px;
+      }
     }
   }
 }

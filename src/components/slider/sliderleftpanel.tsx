@@ -9,7 +9,7 @@ interface SliderLeftPanelI {
   headerLinkText?: string;
   link: string;
   title: string;
-  description: string[];
+  description: string;
   img: any;
 }
 
@@ -17,7 +17,7 @@ const SliderLeftPanel = ({
   headerLinkText,
   link,
   title,
-  description = [],
+  description,
   img,
 }: SliderLeftPanelI) => {
   const handleClick = () => {
@@ -28,16 +28,9 @@ const SliderLeftPanel = ({
       <div className="left">
         <div className="sliderleftpanel_headerLink">{headerLinkText}</div>
         <h4 className="sliderleftpanel_title">{title}</h4>
-        {description?.map((paraDescription: string) => {
-          return (
-            <p className="sliderleftpanel_description sliderleftpanel_lineUp">
-              {paraDescription}
-            </p>
-          );
-        })}
-        {/* <p className="sliderleftpanel_description sliderleftpanel_lineUp">
-            {description[0]}
-          </p> */}
+        <div className="sliderleftpanel_description">
+          {description}
+        </div>
         <Button buttonText={"VIEW PROJECT"} onClick={handleClick} className="mt-12" />
       </div>
       <div className="right">

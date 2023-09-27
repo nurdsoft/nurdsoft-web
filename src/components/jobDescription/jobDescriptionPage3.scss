@@ -2,7 +2,7 @@
 @import "~sass-rem";
 
 .jobDescription3_parentContainer {
-    margin: 6.25rem rem(25px) 1.875rem rem(25px);
+    margin: 6.25rem auto 1.875rem auto;
     color: var(--off-white-100);
     width: 95%;
 
@@ -88,6 +88,7 @@
 
 @media screen and (max-width: 768px) {
     .jobDescription3_parentContainer {
+        margin-top: rem(40px);
         .jobDescription3_header{
             .section_title {
                 font-size: rem(42px);

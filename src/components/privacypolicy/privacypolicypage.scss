@@ -22,36 +22,31 @@
 
   .privacypolicypage_dataCollectionType {
     .privacypolicypage_dataCollectionTitle {
-      background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
-      @include backgroundClip;
+      color: var(--primary-100) !important;
     }
   }
 
   .privacypolicypage_cookiesDataUsage {
     .privacypolicypage_cookiesDataUsageTitle {
-      background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
-      @include backgroundClip;
+      color: var(--primary-100) !important;
     }
   }
 
   .privacypolicypage_disclosureOfData {
     .privacypolicypage_disclosureOfDataTitle {
-      background: linear-gradient(92.15deg, #6164fa 0%, #e73bf3 100%);
-      @include backgroundClip;
+      color: var(--primary-100) !important;
     }
   }
 
   .privacypolicypage_securityOfData {
     .privacypolicypage_securityOfDataTitle {
-      background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
-      @include backgroundClip;
+      color: var(--primary-100) !important;
     }
   }
 
   .privacypolicypage_contactUs {
     .privacypolicypage_contactUsTitle {
-      background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
-      @include backgroundClip;
+      color: var(--primary-100) !important;
     }
   }
 

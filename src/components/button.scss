@@ -13,6 +13,15 @@
     vertical-align: middle;
     background: transparent;
 
+    &:hover {
+      .circle {
+        width: 100%;
+      }
+      .circleColorPrimary {
+        width: 100%;
+      }
+    }
+
     .buttonText {
       padding: rem(11px) rem(24px);
       width: max-content;
@@ -59,20 +68,6 @@
     .circleColorTransparent {
       background-color: var(--off-white-100);
       opacity: 0.12;
-    }
-
-    &:hover {
-      .circle {
-        width: 100%;
-      }
-
-      //   .buttonTextTransparent {
-      //     color: var(--off-white-100);
-      //   }
-
-      //   .buttonTextPrimary {
-      //     color: var(--primary-100);
-      //   }
     }
   }
 }

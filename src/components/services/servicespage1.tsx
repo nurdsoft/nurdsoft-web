@@ -9,18 +9,17 @@ import {
 import { animated, useSpring } from '@react-spring/web';
 
 import Wrapper from "../wrapper";
-import { navigate } from "gatsby";
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const ServicesPage1 = () => {
   const options = [
-    "Branding",
-    "Website",
-    "Mobile App",
     "Landing Page",
     "Desktop App",
-    "SaaS",
+    "Mobile App",
+    "Branding",
     "Product",
+    "Website",
+    "SaaS",
   ];
 
   const triggerRef = useRef<any>();
@@ -41,7 +40,9 @@ const ServicesPage1 = () => {
 
   const handleHireUs = (e: any) => {
     e.preventDefault()
-    navigate('/#contact-us')
+    const contactUs = document.getElementById("contact-us");
+    if(!contactUs) return;
+      contactUs.scrollIntoView({behavior: 'smooth'});
   }
 
   return (
@@ -49,12 +50,12 @@ const ServicesPage1 = () => {
       <div className="servicespage1_parentContainer" ref={triggerRef} >
         <animated.div style={headerStyle}>
           <div className="servicespage1_gridContainer">
-            <div className="servicespage1_titleDiv lineUp">
+            <h1 className="servicespage1_titleDiv lineUp">
               Turn your
               <span className="ml-2 mr-2 servicespage1_ideasDiv">ideas</span>
               <br />
               into reality.
-            </div>
+            </h1>
             <div className="servicespage1_grid">
               <div className="servicespage1_boxContainer servicespage1_item1">
                 <SERVICES_HOME_ICON_1 />

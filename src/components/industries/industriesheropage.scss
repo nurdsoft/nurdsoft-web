@@ -19,8 +19,10 @@
   flex-direction: column;
 
   .heroText {
-    font-family: "DM Sans Bold", sans-serif;
-    font-size: 4rem;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    font-size: rem(62px);
+    line-height: 1.2em;
     text-align: left;
     max-width: 1280px;
     margin: 0 auto;
@@ -30,15 +32,18 @@
   .ribbonWrapper {
     margin-top: auto;
     margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     .ribbon {
       height: 80px;
       width: 100%;
       display: inline-block;
       transform-origin: 41%;
-      transform: rotateZ(347deg);
+      // transform: rotateZ(347deg);
       
       &.transparent {
-        transform: rotate(13deg);
+        // transform: rotate(13deg);
       }
       & > div {
         display: inline-block;
@@ -49,9 +54,9 @@
         padding: 16px;
         background-color: var(--primary-100);
         margin-left: -25px;
-        animation: scrollText 10s infinite linear;
+        animation: scrollText 20s infinite linear;
         &.transparent {
-          animation: scrollTextRev 10s infinite linear;
+          animation: scrollTextRev 20s infinite linear;
           background-color: var(--dark-gray-100);
         }
         .carouselRibbon {
@@ -99,8 +104,8 @@
 
 @media screen and (max-width: 768px) {
   .industryHeroPage_parentContainer{ 
-    .ribbonWrapper {
-      display: none;
+    .heroText {
+      line-height: rem(64px);
     }
   }
   

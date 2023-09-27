@@ -1,4 +1,6 @@
 import * as React from "react";
+
+import Background from "../common/background";
 import PrivacyPolicyPage from "../privacypolicy/privacypolicypage";
 
 const PrivacyPolicyLayout = () => {
@@ -10,6 +12,7 @@ const PrivacyPolicyLayout = () => {
         }}
       >
         <PrivacyPolicyPage />
+        {React.useMemo(() => (<Background />), [])}
       </div>
     </>
   );
