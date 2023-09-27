@@ -1,10 +1,5 @@
 @import "~sass-rem";
 
-#aboutPage4_parentContainer{
-  height: 100%;
-  overflow: hidden;
-}
-
 .aboutPage4_parentContainer {
   // background: var(--black-100);
   max-width: rem(1230px);
@@ -15,10 +10,7 @@
     font-weight: 700;
     line-height: 74px;
     text-align: center;
-    background: linear-gradient(135deg, #6164fa 0%, #e73bf3 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: var(--primary-100);
   }
 
   .control-dots {
@@ -71,6 +63,7 @@
     max-width: rem(300px);
     h1.heading {
       font-size: rem(48px);
+      line-height: rem(56px);
     }
   }
 }

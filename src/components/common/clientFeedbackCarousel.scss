@@ -46,7 +46,6 @@
     max-width: rem(508px);
     min-width: rem(298px);
     width: 95%;
-    background: url("../../images/project-mockup.svg");
     background-position-y: bottom;
     background-size: 138% 100%;
     background-repeat: no-repeat;
@@ -78,20 +77,20 @@
     .description {
       max-width: 700px;
       width: 95%;
-      font-size: rem(24px);
+      font-size: rem(18px);
       font-style: normal;
       font-weight: 400;
-      line-height: rem(36px);
+      line-height: rem(28px);
     }
     .testGiverInfo {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: 16px;
+      gap: 5px 16px;
       flex-wrap: wrap;
 
       .name {
-        font-size: rem(20px);
+        font-size: rem(16px);
         font-style: normal;
         font-weight: 500;
         line-height: 30px;
