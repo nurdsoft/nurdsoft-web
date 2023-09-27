@@ -1,12 +1,21 @@
-import React, { useEffect, useState } from "react";
 import "./privacypolicypage.scss";
-import Wrapper from "../wrapper";
-import Footer from "../common/footer/footer";
+
 import { Link, navigate } from "gatsby";
+import React, { useEffect, useState } from "react";
+
+import Footer from "../common/footer/footer";
 import Select from "react-select";
+import Wrapper from "../wrapper";
 
 const PrivacyPolicyPage = () => {
   if (typeof window === "undefined") return <></>;
+
+  const [emailCopied, setEmailCopied] = React.useState(false)
+
+  const compyEmail = async () => {
+    await navigator.clipboard.writeText("hr@nurdsoft.co")
+    setEmailCopied(true)
+  }
 
   const [hash, setHash] = useState(window.location.hash);
   let [preventHashChange, setPreventHashChange] = useState(false);
@@ -602,13 +611,16 @@ const PrivacyPolicyPage = () => {
               <p className="text-xl offGray mt-8">
                 If you have any questions about this Privacy Policy, please
                 contact us:
-                <a
-                  className="primary100 ml-2 underline"
-                  href="mailto:hello@nurdsoft.co"
-                  target="_blank"
+                <p
+                  className="primary100 underline cursor-pointer"
+                  onClick={compyEmail}
                 >
                   hello@nurdsoft.co
-                </a>
+                </p>
+                {
+                  emailCopied &&
+                  <p className='text-xs mt-2 primary100'>* email copied to clipboard</p>
+                }
               </p>
               <p className="text-xl offGray mt-8">
                 Privacy Policy of

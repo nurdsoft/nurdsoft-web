@@ -223,7 +223,7 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
             </div>
           </div>
           <div className="contact_footer">
-            <div>© Copyright 2023.</div>
+            <div className="copyright">© Copyright 2023.</div>
             <div className="socialIcons_wrapper">
               <div className="icon_container">
                 <FACEBOOK

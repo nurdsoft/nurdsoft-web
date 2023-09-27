@@ -1,29 +1,11 @@
 import "./servicespage3.scss";
 
 import { FLEXIBLE_TIME_ICON, FLEXIBLE_TIME_ICON_PURPLE, HUNGRY_ICON, HUNGRY_ICON_PURPLE, PARTERNERSHIP_ICON, PARTERNERSHIP_ICON_PURPLE, STACK_ICON, STACK_ICON_PURPLE } from "../../icons";
-import React, {useEffect, useRef} from "react";
-import { animated, useSpring } from '@react-spring/web';
 
-import Button from "../button";
+import React from "react";
 import Wrapper from "../wrapper";
-import useIntersectionObserver from "../common/intersectionObserver";
 
 const ServicesPage3 = () => {
-  const triggerRef = useRef<any>();
-
-  const dataRef = useIntersectionObserver(triggerRef, {
-    threshold: 0.4,
-    freezeOnceVisible: false
-  });
-
-  const headerStyle = useSpring({
-    config: { duration: 500 },
-    from: { transform: 'translateY(200px)', opacity: 0 },
-    to: {
-      transform: dataRef?.isIntersecting ? 'translateY(0px)' : 'translateY(200px)',
-      opacity: dataRef?.isIntersecting ? 1 : 0,
-    },
-  });
 
   const boxArr = [
     {
@@ -58,18 +40,14 @@ const ServicesPage3 = () => {
 
   return (
     <Wrapper>
-      <div className="servicespage3_parentContainer" id="servicespage3_parentContainer" ref={triggerRef}>
+      <div className="servicespage3_parentContainer" id="servicespage3_parentContainer" >
         <div className="servicespage3_gridContainer">
           <div className="servicespage3_leftContainer mt-12">
             <div className="servicespage3_titleDiv lineUp">
               Why to Work with Us
             </div>
-            <div>
-              <Button buttonText="SCHEDULE CONSULTATION" />
-            </div>
           </div>
           <div className="servicespage3_rightContainer">
-            <animated.div style={headerStyle}>
               <div className="servicespage3_listContainer ">
                 {boxArr.map(
                   (
@@ -98,7 +76,6 @@ const ServicesPage3 = () => {
                   }
                 )}
               </div>
-            </animated.div>
           </div>
         </div>
       </div>
