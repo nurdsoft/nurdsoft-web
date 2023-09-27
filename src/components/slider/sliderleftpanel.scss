@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+  z-index: 2;
 
   .left {
     flex: 1;
@@ -40,27 +41,5 @@
 
   .right {
     flex: 1;
-  }
-}
-
-.sliderleftpanel_lineUp {
-  animation: 2s anim-lineUp ease-out 1;
-}
-
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
   }
 }

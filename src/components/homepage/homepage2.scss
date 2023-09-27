@@ -28,6 +28,10 @@
       height: auto;
       align-items: center;
       justify-content: center;
+
+      &.slick-active.slick-current {
+        z-index: 3;
+      }
     }
 
   }
