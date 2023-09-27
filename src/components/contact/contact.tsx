@@ -118,7 +118,7 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
   return (
     <>
       <Wrapper id="contact_parentContainer">
-        <div className="contact_parentContainer">
+        <div className="contact_parentContainer" id="contact-us">
           {
             showform &&
             <div className="contact_formWrapper">

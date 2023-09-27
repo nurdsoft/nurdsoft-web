@@ -86,19 +86,48 @@
   }
 }
 
+@media screen and (min-width: 966px) {
+  .homepage2_parentContainer{
+    .slick-track {
+      .slick-slide {
+        &>div {
+          height: 100%;
+          .sliderleftpanel_parentContainer{
+            height: 100%;
+            .left {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              .sliderleftpanel_description {
+                flex: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 966px) {
   .homepage2_parentContainer {
     .slick-track {
-      display: flex;
-  
       .slick-slide {
-        display: flex;
-        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
       }
-  
+      
     }
     .sliderleftpanel_parentContainer{
       flex-direction: column-reverse;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage2_parentContainer {
+    h4.homepage2Heading{
+      font-size: rem(40px);
     }
   }
 }

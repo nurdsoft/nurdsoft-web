@@ -17,9 +17,9 @@ const HomeLayout = () => {
   useEffect(() => {
     const hash = window.location.hash
     if(hash === "#contact-us"){
-      const scroller = document.getElementById("home_scroller");
-      if(!scroller) return;
-      scroller.scrollTop = scroller.scrollHeight;
+      const contactUs = document.getElementById("contact-us");
+      if(!contactUs) return;
+      contactUs.scrollIntoView({ behavior: "smooth" });
     }
   }, [window?.location?.hash])
   return (

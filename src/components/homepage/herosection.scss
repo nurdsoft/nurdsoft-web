@@ -231,6 +231,7 @@
     .hero_text{
       .lineOne {
         font-size: rem(42px);
+        line-height: rem(52px);
       }
       .scroll-bottom {
         display: none;
@@ -247,6 +248,11 @@
       .animated-line {
         font-size: rem(40px);
         height: 80px;
+        margin-top: 60px;
+      }
+      .lineThree {
+        font-size: rem(24px);
+        line-height: rem(36px);
       }
     }
   }

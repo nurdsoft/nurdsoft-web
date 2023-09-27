@@ -74,6 +74,66 @@ const Homepage3 = () => {
             />
           </div>
         </div>
+        <div className="gridContainer-mobile">
+          <div className="boxContainer item1">
+            <StaticImage
+              src="../../images/image_works.png"
+              quality={100}
+              width={368}
+              alt="Image Works"
+            />
+          </div>
+          <div className="boxContainer item2">
+            <StaticImage
+              src="../../images/disney.png"
+              quality={100}
+              alt="Deluxe"
+            />
+          </div>
+          <div className="boxContainer item3">
+            <StaticImage
+              src="../../images/ticket-master.png"
+              quality={100}
+              alt="Deluxe"
+            />
+          </div>
+          <div className="boxContainer item4">
+            <StaticImage
+              src="../../images/fox.png"
+              quality={100}
+              alt="Deluxe"
+            />
+          </div>
+          <div className="boxContainer item5">
+            <StaticImage
+              src="../../images/deluxe.png"
+              quality={100}
+              alt="Deluxe"
+            />
+          </div>
+          <div className="boxContainer item6">
+            <StaticImage
+              src="../../images/rough_draft.png"
+              quality={100}
+              alt="Deluxe"
+            />
+          </div>
+          <div className="boxContainer item7">
+            <StaticImage
+              src="../../images/webdotcom.png"
+              quality={100}
+              width={230}
+              alt="Deluxe"
+            />
+          </div>
+          <div className="boxContainer item8">
+            <StaticImage
+              src="../../images/keysight.png"
+              quality={100}
+              alt="Deluxe"
+            />
+          </div>
+        </div>
       </div>
     </Wrapper>
   );

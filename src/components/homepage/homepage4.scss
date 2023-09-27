@@ -7,7 +7,7 @@
     text-align: center;
     margin: rem(50px) 0;
     font-weight: 700;
-    background: linear-gradient(92.15deg, #6164fa 0%, #e73bf3 100%);
+    background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -80,8 +80,19 @@
 
 @media screen and (max-width: 570px) {
   .homepage4_parentContainer {
+    h4.homepage4_servicesHeading {
+      font-size: rem(40px);
+    }
     .homepage4_boxContainer {
       flex-direction: column;
+      .homepage4_textContainer {
+        padding: 0;
+        text-align: center;
+        .homepage4_heading {
+          margin-bottom: 32px;
+          line-height: rem(40px);
+        }
+      }
       .w-1\/5{
         width: 100%;
       }
