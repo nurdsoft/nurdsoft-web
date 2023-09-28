@@ -16,3 +16,13 @@
     padding-top: rem(32px);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .workpage1_parentContainer {
+    h4.workpage1_title {
+      font-size: rem(48px);
+      line-height: rem(58px);
+    }
+  }
+  
+}

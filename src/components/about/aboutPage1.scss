@@ -135,6 +135,10 @@
 
   @media screen and (max-width: 768px) {
     .aboutPage1_parentContainer{
+      .aboutPage1_heading{
+        font-size: rem(48px);
+        line-height: rem(58px);
+      }
       .wrapper {
         img {
           height: 300px;
