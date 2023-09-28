@@ -36,9 +36,14 @@
       display: inline-block;
       transform-origin: 41%;
       // transform: rotateZ(347deg);
+      background: rgb(97,100,250);
+      background: linear-gradient(90deg, rgba(97,100,250,0) 0%, rgba(97,100,250,1) 30%, rgba(97,100,250,1) 70%, rgba(97,100,250,0) 100%);
+      overflow: hidden;
       
       &.transparent {
         // transform: rotate(13deg);
+        background: rgb(28,37,49);
+        background: linear-gradient(90deg, rgba(28,37,49,0) 0%, rgba(28,37,49,1) 30%, rgba(28,37,49,1) 70%, rgba(28,37,49,0) 100%);
       }
       & > div {
         display: inline-block;
@@ -47,12 +52,12 @@
         width: max-content;
         gap: 48px;
         padding: 16px;
-        background-color: var(--primary-100);
+        // background-color: var(--primary-100);
         margin-left: -25px;
         animation: scrollText 20s infinite linear;
         &.transparent {
           animation: scrollTextRev 20s infinite linear;
-          background-color: var(--dark-gray-100);
+          // background-color: var(--dark-gray-100);
         }
         .carouselRibbon {
           display: inline-block;
@@ -105,7 +110,15 @@
     }
     .ribbonWrapper {
       .ribbon {
+        background: none;
+        &.transparent {
+          background: none;
+        }
         & > div {
+          background-color: var(--primary-100);
+          &.transparent {
+            background-color: var(--dark-gray-100);
+          }
           animation-duration: 16s !important;
           .carouselRibbon {
             width: auto;

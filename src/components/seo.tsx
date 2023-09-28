@@ -31,7 +31,7 @@ export default function Seo({description, title, type, image, url}: ISeo) {
       <meta
         key="og:url"
         property="og:url"
-        content={url || "https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co"}
+        content={url || "https://nurdsoft.co"}
       />
     </>
   );

@@ -1,9 +1,9 @@
 import "./contact.scss";
 
 import { ARROW_RIGHT_SMALL, FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../icons";
-import { Link, navigate } from "gatsby";
 import React, { useState } from "react";
 
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Wrapper from "../wrapper";
 
@@ -12,6 +12,10 @@ interface IContact {
   showform?: boolean; 
 }
 const Contact = ({scrollerId = '', showform = true}: IContact) => {
+
+  const [isLoading, setIsLoading] = useState(false)
+  const [isError, setIsError] = useState(false)
+  const [resMsg, setResMsg] = useState('')
 
   const [formValue, setFormValue] = useState<any>({
     name: "",
@@ -68,7 +72,7 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
   const handleFormValue = (key: string, value: string) => {
     setFormValue({
       ...formValue,
-      [key]: value.trim()
+      [key]: value
     })
   }
 
@@ -99,13 +103,67 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
     return isValid;
   }
 
-  const handleSubmitForm = (e: React.MouseEvent) => {
-
+  const handleSubmitForm = async (e: React.MouseEvent) => {
+    setIsLoading(true)
     e.preventDefault()
 
     const isFormValid = handleValidateForm()
+    console.log('here');
+    
+    if(!isFormValid){
+      setIsError(true)
+      setIsLoading(false)
+      setResMsg("* Please fill all the fields properly.")
+      return
+    }
 
-    if(!isFormValid) return
+    const formVal = new FormData()
+    formVal.append('name', formValue.name.trim())
+    formVal.append('email', formValue.email.trim())
+    formVal.append('platform', formValue.platform.trim())
+    formVal.append('message', formValue.message.trim())
+    formVal.append('budget', formValue.budget.trim())
+    formVal.append('_gotcha', '')
+    
+
+    let res;
+    try{
+      res = await fetch("https://getform.io/f/e505557b-ee3f-4281-9be3-5aa539432bfe", {
+          method: "POST",
+          body: formVal,
+          headers: {
+              "Accept": "application/json",
+          },
+      })
+      res = await res.json()
+      if(res.success){
+        setIsError(false)
+        setIsLoading(false)
+        setResMsg("* Thank you! Your message is on its way to us, Expect to hear from our team soon.")
+      }else{
+        setIsError(true)
+        setIsLoading(false)
+        setResMsg("* Looks like there is some problem submitting form, please reach out directly on hello@nurdsoft.co")
+      }
+      
+    }catch(err){
+      setIsError(true)
+      setIsLoading(false)
+      setResMsg("* Looks like there is some problem submitting form, please reach out directly on hello@nurdsoft.co")
+    }
+    
+    setTimeout(() => {
+      setIsError(false)
+      setIsLoading(false)
+      setResMsg("")
+      setFormValue({
+        name: "",
+        platform: "",
+        message: "",
+        budget: "",
+        email: ""
+      })
+    }, 5000)
   }
 
   const handleBackToTop = () => {
@@ -119,96 +177,135 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
     <>
       <Wrapper id="contact_parentContainer">
         <div className="contact_parentContainer" id="contact-us">
-          {
-            showform &&
+          {showform && (
             <div className="contact_formWrapper">
               <div className="contact_formHeading">
                 <p>Let’s Talk</p>
               </div>
-              <div className="flex_container">
+              <form method="post" action="#" id="form" className="flex_container">
                 <div className="contact_formRight">
                   <div className="contact_formContainer">
                     <div className="contact_formField">
                       <p className="label">My name is</p>
-                      <input onChange={(e) => handleFormValue('name', e.target.value)} className="inputBox" type="text" placeholder="Your Name" />
+                      <input
+                        name="full_name"
+                        form="form"
+                        onChange={(e) => handleFormValue('name', e.target.value)}
+                        className="inputBox"
+                        value={formValue.name}
+                        type="text"
+                        placeholder="Your Name"
+                      />
                     </div>
-
+  
                     <div className="contact_formField">
                       <p className="label">I am looking to build</p>
                       <div className="optionWrapper">
-                        {
-                          platformOptions.map((platform, index) => (
-                            <button 
-                              onClick={(e) => {
-                                e.preventDefault()
-                                handleFormValue('platform', platform.value)
-                              }} 
-                              className={`
-                                option 
-                                ${formValue.platform === platform.value ? 'active' : ''}
-                              `} 
-                              key={index}
-                            >
-                              <p className="optionText">
-                                <span className="animateUp">{platform.text}</span>
-                                <span className="animateUp">{platform.text}</span>
-                              </p>
-                            </button>
-                          ))
-                        }
+                        {platformOptions.map((platform, index) => (
+                          <button
+                            name="platform"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleFormValue('platform', platform.value);
+                            }}
+                            className={`option ${
+                              formValue.platform === platform.value ? 'active' : ''
+                            }`}
+                            key={index}
+                          >
+                            <p className="optionText">
+                              <span className="animateUp">{platform.text}</span>
+                              <span className="animateUp">{platform.text}</span>
+                            </p>
+                          </button>
+                        ))}
                       </div>
                     </div>
-
+  
                     <div className="contact_formField column">
                       <p className="label">What can we help you with?</p>
-                      <input onChange={(e) => handleFormValue('message', e.target.value)}  className="inputBox" type="text" placeholder="Type your message here..." />
+                      <input
+                        name="message"
+                        form="form"
+                        onChange={(e) => handleFormValue('message', e.target.value)}
+                        value={formValue.message}
+                        className="inputBox"
+                        type="text"
+                        placeholder="Type your message here..."
+                      />
                     </div>
-
+  
                     <div className="contact_formField">
                       <p className="label">My budget is</p>
                       <div className="optionWrapper">
-                        {
-                          budgetOptions.map((budget, index) => (
-                            <button 
-                              onClick={(e) => {
-                                e.preventDefault()
-                                handleFormValue('budget', budget.value)
-                              }} 
-                              className={`
-                                option 
-                                ${formValue.budget === budget.value ? 'active' : ''}
-                              `} 
-                              key={index}
-                            >
-                              <p className="optionText">
-                                <span className="animateUp">{budget.text}</span>
-                                <span className="animateUp">{budget.text}</span>
-                              </p>
-                            </button>
-                          ))
-                        }
+                        {budgetOptions.map((budget, index) => (
+                          <button
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleFormValue('budget', budget.value);
+                            }}
+                            className={`option ${
+                              formValue.budget === budget.value ? 'active' : ''
+                            }`}
+                            key={index}
+                            name="budget"
+                          >
+                            <p className="optionText">
+                              <span className="animateUp">{budget.text}</span>
+                              <span className="animateUp">{budget.text}</span>
+                            </p>
+                          </button>
+                        ))}
                       </div>
+                      <input
+                        type="hidden"
+                        name="_gotcha"
+                        style={{ display: 'none !important' }}
+                      />
                     </div>
-
+  
                     <div className="contact_formField">
                       <p className="label">Contact me back at</p>
-                      <input onChange={(e) => handleFormValue('email', e.target.value)} className="inputBox" type="email" placeholder="Your Email" />
+                      <input
+                        name="email"
+                        form="form"
+                        onChange={(e) => handleFormValue('email', e.target.value)}
+                        value={formValue.email}
+                        className="inputBox"
+                        type="email"
+                        placeholder="Your Email"
+                      />
                     </div>
                     <div className="submitWrapper">
-                      <button className="contact_formSubmit" onClick={handleSubmitForm}>
+                      <button
+                        className="contact_formSubmit"
+                        disabled={isLoading}
+                        style={isLoading ? { cursor: 'not-allowed', opacity: 0.5 }: {}}
+                        form="form"
+                        type="submit"
+                        onClick={handleSubmitForm}
+                      >
                         <p>SUBMIT</p>
                         <ARROW_RIGHT_SMALL />
                       </button>
                     </div>
-
+                    {
+                      !isLoading &&
+                      <p className={`text-xs mt-4 ${isError ? "text-red-800" : "text-green-800" }`}>{resMsg}</p>
+                    }
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
-          }
+          )}
           <div className="contact_subFooter">
             <Link to="/">
-              <StaticImage width={200} src="../../images/nurdsoft-logo-expanded.png" placeholder="blurred" alt="nurdsoft" />
+              <StaticImage
+                width={200}
+                src="../../images/nurdsoft-logo-expanded.png"
+                placeholder="blurred"
+                alt="nurdsoft"
+              />
             </Link>
             <div className="link-wrapper">
               <div className="cursor-pointer contact_footer_links">
@@ -255,12 +352,15 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
             <div className="cursor-pointer contact_footer_links">
               <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
-            <span onClick={handleBackToTop} className="backToTop"><ARROW_RIGHT_SMALL /></span>
+            <span onClick={handleBackToTop} className="backToTop">
+              <ARROW_RIGHT_SMALL />
+            </span>
           </div>
         </div>
       </Wrapper>
     </>
   );
+  
 };
 
 export default Contact;
