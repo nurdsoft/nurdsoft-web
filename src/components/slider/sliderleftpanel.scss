@@ -43,3 +43,13 @@
     flex: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .sliderleftpanel_parentContainer {
+    .left {
+      .sliderleftpanel_title {
+        font-size: rem(38px);
+      }
+    }
+  }
+}

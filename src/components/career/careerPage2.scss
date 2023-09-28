@@ -53,12 +53,16 @@
   .careerPage2_parentContainer{
     .companyPerks {
       .perk {
-        padding: 32px;
+        padding: 20px;
+        flex-direction: row;
+        gap: 76px;
+        align-items: center;
         .perkIcon {
           width: 32px;
         }
         .perkLabel {
           font-size: 32px;
+          line-height: 42px;
         }
       }
     }

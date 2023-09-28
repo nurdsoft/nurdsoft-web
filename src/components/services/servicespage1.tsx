@@ -9,6 +9,7 @@ import {
 import { animated, useSpring } from '@react-spring/web';
 
 import Wrapper from "../wrapper";
+import { navigate } from "gatsby";
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const ServicesPage1 = () => {
@@ -39,10 +40,7 @@ const ServicesPage1 = () => {
   });
 
   const handleHireUs = (e: any) => {
-    e.preventDefault()
-    const contactUs = document.getElementById("contact-us");
-    if(!contactUs) return;
-      contactUs.scrollIntoView({behavior: 'smooth'});
+    navigate('/#contact-us')
   }
 
   return (

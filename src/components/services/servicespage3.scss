@@ -19,7 +19,7 @@
       width: 100%;
       flex-wrap: wrap;
       .servicespage3_titleDiv {
-        background: linear-gradient(92.15deg, #b62bf5 0%, #e62e2c 100%);
+        background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
@@ -146,6 +146,7 @@
 @media screen and (max-width: 768px) {
   .servicespage3_parentContainer {
     .servicespage3_gridContainer {
+      margin-top: rem(80px);
       .servicespage3_leftContainer {
         .servicespage3_titleDiv {
           font-size: rem(42px);

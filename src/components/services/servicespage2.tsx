@@ -269,7 +269,7 @@ const Servicespage2 = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center max-w-[60%] ml-auto mr-auto mt-24">
+        <div className={`flex items-center max-w-[60%] ${!isMobileDevice() ? 'ml-auto mr-auto mt-24' : ''}`}>
           {!isMobileDevice() && sliderCaptions.map((slider: string, index: number) => {
             return (
               <div onClick={() => {handleDotClick(index)}} className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>

@@ -2,12 +2,7 @@
 
 #industryHeroPage_parentContainer {
   height: 100%;
-  overflow-y: hidden;
-  position: absolute;
-  width: 100%;
-  max-width: none;
-  left: 0;
-  top: 0;
+  overflow: hidden;
 }
 
 .industryHeroPage_parentContainer {
@@ -104,8 +99,31 @@
 
 @media screen and (max-width: 768px) {
   .industryHeroPage_parentContainer{ 
+    margin-top: rem(62px);
     .heroText {
       line-height: rem(64px);
+    }
+    .ribbonWrapper {
+      .ribbon {
+        & > div {
+          animation-duration: 16s !important;
+          .carouselRibbon {
+            width: auto;
+            .bulletPoint {
+              margin: 0 16px;
+              .text {
+                font-size: rem(18px);
+                vertical-align: middle;
+              }
+              .circle {
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
     }
   }
   

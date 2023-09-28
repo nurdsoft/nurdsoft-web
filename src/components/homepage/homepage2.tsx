@@ -82,7 +82,7 @@ const Homepage2 = () => {
           pauseOnDotsHover
           pauseOnFocus
           pauseOnHover
-          // autoplay
+          autoplay
           speed={500}
           easing="ease-out"
           appendDots= {dots => <ul>{dots}</ul>}
