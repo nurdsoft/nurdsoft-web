@@ -207,7 +207,7 @@ const AuditTrustPage = () => {
             alt="Audit Trust Image"
           />
         </div>
-        <div className="mt-28 mb-16">
+        <div className="mt-28">
           {/* Assessor Dashboard */}
           <div className="audittrustpage_assessorDashboard">
             <h4 className="audittrustpage_assessorDashboardTitle text-5xl text-center mb-2 white">

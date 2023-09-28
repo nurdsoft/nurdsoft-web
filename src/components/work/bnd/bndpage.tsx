@@ -200,7 +200,7 @@ const Bndpage = () => {
             </div>
           </div>
         </div>
-        <div className="bndpage_implementationBuildDeploy pt-16 pb-8">
+        <div className="bndpage_implementationBuildDeploy pt-16">
           <div className="flex justify-items-start items-start">
             <div>
               <h4 className="bndpage_implementationTitle text-5xl mb-2 white">

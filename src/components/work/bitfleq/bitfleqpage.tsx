@@ -196,7 +196,7 @@ const BitFleqpage = () => {
             </div>
           </div>
         </div>
-        <div className="mt-24 mb-16">
+        <div className="mt-24">
           {/* Art Collection Design */}
           <div className="bitfleqspage_artCollection">
             <h4 className="bitfleqspage_artCollectionTitle text-5xl text-center mb-2 white">

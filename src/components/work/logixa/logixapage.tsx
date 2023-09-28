@@ -151,7 +151,7 @@ const LogixaPage = () => {
             alt="Audit Trust Image"
           />
         </div>
-        <div className="mt-28 mb-16">
+        <div className="mt-28">
           <div className="logixapage_assessorDashboard">
             <h4 className="logixapage_assessorDashboardTitle text-5xl text-center mb-2 white">
               Visual <span className="primary100 ml-2">Design</span> (UI)
