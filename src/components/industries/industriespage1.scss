@@ -175,7 +175,7 @@
         height: calc(100vh - 90px);
         color: var(--off-white-100);
         position: sticky;
-        top: calc(90px - 100vh);
+        top: 0;
 
         .menuItem {
             font-size: rem(17px);
