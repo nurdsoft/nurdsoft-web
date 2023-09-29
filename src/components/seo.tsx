@@ -17,7 +17,7 @@ export default function Seo({description, title, type, image, url}: ISeo) {
       <meta
         key="og:image"
         name="og:image"
-        content={image || `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/og-img.png`}
+        content={image || `https://nurdsoft-static-assets.s3.us-west-2.amazonaws.com/images/nurdsoft.png`}
       />
       <meta key="og:title" property="og:title" content={title || "Nurdsoft"} />
       <meta key="og:type" property="og:type" content={type || "website"} />

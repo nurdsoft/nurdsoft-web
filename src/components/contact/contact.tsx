@@ -48,12 +48,8 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
 
   const budgetOptions = [
     {
-      text: '< $10k',
-      value: '< $10k'
-    },
-    {
-      text: '$10k - $30K',
-      value: '$10k - $30K'
+      text: '$15k - $30K',
+      value: '$15k - $30K'
     },
     {
       text: '$30k - $60K',
