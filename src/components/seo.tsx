@@ -22,11 +22,11 @@ export default function Seo({description, title, type, image, url}: ISeo) {
       <meta key="og:title" property="og:title" content={title || "Nurdsoft"} />
       <meta key="og:type" property="og:type" content={type || "website"} />
       <meta key="title" property="title" content={title || "Nurdsoft"} />
-      <meta name="description" content={description || "Software Engineering Studio"} />
+      <meta name="description" content={description || "Software Development Studio"} />
       <meta
         key="og:description"
         property="og:description"
-        content={description || "Software Engineering Studio"}
+        content={description || "Software Development Studio"}
       />
       <meta
         key="og:url"

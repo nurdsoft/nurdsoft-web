@@ -60,10 +60,10 @@ const AboutPage1 = () => {
         </h1>
         <div className="companyDescription">
           <p className="companyDescriptionText">
-            Nurdsoft is a software engineering studio specializing in bespoke software 
+            Nurdsoft is a software development studio specializing in bespoke software 
             for businesses of all sizes including early stage startups. It was formed by 
             like minded entrepreneurs realizing the need for customized software across 
-            industries to build a first in its class software engineering studio.
+            industries to build a first in its class software development studio.
           </p>
         </div>
 

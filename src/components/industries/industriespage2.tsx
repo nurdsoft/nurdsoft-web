@@ -1,11 +1,13 @@
-import React, { useRef } from "react";
 import "./industriespage2.scss";
-import Wrapper from "../wrapper";
-import Client from "../../images/client.png";
-import Logo from "../../images/Logo.svg";
+
+import React, { useRef } from "react";
 import { animated, useSpring } from '@react-spring/web';
-import { IClientFeedback } from "../../types/carouselTypes";
+
+import Client from "../../images/client.png";
 import ClientFeedbackCarousel from "../common/clientFeedbackCarousel";
+import { IClientFeedback } from "../../types/carouselTypes";
+import Logo from "../../images/Logo.svg";
+import Wrapper from "../wrapper";
 import useIntersectionObserver from "../common/intersectionObserver";
 
 const Industriespage2 = () => {
@@ -30,7 +32,7 @@ const Industriespage2 = () => {
     {
       clientImg: Client,
       clientResponse:
-        "Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups.",
+        "Nurdsoft is a software development studio specializing in bespoke software for businesses of all sizes including early stage startups.",
       clientName: "Client Name",
       clientDesignation: "Designation",
       clientCompanyLogo: Logo,
@@ -38,7 +40,7 @@ const Industriespage2 = () => {
     {
       clientImg: Client,
       clientResponse:
-        "Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups.",
+        "Nurdsoft is a software development studio specializing in bespoke software for businesses of all sizes including early stage startups.",
       clientName: "Client Name",
       clientDesignation: "Designation",
       clientCompanyLogo: Logo,

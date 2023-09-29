@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
   },
   siteMetadata: {
     title: `Nurdsoft-`,
-    description: `SOFTWARE ENGINEERING STUDIO`,
+    description: `SOFTWARE DEVELOPMENT STUDIO`,
     author: `Nurdsoft (Prakhar Dixit)`,
     siteUrl: `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/`,
   },
