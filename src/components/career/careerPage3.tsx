@@ -20,7 +20,7 @@ const CareerPage3 = () => {
       >
         <div className="careerPage3_headingWrapper">
           <h1 className="careerPage3_heading">
-            Open Position
+            Open Positions
           </h1>
         </div>
         <div className="careerPage3_cardView_wrapper">

@@ -1,8 +1,8 @@
 @import "~sass-rem";
 
 #industryHeroPage_parentContainer {
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;
+  height: auto;
 }
 
 .industryHeroPage_parentContainer {
@@ -12,6 +12,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url('../../images/industryHeroImg.svg');
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: top;
 
   .heroText {
     letter-spacing: 0.04em;
@@ -24,8 +28,15 @@
     width: 100%;
   }
 
+  .heroImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
   .ribbonWrapper {
-    margin-top: auto;
+    margin-top: -40px;
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
@@ -100,6 +111,18 @@
 @keyframes scrollTextRev {
   from { transform: translateX(-2680px); }
   to   { transform: translateX(-25px); }
+}
+
+@media screen and (max-width: 966px) {
+  .industryHeroPage_parentContainer{
+    background-image: none;
+    .heroImg {
+      opacity: 1;
+    }
+    .ribbonWrapper {
+      margin-top: 40px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

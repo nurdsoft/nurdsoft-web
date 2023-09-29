@@ -3,14 +3,13 @@ import './aboutPage2.scss';
 import { BADGE_ICONS, CLIENT_STATISF_ICONS, DELIVERED_PROJ_ICONS } from '../../icons';
 import React, { useMemo } from 'react';
 
-import Button from '../button';
 import CounterBox from './CounterBox';
 import Wrapper from '../wrapper';
 
 const AboutPage2 = () => {
   const statsData = [
     {
-      number: 93,
+      number: 100,
       label: "Client Satisfaction Ratio",
       specialChar: '%',
       icon: <CLIENT_STATISF_ICONS />
@@ -22,7 +21,7 @@ const AboutPage2 = () => {
       icon: <DELIVERED_PROJ_ICONS />
     },
     {
-      number: 12,
+      number: 20,
       label: "Years of Expertise",
       specialChar: '+',
       icon: <BADGE_ICONS />

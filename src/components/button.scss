@@ -20,6 +20,9 @@
       .circleColorPrimary {
         width: 100%;
       }
+      .buttonTextTransparent {
+        color: var(--primary-100);
+      }
     }
 
     .buttonText {
@@ -39,7 +42,7 @@
     }
 
     .buttonTextTransparent {
-      color: var(--primary-100);
+      color: var(--off-white-100);
     }
 
     .circle {

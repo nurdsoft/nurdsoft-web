@@ -128,7 +128,7 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
 
     let res;
     try{
-      res = await fetch("https://getform.io/f/e505557b-ee3f-4281-9be3-5aa539432bfe", {
+      res = await fetch("https://getform.io/f/4edb0f6b-0271-4728-821a-41f9704b98f1", {
           method: "POST",
           body: formVal,
           headers: {
@@ -197,9 +197,22 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                         placeholder="Your Name"
                       />
                     </div>
+
+                    <div className="contact_formField">
+                      <p className="label">Contact me back at</p>
+                      <input
+                        name="email"
+                        form="form"
+                        onChange={(e) => handleFormValue('email', e.target.value)}
+                        value={formValue.email}
+                        className="inputBox"
+                        type="email"
+                        placeholder="Your Email"
+                      />
+                    </div>
   
                     <div className="contact_formField">
-                      <p className="label">I am looking to build</p>
+                      <p className="label">I am looking to build a</p>
                       <div className="optionWrapper">
                         {platformOptions.map((platform, index) => (
                           <button
@@ -264,18 +277,6 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                       />
                     </div>
   
-                    <div className="contact_formField">
-                      <p className="label">Contact me back at</p>
-                      <input
-                        name="email"
-                        form="form"
-                        onChange={(e) => handleFormValue('email', e.target.value)}
-                        value={formValue.email}
-                        className="inputBox"
-                        type="email"
-                        placeholder="Your Email"
-                      />
-                    </div>
                     <div className="submitWrapper">
                       <button
                         className="contact_formSubmit"

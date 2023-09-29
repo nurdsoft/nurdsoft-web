@@ -1,6 +1,7 @@
 import './industriesheropage.scss'
 
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import Wrapper from '../wrapper'
 
 const IndustriesHeroPage = () => {
@@ -21,8 +22,15 @@ const IndustriesHeroPage = () => {
         <h1 className='heroText'>
           Software <span className='primary100'>solutions </span> <br/> for every sector
         </h1>
+        <div className='heroImg'>
+          <StaticImage
+            src="../../images/industryHeroImg.svg"
+            quality={100}
+            alt="Industry hero bg"
+          />
+        </div>
         <div className='ribbonWrapper'>
-        <div className='ribbon'>
+          <div className='ribbon'>
             <div>
               <div className='carouselRibbon'>
                 {
