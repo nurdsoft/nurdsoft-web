@@ -9,14 +9,9 @@ import HeroOptimizeIcon from '../../images/heroOptimizeIcon.svg'
 import HeroSettingsIcon from '../../images/heroSettingsIcon.svg'
 import HeroSyncIcon from '../../images/heroSyncIcon.svg'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import Wrapper from '../wrapper'
 
 const HeroSection = () => {
-
-  if(typeof window === 'undefined' || typeof document === 'undefined') return <></>
-
-  const [hideScrollBtn, setHideScrollBtn] = useState(false)
 
   const fadingChild = [
     {
@@ -53,27 +48,6 @@ const HeroSection = () => {
     </div>
   )
 
-  const handleScrollUp = () => {
-    const wraperHeight = document.getElementById('herosection_parentContainer')?.clientHeight || 0
-    document.getElementById('home_scroller')?.scrollTo({top: wraperHeight, behavior: 'smooth'})
-  }
-
-  const handleHideScrollBtn = (e: Event) => {
-    const scrollTop = (e.target as HTMLElement).scrollTop
-    if(scrollTop > 5){
-      setHideScrollBtn(true)
-    }else{
-      setHideScrollBtn(false)
-    }
-  }
-
-  useEffect(() => {
-    document.getElementById('home_scroller')?.addEventListener('scroll', handleHideScrollBtn)
-    return () => {
-      document.getElementById('home_scroller')?.removeEventListener('scroll', handleHideScrollBtn)
-    }
-  }, [])
-
   return (
     <Wrapper id='herosection_parentContainer'>
       <div className="herosection_parentContainer">
@@ -94,15 +68,7 @@ const HeroSection = () => {
           <Link to='/#contact-us'>
             <Button buttonText='SCHEDULE CONSULTATION' />
           </Link>
-          {
-            !hideScrollBtn &&
-            <div onClick={handleScrollUp} className='scroll-bottom'>
-              <div className='icon'>
-                <StaticImage placeholder="blurred" src="../../images/scrollDown.svg" className='scrollArrow' alt='scrollArrow' />
-              </div>
-              <p>SCROLL DOWN</p>
-            </div>
-          }
+          
         </div>
       </div>
     </Wrapper>

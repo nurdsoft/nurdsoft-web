@@ -4,11 +4,12 @@
   // pointer-events: none;
   background-repeat: no-repeat;
   background-size: cover;
+  height: max-content;
 }
 
 .herosection_parentContainer {
 
-  height: calc(100vh - 91px);
+  height: max-content;
   color: var(--off-white-100);
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,7 @@
   .hero_text {
     margin-top: rem(200px);
     margin-bottom: auto;
-    height: 100%;
+    height: max-content;
     position: relative;
     width: 100%;
 
