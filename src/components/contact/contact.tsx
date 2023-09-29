@@ -231,19 +231,6 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                       </div>
                     </div>
   
-                    <div className="contact_formField column">
-                      <p className="label">What can we help you with?</p>
-                      <input
-                        name="message"
-                        form="form"
-                        onChange={(e) => handleFormValue('message', e.target.value)}
-                        value={formValue.message}
-                        className="inputBox"
-                        type="text"
-                        placeholder="Type your message here..."
-                      />
-                    </div>
-  
                     <div className="contact_formField">
                       <p className="label">My budget is</p>
                       <div className="optionWrapper">
@@ -270,6 +257,19 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                         type="hidden"
                         name="_gotcha"
                         style={{ display: 'none !important' }}
+                      />
+                    </div>
+
+                    <div className="contact_formField column">
+                      <p className="label">What can Nurdsoft help you with?</p>
+                      <input
+                        name="message"
+                        form="form"
+                        onChange={(e) => handleFormValue('message', e.target.value)}
+                        value={formValue.message}
+                        className="inputBox"
+                        type="text"
+                        placeholder="Type your message here..."
                       />
                     </div>
   
