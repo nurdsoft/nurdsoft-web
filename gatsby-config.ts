@@ -5,10 +5,10 @@ const config: GatsbyConfig = {
     DEV_SSR: true,
   },
   siteMetadata: {
-    title: `Nurdsoft-`,
+    title: `Nurdsoft`,
     description: `SOFTWARE DEVELOPMENT STUDIO`,
-    author: `Nurdsoft (Prakhar Dixit)`,
-    siteUrl: `https://nurdsoft-web-new-prakhar-ira-main.buildndeploy.co/`,
+    author: `Nurdsoft`,
+    siteUrl: `https://nurdsoft.co/`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -41,7 +41,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.nurdsoft-web-new-prakhar-ira-main.buildndeploy.co`,
+        siteUrl: `https://www.nurdsoft.co`,
       },
     },
     {
