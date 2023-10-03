@@ -3,7 +3,7 @@
 .homepage4_parentContainer {
   padding: 0 rem(25px) rem(30px) rem(25px);
   overflow: hidden;
-  h4.homepage4_servicesHeading {
+  .homepage4_servicesHeading {
     text-align: center;
     margin: rem(50px) 0;
     font-weight: 700;
@@ -47,7 +47,7 @@
       transition: all 0.4s ease-out;
       margin-top: 0;
       width: 100%;
-      h4.homepage4_heading {
+      .homepage4_heading {
         font-size: rem(30px);
         color: var(--white);
         font-weight: 700;

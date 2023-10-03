@@ -27,7 +27,7 @@ const SliderLeftPanel = ({
     <div className="sliderleftpanel_parentContainer">
       <div className="left">
         <div className="sliderleftpanel_headerLink">{headerLinkText}</div>
-        <h4 className="sliderleftpanel_title">{title}</h4>
+        <p className="sliderleftpanel_title">{title}</p>
         <div className="sliderleftpanel_description">
           {description}
         </div>
