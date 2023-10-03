@@ -65,9 +65,9 @@
         padding: 16px;
         // background-color: var(--primary-100);
         margin-left: -25px;
-        animation: scrollText 20s infinite linear;
+        animation: scrollText 40s infinite linear;
         &.transparent {
-          animation: scrollTextRev 20s infinite linear;
+          animation: scrollTextRev 40s infinite linear;
           // background-color: var(--dark-gray-100);
         }
         .carouselRibbon {
