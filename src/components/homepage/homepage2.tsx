@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import * as React from "react";
 
-import AuditTrustImg from '../../images/slider_dashboard.png';
-import BitfleqImg from '../../images/showcase_nft.png';
-import BndImg from '../../images/simplify_work.png';
-import LogixaImg from '../../images/logixa.png';
+import AuditTrustImg from '../../images/slider_dashboard.webp'
+import BitfleqImg from '../../images/showcase_nft.webp';
+import BndImg from '../../images/simplify_work.webp';
+import LogixaImg from '../../images/logixa.webp';
 import Slider from "react-slick";
 import SliderLeftPanel from "../slider/sliderleftpanel";
 import Wrapper from "../wrapper";

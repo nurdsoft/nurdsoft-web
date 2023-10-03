@@ -1,9 +1,9 @@
 import "./workpage1.scss";
 
-import AuditTrust from "../../images/slider_dashboard.png";
-import BitFleq from "../../images/showcase_nft.png";
-import BnD from "../../images/simplify_work.png";
-import Logixa from "../../images/logixa.png";
+import AuditTrust from "../../images/slider_dashboard.webp";
+import BitFleq from "../../images/showcase_nft.webp";
+import BnD from "../../images/simplify_work.webp";
+import Logixa from "../../images/logixa.webp";
 import React from "react";
 import StackableCard from "./stackablecard";
 import Wrapper from "../wrapper";
