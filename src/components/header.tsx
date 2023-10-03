@@ -26,7 +26,7 @@ const Header = () => {
           <div className="boxContainer">
             <div className="headerContainer">
               <div>
-                <Link to="/">
+                <Link to="/" aria-label="Home">
                   <NURDSOFT_SMALL_ICON height="40" width="40" className="ml-5" />
                 </Link>
               </div>

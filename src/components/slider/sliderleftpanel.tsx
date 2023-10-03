@@ -34,7 +34,7 @@ const SliderLeftPanel = ({
         <Button buttonText={"VIEW PROJECT"} onClick={handleClick} className="mt-12" />
       </div>
       <div className="right">
-        <img src={img} alt="carouselImg" />
+        <img src={img} alt="carouselImg" width={573} height={337} />
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ export default function Seo({description, title, type, image, url}: ISeo) {
 
   return (
     <>
+      <html lang="en" />
       <meta charSet="utf-8" />
       <title>{title || "Nurdsoft"}</title>
       <meta

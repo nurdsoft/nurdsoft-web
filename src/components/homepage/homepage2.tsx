@@ -72,7 +72,7 @@ const Homepage2 = () => {
   return(
     <Wrapper id="homepage2_parentContainer">
       <div className="homepage2_parentContainer">
-        <h4 className="homepage2Heading">Case Studies</h4>
+        <p className="homepage2Heading">Case Studies</p>
         <Slider
           dots={true}
           infinite={true}

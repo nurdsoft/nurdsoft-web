@@ -34,8 +34,8 @@ const IndustriesHeroPage = () => {
             <div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -44,8 +44,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -54,8 +54,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -64,8 +64,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -74,8 +74,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -84,8 +84,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -98,8 +98,8 @@ const IndustriesHeroPage = () => {
             <div className='transparent'>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -108,8 +108,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -118,8 +118,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -128,8 +128,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -138,8 +138,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>
@@ -148,8 +148,8 @@ const IndustriesHeroPage = () => {
               </div>
               <div className='carouselRibbon'>
                 {
-                  data.map((industry, _) => (
-                    <div className='bulletPoint'>
+                  data.map((industry, index) => (
+                    <div className='bulletPoint' key={index}>
                       <div className='circle'></div>
                       <div className='text'>{industry}</div>
                     </div>

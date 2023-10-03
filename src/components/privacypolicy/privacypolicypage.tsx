@@ -8,7 +8,7 @@ import Select from "react-select";
 import Wrapper from "../wrapper";
 
 const PrivacyPolicyPage = () => {
-  if (typeof window === "undefined") return <></>;
+  const windowLocal = typeof window !== "undefined" ? window : {location: {hash: ""}}
 
   const [emailCopied, setEmailCopied] = React.useState(false)
 
@@ -17,7 +17,7 @@ const PrivacyPolicyPage = () => {
     setEmailCopied(true)
   }
 
-  const [hash, setHash] = useState(window.location.hash);
+  const [hash, setHash] = useState(windowLocal.location.hash);
   let [preventHashChange, setPreventHashChange] = useState(false);
   const [selectedOption, setSelectedOption] = useState<any>({
     label: "Service",
@@ -247,7 +247,7 @@ const PrivacyPolicyPage = () => {
     setPreventHashChange(true);
     setHash(window.location.hash);
     setPreventHashChange(false);
-  }, [window.location.hash]);
+  }, [windowLocal.location.hash]);
 
   const onDropdownChange = (option: { label: string; id: string }): any => {
     setSelectedOption(option);
@@ -324,9 +324,9 @@ const PrivacyPolicyPage = () => {
                     >
                       {policy.title}
                     </h4>
-                    <p className="text-xl offGray mt-12 font-normal">
+                    <div className="text-xl offGray mt-12 font-normal">
                       {policy.description}
-                    </p>
+                    </div>
                   </React.Fragment>
                 );
               }
@@ -611,12 +611,12 @@ const PrivacyPolicyPage = () => {
               <p className="text-xl offGray mt-8">
                 If you have any questions about this Privacy Policy, please
                 contact us:
-                <p
+                <span
                   className="primary100 underline cursor-pointer"
                   onClick={compyEmail}
                 >
-                  hello@nurdsoft.co
-                </p>
+                  {" "}hello@nurdsoft.co
+                </span>
                 {
                   emailCopied &&
                   <p className='text-xs mt-2 primary100'>* email copied to clipboard</p>
