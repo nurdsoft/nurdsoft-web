@@ -9,7 +9,7 @@ const Homepage3 = () => {
   return (
     <Wrapper>
       <div className="homepage3_parentContainer">
-        <h4 className="trustedHeading">Trusted By</h4>
+        <p className="trustedHeading">Trusted By</p>
         <div className="gridContainer">
           <div className="boxContainer item1">
             <StaticImage

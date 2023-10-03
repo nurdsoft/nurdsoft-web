@@ -63,7 +63,7 @@ const LogixaPage = () => {
         <div className="logixapage_imageContainer1 flex justify-center mt-12">
           <StaticImage
             className="logixapage_bndImage rounded-xl"
-            src={"../../../images/logixa.png"}
+            src={"../../../images/logixa.webp"}
             alt="Logixa"
             width={1000}
           />

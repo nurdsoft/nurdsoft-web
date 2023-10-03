@@ -11,17 +11,17 @@ import Homepage3 from "../homepage/homepage3";
 import Homepage4 from "../homepage/homepage4";
 
 const HomeLayout = () => {
-  if(typeof window === "undefined") return <></>;
-
+  const windowLocal = typeof window !== "undefined" ? window : {location: {hash: ""}}
   
   useEffect(() => {
-    const hash = window.location.hash
+    const hash = windowLocal.location.hash
     if(hash === "#contact-us"){
       const contactUs = document.getElementById("contact-us");
       if(!contactUs) return;
       contactUs.scrollIntoView({ behavior: "smooth" });
     }
-  }, [window?.location?.hash])
+  }, [windowLocal?.location?.hash])
+  
   return (
     <div className="home_scroller" id="home_scroller">
       <HeroSection />

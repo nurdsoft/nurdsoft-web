@@ -27,14 +27,14 @@ const SliderLeftPanel = ({
     <div className="sliderleftpanel_parentContainer">
       <div className="left">
         <div className="sliderleftpanel_headerLink">{headerLinkText}</div>
-        <h4 className="sliderleftpanel_title">{title}</h4>
+        <p className="sliderleftpanel_title">{title}</p>
         <div className="sliderleftpanel_description">
           {description}
         </div>
         <Button buttonText={"VIEW PROJECT"} onClick={handleClick} className="mt-12" />
       </div>
       <div className="right">
-        <img src={img} alt="carouselImg" />
+        <img src={img} alt="carouselImg" width={573} height={337} />
       </div>
     </div>
   );

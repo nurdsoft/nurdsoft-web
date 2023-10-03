@@ -48,7 +48,7 @@ const Homepage4 = () => {
   return (
     <Wrapper>
       <div className="homepage4_parentContainer">
-        <h4 className="homepage4_servicesHeading">Expertise</h4>
+        <p className="homepage4_servicesHeading">Expertise</p>
         <div>
           {servicesContainer.map((serviceBlock: Record<string, any>, index: number) => {
             return (
@@ -63,7 +63,7 @@ const Homepage4 = () => {
                   </div>
                 </div>
                 <div className="homepage4_textContainer">
-                  <h4 className="homepage4_heading">{serviceBlock.title}</h4>
+                  <p className="homepage4_heading">{serviceBlock.title}</p>
                   <p className="homepage4_description">
                     {serviceBlock.description}
                   </p>

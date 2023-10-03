@@ -26,6 +26,8 @@ const Homepage1 = () => {
             <img
               src={HandInHand}
               alt="Think About Image"
+              width={1230}
+              height={564}
             />
           </div>
         </div>

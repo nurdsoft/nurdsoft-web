@@ -38,8 +38,8 @@ const HeroSection = () => {
   const FadingChildren = () => (
     <div id='first'>
       {
-        fadingChild.map(({text, img}, _) => (
-          <h1>
+        fadingChild.map(({text, img}, index) => (
+          <h1 key={index}>
             {text}
             <span><img src={img} alt='HeroSettingsIcons' /></span>
           </h1>

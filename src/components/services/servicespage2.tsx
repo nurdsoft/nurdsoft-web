@@ -272,7 +272,7 @@ const Servicespage2 = () => {
         <div className={`flex items-center max-w-[60%] ${!isMobileDevice() ? 'ml-auto mr-auto mt-24' : ''}`}>
           {!isMobileDevice() && sliderCaptions.map((slider: string, index: number) => {
             return (
-              <div onClick={() => {handleDotClick(index)}} className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>
+              <div onClick={() => {handleDotClick(index)}} key={index} className={`servicespage2_dotContainer flex ${sliderCaptions.length - 1 !== index && "flex-1"} items-center gap-4 mt-8`}>
                 <span
                   className={`servicespage2_dotBorder ${
                     currentActiveItem === index ? "servicespage2_selectedDotBorder" : ""
