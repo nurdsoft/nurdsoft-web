@@ -12,7 +12,7 @@ import America from '../../images/america.png';
 import Brazil from '../../images/brazil.png';
 import India from '../../images/india.png';
 import Philippines from '../../images/phillipines.png';
-import Russia from '../../images/russia.png';
+import Ukraine from '../../images/ukraine.png';
 import Wrapper from '../wrapper';
 import geoUrl from './features.json'
 
@@ -29,9 +29,9 @@ const markers: MapMarker[] = [
     flag: India,
   },
   {
-    name: "Russia",
-    coordinates: [97.027175, 61.819707],
-    flag: Russia,
+    name: "Ukraine",
+    coordinates: [31.228354, 49.208863],
+    flag: Ukraine,
   },
   {
     name: "Philippines",
@@ -97,6 +97,9 @@ const AboutPage3 = () => {
                       hover: { outline: "none" },
                       pressed: { outline: "none" },
                     }}
+                    stroke="#f2f3ff20"
+                    strokeWidth="0.3"
+                    className="focus:outline-none"
                   />
                 );
               })
