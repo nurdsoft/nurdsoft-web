@@ -15,7 +15,7 @@ const AboutPage2 = () => {
       icon: <CLIENT_STATISF_ICONS />
     },
     {
-      number: 64,
+      number: 70,
       label: "Delivered Projects",
       specialChar: '+',
       icon: <DELIVERED_PROJ_ICONS />
