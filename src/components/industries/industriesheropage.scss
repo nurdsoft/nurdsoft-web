@@ -63,19 +63,17 @@
         width: max-content;
         gap: 48px;
         padding: 16px;
-        // background-color: var(--primary-100);
         margin-left: -25px;
         animation: scrollText 40s infinite linear;
         &.transparent {
           animation: scrollTextRev 40s infinite linear;
-          // background-color: var(--dark-gray-100);
         }
         .carouselRibbon {
           display: inline-block;
           align-items: center;
           justify-content: center;
           gap: 48px;
-          width: 2608px;
+          width: 2586px;
           .bulletPoint {
             display: inline-block;
             align-items: center;
@@ -83,10 +81,20 @@
             .circle {
               width: 24px;
               height: 24px;
-              background-color: var(--off-white-100);
+              position: relative;
               border-radius: 24px;
               display: inline-block;
-              margin: 0px 20px;
+              margin: 0px 28px 0px 12px;
+
+              svg {
+                height: 150%;
+                width: auto;
+                position: absolute;
+                top: -25%;
+                left: 0;
+                right: 0;
+              }
+
             }
             .text {
               font-size: 32px;

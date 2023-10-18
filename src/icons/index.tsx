@@ -2260,3 +2260,160 @@ export const BADGE_ICONS = (props: ExtendedSvgProps) => {
   )
 }
 
+export const INDUSTRY_MEDIAENT_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3884_9383)">
+        <path d="M6 18C6 16.9391 6.42143 15.9217 7.17157 15.1716C7.92172 14.4214 8.93913 14 10 14H38C39.0609 14 40.0783 14.4214 40.8284 15.1716C41.5786 15.9217 42 16.9391 42 18V36C42 37.0609 41.5786 38.0783 40.8284 38.8284C40.0783 39.5786 39.0609 40 38 40H10C8.93913 40 7.92172 39.5786 7.17157 38.8284C6.42143 38.0783 6 37.0609 6 36V18Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M32 6L24 14L16 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M30 14V40" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M36 30V30.02" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M36 24V24.02" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3884_9383">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_SPORTS_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3884_9392)">
+        <path d="M30 18L18 30" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 24L24 28" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24 20L28 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 42C16 39.3478 14.9464 36.8043 13.0711 34.9289C11.1957 33.0536 8.65216 32 6 32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M32 6C17.64 6 6 17.64 6 32C6 34.6522 7.05357 37.1957 8.92893 39.0711C10.8043 40.9464 13.3478 42 16 42C30.36 42 42 30.36 42 16C42 13.3478 40.9464 10.8043 39.0711 8.92893C37.1957 7.05357 34.6522 6 32 6Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M32 6C32 8.65216 33.0536 11.1957 34.9289 13.0711C36.8043 14.9464 39.3478 16 42 16" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3884_9392">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_LOGISTIC_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3884_9402)">
+        <path d="M10 34C10 35.0609 10.4214 36.0783 11.1716 36.8284C11.9217 37.5786 12.9391 38 14 38C15.0609 38 16.0783 37.5786 16.8284 36.8284C17.5786 36.0783 18 35.0609 18 34C18 32.9391 17.5786 31.9217 16.8284 31.1716C16.0783 30.4214 15.0609 30 14 30C12.9391 30 11.9217 30.4214 11.1716 31.1716C10.4214 31.9217 10 32.9391 10 34Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M30 34C30 35.0609 30.4214 36.0783 31.1716 36.8284C31.9217 37.5786 32.9391 38 34 38C35.0609 38 36.0783 37.5786 36.8284 36.8284C37.5786 36.0783 38 35.0609 38 34C38 32.9391 37.5786 31.9217 36.8284 31.1716C36.0783 30.4214 35.0609 30 34 30C32.9391 30 31.9217 30.4214 31.1716 31.1716C30.4214 31.9217 30 32.9391 30 34Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 34H6V12C6 11.4696 6.21071 10.9609 6.58579 10.5858C6.96086 10.2107 7.46957 10 8 10H26V34M18 34H30M38 34H42V22M42 22H26M42 22L36 12H26" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3884_9402">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_HEALTHCARE_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3841_32016)">
+        <path d="M12 8H10C8.93913 8 7.92172 8.42143 7.17157 9.17157C6.42143 9.92172 6 10.9391 6 12V19C6 21.9174 7.15893 24.7153 9.22183 26.7782C11.2847 28.8411 14.0826 30 17 30C19.9174 30 22.7153 28.8411 24.7782 26.7782C26.8411 24.7153 28 21.9174 28 19V12C28 10.9391 27.5786 9.92172 26.8284 9.17157C26.0783 8.42143 25.0609 8 24 8H22" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 30C16 31.5759 16.3104 33.1363 16.9134 34.5922C17.5165 36.0481 18.4004 37.371 19.5147 38.4853C20.629 39.5996 21.9519 40.4835 23.4078 41.0866C24.8637 41.6896 26.4241 42 28 42C29.5759 42 31.1363 41.6896 32.5922 41.0866C34.0481 40.4835 35.371 39.5996 36.4853 38.4853C37.5996 37.371 38.4835 36.0481 39.0866 34.5922C39.6896 33.1363 40 31.5759 40 30V24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 6V10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 6V10" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M36 20C36 21.0609 36.4214 22.0783 37.1716 22.8284C37.9217 23.5786 38.9391 24 40 24C41.0609 24 42.0783 23.5786 42.8284 22.8284C43.5786 22.0783 44 21.0609 44 20C44 18.9391 43.5786 17.9217 42.8284 17.1716C42.0783 16.4214 41.0609 16 40 16C38.9391 16 37.9217 16.4214 37.1716 17.1716C36.4214 17.9217 36 18.9391 36 20Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3841_32016">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_FINTECH_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3841_32015)">
+        <path d="M34 16V10C34 9.46957 33.7893 8.96086 33.4142 8.58579C33.0391 8.21071 32.5304 8 32 8H12C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12M8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16H36C36.5304 16 37.0391 16.2107 37.4142 16.5858C37.7893 16.9609 38 17.4696 38 18V24M8 12V36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40H36C36.5304 40 37.0391 39.7893 37.4142 39.4142C37.7893 39.0391 38 38.5304 38 38V32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M40 24V32H32C30.9391 32 29.9217 31.5786 29.1716 30.8284C28.4214 30.0783 28 29.0609 28 28C28 26.9391 28.4214 25.9217 29.1716 25.1716C29.9217 24.4214 30.9391 24 32 24H40Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3841_32015">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_RETAIL_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3841_32014)">
+        <path d="M6 42H42" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 14V16C6 17.5913 6.63214 19.1174 7.75736 20.2426C8.88258 21.3679 10.4087 22 12 22C13.5913 22 15.1174 21.3679 16.2426 20.2426C17.3679 19.1174 18 17.5913 18 16M6 14H42M6 14L10 6H38L42 14M18 16V14M18 16C18 17.5913 18.6321 19.1174 19.7574 20.2426C20.8826 21.3679 22.4087 22 24 22C25.5913 22 27.1174 21.3679 28.2426 20.2426C29.3679 19.1174 30 17.5913 30 16M30 16V14M30 16C30 17.5913 30.6321 19.1174 31.7574 20.2426C32.8826 21.3679 34.4087 22 36 22C37.5913 22 39.1174 21.3679 40.2426 20.2426C41.3679 19.1174 42 17.5913 42 16V14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 42.0002V21.7002" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M38 42.0002V21.7002" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 42V34C18 32.9391 18.4214 31.9217 19.1716 31.1716C19.9217 30.4214 20.9391 30 22 30H26C27.0609 30 28.0783 30.4214 28.8284 31.1716C29.5786 31.9217 30 32.9391 30 34V42" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3841_32014">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_GAMING_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3841_32013)">
+        <path d="M24.0005 10H31.0005C33.6526 10 36.1962 11.0536 38.0715 12.9289C39.9469 14.8043 41.0005 17.3478 41.0005 20C41.0005 22.6522 39.9469 25.1957 38.0715 27.0711C36.1962 28.9464 33.6526 30 31.0005 30H20.0005L11.9705 38.454C11.2836 39.1772 10.3803 39.6575 9.39665 39.8226C8.41301 39.9877 7.40237 39.8287 6.517 39.3694C5.63164 38.9101 4.91954 38.1755 4.488 37.2763C4.05647 36.3771 3.92889 35.362 4.12448 34.384L7.39248 18.038C7.8461 15.7709 9.07126 13.7311 10.8595 12.2656C12.6477 10.8001 14.8885 9.99945 17.2005 10H24.0005Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28 29.9996L36.14 38.5676C36.8255 39.2889 37.7264 39.7685 38.7076 39.9344C39.6888 40.1003 40.6973 39.9435 41.5818 39.4876C42.4664 39.0317 43.1792 38.3013 43.6134 37.4059C44.0476 36.5105 44.1797 35.4985 43.99 34.5216L40.79 18.0576" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 18V22" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 20H18" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28 20H32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3841_32013">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_HOSPLIES_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3841_32012)">
+        <path d="M17 20C16.2044 20 15.4413 19.6839 14.8787 19.1213C14.3161 18.5587 14 17.7956 14 17C14 14.0826 15.1589 11.2847 17.2218 9.22183C19.2847 7.15893 22.0826 6 25 6C27.9174 6 30.7153 7.15893 32.7782 9.22183C34.8411 11.2847 36 14.0826 36 17V38C36 39.0609 35.5786 40.0783 34.8284 40.8284C34.0783 41.5786 33.0609 42 32 42H18C16.9391 42 15.9217 41.5786 15.1716 40.8284C14.4214 40.0783 14 39.0609 14 38V34C14 31.24 15.42 29.112 17.76 27.65L26.608 22.12C28.718 20.8 30 19.488 30 17C30 15.6739 29.4732 14.4021 28.5355 13.4645C27.5979 12.5268 26.3261 12 25 12C23.6739 12 22.4021 12.5268 21.4645 13.4645C20.5268 14.4021 20 15.6739 20 17C20 17.7956 19.6839 18.5587 19.1213 19.1213C18.5587 19.6839 17.7956 20 17 20Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3841_32012">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+export const INDUSTRY_REALESTATE_ICON = (props: ExtendedSvgProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" {...props}>
+      <g clip-path="url(#clip0_3847_32309)">
+        <path d="M6 42H42" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 42V14L26 6V42" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M38 42V22L26 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 18V18.02" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 24V24.02" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 30V30.02" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 36V36.02" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_3847_32309">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+
