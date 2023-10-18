@@ -3,6 +3,7 @@ import './industriesheropage.scss'
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Wrapper from '../wrapper'
+import { INDUSTRY_FINTECH_ICON, INDUSTRY_GAMING_ICON, INDUSTRY_HEALTHCARE_ICON, INDUSTRY_HOSPLIES_ICON, INDUSTRY_LOGISTIC_ICON, INDUSTRY_MEDIAENT_ICON, INDUSTRY_REALESTATE_ICON, INDUSTRY_RETAIL_ICON, INDUSTRY_SPORTS_ICON } from '../../icons'
 
 const IndustriesHeroPage = () => {
   const data = [
@@ -15,6 +16,17 @@ const IndustriesHeroPage = () => {
     "Gaming",
     "Hospitality & Leisure",
     "Real Estate"
+  ]
+  const icons = [
+    <INDUSTRY_HEALTHCARE_ICON />,
+    <INDUSTRY_MEDIAENT_ICON />,
+    <INDUSTRY_SPORTS_ICON />,
+    <INDUSTRY_LOGISTIC_ICON />,
+    <INDUSTRY_FINTECH_ICON />,
+    <INDUSTRY_RETAIL_ICON />,
+    <INDUSTRY_GAMING_ICON />,
+    <INDUSTRY_HOSPLIES_ICON />,
+    <INDUSTRY_REALESTATE_ICON />,
   ]
   return (
     <Wrapper id="industryHeroPage_parentContainer">
@@ -36,7 +48,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -46,7 +58,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -56,7 +68,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -66,7 +78,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -76,7 +88,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -86,7 +98,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -100,7 +112,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -110,7 +122,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -120,7 +132,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -130,7 +142,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -140,7 +152,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
@@ -150,7 +162,7 @@ const IndustriesHeroPage = () => {
                 {
                   data.map((industry, index) => (
                     <div className='bulletPoint' key={index}>
-                      <div className='circle'></div>
+                      <div className='circle'>{icons[index]}</div>
                       <div className='text'>{industry}</div>
                     </div>
                   ))
