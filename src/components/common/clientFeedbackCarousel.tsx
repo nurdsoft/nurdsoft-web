@@ -33,17 +33,18 @@ const CustomIndicator = (
 };
 
 const ClientFeedbackCarousel = ({ data }: IClientCarouselData) => {
-
-  const previousSlide = useRef(0)
+  const previousSlide = useRef(0);
 
   const animateCurrentSlide = (index: any) => {
-    const currentImage = document.getElementById(`slideClientImg${index}`)
-    const previousImage = document.getElementById(`slideClientImg${previousSlide.current}`)
-    if(!currentImage || !previousImage) return;
-    currentImage.classList.add('scaleUp')
-    previousImage.classList.remove('scaleUp')
-    previousSlide.current = index
-  }
+    const currentImage = document.getElementById(`slideClientImg${index}`);
+    const previousImage = document.getElementById(
+      `slideClientImg${previousSlide.current}`
+    );
+    if (!currentImage || !previousImage) return;
+    currentImage.classList.add("scaleUp");
+    previousImage.classList.remove("scaleUp");
+    previousSlide.current = index;
+  };
   return (
     <Carousel
       // autoPlay={true}
@@ -65,7 +66,11 @@ const ClientFeedbackCarousel = ({ data }: IClientCarouselData) => {
       {data.map((feedback, index) => (
         <div key={index} className="clientFeedbackCarouselSlide">
           <div className="clientFeedbackCarouselSlideLeft">
-            <img src={feedback.clientImg} alt="slide1" id={`slideClientImg${index}`} />
+            <img
+              src={feedback.clientImg}
+              alt="slide1"
+              id={`slideClientImg${index}`}
+            />
           </div>
           <div className="clientFeedbackCarouselSlideRight">
             <img className="quote" src={Quotes} alt="quotes" />

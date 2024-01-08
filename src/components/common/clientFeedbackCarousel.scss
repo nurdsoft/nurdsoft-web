@@ -31,13 +31,18 @@
 }
 
 @keyframes scaleUpAnimation {
-  from {transform: scale(0.6);}
-  to {transform: scale(1.0);}
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .clientFeedbackCarouselSlide {
   display: flex;
   gap: 67px;
+  padding: 40px 0px;
   justify-content: center;
   max-width: rem(1400px);
   width: 100%;
