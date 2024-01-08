@@ -1,6 +1,12 @@
 import "./contact.scss";
 
-import { ARROW_RIGHT_SMALL, FACEBOOK, GITHUB, LINKEDIN, TWITTER } from "../../icons";
+import {
+  ARROW_RIGHT_SMALL,
+  FACEBOOK,
+  GITHUB,
+  LINKEDIN,
+  TWITTER,
+} from "../../icons";
 import React, { useState } from "react";
 
 import { Link } from "gatsby";
@@ -9,68 +15,67 @@ import Wrapper from "../wrapper";
 
 interface IContact {
   scrollerId: string;
-  showform?: boolean; 
+  showform?: boolean;
 }
-const Contact = ({scrollerId = '', showform = true}: IContact) => {
-
-  const [isLoading, setIsLoading] = useState(false)
-  const [isError, setIsError] = useState(false)
-  const [resMsg, setResMsg] = useState('')
+const Contact = ({ scrollerId = "", showform = true }: IContact) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [resMsg, setResMsg] = useState("");
 
   const [formValue, setFormValue] = useState<any>({
     name: "",
     platform: "",
     message: "",
     budget: "",
-    email: ""
-  })
+    email: "",
+  });
 
-  const [errorKeys, setErrorKeys] = useState<string[]>([]) 
+  const [errorKeys, setErrorKeys] = useState<string[]>([]);
 
   const platformOptions = [
     {
-      text: 'Mobile app',
-      value: 'Mobile app'
+      text: "Mobile app",
+      value: "Mobile app",
     },
     {
-      text: 'Website',
-      value: 'Website'
+      text: "Website",
+      value: "Website",
     },
     {
-      text: 'Desktop app',
-      value: 'Desktop app'
+      text: "Desktop app",
+      value: "Desktop app",
     },
     {
-      text: 'Not Sure',
-      value: 'Not Sure'
-    }
-  ]
+      text: "Not Sure",
+      value: "Not Sure",
+    },
+  ];
 
   const budgetOptions = [
     {
-      text: '$15k - $30K',
-      value: '$15k - $30K'
+      text: "$15k - $30K",
+      value: "$15k - $30K",
     },
     {
-      text: '$30k - $60K',
-      value: '$30k - $60K'
+      text: "$30k - $60K",
+      value: "$30k - $60K",
     },
     {
-      text: '$60k - $100K',
-      value: '$60k - $100K'
+      text: "$60k - $100K",
+      value: "$60k - $100K",
     },
     {
-      text: '$100K+',
-      value: '$100K+'
-    }
-  ]
+      text: "$100K+",
+      value: "$100K+",
+    },
+  ];
 
   const handleFormValue = (key: string, value: string) => {
     setFormValue({
       ...formValue,
-      [key]: value
-    })
-  }
+      [key]: value,
+    });
+  };
 
   const validateEmail = (email: string) => {
     return email.match(
@@ -79,95 +84,101 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
   };
 
   const handleValidateForm = () => {
-    let isValid = true 
+    let isValid = true;
     Object.keys(formValue).map((key) => {
-      if(formValue[key].trim().length < 1){
-        isValid = false
-        if(!errorKeys.includes(key)){
-          setErrorKeys([...errorKeys, key])
+      if (formValue[key].trim().length < 1) {
+        isValid = false;
+        if (!errorKeys.includes(key)) {
+          setErrorKeys([...errorKeys, key]);
         }
       }
-    })
+    });
 
-    if(!validateEmail(formValue.email)){
-      isValid = false
-      if(!errorKeys.includes('email')){
-        setErrorKeys([...errorKeys, 'email'])
+    if (!validateEmail(formValue.email)) {
+      isValid = false;
+      if (!errorKeys.includes("email")) {
+        setErrorKeys([...errorKeys, "email"]);
       }
     }
 
     return isValid;
-  }
+  };
 
   const handleSubmitForm = async (e: React.MouseEvent) => {
-    setIsLoading(true)
-    e.preventDefault()
+    setIsLoading(true);
+    e.preventDefault();
 
-    const isFormValid = handleValidateForm()
-    console.log('here');
-    
-    if(!isFormValid){
-      setIsError(true)
-      setIsLoading(false)
-      setResMsg("* Please fill all the fields properly.")
-      return
+    const isFormValid = handleValidateForm();
+
+    if (!isFormValid) {
+      setIsError(true);
+      setIsLoading(false);
+      setResMsg("* Please fill all the fields properly.");
+      return;
     }
 
-    const formVal = new FormData()
-    formVal.append('name', formValue.name.trim())
-    formVal.append('email', formValue.email.trim())
-    formVal.append('platform', formValue.platform.trim())
-    formVal.append('message', formValue.message.trim())
-    formVal.append('budget', formValue.budget.trim())
-    formVal.append('_gotcha', '')
-    
+    const formVal = new FormData();
+    formVal.append("name", formValue.name.trim());
+    formVal.append("email", formValue.email.trim());
+    formVal.append("platform", formValue.platform.trim());
+    formVal.append("message", formValue.message.trim());
+    formVal.append("budget", formValue.budget.trim());
+    formVal.append("_gotcha", "");
 
     let res;
-    try{
-      res = await fetch("https://getform.io/f/4edb0f6b-0271-4728-821a-41f9704b98f1", {
+    try {
+      res = await fetch(
+        "https://getform.io/f/4edb0f6b-0271-4728-821a-41f9704b98f1",
+        {
           method: "POST",
           body: formVal,
           headers: {
-              "Accept": "application/json",
+            Accept: "application/json",
           },
-      })
-      res = await res.json()
-      if(res.success){
-        setIsError(false)
-        setIsLoading(false)
-        setResMsg("* Thank you! Your message is on its way to us, Expect to hear from our team soon.")
-      }else{
-        setIsError(true)
-        setIsLoading(false)
-        setResMsg("* Looks like there is some problem submitting form, please reach out directly on hello@nurdsoft.co")
+        }
+      );
+      res = await res.json();
+      if (res.success) {
+        setIsError(false);
+        setIsLoading(false);
+        setResMsg(
+          "* Thank you! Your message is on its way to us, Expect to hear from our team soon."
+        );
+      } else {
+        setIsError(true);
+        setIsLoading(false);
+        setResMsg(
+          "* Looks like there is some problem submitting form, please reach out directly on hello@nurdsoft.co"
+        );
       }
-      
-    }catch(err){
-      setIsError(true)
-      setIsLoading(false)
-      setResMsg("* Looks like there is some problem submitting form, please reach out directly on hello@nurdsoft.co")
+    } catch (err) {
+      setIsError(true);
+      setIsLoading(false);
+      setResMsg(
+        "* Looks like there is some problem submitting form, please reach out directly on hello@nurdsoft.co"
+      );
     }
-    
+
     setTimeout(() => {
-      setIsError(false)
-      setIsLoading(false)
-      setResMsg("")
+      setIsError(false);
+      setIsLoading(false);
+      setResMsg("");
       setFormValue({
         name: "",
         platform: "",
         message: "",
         budget: "",
-        email: ""
-      })
-    }, 5000)
-  }
+        email: "",
+      });
+    }, 5000);
+  };
 
   const handleBackToTop = () => {
-    const scroller = document.getElementById(`${scrollerId}`)
-    if(scroller){
-      scroller.scrollTo({top: 0, left: 0, behavior: 'instant'})
+    const scroller = document.getElementById(`${scrollerId}`);
+    if (scroller) {
+      scroller.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
-  }
+  };
 
   return (
     <>
@@ -178,7 +189,12 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
               <div className="contact_formHeading">
                 <p>Let’s Talk</p>
               </div>
-              <form method="post" action="#" id="form" className="flex_container">
+              <form
+                method="post"
+                action="#"
+                id="form"
+                className="flex_container"
+              >
                 <div className="contact_formRight">
                   <div className="contact_formContainer">
                     <div className="contact_formField">
@@ -186,7 +202,9 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                       <input
                         name="full_name"
                         form="form"
-                        onChange={(e) => handleFormValue('name', e.target.value)}
+                        onChange={(e) =>
+                          handleFormValue("name", e.target.value)
+                        }
                         className="inputBox"
                         value={formValue.name}
                         type="text"
@@ -199,14 +217,16 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                       <input
                         name="email"
                         form="form"
-                        onChange={(e) => handleFormValue('email', e.target.value)}
+                        onChange={(e) =>
+                          handleFormValue("email", e.target.value)
+                        }
                         value={formValue.email}
                         className="inputBox"
                         type="email"
                         placeholder="Your Email"
                       />
                     </div>
-  
+
                     <div className="contact_formField">
                       <p className="label">I am looking to build a</p>
                       <div className="optionWrapper">
@@ -215,10 +235,12 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                             name="platform"
                             onClick={(e) => {
                               e.preventDefault();
-                              handleFormValue('platform', platform.value);
+                              handleFormValue("platform", platform.value);
                             }}
                             className={`option ${
-                              formValue.platform === platform.value ? 'active' : ''
+                              formValue.platform === platform.value
+                                ? "active"
+                                : ""
                             }`}
                             key={index}
                           >
@@ -230,7 +252,7 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                         ))}
                       </div>
                     </div>
-  
+
                     <div className="contact_formField">
                       <p className="label">My budget is</p>
                       <div className="optionWrapper">
@@ -238,10 +260,10 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                           <button
                             onClick={(e) => {
                               e.preventDefault();
-                              handleFormValue('budget', budget.value);
+                              handleFormValue("budget", budget.value);
                             }}
                             className={`option ${
-                              formValue.budget === budget.value ? 'active' : ''
+                              formValue.budget === budget.value ? "active" : ""
                             }`}
                             key={index}
                             name="budget"
@@ -256,7 +278,7 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                       <input
                         type="hidden"
                         name="_gotcha"
-                        style={{ display: 'none !important' }}
+                        style={{ display: "none !important" }}
                       />
                     </div>
 
@@ -265,19 +287,25 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                       <input
                         name="message"
                         form="form"
-                        onChange={(e) => handleFormValue('message', e.target.value)}
+                        onChange={(e) =>
+                          handleFormValue("message", e.target.value)
+                        }
                         value={formValue.message}
                         className="inputBox"
                         type="text"
                         placeholder="Type your message here..."
                       />
                     </div>
-  
+
                     <div className="submitWrapper">
                       <button
                         className="contact_formSubmit"
                         disabled={isLoading}
-                        style={isLoading ? { cursor: 'not-allowed', opacity: 0.5 }: {}}
+                        style={
+                          isLoading
+                            ? { cursor: "not-allowed", opacity: 0.5 }
+                            : {}
+                        }
                         form="form"
                         type="submit"
                         onClick={handleSubmitForm}
@@ -286,10 +314,15 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
                         <ARROW_RIGHT_SMALL />
                       </button>
                     </div>
-                    {
-                      !isLoading &&
-                      <p className={`text-xs mt-4 ${isError ? "text-red-800" : "text-green-800" }`}>{resMsg}</p>
-                    }
+                    {!isLoading && (
+                      <p
+                        className={`text-xs mt-4 ${
+                          isError ? "text-red-800" : "text-green-800"
+                        }`}
+                      >
+                        {resMsg}
+                      </p>
+                    )}
                   </div>
                 </div>
               </form>
@@ -298,8 +331,8 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
           <div className="contact_subFooter">
             <Link to="/">
               <StaticImage
-                width={200}
-                src="../../images/nurdsoft-logo-expanded.png"
+                width={60}
+                src="../../images/nurdsoft-logo.png"
                 placeholder="blurred"
                 alt="nurdsoft"
               />
@@ -321,13 +354,17 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
             <div className="socialIcons_wrapper">
               <div className="icon_container">
                 <FACEBOOK
-                  onClick={() => window.open("https://www.facebook.com/nurdsoft")}
+                  onClick={() =>
+                    window.open("https://www.facebook.com/nurdsoft")
+                  }
                   className="socialIcon"
                 />
               </div>
               <div className="icon_container">
                 <TWITTER
-                  onClick={() => window.open("https://www.twitter.com/nurdsoft")}
+                  onClick={() =>
+                    window.open("https://www.twitter.com/nurdsoft")
+                  }
                   className="socialIcon"
                 />
               </div>
@@ -357,7 +394,6 @@ const Contact = ({scrollerId = '', showform = true}: IContact) => {
       </Wrapper>
     </>
   );
-  
 };
 
 export default Contact;
