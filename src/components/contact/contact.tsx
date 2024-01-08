@@ -109,7 +109,6 @@ const Contact = ({ scrollerId = "", showform = true }: IContact) => {
     e.preventDefault();
 
     const isFormValid = handleValidateForm();
-    console.log("here");
 
     if (!isFormValid) {
       setIsError(true);
@@ -177,7 +176,7 @@ const Contact = ({ scrollerId = "", showform = true }: IContact) => {
   const handleBackToTop = () => {
     const scroller = document.getElementById(`${scrollerId}`);
     if (scroller) {
-      scroller.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      scroller.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
   };
 
