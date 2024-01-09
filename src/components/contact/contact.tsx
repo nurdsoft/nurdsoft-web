@@ -331,8 +331,8 @@ const Contact = ({ scrollerId = "", showform = true }: IContact) => {
           <div className="contact_subFooter">
             <Link to="/">
               <StaticImage
-                width={60}
-                src="../../images/nurdsoft-logo.png"
+                width={200}
+                src="../../images/nurdsoft-logo-expanded.png"
                 placeholder="blurred"
                 alt="nurdsoft"
               />
