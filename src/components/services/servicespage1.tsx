@@ -20,7 +20,7 @@ const ServicesPage1 = () => {
     "Branding",
     "Product",
     "Website",
-    "Saas",
+    "SaaS",
   ];
 
   const triggerRef = useRef<any>();
@@ -64,7 +64,7 @@ const ServicesPage1 = () => {
               </div>
               <div className="servicespage1_item2 servicespage1_boxContainer">
                 <SERVICES_HOME_ICON_2 />
-                <h4 className="servicepage1_boxTitle">Sass Projects</h4>
+                <h4 className="servicepage1_boxTitle">SaaS Projects</h4>
                 <p className="servicepage1_boxPara w-5/6">
                   Win engagement through flawless design
                 </p>
