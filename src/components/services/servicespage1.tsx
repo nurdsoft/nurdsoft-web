@@ -20,7 +20,7 @@ const ServicesPage1 = () => {
     "Branding",
     "Product",
     "Website",
-    "SaaS",
+    "Saas",
   ];
 
   const triggerRef = useRef<any>();
