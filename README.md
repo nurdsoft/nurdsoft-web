@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://nurdsoft.co">
-    <img alt="Nurdsoft" src="./src/images/nurdsoft-logo-expanded.png" width="180" />
+    <img alt="Nurdsoft" src="./src/images/nurdsoft-logo-expanded.png" width="280" />
   </a>
 </p>
 <br />
