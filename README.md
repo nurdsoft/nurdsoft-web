@@ -1,49 +1,55 @@
+<br />
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://nurdsoft.co">
+    <img alt="Nurdsoft" src="./src/images/nurdsoft-logo-expanded.png" width="180" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+<br />
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+<p>
+This web app is created using Gatsby, ReactJS, Typescript and Sass.
+</p>
+<br />
+
+
+ <img alt="Site Screenshot" src="./src/images/readme-example.png" width="80%" />
+
+<br />
+
+## 🚀 Usage
+
+1.  **Start developing.**
+
+    git clone the project and navigate into directory and start it up.
 
     ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
+    git clone git@github.com:nurdsoft/nurdsoft-web.git
+    cd nurdsoft-web/
+    npm install && npm run develop
     ```
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
+2.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
 
     Edit `src/pages/index.tsx` to see your site update in real-time!
+  
+3.  **Build**
 
-4.  **Learn more**
+    To build the application, use the following command: 
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    ```shell
+    npm run build
+    ```
+4.  **Start(Production)**
 
-## 🚀 Quick start (Netlify)
+    To start the application in the production envrionment, use following command: 
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+    ```shell
+    npm run start
+    ```
+5.  **Contributing**
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+    To contribute to this project create a new branch from main, with prefix `feature` or `fix` and create a PR.
