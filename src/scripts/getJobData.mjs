@@ -1,4 +1,5 @@
 import * as fs from "fs";
+
 import fetch from "node-fetch";
 
 fetch(
@@ -17,6 +18,6 @@ fetch(
       if (err) {
         throw new Error("Something went wrong.");
       }
-      console.log("JSON written to file. Contents:");
+      console.info("JSON written to file. Contents:");
     });
   });
