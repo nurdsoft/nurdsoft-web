@@ -36,7 +36,7 @@ const Bndpage = () => {
       img: Benefit1,
       title: "Improved Efficiency",
       description:
-        "The automation of software development and deployment processes significantly reduced manual efforts and streamlined project delivery timelines. Development teams could focus more on coding and innovation rather than spending time on repetitive tasks.",
+        "The automation of software engineering and deployment processes significantly reduced manual efforts and streamlined project delivery timelines. Development teams could focus more on coding and innovation rather than spending time on repetitive tasks.",
     },
     {
       img: Benefit2,
@@ -73,7 +73,7 @@ const Bndpage = () => {
       <div className="bndpage_parentContainer">
         <h4 className="bndpage_title">
           Leveraging <span className="primary100">BuildnDeploy.co</span>
-          {" for Streamlined Software Development and Deployment"}
+          {" for Streamlined Software engineering and Deployment"}
         </h4>
         <div className="bndpage_imageContainer1 flex justify-center mt-12">
           <StaticImage
@@ -89,7 +89,7 @@ const Bndpage = () => {
           </h4>
           <p className="bndpage_productStatementDescription mb-8 text-xl offGray font-normal">
             BuildnDeploy.co uses continuous integration (CI) and continuous
-            delivery (CD) to automate the process of software development and
+            delivery (CD) to automate the process of software engineering and
             deployment. CI/CD projects typically use a pipeline that consists of
             a series of steps, such as:
           </p>
@@ -119,7 +119,7 @@ const Bndpage = () => {
           </h4>
           <p className="bndpage_keyChallangeDescription mb-8 text-xl offGray font-normal">
             Prior to adopting BuildnDeploy.co, BND encountered several
-            challenges in their software development and deployment processes:
+            challenges in their software engineering and deployment processes:
           </p>
           <div className="bndpage_keyChallangeListContainer mb-8 text-xl offGray font-normal">
             <div className="flex flex-col gap-6">
@@ -175,7 +175,7 @@ const Bndpage = () => {
                 <span>Increased Speed</span>
               </h4>
               <p className="bndpage_boxPara offGray text-base font-normal">
-                Increase the speed of software development by automating the
+                Increase the speed of software engineering by automating the
                 build and deployment process. This can free up developers to
                 focus on more creative and strategic tasks.
               </p>
@@ -209,7 +209,7 @@ const Bndpage = () => {
               </h4>
               <p className="bndpage_implementationDescription mb-8 mt-8 w-7/12 text-xl offGray font-normal">
                 To overcome these challenges, BND decided to implement
-                BuildnDeploy.co as their software development and deployment
+                BuildnDeploy.co as their software engineering and deployment
                 solution. The following steps were taken during the
                 implementation process:
               </p>
@@ -405,7 +405,7 @@ const Bndpage = () => {
               achieving enhanced efficiency, collaboration, and time-to-market.
               The platform's exceptional automation features, optimized
               workflows, and seamless integrations granted them a significant
-              advantage in the competitive software development industry.
+              advantage in the competitive software engineering industry.
             </p>
             <p className="mb-8 mt-8 text-xl text-center offGray font-normal">
               With Nurdsoft's skillful construction of BuildnDeploy.co, BND

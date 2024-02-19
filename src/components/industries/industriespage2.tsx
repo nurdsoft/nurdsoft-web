@@ -32,7 +32,7 @@ const Industriespage2 = () => {
     {
       clientImg: Client,
       clientResponse:
-        "Nurdsoft is a software development studio specializing in bespoke software for businesses of all sizes including early stage startups.",
+        "Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups.",
       clientName: "Client Name",
       clientDesignation: "Designation",
       clientCompanyLogo: Logo,
@@ -40,7 +40,7 @@ const Industriespage2 = () => {
     {
       clientImg: Client,
       clientResponse:
-        "Nurdsoft is a software development studio specializing in bespoke software for businesses of all sizes including early stage startups.",
+        "Nurdsoft is a software engineering studio specializing in bespoke software for businesses of all sizes including early stage startups.",
       clientName: "Client Name",
       clientDesignation: "Designation",
       clientCompanyLogo: Logo,

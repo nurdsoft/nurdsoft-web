@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
   },
   siteMetadata: {
     title: `Nurdsoft`,
-    description: `SOFTWARE DEVELOPMENT STUDIO`,
+    description: `SOFTWARE ENGINEERING STUDIO`,
     author: `Nurdsoft`,
     siteUrl: `https://nurdsoft.co`,
   },

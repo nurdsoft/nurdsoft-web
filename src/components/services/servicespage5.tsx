@@ -39,7 +39,7 @@ const ServicesPage5 = () => {
         },
         {
             heading: 'Cloud/DevOps',
-            description: 'Cloud/DevOps combines cloud computing and development operations, streamlining software development and deployment processes. It optimizes collaboration, automation, and scalability for faster and more efficient application delivery.',
+            description: 'Cloud/DevOps combines cloud computing and development operations, streamlining software engineering and deployment processes. It optimizes collaboration, automation, and scalability for faster and more efficient application delivery.',
             hash: "cloud-devops"
         },
         {

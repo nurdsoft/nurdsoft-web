@@ -23,7 +23,7 @@ const Workpage1 = () => {
       caption: "INFRASTRUCTURE",
       title: "Build’n Deploy",
       path: "/work/bnd",
-      description: "Leveraging BuildnDeploy.co for Streamlined Software Development and Deployment."
+      description: "Leveraging BuildnDeploy.co for Streamlined Software engineering and Deployment."
     },
     {
       img: AuditTrust,

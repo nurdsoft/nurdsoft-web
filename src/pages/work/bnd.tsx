@@ -17,6 +17,6 @@ export default BnD;
 export const Head = () => (
   <Seo 
     title="Nurdsoft - Buildndeploy"
-    description="BuildnDeploy.co uses continuous integration (CI) and continuous delivery (CD) to automate the process of software development and deployment."
+    description="BuildnDeploy.co uses continuous integration (CI) and continuous delivery (CD) to automate the process of software engineering and deployment."
   />
 )

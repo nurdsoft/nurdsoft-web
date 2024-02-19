@@ -54,7 +54,7 @@ const HeroSection = () => {
         <div className='hero_text'>
           <h1 className='lineOne'>
             Bespoke Software <br/>
-            Development Studio    
+            Engineering Studio    
           </h1>
           <div className='animated-line'>
             <h1>we</h1>

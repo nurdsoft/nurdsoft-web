@@ -48,7 +48,7 @@ const Homepage2 = () => {
       link: "/work/bnd",
       title: "Build’n Deploy",
       description:
-        "This case study delves into the collaborative journey between Nurdsoft and BND, a software development firm, resulting in the creation of BuildnDeploy.co. This cloud-based platform presents extensive solutions for software development, continuous integration, and deployment processes. It showcases how Nurdsoft's assistance empowered BND to streamline their software development lifecycle and amplify their overall efficiency.",
+        "This case study delves into the collaborative journey between Nurdsoft and BND, a software engineering firm, resulting in the creation of BuildnDeploy.co. This cloud-based platform presents extensive solutions for software engineering, continuous integration, and deployment processes. It showcases how Nurdsoft's assistance empowered BND to streamline their software engineering lifecycle and amplify their overall efficiency.",
       img: BndImg,
     },
     {
