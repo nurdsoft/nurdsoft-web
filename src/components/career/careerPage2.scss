@@ -11,10 +11,10 @@
     background: var(--black-100);
 
     .perk {
-      padding: rem(48px) rem(40px);
+      padding: rem-convert(48px) rem-convert(40px);
       display: flex;
       flex-direction: column;
-      gap: rem(32px);
+      gap: rem-convert(32px);
       border: 1px solid var(--gray-100);
       transition: 0.5s all ease;
       &:nth-child(n + 2) {
@@ -22,11 +22,11 @@
       }
       &:hover {
         background-color: var(--dark-gray-100);
-        padding: rem(24px) rem(44px) rem(44px) rem(44px);
+        padding: rem-convert(24px) rem-convert(44px) rem-convert(44px) rem-convert(44px);
       }
 
       .perkLabel {
-        font-size: rem(44px);
+        font-size: rem-convert(44px);
         font-style: normal;
         font-weight: 500;
         line-height: 58px;

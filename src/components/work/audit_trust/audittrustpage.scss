@@ -1,13 +1,13 @@
 @import "~sass-rem";
 
 .audittrustpage_parentContainer {
-  padding: 0 rem(25px) rem(30px) rem(25px);
+  padding: 0 rem-convert(25px) rem-convert(30px) rem-convert(25px);
   .audittrustpage_title {
     color: var(--white);
-    font-size: rem(56px);
+    font-size: rem-convert(56px);
     font-weight: 700;
     line-height: 74px;
-    max-width: rem(984px);
+    max-width: rem-convert(984px);
     width: 100%;
   }
 
@@ -23,12 +23,12 @@
   .audittrustpage_valueProposition {
     .audittrustpage_gridContainer {
       display: grid;
-      margin-top: rem(50px);
+      margin-top: rem-convert(50px);
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(2, 1fr);
       color: var(--off-white-100);
       .audittrustpage_boxContainer {
-        padding: rem(32px);
+        padding: rem-convert(32px);
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -39,14 +39,14 @@
         transition: 0.6s all ease;
         &:hover {
           background-color: var(--dark-gray-100);
-          padding: rem(22px) rem(32px) rem(32px) rem(32px);
+          padding: rem-convert(22px) rem-convert(32px) rem-convert(32px) rem-convert(32px);
         }
       }
       .audittrustpage_item1 {
         grid-column: 1 / 7;
         grid-row: 1;
         border: 1px solid var(--gray-100);
-        margin-right: rem(12px);
+        margin-right: rem-convert(12px);
       }
       .audittrustpage_item2 {
         grid-column: 7 / span 12;
@@ -57,7 +57,7 @@
         grid-column: 1 / span 12;
         border: 1px solid var(--gray-100);
         grid-row: 2;
-        margin-top: rem(12px);
+        margin-top: rem-convert(12px);
       }
     }
   }
@@ -88,7 +88,7 @@
 
   .audittrustpage_emailBoxContainer {
     h4.white {
-      max-width: rem(545px);
+      max-width: rem-convert(545px);
       width: 100%;
     }
   }
@@ -115,20 +115,20 @@
   .audittrustpage_parentContainer {
     .audittrustpage_title {
       width: 100%;
-      font-size: rem(42px);
+      font-size: rem-convert(42px);
       line-height: 52px;
     }
 
     .audittrustpage_introduction{
-      padding: rem(20px);
+      padding: rem-convert(20px);
     }
 
     .audittrustpage_conclusion {
-      padding: rem(20px);
+      padding: rem-convert(20px);
     }
 
     .audittrustpage_keyServices {
-      padding: rem(48px);
+      padding: rem-convert(48px);
       .audittrustpage_keyServicesListContainer {
         margin-bottom: 0;
       }
@@ -148,48 +148,48 @@
   .audittrustpage_parentContainer {
     .audittrustpage_title {
       width: 100%;
-      font-size: rem(32px);
+      font-size: rem-convert(32px);
       line-height: 42px;
     }
 
     .audittrustpage_introduction {
       .audittrustpage_introductionTitle{
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
       }
       p.offGray{
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
       }
     }
 
     .audittrustpage_productStatement{
       .audittrustpage_productStatementTitle{
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
       .audittrustpage_productStatementDescription{
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
       }
       .audittrustpage_productStatementList{
         ol.offGray {
-          font-size: rem(18px);
+          font-size: rem-convert(18px);
         }
       }
     }
 
     .audittrustpage_keyServices {
-      padding: rem(20px);
+      padding: rem-convert(20px);
       .audittrustpage_keyServicesTitle{
-        font-size: rem(32px);
+        font-size: rem-convert(32px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
       .audittrustpage_keyServicesListContainer {
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
         margin-bottom: 0;
         flex-direction: column;
         justify-content: flex-start;
@@ -200,14 +200,14 @@
 
     .audittrustpage_valueProposition{
       .audittrustpage_valuePropositionTitle {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
       .bndpage_implementationDescription {
-        margin: rem(48px) 0 0 0;
+        margin: rem-convert(48px) 0 0 0;
         width: 100%;
       }
       .audittrustpage_auditImage {
@@ -217,7 +217,7 @@
 
     .audittrustpage_assessorDashboard {
       .audittrustpage_assessorDashboardTitle {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
       }
       .audittrustpage_assessorDashboardImagesContainer {
@@ -228,7 +228,7 @@
 
     .audittrustpage_keyFeatures {
       .audittrustpage_keyFeaturesTitle {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
       }
       .audittrustpage_keyFeaturesFlexContainer {
@@ -239,10 +239,10 @@
 
     .audittrustpage_conclusion {
       .audittrustpage_conclusionTitle{
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
       }
       p.offGray{
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
       }
     }
   }

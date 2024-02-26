@@ -1,7 +1,7 @@
 @import "~sass-rem";
 
 .wrapperContainer {
-  max-width: rem(1280px);
+  max-width: rem-convert(1280px);
   margin: 0 auto;
   overflow: unset;
   overflow-x: hidden;

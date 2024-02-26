@@ -1,7 +1,7 @@
 @import "~sass-rem";
 
 // .industryPage1_parentContainer {
-//   margin: 6.25rem rem(25px) 1.875rem rem(25px);
+//   margin: 6.25rem rem-convert(25px) 1.875rem rem-convert(25px);
 //   color: var(--off-white-100);
 
 //   .industrySliderWrapper {
@@ -25,7 +25,7 @@
 //         width: 100%;
 //         flex-wrap: wrap;
 //         gap: 32px;
-//         position: relative; 
+//         position: relative;
 
 //         &.animateRight {
 //           animation: slideRight 0.5s ease-out forwards;
@@ -58,7 +58,7 @@
 
 //       .industryImage {
 //         width: 100%;
-//         max-width: 1000px; 
+//         max-width: 1000px;
 //         position: relative;
 //         padding-bottom: 56.25%;
 //         overflow: hidden;
@@ -112,30 +112,30 @@
 
 // @keyframes fadeIn {
 //   from {
-//       opacity: 0; 
+//       opacity: 0;
 //   }
 //   to {
-//       opacity: 1; 
+//       opacity: 1;
 //   }
 // }
 
 // @keyframes slideRight {
 //   from {
-//       right: -100%; 
+//       right: -100%;
 //   }
 //   to {
-//       right: 0; 
+//       right: 0;
 //   }
 // }
 
 // @keyframes slideLeft {
 //   from {
-//       left: -100%; 
-//       opacity: 0; 
+//       left: -100%;
+//       opacity: 0;
 //   }
 //   to {
-//       left: 0; 
-//       opacity: 1; 
+//       left: 0;
+//       opacity: 1;
 //   }
 // }
 
@@ -165,9 +165,9 @@
     gap: 32px;
 
     .industriespage1_menu{
-        max-width: rem(250px);
+        max-width: rem-convert(250px);
         width: 100%;
-        padding: rem(20px);
+        padding: rem-convert(20px);
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -178,7 +178,7 @@
         top: 0;
 
         .menuItem {
-            font-size: rem(17px);
+            font-size: rem-convert(17px);
             font-style: normal;
             font-weight: 500;
             line-height: 30px;
@@ -193,10 +193,10 @@
                     position: absolute;
                     left: -23px;
                     top: -10px;
-                    width: rem(48px);
-                    height: rem(48px);
+                    width: rem-convert(48px);
+                    height: rem-convert(48px);
                     z-index: -1;
-                    border-radius: rem(30px);
+                    border-radius: rem-convert(30px);
                     background-color: var(--off-white-100);
                     opacity: 0.12;
                 }

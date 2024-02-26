@@ -1,17 +1,17 @@
 @import "~sass-rem";
 
 .homepage4_parentContainer {
-  padding: 0 rem(25px) rem(30px) rem(25px);
+  padding: 0 rem-convert(25px) rem-convert(30px) rem-convert(25px);
   overflow: hidden;
   .homepage4_servicesHeading {
     text-align: center;
-    margin: rem(50px) 0;
+    margin: rem-convert(50px) 0;
     font-weight: 700;
     background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: rem(60px);
+    font-size: rem-convert(60px);
     animation: 2s slide-right 1.5s forwards;
     transform: translateX(-150%);
   }
@@ -19,7 +19,7 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    margin-top: rem(60px);
+    margin-top: rem-convert(60px);
     cursor: pointer;
     .homepage4_lottieContainer {
       opacity: 0;
@@ -30,30 +30,30 @@
         opacity: 1 !important;
       }
       .homepage4_textContainer {
-        padding: rem(24px) rem(32px);
-        // margin-top: rem(18px);
+        padding: rem-convert(24px) rem-convert(32px);
+        // margin-top: rem-convert(18px);
         background-image: url("../../images/services.png");
         background-size: cover;
         background-repeat: no-repeat;
         border: 1px solid var(--gray-100);
         // p.homepage4_description {
-        //   padding-bottom: rem(16px);
+        //   padding-bottom: rem-convert(16px);
         // }
       }
     }
     .homepage4_textContainer {
-      padding: 0 rem(32px) rem(24px) 0;
+      padding: 0 rem-convert(32px) rem-convert(24px) 0;
       border: 1px solid transparent;
       transition: all 0.4s ease-out;
       margin-top: 0;
       width: 100%;
       .homepage4_heading {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         color: var(--white);
         font-weight: 700;
       }
       p.homepage4_description {
-        font-size: rem(16px);
+        font-size: rem-convert(16px);
         color: var(--off-gray);
         font-weight: 400;
         line-height: 25px;
@@ -81,7 +81,7 @@
 @media screen and (max-width: 570px) {
   .homepage4_parentContainer {
     h4.homepage4_servicesHeading {
-      font-size: rem(40px);
+      font-size: rem-convert(40px);
     }
     .homepage4_boxContainer {
       flex-direction: column;
@@ -90,7 +90,7 @@
         text-align: center;
         .homepage4_heading {
           margin-bottom: 32px;
-          line-height: rem(40px);
+          line-height: rem-convert(40px);
         }
       }
       .w-1\/5{

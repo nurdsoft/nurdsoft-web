@@ -9,7 +9,7 @@
     color: var(--off-white-100);
     overflow: hidden;
     gap: 32px;
-    margin-bottom: rem(42px);
+    margin-bottom: rem-convert(42px);
 
     $elements: 10;
     @for $i from 1 to $elements {
@@ -30,22 +30,22 @@
     }
 
     .service_heading{
-        font-size: rem(64px);
+        font-size: rem-convert(64px);
         font-style: normal;
         font-weight: 700;
-        line-height: 74px; 
-        max-width: rem(450px);
+        line-height: 74px;
+        max-width: rem-convert(450px);
         text-align: center;
         margin: 0 auto;
     }
 
     .service_description {
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
         font-style: normal;
         font-weight: 400;
         line-height: 27px; /* 150% */
         letter-spacing: 0.72px;
-        max-width: rem(730px);
+        max-width: rem-convert(730px);
         text-align: center;
         margin: 0 auto;
     }
@@ -53,15 +53,15 @@
 
 @media screen and (max-width: 600px) {
     .industriespage1_serviceWrapper{
-        padding: 0 rem(20px);
+        padding: 0 rem-convert(20px);
         gap: 16px;
         .service_heading{
-            font-size: rem(42px);
+            font-size: rem-convert(42px);
             line-height: 46px;
         }
-        
+
         .service_description {
-            font-size: rem(16px);
+            font-size: rem-convert(16px);
         }
 
     }

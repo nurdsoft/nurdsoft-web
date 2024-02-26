@@ -20,11 +20,11 @@
   background-position: right bottom;
 
   .careerPage1_heading {
-    font-size: rem(64px);
+    font-size: rem-convert(64px);
     font-style: normal;
     font-weight: 700;
     line-height: 74px;
-    margin-bottom: rem(80px);
+    margin-bottom: rem-convert(80px);
     animation: 2.5s anim-lineUp ease-out 1;
     span.blue {
       color: var(--primary-100);
@@ -32,12 +32,12 @@
   }
 
   .careerPage1_description {
-    font-size: rem(18px);
+    font-size: rem-convert(18px);
     font-style: normal;
     font-weight: 400;
     line-height: 27px; /* 150% */
     letter-spacing: 0.72px;
-    max-width: rem(843px);
+    max-width: rem-convert(843px);
   }
 }
 
@@ -47,7 +47,7 @@
     .careerPage1_parentContainer {
       background-image: none;
       .careerPage1_heading {
-        font-size: rem(48px);
+        font-size: rem-convert(48px);
         line-height: 58px;
       }
     }

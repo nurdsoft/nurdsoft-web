@@ -1,14 +1,14 @@
 @import "~sass-rem";
 
 .servicespage3_parentContainer {
-  padding: 0 rem(25px);
+  padding: 0 rem-convert(25px);
 
   .servicespage3_gridContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: rem(200px) auto;
+    margin: rem-convert(200px) auto;
     gap: 120px;
 
     .servicespage3_leftContainer {
@@ -25,7 +25,7 @@
         background-clip: text;
         letter-spacing: 0.04em;
         font-weight: 700;
-        font-size: rem(58px);
+        font-size: rem-convert(58px);
         line-height: 1.2em;
       }
     }
@@ -38,7 +38,7 @@
         width: 100%;
         .servicespage3_boxContainer {
           border: 1px solid var(--gray-300);
-          padding: rem(32px);
+          padding: rem-convert(32px);
           background: var(--black-100);
           display: flex;
           align-items: flex-start;
@@ -47,22 +47,22 @@
           width: 93%;
           cursor: pointer;
           height: inherit;
-          margin: rem(20px) auto;
+          margin: rem-convert(20px) auto;
           transition: all 0.3s ease-in-out;
           .servicespage3_iconPurple {
             display: none;
           }
           .servicespage3_boxText {
-            font-size: rem(28px);
+            font-size: rem-convert(28px);
             color: var(--white);
             font-weight: 500;
             line-height: 48px;
             min-width: 180px;
           }
           .servicespage3_boxPara {
-            font-size: rem(18px);
+            font-size: rem-convert(18px);
             color: var(--off-gray);
-            margin-top: rem(4px);
+            margin-top: rem-convert(4px);
             font-weight: 400;
             line-height: 30px;
             min-width: 180px;
@@ -90,7 +90,7 @@
         }
         .servicespage3_count {
           color: var(--off-gray);
-          font-size: rem(18px);
+          font-size: rem-convert(18px);
         }
         .servicespage3_options {
           .servicespage3_line {
@@ -99,7 +99,7 @@
           }
           .servicespage3_optionsList {
             color: var(--white);
-            font-size: rem(40px);
+            font-size: rem-convert(40px);
             font-weight: 500;
             line-height: 58px;
           }
@@ -115,7 +115,7 @@
 
 @media only screen and (max-width: 966px) {
   .servicespage3_parentContainer {
-    padding: rem(25px) !important;
+    padding: rem-convert(25px) !important;
     .servicespage3_gridContainer {
       display: flex !important;
       flex-direction: column;
@@ -146,20 +146,20 @@
 @media screen and (max-width: 768px) {
   .servicespage3_parentContainer {
     .servicespage3_gridContainer {
-      margin-top: rem(80px);
+      margin-top: rem-convert(80px);
       .servicespage3_leftContainer {
         .servicespage3_titleDiv {
-          font-size: rem(42px);
+          font-size: rem-convert(42px);
         }
       }
 
       .servicespage3_rightContainer {
         background-position-y: center;
-        padding: rem(20px) 0px;
+        padding: rem-convert(20px) 0px;
         .servicespage3_listContainer {
           .servicespage3_options {
             .servicespage3_optionsList {
-              font-size: rem(20px);
+              font-size: rem-convert(20px);
               line-height: 24px;
             }
           }

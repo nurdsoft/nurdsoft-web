@@ -1,14 +1,14 @@
 @import "~sass-rem";
 
 .servicespage2_parentContainer {
-  padding: 0 rem(25px);
+  padding: 0 rem-convert(25px);
 
   .servicespage2_flexContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: rem(40px);
+    margin-top: rem-convert(40px);
     .servicespage2_titleDiv {
       background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
       -webkit-text-fill-color: transparent;
@@ -16,14 +16,14 @@
       background-clip: text;
       letter-spacing: 0.04em;
       font-weight: 700;
-      font-size: rem(58px);
+      font-size: rem-convert(58px);
       line-height: 1.2em;
     }
     .servicespage2_rightContainer {
       width: 45%;
       .servicespage2_paragraph {
         color: var(--off-gray);
-        font-size: rem(20px);
+        font-size: rem-convert(20px);
         font-weight: 400;
       }
     }
@@ -32,7 +32,7 @@
   .servicespage2_wrapper {
     width: 100%;
     overflow-x: hidden;
-    // padding-left: rem(30px);
+    // padding-left: rem-convert(30px);
     // -webkit-overflow-scrolling: touch;
     // scroll-behavior: smooth;
     overflow-y: hidden;
@@ -65,7 +65,7 @@
     }
     .servicespage2_boxContainer {
       border: 1px solid var(--gray-300);
-      padding: rem(32px);
+      padding: rem-convert(32px);
       background: var(--black-100);
       display: flex;
       align-items: flex-start;
@@ -74,22 +74,22 @@
       width: 93%;
       cursor: pointer;
       height: inherit;
-      margin: rem(20px) auto;
+      margin: rem-convert(20px) auto;
       transition: all 0.3s ease-in-out;
       .servicespage2_iconPurple {
         display: none;
       }
       .servicespage2_boxText {
-        font-size: rem(28px);
+        font-size: rem-convert(28px);
         color: var(--white);
         font-weight: 500;
         line-height: 48px;
         min-width: 250px;
       }
       .servicespage2_boxPara {
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
         color: var(--off-gray);
-        margin-top: rem(4px);
+        margin-top: rem-convert(4px);
         font-weight: 400;
         line-height: 30px;
         min-width: 220px;
@@ -118,12 +118,12 @@
     .servicespage2_next {
       cursor: pointer;
       position: absolute;
-      top: rem(300px);
+      top: rem-convert(300px);
       border-radius: 50%;
       background: rgba(28, 37, 49, 0.32);
       border: 2px solid var(--gray-100);
       font-weight: bold;
-      font-size: rem(32px);
+      font-size: rem-convert(32px);
       transition: 0.6s ease;
       color: var(--white);
       &:hover {
@@ -134,7 +134,7 @@
 
     .servicespage2_next {
       right: 12%;
-      padding: rem(5px) rem(17px) rem(5px) rem(23px);
+      padding: rem-convert(5px) rem-convert(17px) rem-convert(5px) rem-convert(23px);
     }
 
     .servicespage2_prev {
@@ -147,12 +147,12 @@
 
   .servicespage2_dotContainer {
     span.servicespage2_dotBorder {
-      width: rem(24px);
-      height: rem(24px);
+      width: rem-convert(24px);
+      height: rem-convert(24px);
       border: 1px solid var(--gray-100);
       cursor: pointer;
       display: block;
-      border-radius: rem(24px);
+      border-radius: rem-convert(24px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -160,9 +160,9 @@
         border: 1px solid var(--primary-100);
       }
       div.servicespage2_dotContent {
-        width: rem(18px);
-        height: rem(18px);
-        border-radius: rem(18px);
+        width: rem-convert(18px);
+        height: rem-convert(18px);
+        border-radius: rem-convert(18px);
         &.servicespage2_selectedDotContent {
           background: var(--primary-100);
         }
@@ -170,7 +170,7 @@
     }
 
     span.servicespage2_dotText {
-      font-size: rem(18px);
+      font-size: rem-convert(18px);
     }
 
     .servicespage2_divider {
@@ -198,7 +198,7 @@
 
 @media only screen and (max-width: 966px) {
   .servicespage2_parentContainer {
-    padding: rem(25px) !important;
+    padding: rem-convert(25px) !important;
     .servicespage2_flexContainer{
       flex-direction: column;
       gap: 32px;
@@ -224,11 +224,11 @@
   .servicespage2_parentContainer {
     .servicespage2_flexContainer {
       .servicespage2_titleDiv{
-        font-size: rem(42px);
-        line-height: rem(50px);
+        font-size: rem-convert(42px);
+        line-height: rem-convert(50px);
       }
     }
-    .servicespage2_wrapper{ 
+    .servicespage2_wrapper{
       .servicespage2_boxContainer {
         flex-direction: column;
         gap: 12px;

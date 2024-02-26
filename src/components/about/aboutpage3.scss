@@ -5,26 +5,26 @@
   opacity: 0;
   width: 95%;
   margin: 0 auto;
-  margin-top: rem(120px);
+  margin-top: rem-convert(120px);
   transition: opacity 0.3s ease-in-out;
   .aboutPage3_heading {
     background: linear-gradient(135deg, #6164fa 0%, #2cd7e5 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: rem(64px);
+    font-size: rem-convert(64px);
     font-style: normal;
     font-weight: 700;
     line-height: 73px;
     text-align: center;
-    margin-bottom: rem(64px);
+    margin-bottom: rem-convert(64px);
   }
 }
 
 @media screen and (max-width: 768px) {
   .aboutPage3_parentContainer {
     .aboutPage3_heading {
-      font-size: rem(42px);
+      font-size: rem-convert(42px);
     }
   }
 }

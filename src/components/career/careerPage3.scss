@@ -18,17 +18,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     // height: 100vh;
-    padding-bottom: rem(94px);
+    padding-bottom: rem-convert(94px);
 
     &.fixed {
         position: fixed;
-        max-width: rem(1280px);
+        max-width: rem-convert(1280px);
         width: 100%;
         margin: 0 auto;
-        top: rem(91px);
+        top: rem-convert(91px);
     }
     .careerPage3_headingWrapper {
-        padding: 0px rem(20px);
+        padding: 0px rem-convert(20px);
         position: sticky;
         top: 70px;
         height: min-content;
@@ -37,12 +37,12 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            font-size: rem(64px);
+            font-size: rem-convert(64px);
             font-style: normal;
             font-weight: 700;
             line-height: 73px;
             text-align: left;
-            margin-bottom: rem(64px);
+            margin-bottom: rem-convert(64px);
         }
     }
     .careerPage3_cardView_wrapper {
@@ -57,18 +57,18 @@
                 display: none;
             }
             .careerPage3_card{
-                max-width: rem(624px);
+                max-width: rem-convert(624px);
                 width: 95%;
-                height: rem(304px);
+                height: rem-convert(304px);
                 border: 1px solid var(--gray-100);
-                margin: rem(20px) auto;
+                margin: rem-convert(20px) auto;
                 color: var(--off-white-100);
                 background-color: var(--black-100);
                 position: relative;
                 z-index: 2;
                 transition: all 0.2s;
                 display: flex;
-                padding: rem(48px);
+                padding: rem-convert(48px);
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 32px;
@@ -82,7 +82,7 @@
                     transform: rotate(3deg);
                     z-index: 1;
                 }
-    
+
                 &.fixed:nth-child(odd) {
                     position: absolute;
                     top: 0;
@@ -93,7 +93,7 @@
                 }
 
                 .jobPosition{
-                    font-size: rem(29px);
+                    font-size: rem-convert(29px);
                     font-style: normal;
                     font-weight: 500;
                     line-height: 48px;
@@ -106,7 +106,7 @@
                     width: 100%;
 
                     .location {
-                        font-size: rem(18px);
+                        font-size: rem-convert(18px);
                         font-style: normal;
                         font-weight: 400;
                         line-height: 27px; /* 150% */
@@ -122,7 +122,7 @@
     .careerPage3_parentContainer{
         grid-template-columns: 1fr;
         .careerPage3_headingWrapper {
-            margin-bottom: rem(20px);
+            margin-bottom: rem-convert(20px);
             position: unset;
             .careerPage3_heading {
                 text-align: center;
@@ -151,9 +151,9 @@
     .careerPage3_parentContainer{
         .careerPage3_headingWrapper{
             .careerPage3_heading{
-                font-size: rem(38px);
-                line-height: rem(48px);
-                margin-bottom: rem(20px);
+                font-size: rem-convert(38px);
+                line-height: rem-convert(48px);
+                margin-bottom: rem-convert(20px);
             }
             .buttonContainer{
                 margin-left: 29%;
@@ -162,7 +162,7 @@
         .careerPage3_cardView_wrapper{
             .careerPage3_cardView{
                 .careerPage3_card {
-                    padding: rem(16px);
+                    padding: rem-convert(16px);
                     height: fit-content;
                     &.fixed:nth-child(even) {
                         width: 90%;
@@ -171,10 +171,10 @@
                         width: 90%;
                     }
                     .careerCardIcon{
-                        width: rem(32px);
+                        width: rem-convert(32px);
                     }
                     .jobPosition{
-                        font-size: rem(20px);
+                        font-size: rem-convert(20px);
                     }
                 }
             }

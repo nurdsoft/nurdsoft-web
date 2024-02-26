@@ -19,7 +19,7 @@
   // font style
   color: var(--off-white-100);
   font-family: "DM Sans", sans-serif;
-  font-size: rem(75px);
+  font-size: rem-convert(75px);
   font-style: normal;
   font-weight: 700;
   line-height: 80px; /* 106.667% */
@@ -32,7 +32,7 @@
   padding: 0 1.5625rem 2.5rem;
 
   .hero_text {
-    margin-top: rem(200px);
+    margin-top: rem-convert(200px);
     margin-bottom: auto;
     height: max-content;
     position: relative;
@@ -40,32 +40,32 @@
 
     .lineOne {
       font-family: "DM Sans Bold", sans-serif;
-      font-size: rem(64px);
+      font-size: rem-convert(64px);
       text-align: left;
     }
-  
+
     .animated-line {
-  
-      margin: rem(120px) auto rem(40px);
-      font-size: rem(64px);
+
+      margin: rem-convert(120px) auto rem-convert(40px);
+      font-size: rem-convert(64px);
       display: flex;
       align-items: center;
       gap: 16px;
       // animation: springLeft 1.5s ease-out forwards;
-  
+
       & > h1 {
         background: linear-gradient(138deg, #6164FA 0%, #2CD7E5 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-      
+
       }
-      
+
       .fading-child {
-      
+
         position: relative;
         width: auto;
-        height: rem(80px);
+        height: rem-convert(80px);
         overflow: hidden;
 
         .child-wrapper {
@@ -85,41 +85,41 @@
               -webkit-text-fill-color: transparent;
               // opacity: 0;
               // position: absolute;
-              
+
               &.animate {
                 animation: fadeInOut 1.5s;
               }
-      
+
               span {
-      
+
                 width: 1em;
                 height: 1em;
-                
+
                 img {
-                
+
                   width: 100%;
                   height: 100%;
-                
+
                 }
               }
             }
           }
         }
-  
+
       }
     }
-    
+
     .lineThree {
       font-family: "DM Sans", sans-serif;
-      font-size: rem(64px);
+      font-size: rem-convert(64px);
       // animation: springRight 1.5s ease-out forwards;
       color: var(--off-grey, #F0F0F0);
-      font-size: rem(32px);
+      font-size: rem-convert(32px);
       font-style: normal;
       font-weight: 500;
-      line-height: rem(48px); /* 150% */
+      line-height: rem-convert(48px); /* 150% */
       text-transform: capitalize;
-      margin-bottom: rem(80px);
+      margin-bottom: rem-convert(80px);
       text-align: left;
     }
 
@@ -152,7 +152,7 @@
     }
 
   }
-  
+
 }
 
 @keyframes fadeInOut {
@@ -166,7 +166,7 @@
 
 @keyframes animatedText{
   to{
-    background-position: 100%; 
+    background-position: 100%;
   }
 }
 
@@ -215,11 +215,11 @@
 }
 
 @media screen and (max-width: 1290px) {
-  .herosection_parentContainer{ 
+  .herosection_parentContainer{
     .hero_text{
       padding: 0px 10px;
       .animated-line {
-        font-size: rem(48px);
+        font-size: rem-convert(48px);
         height: 80px;
       }
     }
@@ -231,8 +231,8 @@
     height: auto;
     .hero_text{
       .lineOne {
-        font-size: rem(42px);
-        line-height: rem(52px);
+        font-size: rem-convert(42px);
+        line-height: rem-convert(52px);
       }
       .scroll-bottom {
         display: none;
@@ -247,13 +247,13 @@
     .hero_text{
       margin-top: 100px;
       .animated-line {
-        font-size: rem(40px);
+        font-size: rem-convert(40px);
         height: 80px;
         margin-top: 60px;
       }
       .lineThree {
-        font-size: rem(24px);
-        line-height: rem(36px);
+        font-size: rem-convert(24px);
+        line-height: rem-convert(36px);
       }
     }
   }

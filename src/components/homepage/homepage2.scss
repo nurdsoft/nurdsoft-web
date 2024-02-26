@@ -5,17 +5,17 @@
 }
 
 .homepage2_parentContainer {
-  padding: 0 rem(25px) rem(60px) rem(25px);
+  padding: 0 rem-convert(25px) rem-convert(60px) rem-convert(25px);
 
   .homepage2Heading {
     text-align: center;
-    margin: rem(50px) 0;
+    margin: rem-convert(50px) 0;
     font-weight: 700;
     background: linear-gradient(92.15deg, #6164fa 0%, #2cd7e6 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: rem(60px);
+    font-size: rem-convert(60px);
     animation: 2s slide-right 1.5s forwards;
     transform: translateX(-150%);
   }
@@ -37,19 +37,19 @@
   }
 
   .slick-dots {
-    height: rem(24px);
+    height: rem-convert(24px);
     display: flex;
     justify-content: center;
     gap: 8px;
     bottom: -57px;
-  
+
     .dotBorder {
-      width: rem(24px);
-      height: rem(24px);
+      width: rem-convert(24px);
+      height: rem-convert(24px);
       border: 1px solid var(--gray-100);
       cursor: pointer;
       display: block;
-      border-radius: rem(24px);
+      border-radius: rem-convert(24px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,15 +57,15 @@
         border: 1px solid var(--primary-100);
       }
       .dotContent {
-        width: rem(18px);
-        height: rem(18px);
-        border-radius: rem(18px);
+        width: rem-convert(18px);
+        height: rem-convert(18px);
+        border-radius: rem-convert(18px);
         &.selectedDotContent {
           background: var(--primary-100);
         }
       }
     }
-    
+
     .slick-active {
       .dotBorder {
         border: 1px solid var(--primary-100);
@@ -75,7 +75,7 @@
       }
     }
   }
-  
+
   .homepage2_flexContainer {
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@
         justify-content: flex-start;
         align-items: flex-start;
       }
-      
+
     }
     .sliderleftpanel_parentContainer{
       flex-direction: column-reverse;
@@ -131,7 +131,7 @@
 @media screen and (max-width: 768px) {
   .homepage2_parentContainer {
     h4.homepage2Heading{
-      font-size: rem(40px);
+      font-size: rem-convert(40px);
     }
   }
 }

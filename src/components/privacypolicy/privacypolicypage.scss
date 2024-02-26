@@ -2,7 +2,7 @@
 @import "../../styles/mixins";
 
 .privacypolicypage_parentContainer {
-  padding: 0 rem(25px) rem(30px) rem(25px);
+  padding: 0 rem-convert(25px) rem-convert(30px) rem-convert(25px);
   height: calc(100vh - 91px);
   overflow: scroll;
   -ms-overflow-style: none;
@@ -63,11 +63,11 @@
 
 @media screen and (max-width: 620px) {
   .privacypolicypage_parentContainer {
-    padding: 0 rem(35px) rem(30px) rem(25px);
+    padding: 0 rem-convert(35px) rem-convert(30px) rem-convert(25px);
 
     .privacypolicy_drodpownContainer {
       display: block;
-      margin: rem(40px) 0;
+      margin: rem-convert(40px) 0;
       position: sticky;
       top: 0px;
     }

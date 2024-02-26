@@ -9,11 +9,11 @@
     .jobDescription3_header{
         .section_title {
             color: var(--primary-100);
-            font-size: rem(64px);
+            font-size: rem-convert(64px);
             font-style: normal;
             font-weight: 700;
             line-height: 74px;
-            margin-bottom: rem(67px);
+            margin-bottom: rem-convert(67px);
             transition: all 1s ease;
             transform: translateX(50%);
             &.slide {
@@ -25,10 +25,10 @@
     .jobDescription3_bulletPoint {
         @include BulletPoint;
         align-items: flex-start;
-        margin-bottom: rem(32px);
+        margin-bottom: rem-convert(32px);
 
         .bulletPoint_data {
-            font-size: rem(20px);
+            font-size: rem-convert(20px);
             font-style: italic;
             font-weight: 400;
             line-height: 30px;
@@ -40,7 +40,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        margin-top: rem(120px);
+        margin-top: rem-convert(120px);
         flex-wrap: wrap;
         .socialIcons_wrapper{
             display: flex;
@@ -88,10 +88,10 @@
 
 @media screen and (max-width: 768px) {
     .jobDescription3_parentContainer {
-        margin-top: rem(40px);
+        margin-top: rem-convert(40px);
         .jobDescription3_header{
             .section_title {
-                font-size: rem(42px);
+                font-size: rem-convert(42px);
             }
         }
     }

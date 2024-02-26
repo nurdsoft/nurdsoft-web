@@ -1,10 +1,10 @@
 @import "~sass-rem";
 
 .industryPage2_parentContainer {
-  max-width: rem(1230px);
-  margin: rem(120px) auto;
+  max-width: rem-convert(1230px);
+  margin: rem-convert(120px) auto;
   h1.heading {
-    font-size: rem(64px);
+    font-size: rem-convert(64px);
     font-style: normal;
     font-weight: 700;
     line-height: 74px;
@@ -22,19 +22,19 @@
 
 @media screen and (max-width: 1410px) {
   .industryPage2_parentContainer {
-    max-width: rem(1100px);
+    max-width: rem-convert(1100px);
   }
 }
 @media screen and (max-width: 1100px) {
   .industryPage2_parentContainer {
-    max-width: rem(600px);
+    max-width: rem-convert(600px);
   }
 }
 @media screen and (max-width: 620px) {
   .industryPage2_parentContainer {
-    max-width: rem(300px);
+    max-width: rem-convert(300px);
     h1.heading {
-      font-size: rem(48px);
+      font-size: rem-convert(48px);
     }
   }
 }

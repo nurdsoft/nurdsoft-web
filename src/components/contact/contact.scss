@@ -4,19 +4,19 @@
   // background: var(--black-100);
   z-index: unset;
   .contact_parentContainer {
-    padding: rem(40px) rem(25px);
+    padding: rem-convert(40px) rem-convert(25px);
     color: var(--off-white-100);
     z-index: 1;
     position: relative;
     .contact_formWrapper {
-      margin-bottom: rem(135px);
-      margin-top: rem(80px);
+      margin-bottom: rem-convert(135px);
+      margin-top: rem-convert(80px);
       .contact_formHeading {
-        font-size: rem(80px);
+        font-size: rem-convert(80px);
         font-style: normal;
         font-weight: 700;
         line-height: 80px;
-        margin-bottom: rem(64px);
+        margin-bottom: rem-convert(64px);
       }
 
       .flex_container {
@@ -31,16 +31,16 @@
             .contact_formField{
               display: flex;
               width: 100%;
-              gap: rem(16px);
+              gap: rem-convert(16px);
               align-items: center;
-              margin-bottom: rem(40px);
+              margin-bottom: rem-convert(40px);
               flex-wrap: wrap;
               &.column{
                 flex-direction: column;
                 align-items: flex-start;
               }
               .label{
-                font-size: rem(24px);
+                font-size: rem-convert(24px);
                 font-style: normal;
                 font-weight: 500;
                 line-height: 36px;
@@ -49,13 +49,13 @@
                 border: none;
                 border-bottom: 1px solid var(--gray-100);
                 background: transparent;
-                font-size: rem(20px);
+                font-size: rem-convert(20px);
                 font-style: italic;
                 font-weight: 400;
                 line-height: 30px;
                 flex: 1;
                 width: 100%;
-                min-width: rem(250px);
+                min-width: rem-convert(250px);
                 &:focus{
                   outline: none;
                   border-bottom: 1px solid var(--off-white-100);
@@ -68,29 +68,29 @@
                 flex-wrap: wrap;
 
                 .option {
-                  
-                  padding: rem(12px) rem(16px);
-                  border-radius: rem(6px);
+
+                  padding: rem-convert(12px) rem-convert(16px);
+                  border-radius: rem-convert(6px);
                   background: var(--off-white-100);
                   color: var(--primary-100);
-  
+
                   &.active {
                     color: var(--off-white-100);
                     background: var(--primary-100);
                   }
-  
+
                   .optionText {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: 8px;
-                    height: rem(21px);
+                    height: rem-convert(21px);
                     overflow: hidden;
                     .animateUp{
                       transition: all 0.2s;
                     }
                   }
-  
+
                   &:hover {
                     .optionText {
                       .animateUp {
@@ -108,15 +108,15 @@
               justify-content: flex-end;
               flex-wrap: wrap;
               gap: 32px;
-              margin-top: rem(64px);
+              margin-top: rem-convert(64px);
 
               .contact_formSubmit{
                 display: flex;
-                padding: rem(16px) rem(24px);
+                padding: rem-convert(16px) rem-convert(24px);
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
-                border-radius: rem(6px);
+                border-radius: rem-convert(6px);
                 background: var(--primary-100);
                 margin-right: auto;
               }
@@ -132,19 +132,19 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      margin-bottom: rem(50px);
-      
+      margin-bottom: rem-convert(50px);
+
       a {
         margin-left: 30px;
       }
-      
+
       .link-wrapper {
         display: flex;
-        gap: rem(16px);
+        gap: rem-convert(16px);
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         flex-wrap: wrap;
-        margin-top: rem(50px);
+        margin-top: rem-convert(50px);
         // margin-left: 30px;
       }
     }
@@ -165,11 +165,11 @@
       right: 0;
       bottom: 120px;
     }
-    
+
     .contact_footer {
       display: flex;
       justify-content: space-between;
-      font-size: rem(16px);
+      font-size: rem-convert(16px);
       text-transform: uppercase;
       color: var(--off-white-100);
       align-items: center;
@@ -181,9 +181,9 @@
         .icon_container{
             cursor: pointer;
             background-color: var(--dark-gray-100);
-            border-radius: rem(24px);
-            width: rem(48px);
-            height: rem(48px);
+            border-radius: rem-convert(24px);
+            width: rem-convert(48px);
+            height: rem-convert(48px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -247,7 +247,7 @@
           margin-right: auto;
         }
         .link-wrapper {
-          gap: rem(12px);
+          gap: rem-convert(12px);
           width: 100%;
           justify-content: space-around;
         }

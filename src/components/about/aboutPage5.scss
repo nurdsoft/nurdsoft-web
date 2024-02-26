@@ -16,7 +16,7 @@
 
   .aboutPage5_joinUs {
     color: var(--primary-100);
-    font-size: rem(64px);
+    font-size: rem-convert(64px);
     font-style: normal;
     font-weight: 700;
     line-height: 74px;
@@ -30,7 +30,7 @@
     gap: 120px;
   }
   .aboutPage5_stage {
-    max-width: rem(652px);
+    max-width: rem-convert(652px);
     z-index: 1;
   }
 
