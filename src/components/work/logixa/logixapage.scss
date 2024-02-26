@@ -1,13 +1,13 @@
 @import "~sass-rem";
 
 .logixapage_parentContainer {
-  padding: 0 rem(25px) rem(30px) rem(25px);
+  padding: 0 rem-convert(25px) rem-convert(30px) rem-convert(25px);
   .logixapage_title {
     color: var(--white);
-    font-size: rem(56px);
+    font-size: rem-convert(56px);
     font-weight: 700;
     line-height: 74px;
-    max-width: rem(917px);
+    max-width: rem-convert(917px);
     width: 100%;
   }
 
@@ -38,7 +38,7 @@
 
   .logixapage_emailBoxContainer {
     h4.white {
-      max-width: rem(545px);
+      max-width: rem-convert(545px);
       width: 100%;
     }
   }
@@ -65,20 +65,20 @@
   .logixapage_parentContainer {
     .logixapage_title {
       width: 100%;
-      font-size: rem(42px);
+      font-size: rem-convert(42px);
       line-height: 52px;
     }
 
     .logixapage_introduction{
-      padding: rem(20px);
+      padding: rem-convert(20px);
     }
 
     .logixapage_conclusion {
-      padding: rem(20px);
+      padding: rem-convert(20px);
     }
 
     .logixapage_keyServices {
-      padding: rem(48px);
+      padding: rem-convert(48px);
       .logixapage_keyServicesListContainer {
         margin-bottom: 0;
       }
@@ -98,48 +98,48 @@
   .logixapage_parentContainer {
     .logixapage_title {
       width: 100%;
-      font-size: rem(32px);
+      font-size: rem-convert(32px);
       line-height: 42px;
     }
 
     .logixapage_introduction {
       .logixapage_introductionTitle{
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
       }
       p.offGray{
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
       }
     }
 
     .logixapage_productStatement{
       .logixapage_productStatementTitle{
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
       .logixapage_productStatementDescription{
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
       }
       .logixapage_productStatementList{
         ol.offGray {
-          font-size: rem(18px);
+          font-size: rem-convert(18px);
         }
       }
     }
 
     .logixapage_keyServices {
-      padding: rem(20px);
+      padding: rem-convert(20px);
       .logixapage_keyServicesTitle{
-        font-size: rem(32px);
+        font-size: rem-convert(32px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
       .logixapage_keyServicesListContainer {
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
         margin-bottom: 0;
         flex-direction: column;
         justify-content: flex-start;
@@ -150,14 +150,14 @@
 
     .logixapage_valueProposition{
       .logixapage_valuePropositionTitle {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
         .primary100 {
           margin: 0;
         }
       }
       .bndpage_implementationDescription {
-        margin: rem(48px) 0 0 0;
+        margin: rem-convert(48px) 0 0 0;
         width: 100%;
       }
       .logixapage_auditImage {
@@ -167,7 +167,7 @@
 
     .logixapage_assessorDashboard {
       .logixapage_assessorDashboardTitle {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
       }
       .logixapage_assessorDashboardImagesContainer {
@@ -178,7 +178,7 @@
 
     .logixapage_keyFeatures {
       .logixapage_keyFeaturesTitle {
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
         text-align: center;
       }
       .logixapage_keyFeaturesFlexContainer {
@@ -189,10 +189,10 @@
 
     .logixapage_conclusion {
       .logixapage_conclusionTitle{
-        font-size: rem(30px);
+        font-size: rem-convert(30px);
       }
       p.offGray{
-        font-size: rem(18px);
+        font-size: rem-convert(18px);
       }
     }
   }

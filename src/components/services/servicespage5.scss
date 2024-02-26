@@ -5,9 +5,9 @@
     gap: 32px;
 
     .servicespage5_menu{
-        max-width: rem(250px);
+        max-width: rem-convert(250px);
         width: 100%;
-        padding: rem(20px);
+        padding: rem-convert(20px);
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -22,7 +22,7 @@
         }
 
         .menuItem {
-            font-size: rem(17px);
+            font-size: rem-convert(17px);
             font-style: normal;
             font-weight: 500;
             line-height: 30px;
@@ -37,10 +37,10 @@
                     position: absolute;
                     left: -23px;
                     top: -10px;
-                    width: rem(48px);
-                    height: rem(48px);
+                    width: rem-convert(48px);
+                    height: rem-convert(48px);
                     z-index: -1;
-                    border-radius: rem(30px);
+                    border-radius: rem-convert(30px);
                     background-color: var(--off-white-100);
                     opacity: 0.12;
                 }

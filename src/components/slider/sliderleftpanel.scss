@@ -16,22 +16,22 @@
       text-transform: uppercase;
       font-weight: 700;
       text-align: left;
-      font-size: rem(20px);
-      margin-bottom: rem(38px);
+      font-size: rem-convert(20px);
+      margin-bottom: rem-convert(38px);
     }
-  
+
     .sliderleftpanel_title {
-      font-size: rem(52px);
+      font-size: rem-convert(52px);
       color: var(--white);
       text-align: left;
       font-weight: 700;
       line-height: 48px;
-      margin-bottom: rem(36px);
+      margin-bottom: rem-convert(36px);
     }
-  
+
     .sliderleftpanel_description {
-      margin: rem(18px) 0 rem(12px) 0;
-      font-size: rem(16px);
+      margin: rem-convert(18px) 0 rem-convert(12px) 0;
+      font-size: rem-convert(16px);
       color: var(--off-gray);
       font-weight: 400;
       text-align: left;
@@ -48,7 +48,7 @@
   .sliderleftpanel_parentContainer {
     .left {
       .sliderleftpanel_title {
-        font-size: rem(38px);
+        font-size: rem-convert(38px);
       }
     }
   }

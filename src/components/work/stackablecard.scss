@@ -1,12 +1,12 @@
 @import "~sass-rem";
 
 .stackable-workCard{
-  width: rem(1280px);
+  width: rem-convert(1280px);
   max-width: 95%;
-  margin: rem(32px) auto;
+  margin: rem-convert(32px) auto;
   position: sticky;
   top: 100px;
-  padding: rem(48px) rem(48px) 0px rem(48px);
+  padding: rem-convert(48px) rem-convert(48px) 0px rem-convert(48px);
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -14,37 +14,37 @@
   color: var(--off-white-100);
   background-color: var(--black-100);
   .content {
-    max-width: rem(600px);
-    min-width: rem(250px);
+    max-width: rem-convert(600px);
+    min-width: rem-convert(250px);
     flex: 1;
     width: 100%;
-    padding-bottom: rem(28px);
+    padding-bottom: rem-convert(28px);
 
     .caption {
-      font-size: rem(20px);
+      font-size: rem-convert(20px);
       font-style: normal;
       font-weight: 700;
-      line-height: rem(28px);
+      line-height: rem-convert(28px);
       color: var(--primary-100);
-      margin-top: rem(20px);
+      margin-top: rem-convert(20px);
     }
 
     .title {
-      font-size: rem(44px);
+      font-size: rem-convert(44px);
       font-style: normal;
       font-weight: 700;
       line-height: 58px;
       color: var(--white);
-      margin-top: rem(12px);
+      margin-top: rem-convert(12px);
     }
 
     .description {
-      margin: rem(32px) 0px;
+      margin: rem-convert(32px) 0px;
     }
   }
   .img {
-    max-width: rem(536px);
-    min-width: rem(100px);
+    max-width: rem-convert(536px);
+    min-width: rem-convert(100px);
     flex: 1;
     width: 100%;
     margin-top: auto;
@@ -57,18 +57,18 @@
 @media screen and (max-width: 966px) {
   .stackable-workCard{
     flex-direction: column-reverse;
-    padding: rem(20px) rem(20px) 0 rem(20px);
+    padding: rem-convert(20px) rem-convert(20px) 0 rem-convert(20px);
     top: 44px;
     .content{
       .caption {
         margin-top: 0;
       }
       .description{
-        margin: rem(18px) 0px;
+        margin: rem-convert(18px) 0px;
       }
     }
     .img {
-      max-width: rem(480px);
+      max-width: rem-convert(480px);
       margin: 0 auto;
     }
   }

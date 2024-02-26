@@ -3,18 +3,18 @@
 .aboutPage2_parentContainer {
     color: var(--off-white-100);
     width: 95%;
-    margin-top: rem(120px);
+    margin-top: rem-convert(120px);
     margin-left: auto;
     margin-right: auto;
-    
+
     .description {
-        margin-bottom: rem(120px);
+        margin-bottom: rem-convert(120px);
         .descriptionText {
-            font-size: rem(32px);
+            font-size: rem-convert(32px);
             font-style: normal;
             font-weight: 500;
-            line-height: rem(48px);
-            margin-bottom: rem(64px);
+            line-height: rem-convert(48px);
+            margin-bottom: rem-convert(64px);
         }
     }
     .companyStats{
@@ -24,7 +24,7 @@
         margin: 0 auto;
 
         .stat {
-            padding: rem(48px) rem(40px);
+            padding: rem-convert(48px) rem-convert(40px);
             display: flex;
             align-items: center;
             gap: 20px;
@@ -35,7 +35,7 @@
             }
             &:hover {
                 background-color: var(--dark-gray-100);
-                padding: rem(12px) rem(44px) rem(44px) rem(44px);
+                padding: rem-convert(12px) rem-convert(44px) rem-convert(44px) rem-convert(44px);
             }
 
             .icon {
@@ -49,19 +49,19 @@
             .text {
                 display: flex;
                 flex-direction: column;
-                gap: rem(16px);
+                gap: rem-convert(16px);
                 .statNumber {
-                    font-size: rem(32px);
+                    font-size: rem-convert(32px);
                     font-style: normal;
                     font-weight: 500;
-                    line-height: rem(40px); 
+                    line-height: rem-convert(40px);
                 }
-    
+
                 .statLabel {
-                    font-size: rem(18px);
+                    font-size: rem-convert(18px);
                     font-style: normal;
                     font-weight: 400;
-                    line-height: rem(24px);
+                    line-height: rem-convert(24px);
                 }
             }
         }
@@ -73,10 +73,10 @@
         .companyStats{
             .stat {
                 .statNumber {
-                    font-size: rem(32px);
+                    font-size: rem-convert(32px);
                 }
                 .statLabel {
-                    font-size: rem(18px);
+                    font-size: rem-convert(18px);
                 }
             }
         }
@@ -87,8 +87,8 @@
     .aboutPage2_parentContainer {
         .description {
             .descriptionText {
-                font-size: rem(24px);
-                line-height: rem(34px);
+                font-size: rem-convert(24px);
+                line-height: rem-convert(34px);
             }
         }
         .companyStats{
@@ -99,10 +99,10 @@
                     border-left: 1px solid var(--gray-100);
                 }
                 .statNumber {
-                    font-size: rem(48px);
+                    font-size: rem-convert(48px);
                 }
                 .statLabel {
-                    font-size: rem(24px);
+                    font-size: rem-convert(24px);
                 }
             }
         }

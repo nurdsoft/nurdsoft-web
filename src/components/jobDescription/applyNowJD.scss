@@ -2,7 +2,7 @@
 
 .applyNow_wrapper {
     width: 100%;
-    margin-top: rem(120px);
+    margin-top: rem-convert(120px);
     flex-wrap: wrap;
     display: flex;
     padding: 64px;
@@ -22,7 +22,7 @@
         font-size: 48px;
         font-style: normal;
         font-weight: 700;
-        line-height: 58px; 
+        line-height: 58px;
         text-align: center;
 
         .primary {
@@ -31,14 +31,14 @@
         }
     }
 }
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {
     .applyNow_wrapper{
         padding: 20px;
         gap: 30px;
 
         .mainText {
-            font-size: rem(24px);
-            line-height: rem(34px);
+            font-size: rem-convert(24px);
+            line-height: rem-convert(34px);
         }
     }
 }

@@ -1,16 +1,16 @@
 @import "~sass-rem";
 
 .aboutPage1_parentContainer{
-  margin: 6.25rem rem(25px) 1.875rem rem(25px);
+  margin: 6.25rem rem-convert(25px) 1.875rem rem-convert(25px);
   color: var(--off-white-100);
   width: 95%;
 
   .aboutPage1_heading {
-    font-size: rem(64px);
+    font-size: rem-convert(64px);
     font-style: normal;
     font-weight: 700;
     line-height: 74px;
-    margin-bottom: rem(80px);
+    margin-bottom: rem-convert(80px);
     animation: 2.5s anim-lineUp ease-out 1;
     span.blue {
       color: var(--primary-100);
@@ -23,7 +23,7 @@
     gap: 48px;
     align-items: center;
     .companyDescriptionText{
-      font-size: rem(32px);
+      font-size: rem-convert(32px);
       font-style: normal;
       font-weight: 400;
       line-height: 48px; /* 150% */
@@ -39,7 +39,7 @@
     --v-offset: 60px;
     --curve-height: 120px;
     margin-top: 120px;
-    
+
     &:before,
     &:after {
       content: "";
@@ -53,7 +53,7 @@
       right: calc(-1 * var(--v-offset));
       z-index: 2;
     }
-  
+
     &:before {
       top: calc(-0.6 * var(--curve-height));
     }
@@ -61,14 +61,14 @@
       bottom: calc(-0.6 * var(--curve-height));
     }
   }
-  
+
   .wrapper {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 24px;
     overflow: auto;
     scroll-snap-type: x mandatory;
-  
+
     img {
       scroll-snap-align: center;
       scroll-snap-align: center;
@@ -87,7 +87,7 @@
   to {
     transform: translatex(-540%);
   }
-  
+
 }
 
 @keyframes anim-lineUp {
@@ -113,13 +113,13 @@
       margin: 0;
       width: 100%;
       .aboutPage1_heading {
-        font-size: rem(42px);
+        font-size: rem-convert(42px);
         padding: 0px 16px;
       }
       .companyDescription {
         .companyDescriptionText{
-          font-size: rem(20px);
-          line-height: rem(30px);
+          font-size: rem-convert(20px);
+          line-height: rem-convert(30px);
           padding: 0px 16px;
         }
       }
@@ -136,15 +136,15 @@
   @media screen and (max-width: 768px) {
     .aboutPage1_parentContainer{
       .aboutPage1_heading{
-        font-size: rem(48px);
-        line-height: rem(58px);
+        font-size: rem-convert(48px);
+        line-height: rem-convert(58px);
       }
       .wrapper {
         img {
           height: 300px;
           width: auto;
           min-width: 300px;
-        } 
+        }
       }
       .aboutPage1_heading {
         margin: 40px 0px;

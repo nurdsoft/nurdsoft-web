@@ -26,11 +26,11 @@
     }
 
     .buttonText {
-      padding: rem(11px) rem(24px);
+      padding: rem-convert(11px) rem-convert(24px);
       width: max-content;
       line-height: 1.6;
       letter-spacing: 0.04em;
-      font-size: rem(16px);
+      font-size: rem-convert(16px);
       text-align: center;
       transition: all 0.4s ease-in-out;
       z-index: 1;

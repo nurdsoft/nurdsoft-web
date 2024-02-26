@@ -43,10 +43,10 @@
       z-index: 1;
     }
     .grid-cell {
-      width: rem(72px);
-      height: rem(72px);
+      width: rem-convert(72px);
+      height: rem-convert(72px);
       border: 1px solid #6164fa;
-      border-radius: rem(8px);
+      border-radius: rem-convert(8px);
       position: fixed;
       z-index: 0;
     }
