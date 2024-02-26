@@ -73,16 +73,10 @@ const LogixaPage = () => {
             Introduction
           </h4>
           <p className="mb-8 mt-8 text-xl text-center offGray font-normal">
-            Logistics and transportation software solutions have revolutionized 
-            the way companies handle their supply chain and distribution networks. 
-            These software platforms offer a comprehensive suite of tools designed 
-            to streamline, optimize, and enhance every aspect of the logistics lifecycle. 
-          </p>
-          <p className="mb-8 mt-8 text-xl text-center offGray font-normal">
-            From inventory management and route optimization to real-time tracking and
-            data analytics, these software systems provide a holistic approach to managing
-            the intricate web of processes involved in getting shipment from point A 
-            to point B.
+            Logixa, established in 2005, is a global player in the transportation and logistics sector, 
+            offering comprehensive services such as freight forwarding, supply chain management, 
+            and last-mile delivery. The company's expansive operations demanded a robust software 
+            solution to seamlessly integrate and optimize their diverse processes. 
           </p>
         </div>
         <div className="logixapage_productStatement mt-16">
@@ -90,12 +84,10 @@ const LogixaPage = () => {
             Product <span className="primary100 mr-2">Statement</span>
           </h4>
           <p className="logixapage_productStatementDescription mb-8 text-xl offGray font-normal">
-            Introducing our cutting-edge Logistics and Transportation Software – your 
-            ultimate solution for seamless supply chain management. Revolutionize the 
-            way you move goods with advanced features such as real-time tracking, route 
-            optimization, inventory management, and insightful analytics. Streamline 
-            operations, enhance efficiency, and exceed customer expectations with our 
-            software, designed to empower your business in the dynamic world of logistics.
+            Logixa, a prominent transportation and logistics company, faced challenges in optimizing their 
+            operations, managing a vast fleet, and ensuring timely deliveries. In a bid to enhance efficiency 
+            and stay ahead in the competitive industry, Logixa partnered with Nurdsoft, a leading software 
+            development company, to develop a bespoke logistics management solution.
           </p>
         </div>
         <div className="logixapage_keyServices pt-16 pb-12 px-24">
@@ -139,9 +131,8 @@ const LogixaPage = () => {
               Value <span className="primary100 mr-2">Proposition</span>
             </h4>
             <p className="logixapage_implementationDescription mb-8 mt-12 w-9/12 text-xl offGray font-normal">
-              Logixa offers state-of-the-art transportation software that helps businesses 
-              transform their operations, reduce costs, and exceed customer expectations in the 
-              logistics industry.
+              The implementation of the Nurdsoft solution involved meticulous planning, customization, and seamless integration 
+              with Logixa's existing infrastructure. The transition was carefully managed to minimize disruptions in daily operations.
             </p>
           </div>
           <StaticImage
@@ -231,21 +222,18 @@ const LogixaPage = () => {
               Conclusion
             </h4>
             <p className="mb-8 mt-8 text-xl text-center offGray font-normal">
-              With a user-centric approach, our Logixa software boasts an array of features 
-              that empower you to take full control of your shipments. From real-time tracking
-              and intelligent route optimization to seamless communication and insightful 
-              analytics, our software covers all aspects, guaranteeing efficient, cost-effective,
-              and timely deliveries. 
+              The Logixa-Nurdsoft collaboration stands as a testament to the transformative 
+              power of customized logistics management solutions.
             </p>
             <p className="mb-8 mt-8 text-xl text-center offGray font-normal">
-              As we deliver this powerful logistic software into your capable hands, we are 
-              confident that a new era of success in shipment management awaits you. Embrace 
-              this transformative tool to unlock unparalleled efficiency, minimize risks, and 
-              maximize customer satisfaction. The journey to elevated logistics starts now, 
-              and we're excited to stand by your side as you achieve remarkable milestones, 
-              experience operational excellence, and witness your logistics reach new pinnacles 
-              of success. Here's to embracing innovation, enhancing customer experiences, and 
-              shaping a future of logistics that knows no bounds.
+              By addressing specific challenges and incorporating innovative features, 
+              the partnership has not only enhanced Logixa's operational efficiency but also 
+              positioned them as a leader in the fiercely competitive transportation and logistics 
+              industry.
+            </p>
+            <p className="mb-8 mt-8 text-xl text-center offGray font-normal">
+              This success story showcases the value of strategic partnerships and tailored 
+              software solutions in navigating the complexities of modern logistics.
             </p>
           </div>
           {/* link buttons */}
