@@ -170,25 +170,25 @@ const LogixaPage = () => {
             <div className="logixapage_assessorDashboardImagesContainer flex flex-wrap gap-6">
               <StaticImage
                 width={603}
-                className="logixapage_assessorDashboard2 rounded-xl"
+                className="logixapage_assessorDashboard2"
                 src={"../../../images/logixa2.png"}
                 alt="Assessor Dashboard 2"
               />
               <StaticImage
                 width={603}
-                className="logixapage_assessorDashboard3 rounded-xl"
+                className="logixapage_assessorDashboard3"
                 src={"../../../images/logixa3.png"}
                 alt="Assessor Dashboard 3"
               />
               <StaticImage
                 width={603}
-                className="logixapage_assessorDashboard4 rounded-xl"
+                className="logixapage_assessorDashboard4"
                 src={"../../../images/logixa4.png"}
                 alt="Assessor Dashboard 4"
               />
               <StaticImage
                 width={603}
-                className="logixapage_assessorDashboard4 rounded-xl"
+                className="logixapage_assessorDashboard4"
                 src={"../../../images/logixa4.png"}
                 alt="Assessor Dashboard 4"
               />
