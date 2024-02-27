@@ -77,7 +77,7 @@ const Bndpage = () => {
         </h4>
         <div className="bndpage_imageContainer1 flex justify-center mt-12">
           <StaticImage
-            className="bndpage_bndImage rounded-xl"
+            className="bndpage_bndImage  "
             src={"../../../images/bnd-large.png"}
             alt="Build & Deploy"
             width={1000}
@@ -117,11 +117,11 @@ const Bndpage = () => {
           <h4 className="bndpage_keyChallangesTitle text-5xl mb-8 white">
             Key <span className="primary100 mr-2">Challanges</span>
           </h4>
-          <p className="bndpage_keyChallangeDescription mb-8 text-xl offGray font-normal">
+          <p className="bndpage_keyChallangeDescription mb-8 text-xl white font-normal">
             Prior to adopting BuildnDeploy.co, BND encountered several
             challenges in their software engineering and deployment processes:
           </p>
-          <div className="bndpage_keyChallangeListContainer mb-8 text-xl offGray font-normal">
+          <div className="bndpage_keyChallangeListContainer mb-8 text-xl white font-normal">
             <div className="flex flex-col gap-6">
               <span className="mr-4 flex items-center gap-8">
                 <ARROW_WITH_GRADIENT />
@@ -231,7 +231,7 @@ const Bndpage = () => {
             </p>
             <div className="flex justify-center">
               <StaticImage
-                className="bndpage_bndImage rounded-xl"
+                className="bndpage_bndImage  "
                 src={"../../../images/implementation_general.png"}
                 alt="Implementation"
                 width={1100}
@@ -248,7 +248,7 @@ const Bndpage = () => {
             <div className="flex justify-center">
               <StaticImage
                 width={1100}
-                className="bndpage_bndImage rounded-xl"
+                className="bndpage_bndImage  "
                 src={"../../../images/environment_variables.png"}
                 alt="Environment Variables"
               />
@@ -264,7 +264,7 @@ const Bndpage = () => {
             </p>
             <div className="flex justify-center">
               <StaticImage
-                className="bndpage_bndImage rounded-xl"
+                className="bndpage_bndImage  "
                 src={"../../../images/build_process.png"}
                 alt="Build Process"
                 width={1100}
@@ -319,26 +319,26 @@ const Bndpage = () => {
             </h4>
             <div className="bndpage_visualDesignImagesContainer flex flex-wrap gap-4 mt-16">
               <StaticImage
-                className="bndpage_visualDesign1 rounded-xl"
+                className="bndpage_visualDesign1  "
                 width={605}
                 src={"../../../images/visual_design1.png"}
                 alt="Visual Design 1"
               />
               <StaticImage
                 width={605}
-                className="bndpage_visualDesign2 rounded-xl"
+                className="bndpage_visualDesign2  "
                 src={"../../../images/visual_design2.png"}
                 alt="Visual Design 2"
               />
               <StaticImage
                 width={605}
-                className="bndpage_visualDesign3 rounded-xl"
+                className="bndpage_visualDesign3  "
                 src={"../../../images/visual_design7.png"}
                 alt="Visual Design 3"
               />
               <StaticImage
                 width={605}
-                className="bndpage_visualDesign4 rounded-xl"
+                className="bndpage_visualDesign4  "
                 src={"../../../images/visual_design8.png"}
                 alt="Visual Design 4"
               />
@@ -346,7 +346,7 @@ const Bndpage = () => {
             <div className="flex justify-center items-center mt-4">
               <StaticImage
                 width={1000}
-                className="bndpage_visualDesign5 rounded-xl"
+                className="bndpage_visualDesign5  "
                 src={"../../../images/visual_design9.png"}
                 alt="Visual Design 5"
               />

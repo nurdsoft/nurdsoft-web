@@ -88,7 +88,7 @@ const AuditTrustPage = () => {
         </h4>
         <div className="audittrustpage_imageContainer1 flex justify-center mt-12">
           <StaticImage
-            className="audittrustpage_audittrustImage rounded-xl"
+            className="audittrustpage_audittrustImage "
             src={"../../../images/audit_dashboard.png"}
             alt="Audit Dashboard"
             width={1000}
@@ -164,7 +164,7 @@ const AuditTrustPage = () => {
           <h4 className="audittrustpage_keyServicesTitle text-5xl mb-12 white">
             Key <span className="primary100 mr-2">Services</span>
           </h4>
-          <div className="audittrustpage_keyServicesListContainer flex justify-between items-center mb-8 text-xl offGray font-normal">
+          <div className="audittrustpage_keyServicesListContainer flex justify-between items-center mb-8 text-xl white font-normal">
             <div className="flex flex-col gap-6">
               <span className="flex items-center gap-6">
                 <CIRCLE_TICK />
@@ -224,25 +224,25 @@ const AuditTrustPage = () => {
             <div className="audittrustpage_assessorDashboardImagesContainer flex flex-wrap gap-6">
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard2 rounded-xl"
+                className="audittrustpage_assessorDashboard2 "
                 src={"../../../images/assessor_dashboard2.png"}
                 alt="Assessor Dashboard 2"
               />
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard3 rounded-xl"
+                className="audittrustpage_assessorDashboard3 "
                 src={"../../../images/assessor_dashboard3.png"}
                 alt="Assessor Dashboard 3"
               />
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard4 rounded-xl"
+                className="audittrustpage_assessorDashboard4 "
                 src={"../../../images/assessor_dashboard4.png"}
                 alt="Assessor Dashboard 4"
               />
               <StaticImage
                 width={603}
-                className="audittrustpage_assessorDashboard4 rounded-xl"
+                className="audittrustpage_assessorDashboard4 "
                 src={"../../../images/assessor_dashboard4.png"}
                 alt="Assessor Dashboard 4"
               />

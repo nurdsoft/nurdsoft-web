@@ -16,7 +16,6 @@
 
   .bitfleqspage_keyChallanges {
     background-color: var(--dark-gray-100);
-    border-radius: 16px;
   }
 
   .bitfleqspage_artCollection {
@@ -76,6 +75,11 @@
         border: 1px solid var(--gray-100);
         max-width: rem-convert(552px);
         width: 100%;
+        &:hover {
+          background: var(--dark-gray-100);
+          transition: all 0.1s;
+          transition-timing-function: ease-in;
+        }
       }
     }
   }

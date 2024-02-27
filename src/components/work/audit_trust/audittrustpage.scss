@@ -17,7 +17,6 @@
 
   .audittrustpage_keyServices {
     background-color: var(--dark-gray-100);
-    border-radius: 16px;
   }
 
   .audittrustpage_valueProposition {
@@ -78,6 +77,11 @@
       grid-template-columns: 1fr 1fr;
       .audittrustpage_keyFeaturesFlexBox {
         border: 1px solid var(--gray-100);
+        &:hover {
+          background: var(--dark-gray-100);
+          transition: all 0.1s;
+          transition-timing-function: ease-in;
+        }
       }
     }
   }

@@ -54,7 +54,7 @@ const BitFleqpage = () => {
         </h4>
         <div className="bitfleqspage_imageContainer1 flex items-center justify-center mt-12">
           <StaticImage
-            className="bitfleqspage_bitfleqsImage rounded-xl"
+            className="bitfleqspage_bitfleqsImage "
             src={"../../../images/bitfleqs-large.png"}
             alt="Bitfleqs"
             width={1000}
@@ -105,10 +105,10 @@ const BitFleqpage = () => {
           <h4 className="bitfleqspage_keyChallangesTitle text-5xl mb-8 white">
             Key <span className="primary100 mr-2">Challanges</span>
           </h4>
-          <p className="bitfleqspage_keyChallangeDescription mb-8 text-xl offGray font-normal">
+          <p className="bitfleqspage_keyChallangeDescription mb-8 text-xl white font-normal">
             Traditional supply chain systems face challenges related to
           </p>
-          <div className="bitfleqspage_keyChallangeListContainer mb-8 text-xl offGray font-normal">
+          <div className="bitfleqspage_keyChallangeListContainer mb-8 text-xl white font-normal">
             <div className="flex flex-col gap-6">
               <span className="mr-4 flex items-center gap-8">
                 <ARROW_WITH_GRADIENT />
@@ -204,14 +204,14 @@ const BitFleqpage = () => {
             </h4>
             <div className="bitfleqspage_artCollectionImagesContainer flex flex-wrap gap-6 mt-20">
               <StaticImage
-                className="bitfleqspage_artCollection1 rounded-xl"
+                className="bitfleqspage_artCollection1 "
                 width={590}
                 src={"../../../images/art_collection1.png"}
                 alt="Art Collection 1"
               />
               <StaticImage
                 width={500}
-                className="bitfleqspage_artCollection2 rounded-xl"
+                className="bitfleqspage_artCollection2 "
                 src={"../../../images/art_collection2.png"}
                 alt="Art Collection 2"
               />
@@ -219,7 +219,7 @@ const BitFleqpage = () => {
             <div className="flex justify-center items-center">
               <StaticImage
                 width={1000}
-                className="bitfleqspage_artCollection3 mt-20 rounded-xl"
+                className="bitfleqspage_artCollection3 mt-20 "
                 src={"../../../images/art_collection3.png"}
                 alt="Art Collection 3"
               />
