@@ -32,6 +32,11 @@
       grid-template-columns: 1fr 1fr;
       .logixapage_keyFeaturesFlexBox {
         border: 1px solid var(--gray-100);
+        &:hover {
+          background: var(--dark-gray-100);
+          transition: all 0.1s;
+          transition-timing-function: ease-in;
+        }
       }
     }
   }
