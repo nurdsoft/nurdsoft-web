@@ -6,7 +6,7 @@ const ApplyNowJD = () => {
   const [emailCopied, setEmailCopied] = React.useState(false)
 
   const compyEmail = async () => {
-    await navigator.clipboard.writeText("hr@nurdsoft.co")
+    await navigator.clipboard.writeText("recruiting@nurdsoft.co")
     setEmailCopied(true)
   }
 
@@ -15,7 +15,7 @@ const ApplyNowJD = () => {
       <p className='extrasmall'>WANT TO JOIN US?</p>
       <p className='mainText'>
         Send your resume and cover letter to <br />
-        <span onClick={compyEmail} className='primary'>hr@nurdsoft.co</span>
+        <span onClick={compyEmail} className='primary'>recruiting@nurdsoft.co</span>
       </p>
       {
         emailCopied &&
