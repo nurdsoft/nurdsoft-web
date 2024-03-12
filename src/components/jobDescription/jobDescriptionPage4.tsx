@@ -25,7 +25,7 @@ const JobDescriptionPage4 = ({ data }: any) => {
             <p className="bulletPoint_data">{quality}</p>
           </div>
         ))}
-        <ApplyNowJD />
+        <ApplyNowJD data={data} />
       </div>
     </Wrapper>
   );
