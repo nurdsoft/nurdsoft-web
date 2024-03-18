@@ -32,7 +32,7 @@ const JobDescriptionPage3 = ({data}: any) => {
         {
           data?.qualities?.length ?
           <></>:
-          <ApplyNowJD />
+          <ApplyNowJD data={data} />
         }
       </div>
     </Wrapper>
