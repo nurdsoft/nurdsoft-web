@@ -21,7 +21,13 @@ const jobDescriptionPage1 = ({data}: any) => {
   const capitalize = (s: string) => {
     const word = s.split(' ')
     let one = word[0].toLowerCase()
-    one = one.charAt(0).toUpperCase() + one.slice(1)
+    console.log(one);
+    
+    if(one === "us") {
+      one = one.toUpperCase()
+    } else {
+      one = one.charAt(0).toUpperCase() + one.slice(1)
+    }
     if(word.length > 1){
       let two = word[1].toLowerCase()
       two = two.charAt(1).toUpperCase() + two.slice(2)
